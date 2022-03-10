@@ -146,4 +146,33 @@ namespace WizardsCode.UniversalAIExtentions.NeoFPS
   - Add `AISoundDetection` component to your AI
   - Add `SoloPlayerCharacterEventWatcher` component to your AI
 
+# Boxing out a Level
 
+In this section we will create a basic level in which the player must fight their way to a specific point, grab an item, then get to the extraction point.
+
+## Scene Setup
+
+  - Using a pen and paper or drawing tablet sketch out the level (see `_Design/Level Sketches/Scratchpad Level 1`)
+  - Create a new scene `_UniversalNeo/Scenes/Scratchpad/Scratchpad Level 1`
+  - Install `Probuilder`
+  - Import the `Wizards Code Prototyping` Package
+
+## Rough level layout
+
+  - Add a `Terrain`
+  - Adjust size to 250 x 500
+  - Position at -125, 0, -250
+  - Build up hills around the edge
+  - Draw the road network 
+  - Block out the buildings using ProBuilder
+  - Make a tree in ProBuilder
+  - Paint some trees in
+
+## Explore the level with NeoFPS
+
+- Open `FeatureDemo_Template` scene additively
+- Drag in all elements intot the Scratchpad scene
+- Remove the old Camera and the test environment
+- Position the `SimpleSpawnerAndGameMode` at the start point
+
+- Hit `Play`
