@@ -123,6 +123,63 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 23800000, guid: 5e90f3a8eafaac6439ede51f9abf20a5, type: 2}
+--- !u!1001 &135789118
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 412386906}
+    m_Modifications:
+    - target: {fileID: 4350659894445806101, guid: 053785787776c5944aeb007355506640, type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4350659894445806101, guid: 053785787776c5944aeb007355506640, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.000013874844
+      objectReference: {fileID: 0}
+    - target: {fileID: 4350659894445806101, guid: 053785787776c5944aeb007355506640, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.09431004
+      objectReference: {fileID: 0}
+    - target: {fileID: 4350659894445806101, guid: 053785787776c5944aeb007355506640, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.5753351
+      objectReference: {fileID: 0}
+    - target: {fileID: 4350659894445806101, guid: 053785787776c5944aeb007355506640, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4350659894445806101, guid: 053785787776c5944aeb007355506640, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.0000000019544328
+      objectReference: {fileID: 0}
+    - target: {fileID: 4350659894445806101, guid: 053785787776c5944aeb007355506640, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4350659894445806101, guid: 053785787776c5944aeb007355506640, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 7.88264e-15
+      objectReference: {fileID: 0}
+    - target: {fileID: 4350659894445806101, guid: 053785787776c5944aeb007355506640, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4350659894445806101, guid: 053785787776c5944aeb007355506640, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4350659894445806101, guid: 053785787776c5944aeb007355506640, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7103366518503496174, guid: 053785787776c5944aeb007355506640, type: 3}
+      propertyPath: m_Name
+      value: Muzzle Flash
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 053785787776c5944aeb007355506640, type: 3}
 --- !u!1001 &175125463
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -205,7 +262,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 412386906}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 1.7, y: 1.8, z: 0}
 --- !u!114 &181316443
 MonoBehaviour:
@@ -600,7 +657,8 @@ MonoBehaviour:
   VFXSettings:
     BulletSettings:
       ImpactEffects: []
-      MuzzleFlashes: []
+      MuzzleFlashes:
+      - {fileID: 1521540978}
     SoundSettings:
       FireSoundEffect: {fileID: 0}
       FireSoundVolume: 1
@@ -5340,6 +5398,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 46b650d8d73301e4189f8469b6d2545b, type: 3}
+--- !u!198 &1521540978 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 8901551380624247700, guid: 053785787776c5944aeb007355506640, type: 3}
+  m_PrefabInstance: {fileID: 135789118}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1706103584
 GameObject:
   m_ObjectHideFlags: 0
@@ -5370,7 +5433,7 @@ Transform:
   m_Children:
   - {fileID: 1984941989}
   m_Father: {fileID: 412386906}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1984941988
 GameObject:

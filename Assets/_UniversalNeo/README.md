@@ -66,8 +66,9 @@
 - Click `Weapon Settings` and select `Raycast` in `Fire Type`
 - Set `Weapon Type` to `Single Shot`
 - Set `Weapon Attack Distance` to `130`
-- Set `Max Raycast Distance` to `100`
+- Set `Max Raycast Distance` to `130`
 - Set `Raycast Hit Layers` to `CharacterPhysics`, disabling `Default`
+- Set `Detection Distance` in the characters `Detection Settings` to 50
 
 - Select the child `W Muszzle`
 - Move it to the muzzle on the model
@@ -84,7 +85,65 @@
 - Select the `W Muzzle` object on the weapon in the right hand
 - Adjust rotation so the debug line hits in the chest `1.7, 1.8, 0`
 
-- TODO: Setup the weapon as per https://aidocs.darkingassets.com/ai-system-and-modules/create-shooter-weapon
+## Add Weapon SFX and VFX
 
-## TODO: Add sound detection
+  - Copy `NeoFPS/Samples/Shared/Prefabs/Weapons/MuzzleFlashes/RealisticMuzzleFlash_AssaultRifle` into the scene
+  - Unpack the prefab and pull out the `Barrel Flare` child into its own object
+  - Delete the original muzzle effect object
+  - Rename `Barrel Flare` to `Muzzle Flash`
+  - Make a prefab in `Prefabs/VFX/Muzzle Flash`
+
+  - Move the `Muzzle Flash` to the tip of the Muzzle
+  - Open `VFX Settings` on the weapon in the right hand
+  - Open `Bullet Settings`
+  - Drag `Muzzle Flash` drag in `NeoFPS/Samples/Shared/Prefabs/Weapons/MuzzleFlashes/RealisticMuzzleFlash_AssaultRifle`
+
+  - Open `Bullet Settings`
+  - Setup sounds using those supplied in `NeoFPS/Samples/Shared/Audio/SoundEffects/Weapons/`
+  - Set the 3D sound on the Audio Source for the weapon to full 3D
+
+## Add sound detection
+
+  - Create a script `_UniversalNeo/Scripts/Runtime/AISoundDetection.cs`
+  - Add the following code:
+```
+using NeoFPS;
+using NeoFPS.ModularFirearms;
+using UnityEngine;
+using UniversalAI;
+
+namespace WizardsCode.UniversalAIExtentions.NeoFPS
+{
+    public class AISoundDetection : MonoBehaviour, IPlayerCharacterSubscriber
+    {
+        [SerializeField, Tooltip("The radius within which the AI may detect sound.")]
+        float radius = 25;
+        
+        private BaseShooterBehaviour shooter;
+        private ICharacter player;
+
+        private void OnDisable()
+        {
+            shooter.onShoot -= DetectSound;
+        }
+
+        public void OnPlayerCharacterChanged(ICharacter character)
+        {
+            shooter.onShoot -= DetectSound;
+
+            shooter = GetComponent<BaseShooterBehaviour>();
+            player = character;
+            shooter.onShoot += DetectSound;
+        }
+
+        private void DetectSound(IModularFirearm source)
+        {
+            UniversalAIManager.SoundDetection(UniversalAIEnums.SoundType.ShootSound, radius, transform);
+        }
+    }
+}
+```
+  - Add `AISoundDetection` component to your AI
+  - Add `SoloPlayerCharacterEventWatcher` component to your AI
+
 
