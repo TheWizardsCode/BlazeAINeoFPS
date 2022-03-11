@@ -1,11 +1,32 @@
 # NeoFPS and Universal AI 2.0 Demo Level
 
-This is a simple little game to demonstrate the integration of NeoFPS and Universal AI to create a simple, but effective Shooter. 
+This is a simple little game to demonstrate the integration of NeoFPS and Universal AI, along with Kubold Rifle and Movement Animset Pro to create a simple, but effective Shooter. 
 
 ## Installation
 
+Follow the steps below. Note the links to the asset store are affiliate links, clicking them helps keep the lights on around here - even if you are not buying now.
+
 1. Checkout the repo
-2. Import [NeoFPS](https://assetstore.unity.com/packages/2d/gui/icons/pixel-cursors-109256?aid=1101l866w)
-3. Import [Universal AI 2.0](https://assetstore.unity.com/packages/tools/ai/universal-ai-2-0-204185?aid=1101l866w)
-4. Import [ProBuilder](https://docs.unity3d.com/Packages/com.unity.probuilder@4.0/manual/installing.html)
-5. Hit Play
+2. Open it in Unity 2021.2.0f1 or later
+3. Import [NeoFPS](https://assetstore.unity.com/packages/2d/gui/icons/pixel-cursors-109256?aid=1101l866w)
+4. Apply all the required settings using the NeoFPS Hub
+5. Import [Universal AI 2.0](https://assetstore.unity.com/packages/tools/ai/universal-ai-2-0-204185?aid=1101l866w)
+6. Open `Tools/Universal AI/AI Wizards/Integration Manager` and change `Use NeoFPS` to `Yes`
+7. Import [Rifle Animset Pro](https://assetstore.unity.com/packages/3d/animations/rifle-animset-pro-15098?aid=1101l866w)
+8. Remove (or exclude from import) the `Scripts` and `PlaymakerAdditions` folder from `RifleAnimsetPro`
+9. Import [Movement Animset Pro](https://assetstore.unity.com/packages/3d/animations/movement-animset-pro-14047?aid=1101l866w)
+10. Remove (or exclude from import) the `Scripts` and `PlaymakerAdditions` folder from `MovementAnimsetPro`
+11. Open the scene `_UniversalNeo/Scenes/Level 1`
+12. Hit Play and shoot stuff... but don't get shot... you know the drill.
+
+## Navigating the Project
+
+The following folders have content that are a part of the project:
+
+`Assets/_Design` contains some prototyping assets that are used in the levels. These are all CC0 licensed or covered by the MIT license of this project.
+`Assets/Dev` contains some dev scenes used for testing of the AI
+`Assets/UniversalNeo` contains the actual game scenes and assets
+
+## Contributing
+
+We welcome your contributions to this demo game created with Universal AI and NeoFPS. Help us make these assets shine. It would be truly awesome if this got to be so good that one or both publishers could use the game to sell their assets. Lets make it happen so they keep building what we need to make games.
