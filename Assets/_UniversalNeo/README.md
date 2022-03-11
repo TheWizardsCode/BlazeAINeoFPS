@@ -68,7 +68,7 @@
 - Set `Weapon Attack Distance` to `130`
 - Set `Max Raycast Distance` to `130`
 - Set `Raycast Hit Layers` to `CharacterPhysics`, disabling `Default`
-- Set `Detection Distance` in the characters `Detection Settings` to 50
+- Set `Detection Distance` in the characters `Detection Settings` to 100
 
 - Select the child `W Muszzle`
 - Move it to the muzzle on the model
@@ -84,6 +84,16 @@
 
 - Select the `W Muzzle` object on the weapon in the right hand
 - Adjust rotation so the debug line hits in the chest `1.7, 1.8, 0`
+
+## Add IK
+
+  - Open `Inverse Kinematics`
+  - Set `Use Inverse Kinematics` to true
+  - Set `Use Hand IK` to true
+  - Set `Hand IK Type` to `Left Hand Only`
+  - 
+  - Enter play mode and adjust the `Right Hand IK` and `Left Hand IK` being sure to take a note of the settings
+  - 
 
 ## Add Weapon SFX and VFX
 
@@ -104,47 +114,12 @@
 
 ## Add sound detection
 
-  - Create a script `_UniversalNeo/Scripts/Runtime/AISoundDetection.cs`
-  - Add the following code:
-```
-using NeoFPS;
-using NeoFPS.ModularFirearms;
-using UnityEngine;
-using UniversalAI;
-
-namespace WizardsCode.UniversalAIExtentions.NeoFPS
-{
-    public class AISoundDetection : MonoBehaviour, IPlayerCharacterSubscriber
-    {
-        [SerializeField, Tooltip("The radius within which the AI may detect sound.")]
-        float radius = 25;
-        
-        private BaseShooterBehaviour shooter;
-        private ICharacter player;
-
-        private void OnDisable()
-        {
-            shooter.onShoot -= DetectSound;
-        }
-
-        public void OnPlayerCharacterChanged(ICharacter character)
-        {
-            shooter.onShoot -= DetectSound;
-
-            shooter = GetComponent<BaseShooterBehaviour>();
-            player = character;
-            shooter.onShoot += DetectSound;
-        }
-
-        private void DetectSound(IModularFirearm source)
-        {
-            UniversalAIManager.SoundDetection(UniversalAIEnums.SoundType.ShootSound, radius, transform);
-        }
-    }
-}
-```
-  - Add `AISoundDetection` component to your AI
+  - Add `AINEOSoundDetection` component to your AI
   - Add `SoloPlayerCharacterEventWatcher` component to your AI
+
+## Make a prefab
+
+  - Make a prefab in `_UniversalNeo/Prefabs/Enemy`
 
 # Boxing out a Level
 
@@ -176,3 +151,14 @@ In this section we will create a basic level in which the player must fight thei
 - Position the `SimpleSpawnerAndGameMode` at the start point
 
 - Hit `Play`
+
+## Add Enemies
+
+  - Drag a number of enemy prefabs into place based on your design
+  - Mark all the buildings as `Not Walkable`
+  - Bake the NavMesh
+
+  - Hit `Play`
+
+  - Double the number of Enemies
+  - Increase enemy hearing range to 75
