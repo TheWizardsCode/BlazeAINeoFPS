@@ -1959,7 +1959,7 @@ NavMeshAgent:
   m_AutoBraking: 1
   m_AutoRepath: 1
   m_Height: 2
-  m_BaseOffset: 0
+  m_BaseOffset: -0.09
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
 --- !u!136 &8426486747739146382
@@ -2133,7 +2133,6 @@ MonoBehaviour:
       IsWeapon: 1
       PlayHitAnimationsOnAttack: 0
       AttackDistance: 130
-      MaxDamageDistance: 150
       MinAttackDelay: 0.4
       MaxAttackDelay: 1
       HitReactionChance: 100
@@ -2221,9 +2220,8 @@ MonoBehaviour:
   CurrentPlayerRef: {fileID: 0}
   CurrentAITarget: {fileID: 0}
   AIReady: 0
-  StartWithError: 1
-  Reasons: 'The ''Detection Distance'' Is Lower Than The ''Max Damage Distance'',
-    AI Won''t Work Properly, disabling the AI: '' Enemy '' !'
+  StartWithError: 0
+  Reasons: 
   IgnoreNavmeshRadius: 1
   IgnoreColliderRadius: 0
   PlayerDistance: 0
@@ -2778,7 +2776,6 @@ MonoBehaviour:
     ProjectileHitLayers:
       serializedVersion: 2
       m_Bits: 1
-    MaxRaycastDistance: 100
     DrawRaycastDebug: 0
     RaycastHitLayers:
       serializedVersion: 2
