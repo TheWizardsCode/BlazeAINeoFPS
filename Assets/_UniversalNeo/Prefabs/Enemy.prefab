@@ -2107,7 +2107,7 @@ MonoBehaviour:
     AIConfidence: 0
     wanderType: 0
     DestroyAIOnDeath: 0
-    DestroyDelay: 2.5
+    DestroyDelay: 15
     DynamicWanderRadius: 20
     FleeDistance: 30
     MinIdleLength: 4
@@ -2133,8 +2133,8 @@ MonoBehaviour:
       IsWeapon: 1
       PlayHitAnimationsOnAttack: 0
       AttackDistance: 130
-      MinAttackDelay: 0.4
-      MaxAttackDelay: 1
+      MinAttackDelay: 0.1
+      MaxAttackDelay: 0.4
       HitReactionChance: 100
       BlockChance: 50
       BlockSuccessfulChance: 70
