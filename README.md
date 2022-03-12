@@ -27,10 +27,9 @@ Universal AI requires that you add events to some weapon animations. Follow thes
 2. Create a folder `Assets/Kubold - Added Events` or similar and copy your duplicated animations into this folder
 3. On `EquipRifle` add `EnableWeapon` event at frame 16
 4. On `EquipRifle` add `EnableIK` event at frame 29
-5. On `EquipRifle` add `EnableWeapon` event at frame 16
-6. On `HolsterRifle` add `DisableWeapon` event at frame 36
-7. On `Rifle_ShootOnce` add `UniversalAIAttack` event at frame 2
-8. Add these three animations to the AI prefab `Assets/_UniversalNeo/Prefabs/Enemy`
+5. On `HolsterRifle` add `DisableWeapon` event at frame 36
+6. On `Rifle_ShootOnce` add `UniversalAIAttack` event at frame 2
+7. Add these three animations to the AI prefab `Assets/_UniversalNeo/Prefabs/Enemy`
 
 ## Play the Game
 
