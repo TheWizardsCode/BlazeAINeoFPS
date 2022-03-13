@@ -2786,7 +2786,7 @@ MonoBehaviour:
     RaycastHitLayers:
       serializedVersion: 2
       m_Bits: 65536
-    DistanceAccuracy: 99
+    DistanceAccuracy: 60
     DebugSimulatedAccuracy: 1
     WeaponName: Rifle
   AmmoSettings:
