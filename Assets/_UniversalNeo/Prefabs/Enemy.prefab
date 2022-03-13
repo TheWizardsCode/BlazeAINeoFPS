@@ -2132,7 +2132,7 @@ MonoBehaviour:
       UseBlockSystem: 0
       IsWeapon: 1
       PlayHitAnimationsOnAttack: 0
-      AttackDistance: 130
+      AttackDistance: 60
       MinAttackDelay: 0.1
       MaxAttackDelay: 0.4
       HitReactionChance: 100
@@ -2163,7 +2163,7 @@ MonoBehaviour:
       ObstacleLayers:
         serializedVersion: 2
         m_Bits: 1
-      DetectionDistance: 150
+      DetectionDistance: 100
       DetectionAngle: 70
       HeadTransform: {fileID: 8426486747731437145}
       AutoFindHeadTransform: 0
@@ -2577,7 +2577,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0859806330214eb4fac7c3b814010a8e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Radius: 75
+  UseSoundDetection: 0
+  m_Radius: 125
 --- !u!1001 &7409876820878931579
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2646,6 +2647,11 @@ PrefabInstance:
 --- !u!23 &7409876820876635675 stripped
 MeshRenderer:
   m_CorrespondingSourceObject: {fileID: 2300000, guid: 7beb38f0bc614ea43855626d97f5eb89, type: 3}
+  m_PrefabInstance: {fileID: 7409876820878931579}
+  m_PrefabAsset: {fileID: 0}
+--- !u!23 &7409876820876635679 stripped
+MeshRenderer:
+  m_CorrespondingSourceObject: {fileID: 2300004, guid: 7beb38f0bc614ea43855626d97f5eb89, type: 3}
   m_PrefabInstance: {fileID: 7409876820878931579}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &7409876820878831835 stripped
@@ -2767,7 +2773,7 @@ MonoBehaviour:
     AlwaysEquipped: 1
     WeaponType: 0
     FireType: 2
-    WeaponAttackDistance: 130
+    WeaponAttackDistance: 60
     FireRate: 8
     FireDelay: 1.5
     WeaponAccuracy: 100
@@ -2807,8 +2813,10 @@ MonoBehaviour:
   WeaponObjectSettings:
     HolsteredWeaponObject:
     - {fileID: 7409876821017333781}
+    - {fileID: 7409876821017333777}
     MainWeaponObject:
     - {fileID: 7409876820876635675}
+    - {fileID: 7409876820876635679}
     Muzzle: {fileID: 7409876821494981807}
   IKSettings:
     LeftHandIK: {fileID: 7409876821553610832}
@@ -2906,6 +2914,11 @@ PrefabInstance:
 --- !u!4 &7409876821015433973 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: 7beb38f0bc614ea43855626d97f5eb89, type: 3}
+  m_PrefabInstance: {fileID: 7409876821015038069}
+  m_PrefabAsset: {fileID: 0}
+--- !u!23 &7409876821017333777 stripped
+MeshRenderer:
+  m_CorrespondingSourceObject: {fileID: 2300004, guid: 7beb38f0bc614ea43855626d97f5eb89, type: 3}
   m_PrefabInstance: {fileID: 7409876821015038069}
   m_PrefabAsset: {fileID: 0}
 --- !u!23 &7409876821017333781 stripped
