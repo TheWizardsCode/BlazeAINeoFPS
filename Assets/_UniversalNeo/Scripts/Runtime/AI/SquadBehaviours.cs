@@ -9,8 +9,8 @@ namespace WizardsCode.UniversalAIExtension
     {
         [SerializeField, Tooltip("How often, in seconds, the squad will review their coordinated efforts.")]
         float m_SquadOrdersFreqency = 3;
-        [SerializeField, Tooltip("The AI that are a member of this squad. The first AI in the list is considered the Squad Commander.")]
-        UniversalAISystem[] m_SquadMembers;
+        [SerializeField, Tooltip("The AI that are members of this squad. The first AI in the list is considered the Squad Commander.")]
+        List<UniversalAISystem> m_SquadMembers = new List<UniversalAISystem>();
 
         UniversalAISystem m_AISystem;
         UniversalAICommandManager m_CommandManager;
@@ -30,10 +30,33 @@ namespace WizardsCode.UniversalAIExtension
             if (Time.timeSinceLevelLoad < m_TimeOfNextSquadOrdersReview) return;
             m_TimeOfNextSquadOrdersReview = Time.timeSinceLevelLoad + m_SquadOrdersFreqency;
 
-            float distance = m_CommandManager.GetTargetDistance();
+            float distance = Mathf.Min(m_CommandManager.GetTargetDistance(), m_AISystem.Settings.Attack.AttackDistance * 0.5f);
 
-            for (int i = 0; i < m_SquadMembers.Length; i++)
-            {                    
+            for (int i = 0; i < m_SquadMembers.Count; i++)
+            {
+                // If AI has been destroyed remove them from the squad
+                if (!m_SquadMembers[i])
+                {
+                    // If this was the last squad member destroy the squad behaviour
+                    if (m_SquadMembers.Count == 1)
+                    {
+                        Destroy(gameObject);
+                        return;
+                    }
+
+                    m_SquadMembers.RemoveAt(i);
+                    // If they were the commander nominate a new commander
+                    if (i == 0)
+                    {
+                        m_AISystem = m_SquadMembers[0].GetComponent<UniversalAISystem>();
+                        m_CommandManager = m_AISystem.UniversalAICommandManager;
+                        distance = Mathf.Min(m_CommandManager.GetTargetDistance(), m_AISystem.Settings.Attack.AttackDistance * 0.5f);
+                    }
+                    // Break out on this cycle but update next frame
+                    m_TimeOfNextSquadOrdersReview = 0;
+                    break;
+                }
+
                 if (m_SquadMembers[i].UniversalAICommandManager.GetTarget() == null 
                     && m_CommandManager.GetTarget() != null)
                 {

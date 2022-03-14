@@ -140,6 +140,7 @@ In this section we will create a basic level in which the player must fight thei
   - Build up hills around the edge
   - Draw the road network 
   - Block out the buildings using ProBuilder
+  - Dig out a lake and throw in a plane of water
   - Make a tree in ProBuilder
   - Paint some trees in
 
@@ -168,4 +169,16 @@ In this section we will create a basic level in which the player must fight thei
   - In `Stats` set `Start Health` to 100
   - In `General Settings/Movement` set `Destory Delay` to 15
   - In  `General Settings/Attack` set `Min Attack Delay` to 0.1 and `Max Attack Delay` to 0.4
+  - And more
+
+## Create Squads
+
+  - Create `Squad Alpha` Add in a bunch of AI
+  - Create `Squad Beta` Add in a bunch of AI
+  - Repeat until `Squad Hotel`
+
+
+
+  
+
   
