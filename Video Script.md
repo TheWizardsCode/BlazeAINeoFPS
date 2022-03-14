@@ -177,6 +177,23 @@ In this section we will create a basic level in which the player must fight thei
   - Create `Squad Beta` Add in a bunch of AI
   - Repeat until `Squad Hotel`
 
+## Add Weapon Sounds
+
+  - Set `Audio Source` on the weapon to have full `3D` sound
+  - Open `VFX Settings`
+  - Add `Audio_Weapon_AssaultRifle_Gunshot01` to `Fire Sound Effect`
+  - Add `Audio_Weapon_AssaultRifle_Reload` to `Reload Sound Effect`
+  - Add `Audio_Weapon_AssaultRifle_Draw` to `Equip Sound Effect`
+  - Add `Audio_Weapon_AssaultRifle_Draw` to `UnEquip Sound Effect`
+
+## Add Character Sounds
+
+  - Set `Audio Source` on the enemy to have full `3D` sound
+  - Open `Unversal AI Sounds`
+  - Add `Audio_Footsteps_Dirt_Std01` and a few more (02, 03 etc.) to `Walk Sounds`
+  - Add `Audio_Footsteps_Dirt_Fast01` and a few more (02, 03 etc.) to `Run Sounds`
+  - Add `Audio_VoiceMale_HitReaction01` and a few more (02, 03 etc.) to `On Take Damage`
+  - Add `Audio_VoiceMale_Pain01` and 02 to `On Death`
 
 
   

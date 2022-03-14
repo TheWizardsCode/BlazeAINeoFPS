@@ -2423,17 +2423,39 @@ MonoBehaviour:
   IdleSounds:
     array: []
   WalkSounds:
-    array: []
+    array:
+    - Clip: {fileID: 8300000, guid: c4394a0a0953053478fe2a2b7a8dc8d9, type: 3}
+      Volume: 1
+    - Clip: {fileID: 8300000, guid: 5ef70ae6123b5564ab3725ad341bd5cf, type: 3}
+      Volume: 1
+    - Clip: {fileID: 8300000, guid: fbb5eb499f4c5d643acedd3dbcec0775, type: 3}
+      Volume: 1
   RunSounds:
-    array: []
+    array:
+    - Clip: {fileID: 8300000, guid: 26fcdff17fb3f38409b3f1afe7ccd826, type: 3}
+      Volume: 1
+    - Clip: {fileID: 8300000, guid: 2682aee76e26bda43b2104dbc4d81761, type: 3}
+      Volume: 1
+    - Clip: {fileID: 8300000, guid: 4bc1633de6452314a842044827f2364b, type: 3}
+      Volume: 1
   OnAttack:
     array: []
   OnDamagedTarget:
     array: []
   OnTakeDamage:
-    array: []
+    array:
+    - Clip: {fileID: 8300000, guid: b91792c6eb1b5d94f8e23d68c5540a0b, type: 3}
+      Volume: 1
+    - Clip: {fileID: 8300000, guid: d8e34c51714302f48820b1337dcf9795, type: 3}
+      Volume: 1
+    - Clip: {fileID: 8300000, guid: 448946864195c0b47881616fe1f631b1, type: 3}
+      Volume: 1
   OnDeath:
-    array: []
+    array:
+    - Clip: {fileID: 8300000, guid: 29588148d48710348bc9dff8e6bf9bee, type: 3}
+      Volume: 1
+    - Clip: {fileID: 8300000, guid: 11a0f4d9cfa330b43bc746debdb57bbd, type: 3}
+      Volume: 1
   OnAlerted:
     array: []
   OnLostTarget:
@@ -2716,7 +2738,7 @@ AudioSource:
     m_Curve:
     - serializedVersion: 3
       time: 0
-      value: 0
+      value: 1
       inSlope: 0
       outSlope: 0
       tangentMode: 0
@@ -2802,13 +2824,13 @@ MonoBehaviour:
       MuzzleFlashes:
       - {fileID: 2115990769360551519}
     SoundSettings:
-      FireSoundEffect: {fileID: 0}
+      FireSoundEffect: {fileID: 8300000, guid: c44657895574a6b45b616037391e3751, type: 3}
       FireSoundVolume: 1
-      ReloadSoundEffect: {fileID: 0}
+      ReloadSoundEffect: {fileID: 8300000, guid: 6d2abda95a30ec24b9fdfddf38f7d1ae, type: 3}
       ReloadSoundVolume: 1
-      EquipSoundEffect: {fileID: 0}
+      EquipSoundEffect: {fileID: 8300000, guid: 226fd8e8d744e134d95fa2cb3e79658c, type: 3}
       EquipSoundVolume: 1
-      UnEquipSoundEffect: {fileID: 0}
+      UnEquipSoundEffect: {fileID: 8300000, guid: 226fd8e8d744e134d95fa2cb3e79658c, type: 3}
       UnEquipSoundVolume: 1
       WeaponAudioSource: {fileID: 7409876821195475374}
   WeaponObjectSettings:
