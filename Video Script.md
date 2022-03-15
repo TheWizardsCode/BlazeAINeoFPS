@@ -185,6 +185,7 @@ In this section we will create a basic level in which the player must fight thei
   - Add `Audio_Weapon_AssaultRifle_Reload` to `Reload Sound Effect`
   - Add `Audio_Weapon_AssaultRifle_Draw` to `Equip Sound Effect`
   - Add `Audio_Weapon_AssaultRifle_Draw` to `UnEquip Sound Effect`
+  - Make the distance drop off in the audio source of the weapon less steep
 
 ## Add Character Sounds
 
@@ -195,7 +196,19 @@ In this section we will create a basic level in which the player must fight thei
   - Add `Audio_VoiceMale_HitReaction01` and a few more (02, 03 etc.) to `On Take Damage`
   - Add `Audio_VoiceMale_Pain01` and 02 to `On Death`
 
+## Add Player Sounds
 
+  - Copy `NeoFpsSoloPlayerCharacter` into your `Prefabs` Folder
+  - Rename it to `UniversalNeoPlayer`
+  - Use it in `SimpleSpawnerAndGameMode`
+  - Change `Damage Audio Threshold` on `UniversalNeoPlayer/FpsSoloCharacter` to 5
+
+## Add Health Pickups, dropped by the AI on death
+
+  - Create a `Items/LootDrop` script
+  - Add `ContactPickup_Health` as a health item
+  - Set to `Spawn as Child`
+  - Add `OnDropLoot` to the AI `OnDeath` event
   
 
   

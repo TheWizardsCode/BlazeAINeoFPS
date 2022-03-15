@@ -1896,6 +1896,7 @@ GameObject:
   - component: {fileID: 8426486747739146368}
   - component: {fileID: 2141231239027794206}
   - component: {fileID: 4698919225792866618}
+  - component: {fileID: 579730254866198664}
   m_Layer: 16
   m_Name: Enemy
   m_TagString: AI
@@ -2398,7 +2399,19 @@ MonoBehaviour:
       m_Calls: []
   OnDeath:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 579730254866198664}
+        m_TargetAssemblyTypeName: WizardsCode.Items.Loot.LootDrop, Assembly-CSharp
+        m_MethodName: OnDropLoot
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   OnRevived:
     m_PersistentCalls:
       m_Calls: []
@@ -2602,6 +2615,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   UseSoundDetection: 0
   m_Radius: 125
+--- !u!114 &579730254866198664
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8426486747731737411}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 69bffea460adcc2448f20f731db0407f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Items:
+  - {fileID: 1277669658375282, guid: 1a24acd352d8fd04bb37f50d3f0a9044, type: 3}
+  m_SpawnAsChild: 1
 --- !u!1001 &7409876820878931579
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2863,7 +2891,7 @@ MonoBehaviour:
     RaycastHitLayers:
       serializedVersion: 2
       m_Bits: 65536
-    DistanceAccuracy: 75
+    DistanceAccuracy: 65
     DebugSimulatedAccuracy: 0
     WeaponName: Rifle
   AmmoSettings:
@@ -2883,9 +2911,9 @@ MonoBehaviour:
       ReloadSoundEffect: {fileID: 8300000, guid: 6d2abda95a30ec24b9fdfddf38f7d1ae, type: 3}
       ReloadSoundVolume: 1
       EquipSoundEffect: {fileID: 8300000, guid: 226fd8e8d744e134d95fa2cb3e79658c, type: 3}
-      EquipSoundVolume: 1
+      EquipSoundVolume: 0.6
       UnEquipSoundEffect: {fileID: 8300000, guid: 226fd8e8d744e134d95fa2cb3e79658c, type: 3}
-      UnEquipSoundVolume: 1
+      UnEquipSoundVolume: 0.6
       WeaponAudioSource: {fileID: 7409876821195475374}
   WeaponObjectSettings:
     HolsteredWeaponObject:
