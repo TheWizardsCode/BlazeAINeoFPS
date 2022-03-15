@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -12,8 +13,8 @@ namespace WizardsCode.UniversalAIExtension
         [SerializeField, Tooltip("The AI that are members of this squad. The first AI in the list is considered the Squad Commander.")]
         List<UniversalAISystem> m_SquadMembers = new List<UniversalAISystem>();
 
-        UniversalAISystem m_AISystem;
-        UniversalAICommandManager m_CommandManager;
+        UniversalAISystem m_SquadLeaderAISystem;
+        UniversalAICommandManager m_SquadLeaderCommandManager;
         float m_TimeOfNextSquadOrdersReview;
 
         private UniversalAISystem m_advancingSquadMember;
@@ -21,8 +22,8 @@ namespace WizardsCode.UniversalAIExtension
 
         void Awake()
         {
-            m_AISystem = m_SquadMembers[0].GetComponent<UniversalAISystem>();
-            m_CommandManager = m_AISystem.UniversalAICommandManager;
+            m_SquadLeaderAISystem = m_SquadMembers[0].GetComponent<UniversalAISystem>();
+            m_SquadLeaderCommandManager = m_SquadLeaderAISystem.UniversalAICommandManager;
         }
 
         void Update()
@@ -30,7 +31,7 @@ namespace WizardsCode.UniversalAIExtension
             if (Time.timeSinceLevelLoad < m_TimeOfNextSquadOrdersReview) return;
             m_TimeOfNextSquadOrdersReview = Time.timeSinceLevelLoad + m_SquadOrdersFreqency;
 
-            float distance = Mathf.Min(m_CommandManager.GetTargetDistance(), m_AISystem.Settings.Attack.AttackDistance * 0.5f);
+            float distance = Mathf.Min(m_SquadLeaderCommandManager.GetTargetDistance(), m_SquadLeaderAISystem.Settings.Attack.AttackDistance * 0.5f);
 
             for (int i = 0; i < m_SquadMembers.Count; i++)
             {
@@ -48,28 +49,16 @@ namespace WizardsCode.UniversalAIExtension
                     // If they were the commander nominate a new commander
                     if (i == 0)
                     {
-                        m_AISystem = m_SquadMembers[0].GetComponent<UniversalAISystem>();
-                        m_CommandManager = m_AISystem.UniversalAICommandManager;
-                        distance = Mathf.Min(m_CommandManager.GetTargetDistance(), m_AISystem.Settings.Attack.AttackDistance * 0.5f);
+                        m_SquadLeaderAISystem = m_SquadMembers[0].GetComponent<UniversalAISystem>();
+                        m_SquadLeaderCommandManager = m_SquadLeaderAISystem.UniversalAICommandManager;
+                        distance = Mathf.Min(m_SquadLeaderCommandManager.GetTargetDistance(), m_SquadLeaderAISystem.Settings.Attack.AttackDistance * 0.5f);
                     }
                     // Break out on this cycle but update next frame
                     m_TimeOfNextSquadOrdersReview = 0;
                     break;
                 }
 
-                if (m_SquadMembers[i].UniversalAICommandManager.GetTarget() == null 
-                    && m_CommandManager.GetTarget() != null)
-                {
-                    m_SquadMembers[i].UniversalAICommandManager.SetTarget(m_CommandManager.GetTarget());
-                    continue;
-                } else
-                {
-                    if (i > 0 && m_CommandManager.GetTarget() == null)
-                    {
-                        m_CommandManager.SetTarget(m_SquadMembers[i].UniversalAICommandManager.GetTarget());
-                        continue;
-                    }
-                }
+                RadioInformation(m_SquadMembers[i].UniversalAICommandManager);
 
                 if (m_advancingSquadMember != null 
                     && m_SquadMembers[i].UniversalAICommandManager.GetTargetDistance() > m_advancingSquadMember.UniversalAICommandManager.GetTargetDistance())
@@ -96,6 +85,31 @@ namespace WizardsCode.UniversalAIExtension
             if (m_advancingSquadMember != null)
             {
                 Debug.Log($"{m_advancingSquadMember} is advancing from a distance of {m_advancingSquadMember.UniversalAICommandManager.GetTargetDistance()} to a distance of up to {m_advancingSquadMember.Settings.Attack.AttackDistance}.");
+            }
+        }
+
+
+        /// <summary>
+        /// Spread information around the squad using the radio.
+        /// </summary>
+        private void RadioInformation(UniversalAICommandManager otherMember)
+        {
+            if (otherMember == m_SquadLeaderCommandManager)
+            {
+                return;
+            }
+
+            if (m_SquadLeaderCommandManager.GetTarget() == null
+                && otherMember.GetTarget() != null) 
+            {
+                m_SquadLeaderCommandManager.SetTarget(otherMember.GetTarget());
+                return;
+            }
+
+            if (otherMember.GetTarget() == null
+                && m_SquadLeaderCommandManager.GetTarget() != null)
+            {
+                otherMember.SetTarget(m_SquadLeaderCommandManager.GetTarget());
             }
         }
     }
