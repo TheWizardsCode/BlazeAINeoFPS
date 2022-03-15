@@ -2705,7 +2705,7 @@ AudioSource:
   MinDistance: 1
   MaxDistance: 500
   Pan2D: 0
-  rolloffMode: 0
+  rolloffMode: 2
   BypassEffects: 0
   BypassListenerEffects: 0
   BypassReverbZones: 0
@@ -2714,22 +2714,76 @@ AudioSource:
     m_Curve:
     - serializedVersion: 3
       time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
+      value: 1.0038071
+      inSlope: -10.464159
+      outSlope: -10.464159
       tangentMode: 0
       weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
+      inWeight: 0
+      outWeight: 0.3018353
+    - serializedVersion: 3
+      time: 0.07542917
+      value: 0.5665436
+      inSlope: -3.2468853
+      outSlope: -3.2468853
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0.49106443
+    - serializedVersion: 3
+      time: 0.19737095
+      value: 0.30229187
+      inSlope: -1.9539088
+      outSlope: -1.9539088
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 0.3068894
+      value: 0.17590332
+      inSlope: -0.4884772
+      outSlope: -0.4884772
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 0.47941756
+      value: 0.095581055
+      inSlope: -0.1221193
+      outSlope: -0.1221193
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 0.66685057
+      value: 0.04586792
+      inSlope: -0.18522559
+      outSlope: -0.18522559
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.6284473
+      outWeight: 1
+    - serializedVersion: 3
+      time: 0.93837637
+      value: 0.015319824
+      inSlope: -0.0076324563
+      outSlope: -0.0076324563
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
     - serializedVersion: 3
       time: 1
-      value: 0
-      inSlope: 0
-      outSlope: 0
+      value: 0.002
+      inSlope: -0.002000801
+      outSlope: -0.002000801
       tangentMode: 0
       weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
+      inWeight: 0
+      outWeight: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
@@ -2809,8 +2863,8 @@ MonoBehaviour:
     RaycastHitLayers:
       serializedVersion: 2
       m_Bits: 65536
-    DistanceAccuracy: 60
-    DebugSimulatedAccuracy: 1
+    DistanceAccuracy: 75
+    DebugSimulatedAccuracy: 0
     WeaponName: Rifle
   AmmoSettings:
     MinDamageAmount: 5
