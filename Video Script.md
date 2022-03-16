@@ -210,5 +210,9 @@ In this section we will create a basic level in which the player must fight thei
   - Set to `Spawn as Child`
   - Add `OnDropLoot` to the AI `OnDeath` event
   
+## And the Render Texture Scope to the Sniper
 
+  - Copy `DemoFacility_FirearmSniperRifle` to `Prefabs/Weapon/FirearmSniperRifle`
+  - Replce default sniper in `UniversalNeoPlayer` with the new weapon
+  - Disable all optics except the `Optics_ScopeAcog_RenderTexture`
   

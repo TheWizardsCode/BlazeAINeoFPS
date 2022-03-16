@@ -2163,7 +2163,7 @@ MonoBehaviour:
         m_Bits: 8192
       ObstacleLayers:
         serializedVersion: 2
-        m_Bits: 513
+        m_Bits: 12586497
       DetectionDistance: 100
       DetectionAngle: 70
       HeadTransform: {fileID: 8426486747731437145}
