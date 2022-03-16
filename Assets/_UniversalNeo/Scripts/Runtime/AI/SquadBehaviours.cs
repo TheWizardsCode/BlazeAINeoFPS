@@ -79,13 +79,6 @@ namespace WizardsCode.UniversalAIExtension
                     m_advancingSquadMember.Settings.Attack.AttackDistance = distance * 0.8f;
                 }
             }
-
-
-
-            if (m_advancingSquadMember != null)
-            {
-                Debug.Log($"{m_advancingSquadMember} is advancing from a distance of {m_advancingSquadMember.UniversalAICommandManager.GetTargetDistance()} to a distance of up to {m_advancingSquadMember.Settings.Attack.AttackDistance}.");
-            }
         }
 
 

@@ -323,12 +323,12 @@ MonoBehaviour:
   - {fileID: 114155156615581814, guid: 31e4dfeb91fd0ac46855f35a6d2caee4, type: 3}
   - {fileID: 114395068230018176, guid: 3cce2d5ec9b7af3459db9bc3dfa597a2, type: 3}
   - {fileID: 114859122101320050, guid: fb72c1376fd1c67429a73bffedf268d3, type: 3}
-  - {fileID: 114012788380733456, guid: b3705a5399c91934588d622071d8236c, type: 3}
-  - {fileID: 114718858968116750, guid: c78023ecc606bf84bbc16ef3cafa093d, type: 3}
-  - {fileID: 114918541887471148, guid: 5586913d6e0ce934da6bed04cc353246, type: 3}
-  - {fileID: 8292312582678481563, guid: 4e3e1d6dc6fec5a40b26be939c56f6b0, type: 3}
-  - {fileID: 114218284299294058, guid: 629f7d2c2a05c3b4d9df1274a2bebf8c, type: 3}
-  - {fileID: 114847495818735858, guid: 07139153b9f0c764385f19b0dba4490b, type: 3}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   m_DuplicateBehaviour: 0
 --- !u!114 &114484651282579356
 MonoBehaviour:

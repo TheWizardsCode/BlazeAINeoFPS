@@ -1898,7 +1898,7 @@ GameObject:
   - component: {fileID: 4698919225792866618}
   - component: {fileID: 579730254866198664}
   m_Layer: 16
-  m_Name: Enemy
+  m_Name: Grunt Enemy
   m_TagString: AI
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2627,9 +2627,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 69bffea460adcc2448f20f731db0407f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Items:
+  m_GuaranteedItems:
   - {fileID: 1277669658375282, guid: 1a24acd352d8fd04bb37f50d3f0a9044, type: 3}
+  m_RandomItems:
+  - {fileID: 1962489923670448, guid: 4d5ced316c05f1946a0549ae4baf6645, type: 3}
+  - {fileID: 1651731687865070, guid: 15103c3503911004792652094ac61f4f, type: 3}
+  - {fileID: 1651731687865070, guid: 293b4a5033ddd374f891d3cd13fef722, type: 3}
+  - {fileID: 1651731687865070, guid: 368872fcbf926a8449c8931d396a7743, type: 3}
+  - {fileID: 1651731687865070, guid: 509420362406396478560e7c37e1ccd9, type: 3}
+  - {fileID: 1651731687865070, guid: 710655323c5501145b640386c3cacd78, type: 3}
+  - {fileID: 1651731687865070, guid: f49528837dc718749a1b5d338aaa5b7b, type: 3}
   m_SpawnAsChild: 1
+  m_MinSpawnOffset: {x: -0.5, y: 0.5, z: -0.5}
+  m_MaxSpawnOffset: {x: 0.5, y: 0.75, z: 0.5}
 --- !u!1001 &7409876820878931579
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2892,7 +2902,7 @@ MonoBehaviour:
       serializedVersion: 2
       m_Bits: 65536
     DistanceAccuracy: 65
-    DebugSimulatedAccuracy: 0
+    DebugSimulatedAccuracy: 1
     WeaponName: Rifle
   AmmoSettings:
     MinDamageAmount: 5

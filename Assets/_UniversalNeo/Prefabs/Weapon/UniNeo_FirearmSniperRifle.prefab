@@ -2063,7 +2063,7 @@ GameObject:
   - component: {fileID: 6569318637397186405}
   - component: {fileID: 8292312582678481563}
   m_Layer: 0
-  m_Name: FirearmSniperRifle
+  m_Name: UniNeo_FirearmSniperRifle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

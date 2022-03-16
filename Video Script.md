@@ -214,5 +214,23 @@ In this section we will create a basic level in which the player must fight thei
 
   - Copy `DemoFacility_FirearmSniperRifle` to `Prefabs/Weapon/FirearmSniperRifle`
   - Replce default sniper in `UniversalNeoPlayer` with the new weapon
-  - Disable all optics except the `Optics_ScopeAcog_RenderTexture`
+  - Disable all optics except the `Optics_ScopeSniper_RenderTexture`
+  - Copy the `FpsInventoryWiedlable` script from the original sniper quickswitch
+  - Remove the `FpsInventoryWieldableSwapppable` script from the new weapon
+  - Paste as new the new inventory script
   
+## Need more cover in the scene for the player
+
+  - Add a whole bunch of small buildings and barrels onto the scene
+
+## Weapon pickups
+
+  - Remove all weapons except the pistol from `UniversalNeoPlayer`
+  - Add an enemy in view when the player spawns
+  - Replace the health pickup with `ContactPickup_AssaultRifle_Quickswitch` as a loot drop for that first enemy
+  - On the `LootDrop` script add a second category of pickups called `RandomPickip`
+  - On the enemy prefab add the various weapon pickups
+  - Create a new Sniper pickup and use our modified sniiper item
+
+
+
