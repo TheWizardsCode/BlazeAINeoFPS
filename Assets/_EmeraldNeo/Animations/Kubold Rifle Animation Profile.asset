@@ -1,0 +1,275 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a8adbcef431b91047a8f193c07acec97, type: 3}
+  m_Name: Kubold Rifle Animation Profile
+  m_EditorClassIdentifier: 
+  AIAnimator: {fileID: 9100000, guid: d52110feb16125c4398397b17baabc6a, type: 2}
+  Attack1Animation: {fileID: 0}
+  Attack2Animation: {fileID: 0}
+  Attack3Animation: {fileID: 0}
+  Attack4Animation: {fileID: 0}
+  Attack5Animation: {fileID: 0}
+  Attack6Animation: {fileID: 0}
+  RunAttack1Animation: {fileID: 0}
+  RunAttack2Animation: {fileID: 0}
+  RunAttack3Animation: {fileID: 0}
+  Idle1Animation: {fileID: 7400002, guid: b52825ddb24a82a47a0938b30bf593f5, type: 3}
+  Idle2Animation: {fileID: 7400010, guid: b52825ddb24a82a47a0938b30bf593f5, type: 3}
+  Idle3Animation: {fileID: 7400008, guid: b52825ddb24a82a47a0938b30bf593f5, type: 3}
+  Idle4Animation: {fileID: 7400006, guid: b52825ddb24a82a47a0938b30bf593f5, type: 3}
+  Idle5Animation: {fileID: 0}
+  Idle6Animation: {fileID: 0}
+  IdleWarningAnimation: {fileID: 0}
+  NonCombatTurnLeftAnimation: {fileID: 7400006, guid: 6844dcb6a866ab34fa96c67e39eab693, type: 3}
+  NonCombatTurnRightAnimation: {fileID: 7400004, guid: 6844dcb6a866ab34fa96c67e39eab693, type: 3}
+  CombatTurnLeftAnimation: {fileID: 0}
+  CombatTurnRightAnimation: {fileID: 0}
+  NonCombatIdleAnimation: {fileID: 7400004, guid: b52825ddb24a82a47a0938b30bf593f5, type: 3}
+  WalkLeftAnimation: {fileID: 7400034, guid: 6844dcb6a866ab34fa96c67e39eab693, type: 3}
+  WalkStraightAnimation: {fileID: 7400012, guid: 6844dcb6a866ab34fa96c67e39eab693, type: 3}
+  WalkRightAnimation: {fileID: 7400030, guid: 6844dcb6a866ab34fa96c67e39eab693, type: 3}
+  RunLeftAnimation: {fileID: 7400064, guid: 6844dcb6a866ab34fa96c67e39eab693, type: 3}
+  RunStraightAnimation: {fileID: 7400036, guid: 6844dcb6a866ab34fa96c67e39eab693, type: 3}
+  RunRightAnimation: {fileID: 7400068, guid: 6844dcb6a866ab34fa96c67e39eab693, type: 3}
+  CombatIdleAnimation: {fileID: 0}
+  CombatWalkLeftAnimation: {fileID: 0}
+  CombatWalkStraightAnimation: {fileID: 0}
+  CombatWalkBackAnimation: {fileID: 0}
+  CombatWalkRightAnimation: {fileID: 0}
+  CombatRunLeftAnimation: {fileID: 0}
+  CombatRunStraightAnimation: {fileID: 0}
+  CombatRunRightAnimation: {fileID: 0}
+  Hit1Animation: {fileID: 7400098, guid: 914b09da235eea34ebdc4e71d057e815, type: 3}
+  Hit2Animation: {fileID: 7400092, guid: 914b09da235eea34ebdc4e71d057e815, type: 3}
+  Hit3Animation: {fileID: 7400096, guid: 914b09da235eea34ebdc4e71d057e815, type: 3}
+  Hit4Animation: {fileID: 7400094, guid: 914b09da235eea34ebdc4e71d057e815, type: 3}
+  Hit5Animation: {fileID: 0}
+  Hit6Animation: {fileID: 0}
+  CombatHit1Animation: {fileID: 0}
+  CombatHit2Animation: {fileID: 0}
+  CombatHit3Animation: {fileID: 0}
+  CombatHit4Animation: {fileID: 0}
+  CombatHit5Animation: {fileID: 0}
+  CombatHit6Animation: {fileID: 0}
+  BlockIdleAnimation: {fileID: 0}
+  BlockHitAnimation: {fileID: 0}
+  PutAwayWeaponAnimation: {fileID: 0}
+  PullOutWeaponAnimation: {fileID: 0}
+  Death1Animation: {fileID: 0}
+  Death2Animation: {fileID: 0}
+  Death3Animation: {fileID: 0}
+  Death4Animation: {fileID: 0}
+  Death5Animation: {fileID: 0}
+  Death6Animation: {fileID: 0}
+  RangedDeath1Animation: {fileID: 7400122, guid: 914b09da235eea34ebdc4e71d057e815, type: 3}
+  RangedDeath2Animation: {fileID: 7400124, guid: 914b09da235eea34ebdc4e71d057e815, type: 3}
+  RangedDeath3Animation: {fileID: 0}
+  RangedDeath4Animation: {fileID: 0}
+  RangedDeath5Animation: {fileID: 0}
+  RangedDeath6Animation: {fileID: 0}
+  RangedCombatIdleAnimation: {fileID: 7400004, guid: 914b09da235eea34ebdc4e71d057e815, type: 3}
+  RangedCombatWalkLeftAnimation: {fileID: 7400040, guid: 914b09da235eea34ebdc4e71d057e815, type: 3}
+  RangedCombatWalkStraightAnimation: {fileID: 7400016, guid: 914b09da235eea34ebdc4e71d057e815, type: 3}
+  RangedCombatWalkBackAnimation: {fileID: 7400024, guid: 914b09da235eea34ebdc4e71d057e815, type: 3}
+  RangedCombatWalkRightAnimation: {fileID: 7400032, guid: 914b09da235eea34ebdc4e71d057e815, type: 3}
+  RangedCombatRunLeftAnimation: {fileID: 7400028, guid: fa608feaf64a07040bef63f640abf835, type: 3}
+  RangedCombatRunStraightAnimation: {fileID: 7400022, guid: fa608feaf64a07040bef63f640abf835, type: 3}
+  RangedCombatRunRightAnimation: {fileID: 7400026, guid: fa608feaf64a07040bef63f640abf835, type: 3}
+  RangedIdleWarningAnimation: {fileID: 0}
+  RangedPutAwayWeaponAnimation: {fileID: 7400000, guid: 22c1235153e48654aa5bd95c0743779f, type: 2}
+  RangedPullOutWeaponAnimation: {fileID: 7400000, guid: cdab01e9e85eca04c9470069778f03a3, type: 2}
+  RangedAttack1Animation: {fileID: 7400000, guid: e838dc53c78192b478c1e62a56669bb6, type: 2}
+  RangedAttack2Animation: {fileID: 0}
+  RangedAttack3Animation: {fileID: 0}
+  RangedAttack4Animation: {fileID: 0}
+  RangedAttack5Animation: {fileID: 0}
+  RangedAttack6Animation: {fileID: 0}
+  RangedRunAttack1Animation: {fileID: 0}
+  RangedRunAttack2Animation: {fileID: 0}
+  RangedRunAttack3Animation: {fileID: 0}
+  RangedCombatHit1Animation: {fileID: 7400098, guid: 914b09da235eea34ebdc4e71d057e815, type: 3}
+  RangedCombatHit2Animation: {fileID: 7400092, guid: 914b09da235eea34ebdc4e71d057e815, type: 3}
+  RangedCombatHit3Animation: {fileID: 7400096, guid: 914b09da235eea34ebdc4e71d057e815, type: 3}
+  RangedCombatHit4Animation: {fileID: 0}
+  RangedCombatHit5Animation: {fileID: 0}
+  RangedCombatHit6Animation: {fileID: 0}
+  RangedCombatTurnLeftAnimation: {fileID: 7400090, guid: 914b09da235eea34ebdc4e71d057e815, type: 3}
+  RangedCombatTurnRightAnimation: {fileID: 7400088, guid: 914b09da235eea34ebdc4e71d057e815, type: 3}
+  Emote1Animation: {fileID: 0}
+  Emote2Animation: {fileID: 0}
+  Emote3Animation: {fileID: 0}
+  Emote4Animation: {fileID: 0}
+  Emote5Animation: {fileID: 0}
+  Emote6Animation: {fileID: 0}
+  Emote7Animation: {fileID: 0}
+  Emote8Animation: {fileID: 0}
+  Emote9Animation: {fileID: 0}
+  Emote10Animation: {fileID: 0}
+  Idle1AnimationSpeed: 1
+  Idle2AnimationSpeed: 1
+  Idle3AnimationSpeed: 1
+  Idle4AnimationSpeed: 1
+  Idle5AnimationSpeed: 1
+  Idle6AnimationSpeed: 1
+  IdleWarningAnimationSpeed: 1
+  RangedIdleWarningAnimationSpeed: 1
+  IdleCombatAnimationSpeed: 1
+  RangedIdleCombatAnimationSpeed: 1
+  IdleNonCombatAnimationSpeed: 1
+  Attack1AnimationSpeed: 0
+  Attack2AnimationSpeed: 1
+  Attack3AnimationSpeed: 1
+  Attack4AnimationSpeed: 1
+  Attack5AnimationSpeed: 1
+  Attack6AnimationSpeed: 1
+  RangedAttack1AnimationSpeed: 1
+  RangedAttack2AnimationSpeed: 1
+  RangedAttack3AnimationSpeed: 1
+  RangedAttack4AnimationSpeed: 1
+  RangedAttack5AnimationSpeed: 1
+  RangedAttack6AnimationSpeed: 1
+  RunAttack1AnimationSpeed: 0
+  RunAttack2AnimationSpeed: 1
+  RunAttack3AnimationSpeed: 1
+  RangedRunAttack1AnimationSpeed: 1
+  RangedRunAttack2AnimationSpeed: 1
+  RangedRunAttack3AnimationSpeed: 1
+  TurnLeftAnimationSpeed: 1
+  TurnRightAnimationSpeed: 1
+  CombatTurnLeftAnimationSpeed: 1
+  CombatTurnRightAnimationSpeed: 1
+  RangedCombatTurnLeftAnimationSpeed: 1
+  RangedCombatTurnRightAnimationSpeed: 1
+  Death1AnimationSpeed: 0
+  Death2AnimationSpeed: 1
+  Death3AnimationSpeed: 1
+  Death4AnimationSpeed: 1
+  Death5AnimationSpeed: 1
+  Death6AnimationSpeed: 1
+  RangedDeath1AnimationSpeed: 1
+  RangedDeath2AnimationSpeed: 1
+  RangedDeath3AnimationSpeed: 1
+  RangedDeath4AnimationSpeed: 1
+  RangedDeath5AnimationSpeed: 1
+  RangedDeath6AnimationSpeed: 1
+  Emote1AnimationSpeed: 1
+  Emote2AnimationSpeed: 1
+  Emote3AnimationSpeed: 1
+  Emote4AnimationSpeed: 1
+  Emote5AnimationSpeed: 1
+  Emote6AnimationSpeed: 1
+  Emote7AnimationSpeed: 1
+  Emote8AnimationSpeed: 1
+  Emote9AnimationSpeed: 1
+  Emote10AnimationSpeed: 1
+  WalkAnimationSpeed: 1
+  RunAnimationSpeed: 1
+  NonCombatWalkAnimationSpeed: 1
+  NonCombatRunAnimationSpeed: 1
+  CombatWalkAnimationSpeed: 1
+  CombatRunAnimationSpeed: 1
+  RangedCombatWalkAnimationSpeed: 1
+  RangedCombatRunAnimationSpeed: 1
+  Hit1AnimationSpeed: 1
+  Hit2AnimationSpeed: 1
+  Hit3AnimationSpeed: 1
+  Hit4AnimationSpeed: 1
+  Hit5AnimationSpeed: 1
+  Hit6AnimationSpeed: 1
+  CombatHit1AnimationSpeed: 0
+  CombatHit2AnimationSpeed: 1
+  CombatHit3AnimationSpeed: 1
+  CombatHit4AnimationSpeed: 1
+  CombatHit5AnimationSpeed: 1
+  CombatHit6AnimationSpeed: 1
+  RangedCombatHit1AnimationSpeed: 1
+  RangedCombatHit2AnimationSpeed: 1
+  RangedCombatHit3AnimationSpeed: 1
+  RangedCombatHit4AnimationSpeed: 1
+  RangedCombatHit5AnimationSpeed: 1
+  RangedCombatHit6AnimationSpeed: 1
+  MirrorWalkLeft: 0
+  MirrorWalkRight: 0
+  MirrorRunLeft: 0
+  MirrorRunRight: 0
+  MirrorCombatWalkLeft: 0
+  MirrorCombatWalkRight: 0
+  MirrorCombatRunLeft: 0
+  MirrorCombatRunRight: 0
+  MirrorCombatTurnLeft: 0
+  MirrorCombatTurnRight: 0
+  MirrorRangedCombatWalkLeft: 0
+  MirrorRangedCombatWalkRight: 0
+  MirrorRangedCombatRunLeft: 0
+  MirrorRangedCombatRunRight: 0
+  MirrorRangedCombatTurnLeft: 0
+  MirrorRangedCombatTurnRight: 0
+  MirrorTurnLeft: 0
+  MirrorTurnRight: 0
+  ReverseWalkAnimation: 0
+  ReverseRangedWalkAnimation: 0
+  UseWarningAnimationRef: 0
+  UseRunAttacksRef: 0
+  UseHitAnimations: 1
+  UseEquipAnimation: 1
+  UseBlockingRef: 0
+  WeaponTypeRef: 1
+  AnimatorType: 1
+  EmoteAnimationList: []
+  IdleAnimationList:
+  - AnimationSpeed: 1
+    AnimationClip: {fileID: 7400002, guid: b52825ddb24a82a47a0938b30bf593f5, type: 3}
+  - AnimationSpeed: 1
+    AnimationClip: {fileID: 7400010, guid: b52825ddb24a82a47a0938b30bf593f5, type: 3}
+  - AnimationSpeed: 1
+    AnimationClip: {fileID: 7400008, guid: b52825ddb24a82a47a0938b30bf593f5, type: 3}
+  - AnimationSpeed: 1
+    AnimationClip: {fileID: 7400006, guid: b52825ddb24a82a47a0938b30bf593f5, type: 3}
+  AttackAnimationList:
+  - AnimationSpeed: 0
+    AnimationClip: {fileID: 0}
+  RunAttackAnimationList:
+  - AnimationSpeed: 0
+    AnimationClip: {fileID: 0}
+  DeathAnimationList:
+  - AnimationSpeed: 0
+    AnimationClip: {fileID: 0}
+  CombatHitAnimationList:
+  - AnimationSpeed: 0
+    AnimationClip: {fileID: 0}
+  HitAnimationList:
+  - AnimationSpeed: 1
+    AnimationClip: {fileID: 7400098, guid: 914b09da235eea34ebdc4e71d057e815, type: 3}
+  - AnimationSpeed: 1
+    AnimationClip: {fileID: 7400092, guid: 914b09da235eea34ebdc4e71d057e815, type: 3}
+  - AnimationSpeed: 1
+    AnimationClip: {fileID: 7400096, guid: 914b09da235eea34ebdc4e71d057e815, type: 3}
+  - AnimationSpeed: 1
+    AnimationClip: {fileID: 7400094, guid: 914b09da235eea34ebdc4e71d057e815, type: 3}
+  RangedAttackAnimationList:
+  - AnimationSpeed: 1
+    AnimationClip: {fileID: 7400000, guid: e838dc53c78192b478c1e62a56669bb6, type: 2}
+  RangedCombatHitAnimationList:
+  - AnimationSpeed: 1
+    AnimationClip: {fileID: 7400098, guid: 914b09da235eea34ebdc4e71d057e815, type: 3}
+  - AnimationSpeed: 1
+    AnimationClip: {fileID: 7400092, guid: 914b09da235eea34ebdc4e71d057e815, type: 3}
+  - AnimationSpeed: 1
+    AnimationClip: {fileID: 7400096, guid: 914b09da235eea34ebdc4e71d057e815, type: 3}
+  - AnimationSpeed: 1
+    AnimationClip: {fileID: 7400094, guid: 914b09da235eea34ebdc4e71d057e815, type: 3}
+  RangedRunAttackAnimationList: []
+  RangedDeathAnimationList:
+  - AnimationSpeed: 1
+    AnimationClip: {fileID: 7400122, guid: 914b09da235eea34ebdc4e71d057e815, type: 3}
+  - AnimationSpeed: 1
+    AnimationClip: {fileID: 7400124, guid: 914b09da235eea34ebdc4e71d057e815, type: 3}

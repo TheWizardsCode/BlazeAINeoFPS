@@ -1,0 +1,75 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fc1a975727f99e04bbef5ff4da983d6e, type: 3}
+  m_Name: Assault Rifle Ability
+  m_EditorClassIdentifier: 
+  AbilityName: Assault Rifle
+  AbilityDescription: Shoot with an assault rifle
+  AbilityDamage: 5
+  MinAbilityDamage: 3
+  MaxAbilityDamage: 7
+  AbilityDamagePerIncrement: 5
+  CriticalHitOdds: 6.25
+  CriticalHitMultiplierMin: 1.1
+  CriticalHitMultiplierMax: 1.3
+  AbilityImpactDamage: 5
+  AbilitySupportAmount: 5
+  AbilityDamageIncrement: 1
+  AbilityCooldown: 10
+  AbilityLength: 8
+  SummonRadius: 10
+  ProjectileSpeed: 50
+  ProjectileTimeoutSeconds: 6
+  ColliderRadius: 0.05
+  ProjectileGravity: 0.5
+  TimeoutTime: 4.5
+  CollisionTime: 0
+  HeatSeekingSeconds: 1
+  CastEffectTimeoutSeconds: 1.32
+  AbilityEffectTimeoutSeconds: 5
+  SummonEffectTimeoutSeconds: 3
+  CollisionTimeout: 3
+  DamageOvertimeTimeout: 3
+  GravityAmount: 1
+  AbilityIcon: {fileID: 2800000, guid: 441db52eba688c94b9bca7eb01484341, type: 3}
+  AbilityEffect: {fileID: 1208659704613206977, guid: 84705ec38d3f59749a51691f1d46db9b, type: 3}
+  CreateEffect: {fileID: 7103366518503496174, guid: 053785787776c5944aeb007355506640, type: 3}
+  SummonEffect: {fileID: 0}
+  SummonObject: {fileID: 0}
+  DamageOverTimeEffect: {fileID: 0}
+  DamageOverTimeSound: {fileID: 0}
+  CollisionEffect: {fileID: 0}
+  CollisionSoundsList: []
+  SummonSound: {fileID: 0}
+  CreateSoundsList:
+  - {fileID: 8300000, guid: c44657895574a6b45b616037391e3751, type: 3}
+  - {fileID: 8300000, guid: 5f1b80a08747b6741bd5ffb1748278f1, type: 3}
+  - {fileID: 8300000, guid: 91241f96a55b9e34ab65c43800129f82, type: 3}
+  AbilityType: 0
+  DamageType: 0
+  SupportType: 0
+  HighQualityCollisions: 0
+  SoundOnCollisionRef: 0
+  HeatSeekingRef: 0
+  EffectOnCollisionRef: 0
+  CollisionEffectOnTargets: 1
+  ArrowProjectileRef: 0
+  UseGravity: 0
+  UseRandomizedDamage: 1
+  AbilityStacksRef: 0
+  UseDamageOverTimeEffectRef: 0
+  UseDamageOverTimeSoundRef: 0
+  UseCreateSound: 1
+  UseCriticalHits: 0
+  UseCustomAbilityIcon: 0
+  UseCreateEffect: 1
+  AbilityEditorTabs: 1

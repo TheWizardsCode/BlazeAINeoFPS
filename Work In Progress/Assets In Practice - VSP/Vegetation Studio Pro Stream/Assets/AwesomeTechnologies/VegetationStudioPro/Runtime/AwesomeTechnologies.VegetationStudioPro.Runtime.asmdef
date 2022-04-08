@@ -1,0 +1,22 @@
+{
+    "name": "AwesomeTechnologies.VegetationStudioPro.Runtime",
+    "references": [
+        "Unity.Mathematics",
+        "Unity.Collections",
+        "Unity.Jobs",
+        "Unity.Burst",
+        "Unity.Postprocessing.Runtime",
+        "AwesomeTechnologies.TouchReactSystemPro.Runtime"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": true,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [
+        "VSP_PACKAGES"
+    ],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

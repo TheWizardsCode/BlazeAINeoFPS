@@ -31,8 +31,6 @@ namespace WizardsCode.UniversalAIExtension
             if (Time.timeSinceLevelLoad < m_TimeOfNextSquadOrdersReview) return;
             m_TimeOfNextSquadOrdersReview = Time.timeSinceLevelLoad + m_SquadOrdersFreqency;
 
-            float distance = Mathf.Min(m_SquadLeaderCommandManager.GetTargetDistance(), m_SquadLeaderAISystem.Settings.Attack.AttackDistance * 0.5f);
-
             for (int i = 0; i < m_SquadMembers.Count; i++)
             {
                 // If AI has been destroyed remove them from the squad
@@ -51,7 +49,6 @@ namespace WizardsCode.UniversalAIExtension
                     {
                         m_SquadLeaderAISystem = m_SquadMembers[0].GetComponent<UniversalAISystem>();
                         m_SquadLeaderCommandManager = m_SquadLeaderAISystem.UniversalAICommandManager;
-                        distance = Mathf.Min(m_SquadLeaderCommandManager.GetTargetDistance(), m_SquadLeaderAISystem.Settings.Attack.AttackDistance * 0.5f);
                     }
                     // Break out on this cycle but update next frame
                     m_TimeOfNextSquadOrdersReview = 0;
@@ -59,25 +56,6 @@ namespace WizardsCode.UniversalAIExtension
                 }
 
                 RadioInformation(m_SquadMembers[i].UniversalAICommandManager);
-
-                if (m_advancingSquadMember != null 
-                    && m_SquadMembers[i].UniversalAICommandManager.GetTargetDistance() > m_advancingSquadMember.UniversalAICommandManager.GetTargetDistance())
-                {
-                    m_advancingSquadMember.Settings.Attack.AttackDistance = m_OriginalAttackDistance;
-                    m_advancingSquadMember = m_SquadMembers[i];
-                    m_OriginalAttackDistance = m_advancingSquadMember.Settings.Attack.AttackDistance;
-                    m_advancingSquadMember.Settings.Attack.AttackDistance = distance * 0.8f;
-                    continue;
-                } else if (m_SquadMembers[i].UniversalAICommandManager.GetTargetDistance() > distance)
-                {
-                    if (m_advancingSquadMember)
-                    {
-                        m_advancingSquadMember.Settings.Attack.AttackDistance = m_OriginalAttackDistance;
-                    }
-                    m_advancingSquadMember = m_SquadMembers[i];
-                    m_OriginalAttackDistance = m_advancingSquadMember.Settings.Attack.AttackDistance;
-                    m_advancingSquadMember.Settings.Attack.AttackDistance = distance * 0.8f;
-                }
             }
         }
 
