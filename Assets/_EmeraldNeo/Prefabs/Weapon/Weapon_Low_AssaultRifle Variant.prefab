@@ -9,7 +9,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1203822305}
-  - component: {fileID: 1203822306}
   m_Layer: 16
   m_Name: W Muzzle
   m_TagString: Untagged
@@ -32,18 +31,6 @@ Transform:
   m_Father: {fileID: 5075920997477876532}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 1.7, y: 1.8, z: 0}
---- !u!114 &1203822306
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1203822304}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d1a096b3012103e4ca59860f4c3874d6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &5075920997477751220
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -53,7 +40,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 100000, guid: 7beb38f0bc614ea43855626d97f5eb89, type: 3}
       propertyPath: m_Name
-      value: Weapon_Low_AssaultRifle
+      value: Weapon_Low_AssaultRifle Variant
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: 7beb38f0bc614ea43855626d97f5eb89, type: 3}
       propertyPath: m_Layer
