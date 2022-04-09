@@ -2455,6 +2455,7 @@ GameObject:
   - component: {fileID: 2955336787888845591}
   - component: {fileID: 1725859445}
   - component: {fileID: 1725859446}
+  - component: {fileID: 1434464328}
   m_Layer: 0
   m_Name: Soldier
   m_TagString: AI
@@ -2727,6 +2728,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1434464328}
+        m_TargetAssemblyTypeName: WizardsCode.NeoEmeraldFPS.ScoreSource, Assembly-CSharp
+        m_MethodName: AddScore
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 25
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   DamageEvent:
     m_PersistentCalls:
       m_Calls: []
@@ -2967,8 +2980,8 @@ MonoBehaviour:
   CurrentDamageAmount: 5
   DamageAmountRun: 5
   WanderRadius: 25
-  TabNumber: 2
-  TemperamentTabNumber: 6
+  TabNumber: 1
+  TemperamentTabNumber: 5
   DetectionTagsTabNumber: 0
   AnimationTabNumber: 2
   SoundTabNumber: 1
@@ -3666,6 +3679,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b9ad606a63b47bd428e5bd6041fde8bc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1434464328
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4310788834501611338}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7cac98e97762fd54697ca06f9124a66a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &4310788834501611340
