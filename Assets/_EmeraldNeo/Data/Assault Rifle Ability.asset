@@ -15,8 +15,8 @@ MonoBehaviour:
   AbilityName: Assault Rifle
   AbilityDescription: Shoot with an assault rifle
   AbilityDamage: 5
-  MinAbilityDamage: 3
-  MaxAbilityDamage: 7
+  MinAbilityDamage: 5
+  MaxAbilityDamage: 9
   AbilityDamagePerIncrement: 5
   CriticalHitOdds: 6.25
   CriticalHitMultiplierMin: 1.1

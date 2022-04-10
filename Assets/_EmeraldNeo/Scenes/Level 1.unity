@@ -21717,30 +21717,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Soldier
       objectReference: {fileID: 0}
-    - target: {fileID: 4310788834501611377, guid: 4314b90a5e454c4478e2c5cf5d9605b1, type: 3}
-      propertyPath: TabNumber
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4310788834501611377, guid: 4314b90a5e454c4478e2c5cf5d9605b1, type: 3}
-      propertyPath: StartingHealth
-      value: 125
-      objectReference: {fileID: 0}
-    - target: {fileID: 4310788834501611377, guid: 4314b90a5e454c4478e2c5cf5d9605b1, type: 3}
-      propertyPath: TemperamentTabNumber
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4310788834501611377, guid: 4314b90a5e454c4478e2c5cf5d9605b1, type: 3}
-      propertyPath: DetectionTagsTabNumber
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 4310788834501611377, guid: 4314b90a5e454c4478e2c5cf5d9605b1, type: 3}
-      propertyPath: MaxChaseDistanceTypeRef
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4310788834501611377, guid: 4314b90a5e454c4478e2c5cf5d9605b1, type: 3}
-      propertyPath: ObstructionDetectionLayerMask.m_Bits
-      value: 35651878
-      objectReference: {fileID: 0}
     - target: {fileID: 4310788834502103914, guid: 4314b90a5e454c4478e2c5cf5d9605b1, type: 3}
       propertyPath: m_RootOrder
       value: 6
