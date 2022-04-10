@@ -48,7 +48,12 @@ MonoBehaviour:
   DamageOverTimeEffect: {fileID: 0}
   DamageOverTimeSound: {fileID: 0}
   CollisionEffect: {fileID: 0}
-  CollisionSoundsList: []
+  CollisionSoundsList:
+  - {fileID: 8300000, guid: d43ec90eca474d0438ca210a7c07cece, type: 3}
+  - {fileID: 8300000, guid: 1760b8b8801adc847b8318edff8ef390, type: 3}
+  - {fileID: 8300000, guid: 03d970d600f3c5d4490b0bb97adf2db7, type: 3}
+  - {fileID: 8300000, guid: 43e948e1c706c2d4aad5cbd3506e7298, type: 3}
+  - {fileID: 8300000, guid: 3de2eefed220d8144b7b296e34e0257b, type: 3}
   SummonSound: {fileID: 0}
   CreateSoundsList:
   - {fileID: 8300000, guid: c44657895574a6b45b616037391e3751, type: 3}
@@ -58,7 +63,7 @@ MonoBehaviour:
   DamageType: 0
   SupportType: 0
   HighQualityCollisions: 0
-  SoundOnCollisionRef: 0
+  SoundOnCollisionRef: 1
   HeatSeekingRef: 0
   EffectOnCollisionRef: 0
   CollisionEffectOnTargets: 1
@@ -72,4 +77,4 @@ MonoBehaviour:
   UseCriticalHits: 0
   UseCustomAbilityIcon: 0
   UseCreateEffect: 1
-  AbilityEditorTabs: 0
+  AbilityEditorTabs: 2

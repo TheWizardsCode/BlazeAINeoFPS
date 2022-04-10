@@ -3254,6 +3254,7 @@ GameObject:
   - component: {fileID: 3949218310996544281}
   - component: {fileID: 4776187162604178991}
   - component: {fileID: 4776187162604178992}
+  - component: {fileID: 612730535}
   m_Layer: 0
   m_Name: Soldier
   m_TagString: AI
@@ -3364,7 +3365,7 @@ MonoBehaviour:
   RotateTowardsTarget: 0
   m_AttackAnimationClipMissing: 0
   ProjectileCollisionPointY: 1.5
-  m_ProjectileCollisionPoint: {x: -26.080757, y: 1.5, z: 58.103027}
+  m_ProjectileCollisionPoint: {x: -13.693481, y: 1.4999924, z: 57.565384}
   ObstructionTimer: 0
   ObstructionSeconds: 2
   IdleVolume: 1
@@ -3558,7 +3559,19 @@ MonoBehaviour:
       m_Calls: []
   OnDetectTargetEvent:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 612730535}
+        m_TargetAssemblyTypeName: WizardsCode.NeoEmeraldFPS.AIBarksController, Assembly-CSharp
+        m_MethodName: OnEnemySpotted
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   OnAttackEvent:
     m_PersistentCalls:
       m_Calls: []
@@ -3773,15 +3786,15 @@ MonoBehaviour:
   ObstructionDetectionUpdateSeconds: 0.1
   ObstructionDetectionUpdateTimer: 0
   CurrentHealth: 0
-  StartingHealth: 100
+  StartingHealth: 125
   DetectionRadius: 70
   CurrentDamageAmount: 5
   DamageAmountRun: 5
   WanderRadius: 25
-  TabNumber: 2
-  TemperamentTabNumber: 1
-  DetectionTagsTabNumber: 0
-  AnimationTabNumber: 2
+  TabNumber: 1
+  TemperamentTabNumber: 2
+  DetectionTagsTabNumber: 2
+  AnimationTabNumber: 3
   SoundTabNumber: 1
   MovementTabNumber: 0
   WeaponTypeTabNumber: 0
@@ -3933,8 +3946,8 @@ MonoBehaviour:
   Renderer4: {fileID: 4310788834513175062}
   DeathTypeRef: 1
   BehaviorRef: 3
-  DetectionTypeRef: 0
-  MaxChaseDistanceTypeRef: 1
+  DetectionTypeRef: 1
+  MaxChaseDistanceTypeRef: 0
   ConfidenceRef: 1
   OptimizedStateRef: 1
   CurrentDetectionRef: 1
@@ -4226,7 +4239,7 @@ AudioSource:
   m_GameObject: {fileID: 4310788834501611338}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
+  OutputAudioMixerGroup: {fileID: 243957145267007018, guid: a6f18d72e4ba7bb44a99c8b5e4d9703c, type: 2}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 1
   m_Volume: 1
@@ -4238,9 +4251,9 @@ AudioSource:
   Priority: 128
   DopplerLevel: 0
   MinDistance: 1
-  MaxDistance: 50
+  MaxDistance: 300
   Pan2D: 0
-  rolloffMode: 1
+  rolloffMode: 0
   BypassEffects: 0
   BypassListenerEffects: 0
   BypassReverbZones: 0
@@ -4539,6 +4552,24 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cd02606a5700ee14592602af1402cec5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &612730535
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4310788834501611338}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0b8f7dc85a28cb64f980e3b41acea5d9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_ApproximateTimeBetweenBarks: 5
+  m_EnemySpottedClips:
+  - {fileID: 8300000, guid: a7da3f21868338e4b969a52c9109c048, type: 3}
+  - {fileID: 8300000, guid: 89858ccc8237a694185aa8a1a81f84af, type: 3}
+  - {fileID: 8300000, guid: ca6398e296492b04ca21226550a88f78, type: 3}
+  - {fileID: 8300000, guid: da00c9ec1ca8fc04290339094ff13d49, type: 3}
 --- !u!1 &4310788834501611340
 GameObject:
   m_ObjectHideFlags: 0

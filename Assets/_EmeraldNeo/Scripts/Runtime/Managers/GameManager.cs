@@ -51,7 +51,7 @@ namespace WizardsCode.NeoEmeraldFPS
         {
             get
             {
-                return m_Score > m_ScoreNeededForTheWin;
+                return m_Score >= m_ScoreNeededForTheWin;
             }
         }
 

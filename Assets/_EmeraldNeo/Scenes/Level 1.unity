@@ -2116,7 +2116,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4310788834502103914, guid: 4314b90a5e454c4478e2c5cf5d9605b1, type: 3}
       propertyPath: m_RootOrder
-      value: 25
+      value: 24
       objectReference: {fileID: 0}
     - target: {fileID: 4310788834502103914, guid: 4314b90a5e454c4478e2c5cf5d9605b1, type: 3}
       propertyPath: m_LocalPosition.x
@@ -9527,7 +9527,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh106128
+  m_Name: pb_Mesh1544714
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -10491,7 +10491,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4310788834502103914, guid: 4314b90a5e454c4478e2c5cf5d9605b1, type: 3}
       propertyPath: m_RootOrder
-      value: 14
+      value: 13
       objectReference: {fileID: 0}
     - target: {fileID: 4310788834502103914, guid: 4314b90a5e454c4478e2c5cf5d9605b1, type: 3}
       propertyPath: m_LocalPosition.x
@@ -14075,7 +14075,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 13
+  m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &885177467
 PrefabInstance:
@@ -14164,7 +14164,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh106666
+  m_Name: pb_Mesh1561460
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -16344,7 +16344,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh106248
+  m_Name: pb_Mesh1548752
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -17951,7 +17951,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 73
+  m_RootOrder: 74
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!43 &1099741072
 Mesh:
@@ -19623,7 +19623,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 75
+  m_RootOrder: 76
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1152518102
 PrefabInstance:
@@ -20708,7 +20708,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 775705461409826559, guid: 60229326278de0d498c7215cc5ed903a, type: 3}
       propertyPath: m_RootOrder
-      value: 76
+      value: 75
       objectReference: {fileID: 0}
     - target: {fileID: 775705461409826559, guid: 60229326278de0d498c7215cc5ed903a, type: 3}
       propertyPath: m_LocalPosition.x
@@ -21716,6 +21716,30 @@ PrefabInstance:
     - target: {fileID: 4310788834501611338, guid: 4314b90a5e454c4478e2c5cf5d9605b1, type: 3}
       propertyPath: m_Name
       value: Soldier
+      objectReference: {fileID: 0}
+    - target: {fileID: 4310788834501611377, guid: 4314b90a5e454c4478e2c5cf5d9605b1, type: 3}
+      propertyPath: TabNumber
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4310788834501611377, guid: 4314b90a5e454c4478e2c5cf5d9605b1, type: 3}
+      propertyPath: StartingHealth
+      value: 125
+      objectReference: {fileID: 0}
+    - target: {fileID: 4310788834501611377, guid: 4314b90a5e454c4478e2c5cf5d9605b1, type: 3}
+      propertyPath: TemperamentTabNumber
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4310788834501611377, guid: 4314b90a5e454c4478e2c5cf5d9605b1, type: 3}
+      propertyPath: DetectionTagsTabNumber
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4310788834501611377, guid: 4314b90a5e454c4478e2c5cf5d9605b1, type: 3}
+      propertyPath: MaxChaseDistanceTypeRef
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4310788834501611377, guid: 4314b90a5e454c4478e2c5cf5d9605b1, type: 3}
+      propertyPath: ObstructionDetectionLayerMask.m_Bits
+      value: 35651878
       objectReference: {fileID: 0}
     - target: {fileID: 4310788834502103914, guid: 4314b90a5e454c4478e2c5cf5d9605b1, type: 3}
       propertyPath: m_RootOrder
@@ -24312,7 +24336,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh106604
+  m_Name: pb_Mesh1558786
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -24673,7 +24697,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh106522
+  m_Name: pb_Mesh1556298
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -26677,7 +26701,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 40
+  m_RootOrder: 41
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1556318538 stripped
 MonoBehaviour:
@@ -29623,7 +29647,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 24
+  m_RootOrder: 25
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1734889503
 PrefabInstance:
@@ -29638,7 +29662,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4310788834502103914, guid: 4314b90a5e454c4478e2c5cf5d9605b1, type: 3}
       propertyPath: m_RootOrder
-      value: 41
+      value: 40
       objectReference: {fileID: 0}
     - target: {fileID: 4310788834502103914, guid: 4314b90a5e454c4478e2c5cf5d9605b1, type: 3}
       propertyPath: m_LocalPosition.x
@@ -30179,7 +30203,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh105892
+  m_Name: pb_Mesh1537620
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -34694,7 +34718,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4044066058946310163, guid: dc8858db45e081f42b21e0dae08abe66, type: 3}
       propertyPath: m_RootOrder
-      value: 74
+      value: 73
       objectReference: {fileID: 0}
     - target: {fileID: 4044066058946310163, guid: dc8858db45e081f42b21e0dae08abe66, type: 3}
       propertyPath: m_AnchorMax.x

@@ -18,11 +18,13 @@ namespace WizardsCode.EmeraldAIExtension
 
         private EmeraldAISystem m_advancingSquadMember;
         private float m_OriginalAttackDistance;
+        private bool spottedBarkPlayed = false;
 
         void Awake()
         {
             m_SquadLeaderAISystem = m_SquadMembers[0].GetComponent<EmeraldAISystem>();
             m_SquadLeaderEventsManager = m_SquadLeaderAISystem.GetComponent<EmeraldAIEventsManager>();
+
         }
 
         void Update()
@@ -59,7 +61,10 @@ namespace WizardsCode.EmeraldAIExtension
                 // Ensure all Squad members have the same target
                 // OPTIMIZATION: Cache the EmeraldAIEventsManager
                 EmeraldAIEventsManager currentSquadMemberEventManager = m_SquadMembers[i].GetComponent<EmeraldAIEventsManager>();
-                RadioInformation(currentSquadMemberEventManager);
+                if (m_SquadMembers[i].HasTarget)
+                {
+                    RadioInformation(currentSquadMemberEventManager);
+                }
 
                 if (m_SquadLeaderEventsManager.GetCombatTarget() == null) return;
 
@@ -100,6 +105,7 @@ namespace WizardsCode.EmeraldAIExtension
             if (m_SquadLeaderEventsManager.GetCombatTarget() == null
                 && otherMember.GetCombatTarget() != null) 
             {
+
                 m_SquadLeaderEventsManager.OverrideCombatTarget(otherMember.GetCombatTarget());
                 return;
             }
