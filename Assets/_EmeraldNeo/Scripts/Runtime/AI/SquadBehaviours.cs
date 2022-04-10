@@ -1,6 +1,7 @@
 using EmeraldAI;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.AI;
 
 namespace WizardsCode.EmeraldAIExtension
 {
@@ -27,6 +28,7 @@ namespace WizardsCode.EmeraldAIExtension
         void Update()
         {
             if (Time.timeSinceLevelLoad < m_TimeOfNextSquadOrdersReview) return;
+
             m_TimeOfNextSquadOrdersReview = Time.timeSinceLevelLoad + m_SquadOrdersFreqency;
 
             float distance = Mathf.Min(m_SquadLeaderEventsManager.GetDistanceFromTarget(), m_SquadLeaderAISystem.AttackDistance * 0.5f);
@@ -36,7 +38,7 @@ namespace WizardsCode.EmeraldAIExtension
                 // If AI has been destroyed remove them from the squad
                 if (!m_SquadMembers[i])
                 {
-                    // If this was the last squad member destroy the squad behaviour
+                    // If this was the last squad member destroy the squad behaviour, the remaining squad member will act individually
                     if (m_SquadMembers.Count == 1)
                     {
                         Destroy(gameObject);
@@ -47,19 +49,23 @@ namespace WizardsCode.EmeraldAIExtension
                     // If they were the commander nominate a new commander
                     if (i == 0)
                     {
-                        m_SquadLeaderAISystem = m_SquadMembers[0].GetComponent<EmeraldAISystem>();
+                        m_SquadLeaderAISystem = m_SquadMembers[0];
+                        // OPTIMIZATION: Cache the EmeraldAIEventsManager
                         m_SquadLeaderEventsManager = m_SquadLeaderAISystem.GetComponent<EmeraldAIEventsManager>();
                         distance = Mathf.Min(m_SquadLeaderEventsManager.GetDistanceFromTarget(), m_SquadLeaderAISystem.AttackDistance * 0.5f);
                     }
-                    // Break out on this cycle but update next frame
-                    m_TimeOfNextSquadOrdersReview = 0;
-                    break;
                 }
 
+                // Ensure all Squad members have the same target
+                // OPTIMIZATION: Cache the EmeraldAIEventsManager
                 EmeraldAIEventsManager currentSquadMemberEventManager = m_SquadMembers[i].GetComponent<EmeraldAIEventsManager>();
                 RadioInformation(currentSquadMemberEventManager);
 
-                if (m_advancingSquadMember != null 
+                if (m_SquadLeaderEventsManager.GetCombatTarget() == null) return;
+
+                float optimalAttackDistance = (m_SquadMembers[i].AttackDistance - m_SquadMembers[i].BackupDistance) / 2;
+
+                if (m_advancingSquadMember != null
                     && currentSquadMemberEventManager.GetDistanceFromTarget() > m_advancingSquadMember.GetComponent<EmeraldAIEventsManager>().GetDistanceFromTarget())
                 {
                     m_advancingSquadMember.AttackDistance = m_OriginalAttackDistance;

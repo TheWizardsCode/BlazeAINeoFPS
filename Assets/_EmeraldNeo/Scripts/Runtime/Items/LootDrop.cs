@@ -43,14 +43,14 @@ namespace WizardsCode.Items.Loot
 
             // OPTIMIZATION: use a pool
             GameObject go = Instantiate(item);
-            go.transform.position = pos;
             if (m_SpawnAsChild)
             {
+                go.transform.position = pos;
                 go.transform.SetParent(transform, false);
             }
             else
             {
-                go.transform.position = transform.position;
+                go.transform.position = transform.position + pos;
             }
         }
     }

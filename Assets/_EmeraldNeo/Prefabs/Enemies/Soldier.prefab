@@ -3366,7 +3366,7 @@ MonoBehaviour:
   ProjectileCollisionPointY: 1.5
   m_ProjectileCollisionPoint: {x: -26.080757, y: 1.5, z: 58.103027}
   ObstructionTimer: 0
-  ObstructionSeconds: 3
+  ObstructionSeconds: 2
   IdleVolume: 1
   WalkFootstepVolume: 0.1
   RunFootstepVolume: 0.1
@@ -3485,9 +3485,9 @@ MonoBehaviour:
   CombatAngleToTurn: 20
   StationaryTurningSpeedNonCombat: 50
   MovingTurningSpeedNonCombat: 2000
-  StationaryTurningSpeedCombat: 50
-  MovingTurningSpeedCombat: 2000
-  BackupTurningSpeed: 100
+  StationaryTurningSpeedCombat: 200
+  MovingTurningSpeedCombat: 2500
+  BackupTurningSpeed: 151
   MaxSlopeLimit: 30
   Acceleration: 1
   Deceleration: 0.5
@@ -3779,7 +3779,7 @@ MonoBehaviour:
   DamageAmountRun: 5
   WanderRadius: 25
   TabNumber: 1
-  TemperamentTabNumber: 0
+  TemperamentTabNumber: 1
   DetectionTagsTabNumber: 0
   AnimationTabNumber: 2
   SoundTabNumber: 1
@@ -3790,7 +3790,7 @@ MonoBehaviour:
   AttackAnimationNumber: 1
   RunAttackAnimationNumber: 1
   IdleAnimationNumber: 1
-  CombatTabNumber: 1
+  CombatTabNumber: 0
   FactionsAndTagTabNumber: 0
   EventTabNumber: 1
   MinimumWaitTime: 3
@@ -4427,9 +4427,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 69bffea460adcc2448f20f731db0407f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_GuaranteedItems: []
+  m_GuaranteedItems:
+  - {fileID: 1093223799179017916, guid: 37853dcf8f413ab4880e95f08284bb6c, type: 3}
   m_RandomItems:
-  - {fileID: 1277669658375282, guid: 1a24acd352d8fd04bb37f50d3f0a9044, type: 3}
   - {fileID: 1962489923670448, guid: 4d5ced316c05f1946a0549ae4baf6645, type: 3}
   - {fileID: 1651731687865070, guid: 15103c3503911004792652094ac61f4f, type: 3}
   - {fileID: 1651731687865070, guid: 293b4a5033ddd374f891d3cd13fef722, type: 3}

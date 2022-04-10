@@ -17,7 +17,7 @@ namespace WizardsCode.NeoEmeraldFPS
             manager = GameObject.FindObjectOfType<GameManager>();
             if (manager == null)
             {
-                Debug.LogWarning("No game manager found, destroying ScoreSource as it requires one.");
+                Debug.LogWarning("No game manager found, destroying ScoreSource as it requires one.");  
                 Destroy(this);
             }
         }
