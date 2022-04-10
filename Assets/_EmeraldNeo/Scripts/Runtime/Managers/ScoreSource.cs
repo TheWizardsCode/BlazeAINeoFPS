@@ -15,6 +15,11 @@ namespace WizardsCode.NeoEmeraldFPS
         private void Start()
         {
             manager = GameObject.FindObjectOfType<GameManager>();
+            if (manager == null)
+            {
+                Debug.LogWarning("No game manager found, destroying ScoreSource as it requires one.");
+                Destroy(this);
+            }
         }
 
         public void AddScore(int score)
