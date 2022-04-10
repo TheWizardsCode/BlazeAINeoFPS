@@ -3778,7 +3778,7 @@ MonoBehaviour:
   CurrentDamageAmount: 5
   DamageAmountRun: 5
   WanderRadius: 25
-  TabNumber: 1
+  TabNumber: 2
   TemperamentTabNumber: 1
   DetectionTagsTabNumber: 0
   AnimationTabNumber: 2
@@ -3933,7 +3933,7 @@ MonoBehaviour:
   Renderer4: {fileID: 4310788834513175062}
   DeathTypeRef: 1
   BehaviorRef: 3
-  DetectionTypeRef: 1
+  DetectionTypeRef: 0
   MaxChaseDistanceTypeRef: 1
   ConfidenceRef: 1
   OptimizedStateRef: 1
