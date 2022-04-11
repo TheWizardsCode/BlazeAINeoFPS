@@ -26,6 +26,12 @@ namespace WizardsCode.NeoEmeraldFPS
         int m_LivesLost = 0;
         int m_Score = 0;
 
+        private void Awake()
+        {
+            Cursor.lockState = CursorLockMode.Locked;
+            Cursor.visible = false;
+        }
+
         internal void AddScore(int score)
         {
             m_Score += score;

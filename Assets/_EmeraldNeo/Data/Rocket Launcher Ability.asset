@@ -10,13 +10,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fc1a975727f99e04bbef5ff4da983d6e, type: 3}
-  m_Name: Assault Rifle Ability
+  m_Name: Rocket Launcher Ability
   m_EditorClassIdentifier: 
-  AbilityName: Assault Rifle
-  AbilityDescription: Shoot with an assault rifle
+  AbilityName: Rocket Launcher
+  AbilityDescription: Shoot with a Rocket Launcher
   AbilityDamage: 5
-  MinAbilityDamage: 7
-  MaxAbilityDamage: 11
+  MinAbilityDamage: 30
+  MaxAbilityDamage: 50
   AbilityDamagePerIncrement: 5
   CriticalHitOdds: 6.25
   CriticalHitMultiplierMin: 1.1
@@ -27,27 +27,27 @@ MonoBehaviour:
   AbilityCooldown: 10
   AbilityLength: 8
   SummonRadius: 10
-  ProjectileSpeed: 50
+  ProjectileSpeed: 15
   ProjectileTimeoutSeconds: 6
-  ColliderRadius: 0.05
+  ColliderRadius: 0.2
   ProjectileGravity: 0.5
   TimeoutTime: 4.5
   CollisionTime: 0
   HeatSeekingSeconds: 1
-  CastEffectTimeoutSeconds: 1.32
-  AbilityEffectTimeoutSeconds: 5
+  CastEffectTimeoutSeconds: 1.05
+  AbilityEffectTimeoutSeconds: 29.9
   SummonEffectTimeoutSeconds: 3
   CollisionTimeout: 3
   DamageOvertimeTimeout: 3
   GravityAmount: 1
   AbilityIcon: {fileID: 2800000, guid: 441db52eba688c94b9bca7eb01484341, type: 3}
-  AbilityEffect: {fileID: 1208659704613206977, guid: 84705ec38d3f59749a51691f1d46db9b, type: 3}
-  CreateEffect: {fileID: 7103366518503496174, guid: 053785787776c5944aeb007355506640, type: 3}
+  AbilityEffect: {fileID: 2246362940774954860, guid: 82cb7dd2c2c07e0448c8f82038dddcae, type: 3}
+  CreateEffect: {fileID: 450044020708499364, guid: 93a162fc463d2d842a8c25e141618684, type: 3}
   SummonEffect: {fileID: 0}
   SummonObject: {fileID: 0}
   DamageOverTimeEffect: {fileID: 0}
   DamageOverTimeSound: {fileID: 0}
-  CollisionEffect: {fileID: 0}
+  CollisionEffect: {fileID: 1764654978243476, guid: a98b15aa948478849b54661e4d9a317e, type: 3}
   CollisionSoundsList:
   - {fileID: 8300000, guid: d43ec90eca474d0438ca210a7c07cece, type: 3}
   - {fileID: 8300000, guid: 1760b8b8801adc847b8318edff8ef390, type: 3}
@@ -56,16 +56,14 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 3de2eefed220d8144b7b296e34e0257b, type: 3}
   SummonSound: {fileID: 0}
   CreateSoundsList:
-  - {fileID: 8300000, guid: c44657895574a6b45b616037391e3751, type: 3}
-  - {fileID: 8300000, guid: 5f1b80a08747b6741bd5ffb1748278f1, type: 3}
-  - {fileID: 8300000, guid: 91241f96a55b9e34ab65c43800129f82, type: 3}
+  - {fileID: 8300000, guid: 40e71b0f7bd610849b40f150553f4702, type: 3}
   AbilityType: 0
   DamageType: 0
   SupportType: 0
   HighQualityCollisions: 0
-  SoundOnCollisionRef: 1
+  SoundOnCollisionRef: 0
   HeatSeekingRef: 0
-  EffectOnCollisionRef: 0
+  EffectOnCollisionRef: 1
   CollisionEffectOnTargets: 1
   ArrowProjectileRef: 0
   UseGravity: 0
@@ -76,5 +74,5 @@ MonoBehaviour:
   UseCreateSound: 1
   UseCriticalHits: 0
   UseCustomAbilityIcon: 0
-  UseCreateEffect: 1
+  UseCreateEffect: 0
   AbilityEditorTabs: 1

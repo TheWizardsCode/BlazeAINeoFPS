@@ -1,3 +1,4 @@
+using EmeraldAI;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -13,9 +14,9 @@ namespace WizardsCode.NeoEmeraldFPS
         float m_ApproximateTimeBetweenBarks = 2;
         [SerializeField, Tooltip("Audio clips a to play when an enemy is spotted.")]
         AudioClip[] m_EnemySpottedClips;
-        
+
         AudioSource audioSource;
-        float timeOfNextBark = 0;
+        static float timeOfNextBark = 0;
 
         void Awake()
         {
@@ -31,13 +32,17 @@ namespace WizardsCode.NeoEmeraldFPS
         {
             if (Time.timeSinceLevelLoad < timeOfNextBark && m_EnemySpottedClips.Length > 0) return;
 
-            Debug.Log($"{name} barked enemy spotted");
-
             timeOfNextBark = Time.timeSinceLevelLoad + (m_ApproximateTimeBetweenBarks * Random.Range(0.8f, 1.2f));
 
-            audioSource.clip = m_EnemySpottedClips[Random.Range(0, m_EnemySpottedClips.Length)];
-            audioSource.Play();
+            StartCoroutine(PlayBark(m_EnemySpottedClips[Random.Range(0, m_EnemySpottedClips.Length)]));
+        }
 
+        IEnumerator PlayBark(AudioClip clip)
+        {
+            yield return new WaitForSeconds(Random.Range(m_ApproximateTimeBetweenBarks / 6, m_ApproximateTimeBetweenBarks / 4));
+
+            audioSource.clip = clip;
+            audioSource.Play();
         }
     }
 }

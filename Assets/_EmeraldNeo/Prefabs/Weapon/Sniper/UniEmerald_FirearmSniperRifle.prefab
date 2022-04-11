@@ -2063,7 +2063,7 @@ GameObject:
   - component: {fileID: 6569318637397186405}
   - component: {fileID: 8292312582678481563}
   m_Layer: 0
-  m_Name: UniNeo_FirearmSniperRifle
+  m_Name: UniEmerald_FirearmSniperRifle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2257,7 +2257,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_StartActive: 1
   m_ActivationMode: 0
-  m_ProjectilePrefab: {fileID: 114313776099250690, guid: ce72b773fe625db439a2e1028003ea25, type: 3}
+  m_ProjectilePrefab: {fileID: 6676110222604340999, guid: 9625580cc345a6a46a284b4f162656e3, type: 3}
   m_MuzzleTip: {fileID: 6538253417889685703}
   m_MuzzleSpeed: 1000
   m_Layers:
