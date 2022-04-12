@@ -1,17 +1,40 @@
 using EmeraldAI;
+using NeoFPS;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
 
 namespace WizardsCode.EmeraldAIExtension
 {
-    public class SquadBehaviours : MonoBehaviour
+    /// <summary>
+    /// The core Squad manager, starting with spawning/despawning on player proximity then managing the squad activity when active.
+    /// </summary>
+    [RequireComponent(typeof(SoloPlayerCharacterEventWatcher))]
+    public class SquadBehaviours : MonoBehaviour, IPlayerCharacterSubscriber
     {
+        [Header("Squad Activation")]
+        [SerializeField, Tooltip("The number of members of this squad.")]
+        int m_NumberOfMembers = 5;
+        [SerializeField, Tooltip("The prefab to use when spawning members of this squad.")]
+        EmeraldAISystem m_MemberPrefab;
+        [SerializeField, Tooltip("The radius within which to spawn the members of this squad.")]
+        float m_SpawnRadius = 15;
+        [SerializeField, Tooltip("When a player is within this range activate the squad.")]
+        float m_ActivationRange = 150;
+        [SerializeField, Tooltip("When there are no players within this range deactivate the squad.")]
+        float m_DeactivationRange = 250;
+        [SerializeField, Tooltip("Is the squad active on startup? If they are they will be deactivated as soon as there are no players within range.")]
+        bool m_IsActive = true;
+
+
+        [Header("Squad Behaviours")]
         [SerializeField, Tooltip("How often, in seconds, the squad will review their coordinated efforts.")]
         float m_SquadOrdersFreqency = 3;
-        [SerializeField, Tooltip("The AI that are members of this squad. The first AI in the list is considered the Squad Commander.")]
-        List<EmeraldAISystem> m_SquadMembers = new List<EmeraldAISystem>();
 
+        private SoloPlayerCharacterEventWatcher m_Watcher;
+        private ICharacter m_Player;
+
+        List<EmeraldAISystem> m_SquadMembers = new List<EmeraldAISystem>();
         EmeraldAISystem m_SquadLeaderAISystem;
         EmeraldAIEventsManager m_SquadLeaderEventsManager;
         float m_TimeOfNextSquadOrdersReview;
@@ -22,13 +45,66 @@ namespace WizardsCode.EmeraldAIExtension
 
         void Awake()
         {
+            m_Watcher = GetComponent<SoloPlayerCharacterEventWatcher>();
+        }
+
+        private void Start()
+        {
+            Vector3 pos;
+            EmeraldAISystem ai;
+            for (int i = 0; i < m_NumberOfMembers; i++)
+            {
+                ai = Instantiate<EmeraldAISystem>(m_MemberPrefab);
+                Vector2 offset = Random.insideUnitCircle * m_SpawnRadius;
+                pos = transform.position;
+                pos.x += offset.x;
+                pos.z += offset.y;
+                pos.y = Terrain.activeTerrain.SampleHeight(pos);
+                ai.transform.position = pos;
+                ai.gameObject.SetActive(m_IsActive);
+                ai.GetComponent<EmeraldAIEventsManager>().SetDestinationPosition(pos);
+
+                m_SquadMembers.Add(ai);
+            }
+
             m_SquadLeaderAISystem = m_SquadMembers[0].GetComponent<EmeraldAISystem>();
             m_SquadLeaderEventsManager = m_SquadLeaderAISystem.GetComponent<EmeraldAIEventsManager>();
+        }
 
+        protected void OnEnable()
+        {
+            m_Watcher.AttachSubscriber(this);
+        }
+
+        private void OnDisable()
+        {
+            m_Watcher.ReleaseSubscriber(this);
+        }
+
+        public void OnPlayerCharacterChanged(ICharacter character)
+        {
+            m_Player = character;
         }
 
         void Update()
         {
+            if (m_Player == null) return;
+
+            if (!m_IsActive)
+            {
+                if (Vector3.Distance(m_Player.transform.position, transform.position) <= m_ActivationRange)
+                {
+                    SpawnSquad();
+                } else
+                {
+                    return;
+                }
+            } else if (Vector3.Distance(m_Player.transform.position, transform.position) >= m_DeactivationRange)
+            {
+                DespawnSquad();
+                return;
+            }
+
             if (Time.timeSinceLevelLoad < m_TimeOfNextSquadOrdersReview) return;
 
             m_TimeOfNextSquadOrdersReview = Time.timeSinceLevelLoad + m_SquadOrdersFreqency;
@@ -91,6 +167,23 @@ namespace WizardsCode.EmeraldAIExtension
             }
         }
 
+        void SpawnSquad()
+        {
+            m_IsActive = true;
+            for (int i = 0; i < m_SquadMembers.Count; i++)
+            {
+                m_SquadMembers[i].gameObject.SetActive(true);
+            }
+        }
+
+        void DespawnSquad()
+        {
+            m_IsActive = false;
+            for (int i = 0; i < m_SquadMembers.Count; i++)
+            {
+                m_SquadMembers[i].gameObject.SetActive(false);
+            }
+        }
 
         /// <summary>
         /// Spread information around the squad using the radio.
