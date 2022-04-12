@@ -1,0 +1,56 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c760e862a1eea4c4a81324701b78b9fd, type: 3}
+  m_Name: NeoWar Design Document
+  m_EditorClassIdentifier: 
+  m_ElevatorPitch: An all out action game designed for lighthearted but serious fun.
+    Drop in and drop out for maximum replayability. Journey through the ages in a
+    quest to change the history of the world, no the universe, no the multiverse.
+  m_GameIdentity: Low Poly action shooter that travels through time, space and the
+    multiverse as you discover all is not as it seems.
+  m_GameLoop: 'A rogue-like in which only the players experience survives between
+    missions, regardless of success or failure. '
+  m_DesignPillars:
+  - Desperation - will I ever complete this mission
+  - Elation - a completed the mission, no I can [insert new skill]
+  - Realization - each mission is a metaphor for a real world situation
+  m_Features:
+  - Mixture of scripted procedural levels
+  - Time travel allows discovered missions to be completed in any order
+  - Each mission is a mini-game in itself
+  - Failure brings no punishment, only experience carries over win or lose
+  - Automatic progression through experience and skills based on mission skills needed
+  - 
+  - 
+  - 
+  m_MagicMoments:
+  - Succeeding or Failing a mission, realizing the player is now stronger
+  - Learning a new skill in a mission that can be used in other similar missions
+  - 
+  - 
+  - 
+  m_ArtStyle:
+  - Synty
+  - Toon shader
+  - 
+  m_MusicSound:
+  - 
+  - 
+  - 
+  m_InterfaceAndControls:
+  - 
+  - 
+  - 
+  m_TargetPlatforms:
+  - 
+  - 
+  - 

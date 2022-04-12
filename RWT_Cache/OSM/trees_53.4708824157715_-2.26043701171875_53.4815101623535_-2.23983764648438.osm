@@ -1,0 +1,889 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<osm version="0.6" generator="Overpass API 0.7.57 93a4d346">
+<note>The data included in this document is from www.openstreetmap.org. The data is made available under ODbL.</note>
+<meta osm_base="2022-04-12T02:33:35Z"/>
+
+  <node id="1312076119" lat="53.4738334" lon="-2.2558747">
+    <tag k="leaf_type" v="broadleaved"/>
+    <tag k="natural" v="tree"/>
+    <tag k="species" v="Salix babylonica"/>
+    <tag k="species:en" v="Weeping Willow"/>
+  </node>
+  <node id="3678747568" lat="53.4794331" lon="-2.2454655">
+    <tag k="natural" v="tree"/>
+  </node>
+  <node id="3678747569" lat="53.4793565" lon="-2.2455218">
+    <tag k="natural" v="tree"/>
+  </node>
+  <node id="3678747570" lat="53.4792894" lon="-2.2455835">
+    <tag k="natural" v="tree"/>
+  </node>
+  <node id="3678747571" lat="53.4792080" lon="-2.2456506">
+    <tag k="natural" v="tree"/>
+  </node>
+  <node id="3678747572" lat="53.4798593" lon="-2.2451597">
+    <tag k="natural" v="tree"/>
+  </node>
+  <node id="3678747573" lat="53.4797667" lon="-2.2452429">
+    <tag k="natural" v="tree"/>
+  </node>
+  <node id="3678747574" lat="53.4796757" lon="-2.2453046">
+    <tag k="natural" v="tree"/>
+  </node>
+  <node id="3678747575" lat="53.4790468" lon="-2.2452858">
+    <tag k="natural" v="tree"/>
+  </node>
+  <node id="3678747576" lat="53.4791905" lon="-2.2453207">
+    <tag k="natural" v="tree"/>
+  </node>
+  <node id="3678747577" lat="53.4797491" lon="-2.2449398">
+    <tag k="natural" v="tree"/>
+  </node>
+  <node id="3678747578" lat="53.4798800" lon="-2.2448406">
+    <tag k="natural" v="tree"/>
+  </node>
+  <node id="4221532103" lat="53.4753642" lon="-2.2440444">
+    <tag k="natural" v="tree"/>
+  </node>
+  <node id="4221532104" lat="53.4756132" lon="-2.2436475">
+    <tag k="natural" v="tree"/>
+  </node>
+  <node id="4221532111" lat="53.4753546" lon="-2.2437735">
+    <tag k="natural" v="tree"/>
+  </node>
+  <node id="4221532112" lat="53.4752716" lon="-2.2438138">
+    <tag k="natural" v="tree"/>
+  </node>
+  <node id="4221532113" lat="53.4751934" lon="-2.2437467">
+    <tag k="natural" v="tree"/>
+  </node>
+  <node id="4221532114" lat="53.4753897" lon="-2.2436475">
+    <tag k="natural" v="tree"/>
+  </node>
+  <node id="4221532118" lat="53.4766014" lon="-2.2455811">
+    <tag k="natural" v="tree"/>
+  </node>
+  <node id="4221532119" lat="53.4766501" lon="-2.2456106">
+    <tag k="natural" v="tree"/>
+  </node>
+  <node id="4221532120" lat="53.4766988" lon="-2.2456562">
+    <tag k="natural" v="tree"/>
+  </node>
+  <node id="4221532121" lat="53.4767443" lon="-2.2456951">
+    <tag k="natural" v="tree"/>
+  </node>
+  <node id="4221532122" lat="53.4769000" lon="-2.2459485">
+    <tag k="natural" v="tree"/>
+  </node>
+  <node id="4221532123" lat="53.4768640" lon="-2.2458614">
+    <tag k="natural" v="tree"/>
+  </node>
+  <node id="4221532124" lat="53.4768265" lon="-2.2458064">
+    <tag k="natural" v="tree"/>
+  </node>
+  <node id="4221532125" lat="53.4767874" lon="-2.2457460">
+    <tag k="natural" v="tree"/>
+  </node>
+  <node id="4221532126" lat="53.4769542" lon="-2.2461068">
+    <tag k="natural" v="tree"/>
+  </node>
+  <node id="4221532127" lat="53.4769893" lon="-2.2461886">
+    <tag k="natural" v="tree"/>
+  </node>
+  <node id="4221532128" lat="53.4770165" lon="-2.2462610">
+    <tag k="natural" v="tree"/>
+  </node>
+  <node id="4221532129" lat="53.4770500" lon="-2.2463294">
+    <tag k="natural" v="tree"/>
+  </node>
+  <node id="4221532130" lat="53.4770827" lon="-2.2463965">
+    <tag k="natural" v="tree"/>
+  </node>
+  <node id="4301826328" lat="53.4743609" lon="-2.2516797">
+    <tag k="natural" v="tree"/>
+  </node>
+  <node id="4301826329" lat="53.4742830" lon="-2.2516489">
+    <tag k="natural" v="tree"/>
+  </node>
+  <node id="4302906656" lat="53.4798598" lon="-2.2483699">
+    <tag k="natural" v="tree"/>
+  </node>
+  <node id="4302906657" lat="53.4797892" lon="-2.2484854">
+    <tag k="natural" v="tree"/>
+  </node>
+  <node id="5816022432" lat="53.4780622" lon="-2.2527534">
+    <tag k="natural" v="tree"/>
+  </node>
+  <node id="5816022433" lat="53.4780355" lon="-2.2524702">
+    <tag k="natural" v="tree"/>
+  </node>
+  <node id="5816022434" lat="53.4779111" lon="-2.2528123">
+    <tag k="natural" v="tree"/>
+  </node>
+  <node id="5816022435" lat="53.4778722" lon="-2.2525269">
+    <tag k="natural" v="tree"/>
+  </node>
+  <node id="5816022436" lat="53.4779848" lon="-2.2524078">
+    <tag k="natural" v="tree"/>
+  </node>
+  <node id="5816022437" lat="53.4779042" lon="-2.2524428">
+    <tag k="natural" v="tree"/>
+  </node>
+  <node id="5816022438" lat="53.4780734" lon="-2.2525216">
+    <tag k="natural" v="tree"/>
+  </node>
+  <node id="5816022439" lat="53.4778649" lon="-2.2526133">
+    <tag k="natural" v="tree"/>
+  </node>
+  <node id="5816022440" lat="53.4779681" lon="-2.2528555">
+    <tag k="natural" v="tree"/>
+  </node>
+  <node id="5816022441" lat="53.4780403" lon="-2.2528164">
+    <tag k="natural" v="tree"/>
+  </node>
+  <node id="5816055037" lat="53.4778431" lon="-2.2531633">
+    <tag k="natural" v="tree"/>
+  </node>
+  <node id="5816055038" lat="53.4779775" lon="-2.2531297">
+    <tag k="natural" v="tree"/>
+  </node>
+  <node id="5816055039" lat="53.4781609" lon="-2.2530452">
+    <tag k="natural" v="tree"/>
+  </node>
+  <node id="5816055040" lat="53.4777331" lon="-2.2535830">
+    <tag k="natural" v="tree"/>
+  </node>
+  <node id="5816055041" lat="53.4777817" lon="-2.2535508">
+    <tag k="natural" v="tree"/>
+  </node>
+  <node id="5816055042" lat="53.4778560" lon="-2.2535246">
+    <tag k="natural" v="tree"/>
+  </node>
+  <node id="5816055043" lat="53.4779157" lon="-2.2534940">
+    <tag k="natural" v="tree"/>
+  </node>
+  <node id="5816055044" lat="53.4779807" lon="-2.2534566">
+    <tag k="natural" v="tree"/>
+  </node>
+  <node id="5816055045" lat="53.4780327" lon="-2.2534408">
+    <tag k="natural" v="tree"/>
+  </node>
+  <node id="5816055046" lat="53.4780283" lon="-2.2533376">
+    <tag k="natural" v="tree"/>
+  </node>
+  <node id="5816055047" lat="53.4781164" lon="-2.2533122">
+    <tag k="natural" v="tree"/>
+  </node>
+  <node id="5816055048" lat="53.4781289" lon="-2.2534094">
+    <tag k="natural" v="tree"/>
+  </node>
+  <node id="5816055049" lat="53.4781810" lon="-2.2533982">
+    <tag k="natural" v="tree"/>
+  </node>
+  <node id="5816055050" lat="53.4782375" lon="-2.2533840">
+    <tag k="natural" v="tree"/>
+  </node>
+  <node id="5816055051" lat="53.4776984" lon="-2.2532950">
+    <tag k="natural" v="tree"/>
+  </node>
+  <node id="5816055052" lat="53.4777971" lon="-2.2528086">
+    <tag k="natural" v="tree"/>
+  </node>
+  <node id="5816056253" lat="53.4777398" lon="-2.2528404">
+    <tag k="natural" v="tree"/>
+  </node>
+  <node id="5816056254" lat="53.4776886" lon="-2.2528671">
+    <tag k="natural" v="tree"/>
+  </node>
+  <node id="5816056255" lat="53.4776188" lon="-2.2528968">
+    <tag k="natural" v="tree"/>
+  </node>
+  <node id="5816056256" lat="53.4776398" lon="-2.2530181">
+    <tag k="natural" v="tree"/>
+  </node>
+  <node id="5816056257" lat="53.4776883" lon="-2.2531417">
+    <tag k="natural" v="tree"/>
+  </node>
+  <node id="5816056258" lat="53.4777882" lon="-2.2532233">
+    <tag k="natural" v="tree"/>
+  </node>
+  <node id="5816056259" lat="53.4782247" lon="-2.2532516">
+    <tag k="natural" v="tree"/>
+  </node>
+  <node id="5816078516" lat="53.4794924" lon="-2.2454081">
+    <tag k="natural" v="tree"/>
+  </node>
+  <node id="5816078517" lat="53.4796097" lon="-2.2453157">
+    <tag k="natural" v="tree"/>
+  </node>
+  <node id="5816135738" lat="53.4775238" lon="-2.2525344">
+    <tag k="natural" v="tree"/>
+  </node>
+  <node id="5816135739" lat="53.4776230" lon="-2.2524468">
+    <tag k="natural" v="tree"/>
+  </node>
+  <node id="5816166828" lat="53.4777851" lon="-2.2526390">
+    <tag k="natural" v="tree"/>
+  </node>
+  <node id="5816166829" lat="53.4777642" lon="-2.2525302">
+    <tag k="natural" v="tree"/>
+  </node>
+  <node id="5816166830" lat="53.4777460" lon="-2.2523783">
+    <tag k="natural" v="tree"/>
+  </node>
+  <node id="5816166831" lat="53.4778060" lon="-2.2523454">
+    <tag k="natural" v="tree"/>
+  </node>
+  <node id="5816166832" lat="53.4778816" lon="-2.2523159">
+    <tag k="natural" v="tree"/>
+  </node>
+  <node id="5816166833" lat="53.4779579" lon="-2.2522819">
+    <tag k="natural" v="tree"/>
+  </node>
+  <node id="5816166834" lat="53.4780220" lon="-2.2522388">
+    <tag k="natural" v="tree"/>
+  </node>
+  <node id="5816166835" lat="53.4780638" lon="-2.2522161">
+    <tag k="natural" v="tree"/>
+  </node>
+  <node id="5816166836" lat="53.4780941" lon="-2.2522739">
+    <tag k="natural" v="tree"/>
+  </node>
+  <node id="5818340671" lat="53.4778956" lon="-2.2520361">
+    <tag k="denotation" v="urban"/>
+    <tag k="natural" v="tree"/>
+  </node>
+  <node id="5818340672" lat="53.4778423" lon="-2.2516864">
+    <tag k="denotation" v="urban"/>
+    <tag k="natural" v="tree"/>
+  </node>
+  <node id="5818340673" lat="53.4777214" lon="-2.2510299">
+    <tag k="denotation" v="urban"/>
+    <tag k="natural" v="tree"/>
+  </node>
+  <node id="5818340674" lat="53.4776518" lon="-2.2506690">
+    <tag k="denotation" v="urban"/>
+    <tag k="natural" v="tree"/>
+  </node>
+  <node id="5818340675" lat="53.4776222" lon="-2.2505430">
+    <tag k="denotation" v="urban"/>
+    <tag k="natural" v="tree"/>
+  </node>
+  <node id="5818340676" lat="53.4775647" lon="-2.2502076">
+    <tag k="denotation" v="urban"/>
+    <tag k="natural" v="tree"/>
+  </node>
+  <node id="5818399171" lat="53.4780192" lon="-2.2504334">
+    <tag k="natural" v="tree"/>
+  </node>
+  <node id="5818399172" lat="53.4779150" lon="-2.2504929">
+    <tag k="natural" v="tree"/>
+  </node>
+  <node id="5818399173" lat="53.4778997" lon="-2.2506225">
+    <tag k="natural" v="tree"/>
+  </node>
+  <node id="5818399174" lat="53.4780414" lon="-2.2505618">
+    <tag k="natural" v="tree"/>
+  </node>
+  <node id="5818399175" lat="53.4780261" lon="-2.2505350">
+    <tag k="natural" v="tree"/>
+  </node>
+  <node id="5818399176" lat="53.4780171" lon="-2.2505700">
+    <tag k="natural" v="tree"/>
+  </node>
+  <node id="5818399177" lat="53.4779332" lon="-2.2505686">
+    <tag k="natural" v="tree"/>
+  </node>
+  <node id="6283556281" lat="53.4784029" lon="-2.2505198">
+    <tag k="denotation" v="urban"/>
+    <tag k="natural" v="tree"/>
+  </node>
+  <node id="6283556282" lat="53.4783849" lon="-2.2503984">
+    <tag k="denotation" v="urban"/>
+    <tag k="natural" v="tree"/>
+  </node>
+  <node id="6283556283" lat="53.4783675" lon="-2.2502729">
+    <tag k="denotation" v="urban"/>
+    <tag k="natural" v="tree"/>
+  </node>
+  <node id="6283556284" lat="53.4783512" lon="-2.2501784">
+    <tag k="denotation" v="urban"/>
+    <tag k="natural" v="tree"/>
+  </node>
+  <node id="6283562685" lat="53.4783300" lon="-2.2500412">
+    <tag k="denotation" v="urban"/>
+    <tag k="natural" v="tree"/>
+  </node>
+  <node id="6304626573" lat="53.4773517" lon="-2.2531119">
+    <tag k="natural" v="tree"/>
+  </node>
+  <node id="6304626574" lat="53.4773197" lon="-2.2529241">
+    <tag k="natural" v="tree"/>
+  </node>
+  <node id="6304626575" lat="53.4772160" lon="-2.2525969">
+    <tag k="natural" v="tree"/>
+  </node>
+  <node id="6304626576" lat="53.4771881" lon="-2.2524923">
+    <tag k="natural" v="tree"/>
+  </node>
+  <node id="6304626577" lat="53.4769741" lon="-2.2525593">
+    <tag k="natural" v="tree"/>
+  </node>
+  <node id="6304626578" lat="53.4769111" lon="-2.2525862">
+    <tag k="natural" v="tree"/>
+  </node>
+  <node id="6343468075" lat="53.4813446" lon="-2.2501301">
+    <tag k="denotation" v="urban"/>
+    <tag k="natural" v="tree"/>
+  </node>
+  <node id="6343468076" lat="53.4813307" lon="-2.2500536">
+    <tag k="denotation" v="urban"/>
+    <tag k="natural" v="tree"/>
+  </node>
+  <node id="6343468077" lat="53.4813686" lon="-2.2501535">
+    <tag k="denotation" v="urban"/>
+    <tag k="natural" v="tree"/>
+  </node>
+  <node id="6343468078" lat="53.4813275" lon="-2.2501770">
+    <tag k="denotation" v="urban"/>
+    <tag k="natural" v="tree"/>
+  </node>
+  <node id="6343468079" lat="53.4814715" lon="-2.2501113">
+    <tag k="denotation" v="urban"/>
+    <tag k="natural" v="tree"/>
+  </node>
+  <node id="6343468081" lat="53.4814855" lon="-2.2500603">
+    <tag k="denotation" v="urban"/>
+    <tag k="natural" v="tree"/>
+  </node>
+  <node id="6343468082" lat="53.4814751" lon="-2.2499866">
+    <tag k="denotation" v="urban"/>
+    <tag k="natural" v="tree"/>
+  </node>
+  <node id="6343468083" lat="53.4814659" lon="-2.2499162">
+    <tag k="denotation" v="urban"/>
+    <tag k="natural" v="tree"/>
+  </node>
+  <node id="6343468084" lat="53.4813207" lon="-2.2499825">
+    <tag k="denotation" v="urban"/>
+    <tag k="natural" v="tree"/>
+  </node>
+  <node id="6343468185" lat="53.4814280" lon="-2.2498846">
+    <tag k="denotation" v="urban"/>
+    <tag k="natural" v="tree"/>
+  </node>
+  <node id="6343468186" lat="53.4814779" lon="-2.2498645">
+    <tag k="denotation" v="urban"/>
+    <tag k="natural" v="tree"/>
+  </node>
+  <node id="6343468187" lat="53.4813414" lon="-2.2499269">
+    <tag k="denotation" v="urban"/>
+    <tag k="natural" v="tree"/>
+  </node>
+  <node id="6343468188" lat="53.4812880" lon="-2.2499537">
+    <tag k="denotation" v="urban"/>
+    <tag k="natural" v="tree"/>
+  </node>
+  <node id="9252709246" lat="53.4773435" lon="-2.2468086">
+    <tag k="natural" v="tree"/>
+  </node>
+  <node id="9252709247" lat="53.4773109" lon="-2.2467293">
+    <tag k="natural" v="tree"/>
+  </node>
+  <node id="9252709248" lat="53.4772770" lon="-2.2466517">
+    <tag k="natural" v="tree"/>
+  </node>
+  <node id="9252709249" lat="53.4772512" lon="-2.2465861">
+    <tag k="natural" v="tree"/>
+  </node>
+  <node id="9252709250" lat="53.4773530" lon="-2.2470340">
+    <tag k="natural" v="tree"/>
+  </node>
+  <node id="9252709251" lat="53.4773890" lon="-2.2471076">
+    <tag k="natural" v="tree"/>
+  </node>
+  <node id="9252709252" lat="53.4774274" lon="-2.2471806">
+    <tag k="natural" v="tree"/>
+  </node>
+  <node id="9252709253" lat="53.4774529" lon="-2.2472576">
+    <tag k="natural" v="tree"/>
+  </node>
+  <node id="9252709254" lat="53.4774797" lon="-2.2473278">
+    <tag k="natural" v="tree"/>
+  </node>
+  <node id="9252709255" lat="53.4775123" lon="-2.2473980">
+    <tag k="natural" v="tree"/>
+  </node>
+  <node id="9252709256" lat="53.4775418" lon="-2.2474664">
+    <tag k="natural" v="tree"/>
+  </node>
+  <node id="9252709257" lat="53.4774019" lon="-2.2469780">
+    <tag k="natural" v="tree"/>
+  </node>
+  <node id="9252709258" lat="53.4774335" lon="-2.2470562">
+    <tag k="natural" v="tree"/>
+  </node>
+  <node id="9252709259" lat="53.4774692" lon="-2.2471338">
+    <tag k="natural" v="tree"/>
+  </node>
+  <node id="9252709260" lat="53.4774960" lon="-2.2472086">
+    <tag k="natural" v="tree"/>
+  </node>
+  <node id="9252709261" lat="53.4775235" lon="-2.2472725">
+    <tag k="natural" v="tree"/>
+  </node>
+  <node id="9252709262" lat="53.4775530" lon="-2.2473449">
+    <tag k="natural" v="tree"/>
+  </node>
+  <node id="9252709263" lat="53.4775816" lon="-2.2474185">
+    <tag k="natural" v="tree"/>
+  </node>
+  <node id="9252709264" lat="53.4777184" lon="-2.2477403">
+    <tag k="natural" v="tree"/>
+  </node>
+  <node id="9252709265" lat="53.4777564" lon="-2.2478128">
+    <tag k="natural" v="tree"/>
+  </node>
+  <node id="9252709266" lat="53.4777880" lon="-2.2478784">
+    <tag k="natural" v="tree"/>
+  </node>
+  <node id="9252709267" lat="53.4778199" lon="-2.2479594">
+    <tag k="natural" v="tree"/>
+  </node>
+  <node id="9252709268" lat="53.4776406" lon="-2.2477420">
+    <tag k="natural" v="tree"/>
+  </node>
+  <node id="9252709269" lat="53.4776709" lon="-2.2478082">
+    <tag k="natural" v="tree"/>
+  </node>
+  <node id="9252709270" lat="53.4776997" lon="-2.2478670">
+    <tag k="natural" v="tree"/>
+  </node>
+  <node id="9252709271" lat="53.4777333" lon="-2.2479429">
+    <tag k="natural" v="tree"/>
+  </node>
+  <node id="9260133252" lat="53.4811674" lon="-2.2512744">
+    <tag k="natural" v="tree"/>
+  </node>
+  <node id="9260133253" lat="53.4811833" lon="-2.2511866">
+    <tag k="natural" v="tree"/>
+  </node>
+  <node id="9260133254" lat="53.4812292" lon="-2.2511669">
+    <tag k="natural" v="tree"/>
+  </node>
+  <node id="9260133255" lat="53.4812652" lon="-2.2512294">
+    <tag k="natural" v="tree"/>
+  </node>
+  <node id="9260133256" lat="53.4812932" lon="-2.2513819">
+    <tag k="natural" v="tree"/>
+  </node>
+  <node id="9260133257" lat="53.4813663" lon="-2.2518869">
+    <tag k="natural" v="tree"/>
+  </node>
+  <node id="9260133258" lat="53.4812853" lon="-2.2513137">
+    <tag k="natural" v="tree"/>
+  </node>
+  <node id="9260328561" lat="53.4807398" lon="-2.2531500">
+    <tag k="natural" v="tree"/>
+  </node>
+  <node id="9260328562" lat="53.4809818" lon="-2.2530648">
+    <tag k="natural" v="tree"/>
+  </node>
+  <node id="9260328563" lat="53.4809390" lon="-2.2530799">
+    <tag k="natural" v="tree"/>
+  </node>
+  <node id="9260328564" lat="53.4808809" lon="-2.2531003">
+    <tag k="natural" v="tree"/>
+  </node>
+  <node id="9260328565" lat="53.4808111" lon="-2.2531249">
+    <tag k="natural" v="tree"/>
+  </node>
+  <node id="9260330911" lat="53.4809942" lon="-2.2531539">
+    <tag k="natural" v="tree"/>
+  </node>
+  <node id="9260330912" lat="53.4807522" lon="-2.2532391">
+    <tag k="natural" v="tree"/>
+  </node>
+  <node id="9260330913" lat="53.4808234" lon="-2.2532140">
+    <tag k="natural" v="tree"/>
+  </node>
+  <node id="9260330914" lat="53.4808933" lon="-2.2531894">
+    <tag k="natural" v="tree"/>
+  </node>
+  <node id="9260330915" lat="53.4809514" lon="-2.2531689">
+    <tag k="natural" v="tree"/>
+  </node>
+  <node id="9516572885" lat="53.4799933" lon="-2.2482858">
+    <tag k="natural" v="tree"/>
+  </node>
+  <node id="9516572890" lat="53.4799598" lon="-2.2480712">
+    <tag k="natural" v="tree"/>
+  </node>
+  <node id="9516572893" lat="53.4798988" lon="-2.2476723">
+    <tag k="natural" v="tree"/>
+  </node>
+  <node id="9516572894" lat="53.4798866" lon="-2.2475735">
+    <tag k="natural" v="tree"/>
+  </node>
+  <node id="9516572896" lat="53.4798320" lon="-2.2473859">
+    <tag k="natural" v="tree"/>
+  </node>
+  <node id="9516572900" lat="53.4798164" lon="-2.2473390">
+    <tag k="natural" v="tree"/>
+  </node>
+  <node id="9516572903" lat="53.4797815" lon="-2.2473264">
+    <tag k="natural" v="tree"/>
+  </node>
+  <node id="9516572904" lat="53.4795152" lon="-2.2469515">
+    <tag k="natural" v="tree"/>
+  </node>
+  <node id="9516572905" lat="53.4796235" lon="-2.2468961">
+    <tag k="natural" v="tree"/>
+  </node>
+  <node id="9516572908" lat="53.4797353" lon="-2.2466630">
+    <tag k="natural" v="tree"/>
+  </node>
+  <node id="9516572911" lat="53.4797104" lon="-2.2464515">
+    <tag k="natural" v="tree"/>
+  </node>
+  <node id="9516572912" lat="53.4796983" lon="-2.2463203">
+    <tag k="natural" v="tree"/>
+  </node>
+  <node id="9516572913" lat="53.4796875" lon="-2.2462411">
+    <tag k="natural" v="tree"/>
+  </node>
+  <node id="9516572914" lat="53.4796767" lon="-2.2461382">
+    <tag k="natural" v="tree"/>
+  </node>
+  <node id="9516574318" lat="53.4796672" lon="-2.2460403">
+    <tag k="natural" v="tree"/>
+  </node>
+  <node id="9516574319" lat="53.4796318" lon="-2.2458623">
+    <tag k="natural" v="tree"/>
+  </node>
+  <node id="1312020308" lat="53.4709427" lon="-2.2573642"/>
+  <node id="1312020312" lat="53.4712043" lon="-2.2565165"/>
+  <node id="1400892612" lat="53.4777058" lon="-2.2523453"/>
+  <node id="1400892615" lat="53.4780907" lon="-2.2521676"/>
+  <node id="1400892616" lat="53.4777713" lon="-2.2527596"/>
+  <node id="1400892622" lat="53.4775647" lon="-2.2528558"/>
+  <node id="1400892624" lat="53.4777150" lon="-2.2536936"/>
+  <node id="2502686123" lat="53.4708128" lon="-2.2557887"/>
+  <node id="2502686142" lat="53.4706915" lon="-2.2549358"/>
+  <node id="2502686154" lat="53.4704871" lon="-2.2550055"/>
+  <node id="2502686219" lat="53.4707575" lon="-2.2559099"/>
+  <node id="3810235778" lat="53.4715071" lon="-2.2430132"/>
+  <node id="3810235801" lat="53.4721103" lon="-2.2435518"/>
+  <node id="5773465352" lat="53.4705959" lon="-2.2545596"/>
+  <node id="5773465453" lat="53.4706517" lon="-2.2543632"/>
+  <node id="5773465454" lat="53.4707107" lon="-2.2541367"/>
+  <node id="5773465461" lat="53.4707180" lon="-2.2536923"/>
+  <node id="5773465462" lat="53.4707542" lon="-2.2537577"/>
+  <node id="5773465463" lat="53.4707639" lon="-2.2538324"/>
+  <node id="5773465464" lat="53.4707292" lon="-2.2540192"/>
+  <node id="5773465465" lat="53.4704699" lon="-2.2549907"/>
+  <node id="5773465483" lat="53.4707609" lon="-2.2536952"/>
+  <node id="5773465484" lat="53.4707816" lon="-2.2536577"/>
+  <node id="5773465485" lat="53.4708168" lon="-2.2536550"/>
+  <node id="5773465486" lat="53.4708599" lon="-2.2543041"/>
+  <node id="5773465487" lat="53.4708950" lon="-2.2546340"/>
+  <node id="5773465488" lat="53.4709621" lon="-2.2551222"/>
+  <node id="5773465489" lat="53.4710802" lon="-2.2556747"/>
+  <node id="5773465490" lat="53.4711935" lon="-2.2561736"/>
+  <node id="5773465491" lat="53.4713181" lon="-2.2565035"/>
+  <node id="5773465492" lat="53.4713835" lon="-2.2567637"/>
+  <node id="5773465493" lat="53.4714107" lon="-2.2569353"/>
+  <node id="5773465494" lat="53.4713979" lon="-2.2571043"/>
+  <node id="5773465495" lat="53.4713564" lon="-2.2572947"/>
+  <node id="5773465496" lat="53.4712957" lon="-2.2574718"/>
+  <node id="5773465497" lat="53.4712574" lon="-2.2575710"/>
+  <node id="5773465498" lat="53.4711664" lon="-2.2576381"/>
+  <node id="5773465499" lat="53.4710387" lon="-2.2576890"/>
+  <node id="5773465500" lat="53.4708535" lon="-2.2577641"/>
+  <node id="5773465501" lat="53.4707593" lon="-2.2578231"/>
+  <node id="5773465502" lat="53.4708615" lon="-2.2574691"/>
+  <node id="5773465503" lat="53.4709030" lon="-2.2573296"/>
+  <node id="5773465504" lat="53.4708434" lon="-2.2562022"/>
+  <node id="5816027907" lat="53.4781233" lon="-2.2525450"/>
+  <node id="5816027908" lat="53.4780791" lon="-2.2522724"/>
+  <node id="5816027909" lat="53.4778115" lon="-2.2526880"/>
+  <node id="5816027910" lat="53.4777647" lon="-2.2524130"/>
+  <node id="5816027911" lat="53.4779406" lon="-2.2523358"/>
+  <node id="5816027914" lat="53.4781701" lon="-2.2528411"/>
+  <node id="5816044874" lat="53.4778561" lon="-2.2529505"/>
+  <node id="5816044878" lat="53.4781513" lon="-2.2525318"/>
+  <node id="5816044879" lat="53.4779260" lon="-2.2522436"/>
+  <node id="5816044880" lat="53.4779144" lon="-2.2523472"/>
+  <node id="5816044881" lat="53.4779000" lon="-2.2522556"/>
+  <node id="5816044883" lat="53.4781304" lon="-2.2525900"/>
+  <node id="5816044884" lat="53.4781585" lon="-2.2525765"/>
+  <node id="5816044885" lat="53.4781991" lon="-2.2528285"/>
+  <node id="5816044888" lat="53.4781040" lon="-2.2534969"/>
+  <node id="5816044901" lat="53.4780569" lon="-2.2532072"/>
+  <node id="5816044902" lat="53.4780452" lon="-2.2532000"/>
+  <node id="5816044904" lat="53.4780255" lon="-2.2531430"/>
+  <node id="5816044905" lat="53.4780117" lon="-2.2530714"/>
+  <node id="5816044907" lat="53.4780095" lon="-2.2530171"/>
+  <node id="5816044909" lat="53.4777674" lon="-2.2531015"/>
+  <node id="5816044910" lat="53.4777633" lon="-2.2531489"/>
+  <node id="5816044911" lat="53.4777468" lon="-2.2531765"/>
+  <node id="5816044912" lat="53.4777286" lon="-2.2531725"/>
+  <node id="5816044913" lat="53.4777033" lon="-2.2531331"/>
+  <node id="5816044914" lat="53.4776828" lon="-2.2530758"/>
+  <node id="5816044915" lat="53.4776734" lon="-2.2530304"/>
+  <node id="5816044916" lat="53.4776734" lon="-2.2529692"/>
+  <node id="5816044917" lat="53.4776857" lon="-2.2529347"/>
+  <node id="5816044918" lat="53.4777045" lon="-2.2529120"/>
+  <node id="5816044919" lat="53.4777310" lon="-2.2529219"/>
+  <node id="5816044920" lat="53.4777456" lon="-2.2529574"/>
+  <node id="5816044921" lat="53.4777550" lon="-2.2529957"/>
+  <node id="5816125473" lat="53.4777631" lon="-2.2527102"/>
+  <node id="5816125474" lat="53.4777354" lon="-2.2525345"/>
+  <node id="5816135737" lat="53.4777119" lon="-2.2523863"/>
+  <node id="5816163914" lat="53.4778128" lon="-2.2530877"/>
+  <node id="5816163915" lat="53.4778639" lon="-2.2530464"/>
+  <node id="5816163916" lat="53.4779038" lon="-2.2530859"/>
+  <node id="5816163917" lat="53.4779161" lon="-2.2530928"/>
+  <node id="5816163918" lat="53.4779611" lon="-2.2530670"/>
+  <node id="5816163919" lat="53.4780262" lon="-2.2531670"/>
+  <node id="5816163920" lat="53.4780330" lon="-2.2532643"/>
+  <node id="5816163921" lat="53.4779965" lon="-2.2533034"/>
+  <node id="5816163922" lat="53.4779919" lon="-2.2533333"/>
+  <node id="5816163923" lat="53.4779927" lon="-2.2533893"/>
+  <node id="5816163924" lat="53.4779826" lon="-2.2533985"/>
+  <node id="5816163925" lat="53.4779632" lon="-2.2534180"/>
+  <node id="5816163926" lat="53.4779500" lon="-2.2534453"/>
+  <node id="5816163927" lat="53.4779183" lon="-2.2534375"/>
+  <node id="5816163928" lat="53.4779004" lon="-2.2534453"/>
+  <node id="5816163929" lat="53.4778927" lon="-2.2534636"/>
+  <node id="5816163930" lat="53.4778454" lon="-2.2534662"/>
+  <node id="5816163931" lat="53.4778237" lon="-2.2534714"/>
+  <node id="5816163932" lat="53.4777997" lon="-2.2535079"/>
+  <node id="5816163933" lat="53.4777756" lon="-2.2535183"/>
+  <node id="5816163934" lat="53.4777470" lon="-2.2535417"/>
+  <node id="5816163935" lat="53.4777260" lon="-2.2535443"/>
+  <node id="5816163936" lat="53.4777167" lon="-2.2535183"/>
+  <node id="5816163937" lat="53.4777113" lon="-2.2534675"/>
+  <node id="5816163938" lat="53.4777098" lon="-2.2534271"/>
+  <node id="5816163939" lat="53.4777167" lon="-2.2533646"/>
+  <node id="5816163940" lat="53.4777400" lon="-2.2533021"/>
+  <node id="5816163941" lat="53.4777578" lon="-2.2533034"/>
+  <node id="5816163942" lat="53.4777764" lon="-2.2533359"/>
+  <node id="5816163943" lat="53.4778105" lon="-2.2533477"/>
+  <node id="5816163944" lat="53.4778462" lon="-2.2533438"/>
+  <node id="5816163945" lat="53.4778531" lon="-2.2533190"/>
+  <node id="5816163946" lat="53.4778787" lon="-2.2533047"/>
+  <node id="5816163947" lat="53.4778873" lon="-2.2532878"/>
+  <node id="5816163948" lat="53.4779043" lon="-2.2532226"/>
+  <node id="5816163949" lat="53.4779221" lon="-2.2531601"/>
+  <node id="5816163950" lat="53.4779431" lon="-2.2531354"/>
+  <node id="5816163951" lat="53.4779524" lon="-2.2531627"/>
+  <node id="5816163952" lat="53.4779686" lon="-2.2531888"/>
+  <node id="5816163953" lat="53.4779857" lon="-2.2532109"/>
+  <node id="5829706084" lat="53.4780301" lon="-2.2531250"/>
+  <node id="5829706085" lat="53.4780411" lon="-2.2531156"/>
+  <node id="5829706086" lat="53.4780375" lon="-2.2530941"/>
+  <node id="5829706087" lat="53.4780275" lon="-2.2530915"/>
+  <node id="5829706088" lat="53.4780191" lon="-2.2530875"/>
+  <node id="5829706089" lat="53.4780073" lon="-2.2530419"/>
+  <node id="6101159699" lat="53.4710574" lon="-2.2569926"/>
+  <node id="6101159700" lat="53.4707813" lon="-2.2559909"/>
+  <node id="6101159710" lat="53.4708726" lon="-2.2574318"/>
+  <node id="6283509682" lat="53.4778703" lon="-2.2542806"/>
+  <node id="6283509683" lat="53.4779198" lon="-2.2545655"/>
+  <node id="6283509684" lat="53.4779771" lon="-2.2546248"/>
+  <node id="6283509685" lat="53.4781883" lon="-2.2545319"/>
+  <node id="6283509686" lat="53.4781881" lon="-2.2544721"/>
+  <node id="6283509687" lat="53.4780680" lon="-2.2537167"/>
+  <node id="6283509688" lat="53.4777989" lon="-2.2538485"/>
+  <node id="6304626571" lat="53.4774578" lon="-2.2537894"/>
+  <node id="6304626572" lat="53.4770050" lon="-2.2540053"/>
+  <node id="6304626579" lat="53.4767222" lon="-2.2529440"/>
+  <node id="6304626580" lat="53.4766757" lon="-2.2529663"/>
+  <way id="569609678">
+    <nd ref="3810235801"/>
+    <nd ref="3810235778"/>
+    <tag k="leaf_type" v="broadleaved"/>
+    <tag k="natural" v="tree_row"/>
+  </way>
+  <way id="609545658">
+    <nd ref="5773465461"/>
+    <nd ref="5773465483"/>
+    <nd ref="5773465484"/>
+    <nd ref="5773465485"/>
+    <nd ref="5773465486"/>
+    <nd ref="5773465487"/>
+    <nd ref="5773465488"/>
+    <nd ref="5773465489"/>
+    <nd ref="5773465490"/>
+    <nd ref="5773465491"/>
+    <nd ref="5773465492"/>
+    <nd ref="5773465493"/>
+    <nd ref="5773465494"/>
+    <nd ref="5773465495"/>
+    <nd ref="5773465496"/>
+    <nd ref="5773465497"/>
+    <nd ref="5773465498"/>
+    <nd ref="5773465499"/>
+    <nd ref="5773465500"/>
+    <nd ref="5773465501"/>
+    <nd ref="5773465502"/>
+    <nd ref="6101159710"/>
+    <nd ref="5773465503"/>
+    <nd ref="1312020308"/>
+    <nd ref="6101159699"/>
+    <nd ref="1312020312"/>
+    <nd ref="5773465504"/>
+    <nd ref="6101159700"/>
+    <nd ref="2502686219"/>
+    <nd ref="2502686123"/>
+    <nd ref="2502686142"/>
+    <nd ref="2502686154"/>
+    <nd ref="5773465465"/>
+    <nd ref="5773465352"/>
+    <nd ref="5773465453"/>
+    <nd ref="5773465454"/>
+    <nd ref="5773465464"/>
+    <nd ref="5773465463"/>
+    <nd ref="5773465462"/>
+    <nd ref="5773465461"/>
+    <tag k="natural" v="wood"/>
+  </way>
+  <way id="614948897">
+    <nd ref="5816027907"/>
+    <nd ref="5816044878"/>
+    <nd ref="1400892615"/>
+    <nd ref="5816044879"/>
+    <nd ref="5816027911"/>
+    <nd ref="5816027908"/>
+    <nd ref="5816027907"/>
+    <tag k="leaf_type" v="broadleaved"/>
+    <tag k="natural" v="wood"/>
+  </way>
+  <way id="614948899">
+    <nd ref="5816044880"/>
+    <nd ref="5816044881"/>
+    <nd ref="1400892612"/>
+    <nd ref="5816135737"/>
+    <nd ref="5816125474"/>
+    <nd ref="5816125473"/>
+    <nd ref="5816027909"/>
+    <nd ref="5816027910"/>
+    <nd ref="5816044880"/>
+    <tag k="leaf_type" v="broadleaved"/>
+    <tag k="natural" v="wood"/>
+  </way>
+  <way id="614948900">
+    <nd ref="5816027914"/>
+    <nd ref="5816044883"/>
+    <nd ref="5816044884"/>
+    <nd ref="5816044885"/>
+    <nd ref="5816027914"/>
+    <tag k="natural" v="wood"/>
+  </way>
+  <way id="614959067">
+    <nd ref="5816044902"/>
+    <nd ref="5816044901"/>
+    <nd ref="5816044888"/>
+    <nd ref="1400892624"/>
+    <nd ref="1400892622"/>
+    <nd ref="1400892616"/>
+    <nd ref="5816125473"/>
+    <nd ref="5816027909"/>
+    <nd ref="5816044874"/>
+    <nd ref="5816044921"/>
+    <nd ref="5816044920"/>
+    <nd ref="5816044919"/>
+    <nd ref="5816044918"/>
+    <nd ref="5816044917"/>
+    <nd ref="5816044916"/>
+    <nd ref="5816044915"/>
+    <nd ref="5816044914"/>
+    <nd ref="5816044913"/>
+    <nd ref="5816044912"/>
+    <nd ref="5816044911"/>
+    <nd ref="5816044910"/>
+    <nd ref="5816044909"/>
+    <nd ref="5816163914"/>
+    <nd ref="5816163915"/>
+    <nd ref="5816163916"/>
+    <nd ref="5816163917"/>
+    <nd ref="5816163918"/>
+    <nd ref="5816044907"/>
+    <nd ref="5829706089"/>
+    <nd ref="5816044905"/>
+    <nd ref="5829706088"/>
+    <nd ref="5829706087"/>
+    <nd ref="5829706086"/>
+    <nd ref="5829706085"/>
+    <nd ref="5829706084"/>
+    <nd ref="5816044904"/>
+    <nd ref="5816163919"/>
+    <nd ref="5816163953"/>
+    <nd ref="5816163952"/>
+    <nd ref="5816163951"/>
+    <nd ref="5816163950"/>
+    <nd ref="5816163949"/>
+    <nd ref="5816163948"/>
+    <nd ref="5816163947"/>
+    <nd ref="5816163946"/>
+    <nd ref="5816163945"/>
+    <nd ref="5816163944"/>
+    <nd ref="5816163943"/>
+    <nd ref="5816163942"/>
+    <nd ref="5816163941"/>
+    <nd ref="5816163940"/>
+    <nd ref="5816163939"/>
+    <nd ref="5816163938"/>
+    <nd ref="5816163937"/>
+    <nd ref="5816163936"/>
+    <nd ref="5816163935"/>
+    <nd ref="5816163934"/>
+    <nd ref="5816163933"/>
+    <nd ref="5816163932"/>
+    <nd ref="5816163931"/>
+    <nd ref="5816163930"/>
+    <nd ref="5816163929"/>
+    <nd ref="5816163928"/>
+    <nd ref="5816163927"/>
+    <nd ref="5816163926"/>
+    <nd ref="5816163925"/>
+    <nd ref="5816163924"/>
+    <nd ref="5816163923"/>
+    <nd ref="5816163922"/>
+    <nd ref="5816163921"/>
+    <nd ref="5816163920"/>
+    <nd ref="5816044902"/>
+    <tag k="leaf_type" v="broadleaved"/>
+    <tag k="natural" v="wood"/>
+  </way>
+  <way id="670989592">
+    <nd ref="6283509682"/>
+    <nd ref="6283509683"/>
+    <tag k="natural" v="tree_row"/>
+  </way>
+  <way id="670989593">
+    <nd ref="6283509684"/>
+    <nd ref="6283509685"/>
+    <tag k="natural" v="tree_row"/>
+  </way>
+  <way id="670989594">
+    <nd ref="6283509686"/>
+    <nd ref="6283509687"/>
+    <nd ref="6283509688"/>
+    <tag k="leaf_type" v="broadleaved"/>
+    <tag k="natural" v="tree_row"/>
+  </way>
+  <way id="673231955">
+    <nd ref="6304626579"/>
+    <nd ref="6304626580"/>
+    <tag k="natural" v="tree_row"/>
+  </way>
+  <way id="957665587">
+    <nd ref="6304626571"/>
+    <nd ref="6304626572"/>
+    <tag k="leaf_type" v="broadleaved"/>
+    <tag k="natural" v="tree_row"/>
+  </way>
+
+</osm>
