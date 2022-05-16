@@ -1,0 +1,224 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8c477de684ee10c4082f9fddf19a75ce, type: 3}
+  m_Name: GeNa Palette Take the Airstrip
+  m_EditorClassIdentifier: 
+  m_paletteEntryIDCount: -2147483596
+  m_paletteEntries:
+  - m_name: SM_Bld_City_Preset_01
+    m_id: -2147483647
+    m_guid: 80ac00a6b41e2f34b87dd10d8e2e2dd1
+    m_object: {fileID: 1418571016652894, guid: 80ac00a6b41e2f34b87dd10d8e2e2dd1, type: 3}
+  - m_name: SM_Bld_City_Preset_02
+    m_id: -2147483646
+    m_guid: 57c4ae2ca20db04429a66e96344112bb
+    m_object: {fileID: 1158602810270388, guid: 57c4ae2ca20db04429a66e96344112bb, type: 3}
+  - m_name: SM_Bld_City_Preset_03
+    m_id: -2147483645
+    m_guid: 1ca6bb63aa99bc64bac38b317e404eff
+    m_object: {fileID: 1552103035294444, guid: 1ca6bb63aa99bc64bac38b317e404eff, type: 3}
+  - m_name: SM_Bld_City_Preset_04
+    m_id: -2147483644
+    m_guid: ebe52ce7ae72f024f811051c4eef949e
+    m_object: {fileID: 1845140655240340, guid: ebe52ce7ae72f024f811051c4eef949e, type: 3}
+  - m_name: SM_Bld_City_Preset_05
+    m_id: -2147483643
+    m_guid: e7dba4ca14803604da3d8c9f7eb3e7f1
+    m_object: {fileID: 1435435827411346, guid: e7dba4ca14803604da3d8c9f7eb3e7f1, type: 3}
+  - m_name: SM_Bld_City_Preset_06
+    m_id: -2147483642
+    m_guid: f28a2653dd92be647b0ea3f199bdfd3c
+    m_object: {fileID: 1953474123081376, guid: f28a2653dd92be647b0ea3f199bdfd3c, type: 3}
+  - m_name: SM_Bld_City_Preset_07
+    m_id: -2147483641
+    m_guid: bbd02573b790e9741979cef96b173619
+    m_object: {fileID: 1972491258588128, guid: bbd02573b790e9741979cef96b173619, type: 3}
+  - m_name: SM_Bld_City_Preset_08
+    m_id: -2147483640
+    m_guid: 7664e4d513aee744c858b4aec20373d3
+    m_object: {fileID: 1154973896894178, guid: 7664e4d513aee744c858b4aec20373d3, type: 3}
+  - m_name: SM_Bld_City_Preset_09
+    m_id: -2147483639
+    m_guid: 7bdf3f5012392bc44869e52f92eb0d09
+    m_object: {fileID: 1425159068938724, guid: 7bdf3f5012392bc44869e52f92eb0d09, type: 3}
+  - m_name: SM_Bld_TownHouse_01
+    m_id: -2147483638
+    m_guid: 9117ca747581dd84797a6fcd69a28b4a
+    m_object: {fileID: 186234, guid: 9117ca747581dd84797a6fcd69a28b4a, type: 3}
+  - m_name: SM_Bld_TownHouse_02
+    m_id: -2147483637
+    m_guid: 8e4450e470323aa4e94ab16099d00300
+    m_object: {fileID: 167486, guid: 8e4450e470323aa4e94ab16099d00300, type: 3}
+  - m_name: SM_Bld_TownHouse_03
+    m_id: -2147483636
+    m_guid: 91b8f4e851e057d498d7f7a5fe27a511
+    m_object: {fileID: 161156, guid: 91b8f4e851e057d498d7f7a5fe27a511, type: 3}
+  - m_name: SM_Bld_TownHouse_05
+    m_id: -2147483635
+    m_guid: f8760df281b555f42bd74e5d6368bba6
+    m_object: {fileID: 108586, guid: f8760df281b555f42bd74e5d6368bba6, type: 3}
+  - m_name: SM_Bld_TownHouse_06
+    m_id: -2147483634
+    m_guid: 9c6ef5ef9dbda28428fa50c2afde0ce0
+    m_object: {fileID: 178342, guid: 9c6ef5ef9dbda28428fa50c2afde0ce0, type: 3}
+  - m_name: SM_Bld_TownHouse_01 Variant
+    m_id: -2147483633
+    m_guid: fcc49b9b28b4a834d89ceb2851bf4adf
+    m_object: {fileID: 3439008473467656679, guid: fcc49b9b28b4a834d89ceb2851bf4adf, type: 3}
+  - m_name: pwub_builtin_1_c5
+    m_id: -2147483632
+    m_guid: 8562e5af4cc78dd488059285d0c642d1
+    m_object: {fileID: 2800000, guid: 8562e5af4cc78dd488059285d0c642d1, type: 3}
+  - m_name: pwub_builtin_2_c5
+    m_id: -2147483631
+    m_guid: f77fc97af49c16c4cb3927a1d0462e79
+    m_object: {fileID: 2800000, guid: f77fc97af49c16c4cb3927a1d0462e79, type: 3}
+  - m_name: pwub_builtin_3_c5
+    m_id: -2147483630
+    m_guid: 9cd761b0a0aa72648a348e5ebfd6e86b
+    m_object: {fileID: 2800000, guid: 9cd761b0a0aa72648a348e5ebfd6e86b, type: 3}
+  - m_name: pwub_builtin_4_c5
+    m_id: -2147483629
+    m_guid: 3d320e63902a22c4a936a386d3b82942
+    m_object: {fileID: 2800000, guid: 3d320e63902a22c4a936a386d3b82942, type: 3}
+  - m_name: pwub_builtin_5_c5
+    m_id: -2147483628
+    m_guid: d655b3415e9b4a349bdfff62e290f6a0
+    m_object: {fileID: 2800000, guid: d655b3415e9b4a349bdfff62e290f6a0, type: 3}
+  - m_name: pwub_builtin_6_c5
+    m_id: -2147483627
+    m_guid: 86ce52cdd27d0214786d1ffd6923fff6
+    m_object: {fileID: 2800000, guid: 86ce52cdd27d0214786d1ffd6923fff6, type: 3}
+  - m_name: pwub_builtin_7_c5
+    m_id: -2147483626
+    m_guid: 9236ebf756af8954193c9c44e05ba09e
+    m_object: {fileID: 2800000, guid: 9236ebf756af8954193c9c44e05ba09e, type: 3}
+  - m_name: pwub_builtin_8_c5
+    m_id: -2147483625
+    m_guid: a913d21bd6330f64bae5eb7e5fbd830b
+    m_object: {fileID: 2800000, guid: a913d21bd6330f64bae5eb7e5fbd830b, type: 3}
+  - m_name: pwub_builtin_9_c5
+    m_id: -2147483624
+    m_guid: 7fd839b086d4a844d83cbe9490683855
+    m_object: {fileID: 2800000, guid: 7fd839b086d4a844d83cbe9490683855, type: 3}
+  - m_name: pwub_builtin_10_c5
+    m_id: -2147483623
+    m_guid: 9fd32fab18db93d4bab18a1fb6923819
+    m_object: {fileID: 2800000, guid: 9fd32fab18db93d4bab18a1fb6923819, type: 3}
+  - m_name: pwub_builtin_11_c5
+    m_id: -2147483622
+    m_guid: 05c00cf657919e346bebf9e153c56e66
+    m_object: {fileID: 2800000, guid: 05c00cf657919e346bebf9e153c56e66, type: 3}
+  - m_name: pwub_builtin_12_c5
+    m_id: -2147483621
+    m_guid: 2fbda824cdc093e4c9951a5f273f6554
+    m_object: {fileID: 2800000, guid: 2fbda824cdc093e4c9951a5f273f6554, type: 3}
+  - m_name: pwub_builtin_13_c5
+    m_id: -2147483620
+    m_guid: 27e1a0b4841c0b34eb51ed3e21e50691
+    m_object: {fileID: 2800000, guid: 27e1a0b4841c0b34eb51ed3e21e50691, type: 3}
+  - m_name: pwub_builtin_14_c5
+    m_id: -2147483619
+    m_guid: 4a374978ee6c9ab46a39372d609f7e1e
+    m_object: {fileID: 2800000, guid: 4a374978ee6c9ab46a39372d609f7e1e, type: 3}
+  - m_name: pwub_builtin_15_c5
+    m_id: -2147483618
+    m_guid: 128216f3a20cb73458440e12e657db4b
+    m_object: {fileID: 2800000, guid: 128216f3a20cb73458440e12e657db4b, type: 3}
+  - m_name: pwub_builtin_16_c5
+    m_id: -2147483617
+    m_guid: 410d50fd32c308c46a95f502d3c7c2ff
+    m_object: {fileID: 2800000, guid: 410d50fd32c308c46a95f502d3c7c2ff, type: 3}
+  - m_name: pwub_builtin_17_c5
+    m_id: -2147483616
+    m_guid: cc056045a1782ac4a8c08bdce66d49ed
+    m_object: {fileID: 2800000, guid: cc056045a1782ac4a8c08bdce66d49ed, type: 3}
+  - m_name: pwub_builtin_18_c5
+    m_id: -2147483615
+    m_guid: b04e2e83ee1283545a02e1bab08989ba
+    m_object: {fileID: 2800000, guid: b04e2e83ee1283545a02e1bab08989ba, type: 3}
+  - m_name: pwub_builtin_19_c5
+    m_id: -2147483614
+    m_guid: e24fd533463218644ae0bb81977c5e99
+    m_object: {fileID: 2800000, guid: e24fd533463218644ae0bb81977c5e99, type: 3}
+  - m_name: pwub_builtin_20_c5
+    m_id: -2147483613
+    m_guid: 738922d98c7b6f242bcd7f511badbef5
+    m_object: {fileID: 2800000, guid: 738922d98c7b6f242bcd7f511badbef5, type: 3}
+  - m_name: SM_Bld_TownHouse_02 Variant
+    m_id: -2147483612
+    m_guid: fdaf45f6726ce6443aedc56c96e8b4a4
+    m_object: {fileID: 3788282364535349068, guid: fdaf45f6726ce6443aedc56c96e8b4a4, type: 3}
+  - m_name: SM_Bld_TownHouse_03 Variant
+    m_id: -2147483611
+    m_guid: c1e365716a0f4f1498ae1a6a76226609
+    m_object: {fileID: 5698524133002277768, guid: c1e365716a0f4f1498ae1a6a76226609, type: 3}
+  - m_name: SM_Bld_TownHouse_04 Variant
+    m_id: -2147483610
+    m_guid: d8f9754ca8f8f4f41a82a752c84240b7
+    m_object: {fileID: 5421720085581877051, guid: d8f9754ca8f8f4f41a82a752c84240b7, type: 3}
+  - m_name: SM_Bld_TownHouse_05 Variant
+    m_id: -2147483609
+    m_guid: 478358338c1fac94bba53bb979526980
+    m_object: {fileID: 3609795993995504751, guid: 478358338c1fac94bba53bb979526980, type: 3}
+  - m_name: SM_Bld_TownHouse_06 Variant
+    m_id: -2147483608
+    m_guid: 17c1b5ac5195fbd4890b886fad66662a
+    m_object: {fileID: 1650721810094386183, guid: 17c1b5ac5195fbd4890b886fad66662a, type: 3}
+  - m_name: SM_Bld_City_Preset_01 Variant
+    m_id: -2147483607
+    m_guid: 7955d7356c1029d42941332b6f933640
+    m_object: {fileID: 2214821730581874721, guid: 7955d7356c1029d42941332b6f933640, type: 3}
+  - m_name: SM_Bld_City_Preset_02 Variant
+    m_id: -2147483606
+    m_guid: df28d847716bb6b4ca01605f38bd10e5
+    m_object: {fileID: 6497813701951881410, guid: df28d847716bb6b4ca01605f38bd10e5, type: 3}
+  - m_name: SM_Bld_City_Preset_03 Variant
+    m_id: -2147483605
+    m_guid: a7cdb7b0baf29b84a8f700c9bad8b98d
+    m_object: {fileID: 6276182587911014901, guid: a7cdb7b0baf29b84a8f700c9bad8b98d, type: 3}
+  - m_name: SM_Bld_City_Preset_04 Variant
+    m_id: -2147483604
+    m_guid: 7df95cd0db74dea40b11732f55b7dfa3
+    m_object: {fileID: 5801547837451379550, guid: 7df95cd0db74dea40b11732f55b7dfa3, type: 3}
+  - m_name: SM_Bld_City_Preset_05 Variant
+    m_id: -2147483603
+    m_guid: c1c8bd6e2c69bdf44b3f3eb3d96ebd17
+    m_object: {fileID: 5396174505707702291, guid: c1c8bd6e2c69bdf44b3f3eb3d96ebd17, type: 3}
+  - m_name: SM_Bld_City_Preset_06 Variant
+    m_id: -2147483602
+    m_guid: f6b93e332323c434881c5a12d4b83174
+    m_object: {fileID: 8698251856613385668, guid: f6b93e332323c434881c5a12d4b83174, type: 3}
+  - m_name: SM_Bld_City_Preset_07 Variant
+    m_id: -2147483601
+    m_guid: da4be9870be83e246b4bb8259aca08f1
+    m_object: {fileID: 6723434173676693887, guid: da4be9870be83e246b4bb8259aca08f1, type: 3}
+  - m_name: SM_Bld_City_Preset_08 Variant
+    m_id: -2147483600
+    m_guid: 2f71b7cdef41c954eb3fec68f9d237f8
+    m_object: {fileID: 769050323743110759, guid: 2f71b7cdef41c954eb3fec68f9d237f8, type: 3}
+  - m_name: SM_Bld_City_Preset_09 Variant
+    m_id: -2147483599
+    m_guid: 8c876ebc818ba1f46bfa08a02b92b774
+    m_object: {fileID: 2183801267420238380, guid: 8c876ebc818ba1f46bfa08a02b92b774, type: 3}
+  - m_name: SM_Env_Tree_01
+    m_id: -2147483598
+    m_guid: d295338eb2193c14f9feb82d278c826f
+    m_object: {fileID: 145966, guid: d295338eb2193c14f9feb82d278c826f, type: 3}
+  - m_name: SM_Env_Tree_02
+    m_id: -2147483597
+    m_guid: 215ef3b148e692b49a3ac46988ad67ba
+    m_object: {fileID: 167818, guid: 215ef3b148e692b49a3ac46988ad67ba, type: 3}
+  - m_name: SM_Env_Tree_03
+    m_id: -2147483596
+    m_guid: 848847ad5d2e9e94b9dd1ed6dead47f2
+    m_object: {fileID: 131502, guid: 848847ad5d2e9e94b9dd1ed6dead47f2, type: 3}

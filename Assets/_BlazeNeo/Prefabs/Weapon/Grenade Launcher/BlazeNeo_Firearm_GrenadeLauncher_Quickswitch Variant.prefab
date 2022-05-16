@@ -1,0 +1,82 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &5994080441518587053
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1152804995060304, guid: 629f7d2c2a05c3b4d9df1274a2bebf8c, type: 3}
+      propertyPath: m_Name
+      value: BlazeNeo_Firearm_GrenadeLauncher_Quickswitch Variant
+      objectReference: {fileID: 0}
+    - target: {fileID: 4893211592419396, guid: 629f7d2c2a05c3b4d9df1274a2bebf8c, type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4893211592419396, guid: 629f7d2c2a05c3b4d9df1274a2bebf8c, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4893211592419396, guid: 629f7d2c2a05c3b4d9df1274a2bebf8c, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4893211592419396, guid: 629f7d2c2a05c3b4d9df1274a2bebf8c, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4893211592419396, guid: 629f7d2c2a05c3b4d9df1274a2bebf8c, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4893211592419396, guid: 629f7d2c2a05c3b4d9df1274a2bebf8c, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4893211592419396, guid: 629f7d2c2a05c3b4d9df1274a2bebf8c, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4893211592419396, guid: 629f7d2c2a05c3b4d9df1274a2bebf8c, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4893211592419396, guid: 629f7d2c2a05c3b4d9df1274a2bebf8c, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4893211592419396, guid: 629f7d2c2a05c3b4d9df1274a2bebf8c, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4893211592419396, guid: 629f7d2c2a05c3b4d9df1274a2bebf8c, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114279086836689452, guid: 629f7d2c2a05c3b4d9df1274a2bebf8c, type: 3}
+      propertyPath: m_Explosion
+      value: 
+      objectReference: {fileID: 114361292132502964, guid: bb2578b9c476bb243afbc27af3a0cfb4, type: 3}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 629f7d2c2a05c3b4d9df1274a2bebf8c, type: 3}
+--- !u!1 &5992980619782336253 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1152804995060304, guid: 629f7d2c2a05c3b4d9df1274a2bebf8c, type: 3}
+  m_PrefabInstance: {fileID: 5994080441518587053}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &416442316927856341
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5992980619782336253}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7e37f41b2cecd4548b4b2ece3c595790, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  distractionRadius: 10
+  passThroughColliders: 1

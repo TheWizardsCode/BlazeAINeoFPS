@@ -1,0 +1,183 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &767913492350111877
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1154973896894178, guid: 7664e4d513aee744c858b4aec20373d3, type: 3}
+      propertyPath: m_Name
+      value: SM_Bld_City_Preset_08 Variant
+      objectReference: {fileID: 0}
+    - target: {fileID: 1154973896894178, guid: 7664e4d513aee744c858b4aec20373d3, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 4677180062226590, guid: 7664e4d513aee744c858b4aec20373d3, type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4677180062226590, guid: 7664e4d513aee744c858b4aec20373d3, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 480.22223
+      objectReference: {fileID: 0}
+    - target: {fileID: 4677180062226590, guid: 7664e4d513aee744c858b4aec20373d3, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.4577942
+      objectReference: {fileID: 0}
+    - target: {fileID: 4677180062226590, guid: 7664e4d513aee744c858b4aec20373d3, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 323.09055
+      objectReference: {fileID: 0}
+    - target: {fileID: 4677180062226590, guid: 7664e4d513aee744c858b4aec20373d3, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4677180062226590, guid: 7664e4d513aee744c858b4aec20373d3, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4677180062226590, guid: 7664e4d513aee744c858b4aec20373d3, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4677180062226590, guid: 7664e4d513aee744c858b4aec20373d3, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4677180062226590, guid: 7664e4d513aee744c858b4aec20373d3, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4677180062226590, guid: 7664e4d513aee744c858b4aec20373d3, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4677180062226590, guid: 7664e4d513aee744c858b4aec20373d3, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 7664e4d513aee744c858b4aec20373d3, type: 3}
+--- !u!1 &769050323743110759 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1154973896894178, guid: 7664e4d513aee744c858b4aec20373d3, type: 3}
+  m_PrefabInstance: {fileID: 767913492350111877}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &141613183890379296
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 769050323743110759}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 852f40e076b9488c939c7d648cde4dbb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_destroyAfterSpawn: 1
+  m_unpackPrefab: 0
+  m_terrainModifier:
+    m_enabled: 1
+    m_updateTerrain: 0
+    m_position: {x: 381.80115, y: 3.0040889, z: 144.35693}
+    m_brushIndex: 0
+    m_areaOfEffect: 100
+    m_textureProtoIndex: 0
+    m_detailProtoIndex: 0
+    m_brushTextureIDs: 100000801100008012000080130000801400008015000080160000801700008018000080190000801a0000801b0000801c0000801d0000801e0000801f00008020000080210000802200008023000080
+    m_brushTextures:
+    - {fileID: 2800000, guid: 8562e5af4cc78dd488059285d0c642d1, type: 3}
+    - {fileID: 2800000, guid: f77fc97af49c16c4cb3927a1d0462e79, type: 3}
+    - {fileID: 2800000, guid: 9cd761b0a0aa72648a348e5ebfd6e86b, type: 3}
+    - {fileID: 2800000, guid: 3d320e63902a22c4a936a386d3b82942, type: 3}
+    - {fileID: 2800000, guid: d655b3415e9b4a349bdfff62e290f6a0, type: 3}
+    - {fileID: 2800000, guid: 86ce52cdd27d0214786d1ffd6923fff6, type: 3}
+    - {fileID: 2800000, guid: 9236ebf756af8954193c9c44e05ba09e, type: 3}
+    - {fileID: 2800000, guid: a913d21bd6330f64bae5eb7e5fbd830b, type: 3}
+    - {fileID: 2800000, guid: 7fd839b086d4a844d83cbe9490683855, type: 3}
+    - {fileID: 2800000, guid: 9fd32fab18db93d4bab18a1fb6923819, type: 3}
+    - {fileID: 2800000, guid: 05c00cf657919e346bebf9e153c56e66, type: 3}
+    - {fileID: 2800000, guid: 2fbda824cdc093e4c9951a5f273f6554, type: 3}
+    - {fileID: 2800000, guid: 27e1a0b4841c0b34eb51ed3e21e50691, type: 3}
+    - {fileID: 2800000, guid: 4a374978ee6c9ab46a39372d609f7e1e, type: 3}
+    - {fileID: 2800000, guid: 128216f3a20cb73458440e12e657db4b, type: 3}
+    - {fileID: 2800000, guid: 410d50fd32c308c46a95f502d3c7c2ff, type: 3}
+    - {fileID: 2800000, guid: cc056045a1782ac4a8c08bdce66d49ed, type: 3}
+    - {fileID: 2800000, guid: b04e2e83ee1283545a02e1bab08989ba, type: 3}
+    - {fileID: 2800000, guid: e24fd533463218644ae0bb81977c5e99, type: 3}
+    - {fileID: 2800000, guid: 738922d98c7b6f242bcd7f511badbef5, type: 3}
+    m_invertAlpha: 1
+    m_effectType: 2
+    m_strength: 1
+    m_rotationY: 89.63946
+    m_noiseEnabled: 0
+    m_noiseStrength: 1
+    m_noiseFalloff:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      - serializedVersion: 3
+        time: 1
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    m_noiseFractal:
+      m_enabled: 0
+      m_noiseFalloff:
+        serializedVersion: 2
+        m_Curve:
+        - serializedVersion: 3
+          time: 0
+          value: 1
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+          weightedMode: 0
+          inWeight: 0
+          outWeight: 0
+        - serializedVersion: 3
+          time: 1
+          value: 0
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+          weightedMode: 0
+          inWeight: 0
+          outWeight: 0
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+      m_noiseType: 0
+      m_strength: 1
+      m_seed: 0
+      m_octaves: 8
+      m_persistence: 0.65
+      m_frequency: 0.05
+      m_lacunarity: 1.5
+      m_amplitude: 1
+      m_offset: {x: 0, y: 0}
+      m_warp: 0
+      m_warp0: 0
+      m_damp: 0
+      m_damp0: 0
+      m_dampScale: 0
+      m_ridgedOffset: 0
