@@ -1,4 +1,4 @@
-# NeoFPS and Universal AI 2.0 Demo Level
+# NeoFPS and Blaze AI Demo Level
 
 This is a simple little game to demonstrate the integration of [NeoFPS](https://assetstore.unity.com/packages/2d/gui/icons/pixel-cursors-109256?aid=1101l866w) and [Blaze AI](https://assetstore.unity.com/packages/tools/ai/blaze-ai-engine-194525?aid=1101l866w), along with Kubold [Rifle Animset Pro](https://assetstore.unity.com/packages/3d/animations/rifle-animset-pro-15098?aid=1101l866w) and [Movement Animset Pro](https://assetstore.unity.com/packages/3d/animations/movement-animset-pro-14047?aid=1101l866w) to create a simple, but effective Shooter. 
 
