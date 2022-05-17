@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
 
-namespace WizardsCode.NeoEmeraldFPS
+namespace WizardsCode.BlazeNeoFPS
 {
     /// <summary>
     /// Marks an object as a source of a score.

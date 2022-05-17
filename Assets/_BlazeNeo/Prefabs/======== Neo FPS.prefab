@@ -134,6 +134,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_ScoreNeededForTheWin: 850
+  m_LivesAvailable: 3
   m_WinningSceneName: Won
   m_LosingSceneName: Lost
 --- !u!1 &276495029143224818

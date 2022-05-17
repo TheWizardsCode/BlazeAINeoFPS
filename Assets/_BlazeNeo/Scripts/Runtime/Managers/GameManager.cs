@@ -5,7 +5,7 @@ using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.SceneManagement;
 
-namespace WizardsCode.NeoEmeraldFPS
+namespace WizardsCode.BlazeNeoFPS
 {
     /// <summary>
     /// Manages the game state and monitors for win/lose conditions.
@@ -14,6 +14,9 @@ namespace WizardsCode.NeoEmeraldFPS
     {
         [SerializeField, Tooltip("How many enemies does the player need to kill in order to win the game.")]
         internal int m_ScoreNeededForTheWin = 1000;
+        [SerializeField, Tooltip("How many lives is the player given before they are considered to have lost the game.")]
+        internal int m_LivesAvailable = 3;
+
         [SerializeField, Tooltip("The name of the scene to load upon winning.")]
         private string m_WinningSceneName = "Win";
 
@@ -22,9 +25,9 @@ namespace WizardsCode.NeoEmeraldFPS
 
         [SerializeField, Tooltip("An event that is fired whenever the score changes. The parameter is the new score.")]
         public UnityAction<int> onScoreChanged;
-
-        int m_LivesLost = 0;
-        int m_Score = 0;
+        
+        public int livesLost { get; private set; }   
+        public int score { get; private set; }
 
         private void Awake()
         {
@@ -34,9 +37,9 @@ namespace WizardsCode.NeoEmeraldFPS
 
         internal void AddScore(int score)
         {
-            m_Score += score;
-            if (onScoreChanged != null) 
-                onScoreChanged(m_Score);
+            this.score += score;
+            if (onScoreChanged != null)
+                onScoreChanged(this.score);
         }
 
         /// <summary>
@@ -46,7 +49,7 @@ namespace WizardsCode.NeoEmeraldFPS
         {
             get
             {
-                return m_LivesLost > 3;
+                return livesLost > m_LivesAvailable;
             }
         }
 
@@ -57,7 +60,7 @@ namespace WizardsCode.NeoEmeraldFPS
         {
             get
             {
-                return m_Score >= m_ScoreNeededForTheWin;
+                return score >= m_ScoreNeededForTheWin;
             }
         }
 
@@ -77,7 +80,7 @@ namespace WizardsCode.NeoEmeraldFPS
         /// </summary>
         public void OnPlayerDeath()
         {
-            m_LivesLost++;
+            livesLost++;
         }
 
 
@@ -86,7 +89,7 @@ namespace WizardsCode.NeoEmeraldFPS
         /// </summary>
         public void OnEnemyDeath()
         {
-            m_Score++;
+            score++;
         }
     }
 }

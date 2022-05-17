@@ -3136,7 +3136,7 @@ MonoBehaviour:
   alertState:
     useAlertStateOnStart: 0
     alertOthers: 1
-    alertRadius: 20
+    alertRadius: 30
     tagsToAlert:
     - Enemy
     receiveAlertFromOthers: 1
@@ -3192,7 +3192,7 @@ MonoBehaviour:
       coverAnimationTransition: 0.25
     distanceFromEnemy: 50
     attackDistance: 40
-    alertOthersTime: 1.5
+    alertOthersTime: 0.5
     layersToIgnore:
       serializedVersion: 2
       m_Bits: 0

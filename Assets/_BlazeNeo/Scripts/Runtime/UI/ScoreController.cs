@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-namespace WizardsCode.NeoEmeraldFPS.UI
+namespace WizardsCode.BlazeNeoFPS.UI
 {
     public class ScoreController : MonoBehaviour
     {

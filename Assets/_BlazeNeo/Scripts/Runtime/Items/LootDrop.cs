@@ -2,6 +2,7 @@ using NeoFPS;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using WizardsCode.AI;
 
 namespace WizardsCode.Items.Loot
 {
@@ -10,6 +11,7 @@ namespace WizardsCode.Items.Loot
     /// </summary>
     public class LootDrop : MonoBehaviour
     {
+        #region Inspector Fields
         [SerializeField, Tooltip("A list of items that Will be dropped in this loot drop.")]
         GameObject[] m_GuaranteedItems;
         [SerializeField, Tooltip("A list of items that may be dropped in this loot drop.")]
@@ -20,7 +22,23 @@ namespace WizardsCode.Items.Loot
         Vector3 m_MinSpawnOffset = new Vector3(-0.5f, 0.5f, -0.5f);
         [SerializeField, Tooltip("The maximum spawn offset from the spawn transform (the pivot of the transform of this component).")]
         Vector3 m_MaxSpawnOffset = new Vector3(0.5f, 0.75f, 0.5f);
+        #endregion
 
+        #region Variables
+        internal static AIManager m_aiManager;
+        #endregion
+
+        #region Lifecycle Management
+        private void Start()
+        {
+            if (m_aiManager == null)
+            {
+                m_aiManager = FindObjectOfType<AIManager>();
+            }
+        }
+        #endregion
+
+        #region Events
         /// <summary>
         /// A method to call when an AI is killed. A loot drop will be created at the currently location.
         /// </summary>
@@ -36,9 +54,13 @@ namespace WizardsCode.Items.Loot
                 SpawnLoot(m_RandomItems[Random.Range(0, m_RandomItems.Length)]);
             }
         }
+        #endregion
 
+        #region Loot Spawning
         private void SpawnLoot(GameObject item)
         {
+            Debug.Log($"Loot Drop Value is currently {m_aiManager.lootValue}");
+
             Vector3 pos = m_MinSpawnOffset + (Random.value * (m_MaxSpawnOffset - m_MinSpawnOffset));
 
             // OPTIMIZATION: use a pool
@@ -53,5 +75,6 @@ namespace WizardsCode.Items.Loot
                 go.transform.position = transform.position + pos;
             }
         }
+        #endregion
     }
 }
