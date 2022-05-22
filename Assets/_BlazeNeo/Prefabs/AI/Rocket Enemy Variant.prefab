@@ -7,6 +7,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 3849496650614084380}
     m_Modifications:
+    - target: {fileID: 2205214468985690845, guid: f26add0b8561051438426890f3bd0f19, type: 3}
+      propertyPath: m_PlayOnAwake
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3643882369342148042, guid: f26add0b8561051438426890f3bd0f19, type: 3}
       propertyPath: autoFire
       value: 0
@@ -71,6 +75,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: -214.966
       objectReference: {fileID: 0}
+    - target: {fileID: 4490302565791019162, guid: f26add0b8561051438426890f3bd0f19, type: 3}
+      propertyPath: m_PlayOnAwake
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4490302565791019165, guid: f26add0b8561051438426890f3bd0f19, type: 3}
       propertyPath: m_Name
       value: Rocket Launcher
@@ -101,27 +109,27 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 757729266428322833, guid: 60825afa6ef57b9419e003c1d0b3ef36, type: 3}
       propertyPath: m_LocalScale.x
-      value: 1.4
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 757729266428322833, guid: 60825afa6ef57b9419e003c1d0b3ef36, type: 3}
       propertyPath: m_LocalScale.y
-      value: 1.4
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 757729266428322833, guid: 60825afa6ef57b9419e003c1d0b3ef36, type: 3}
       propertyPath: m_LocalScale.z
-      value: 1.4
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 757729266428322833, guid: 60825afa6ef57b9419e003c1d0b3ef36, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -4.23
+      value: -88.307014
       objectReference: {fileID: 0}
     - target: {fileID: 757729266428322833, guid: 60825afa6ef57b9419e003c1d0b3ef36, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.0000019073486
+      value: 0.659317
       objectReference: {fileID: 0}
     - target: {fileID: 757729266428322833, guid: 60825afa6ef57b9419e003c1d0b3ef36, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 15.028046
+      value: -33.040665
       objectReference: {fileID: 0}
     - target: {fileID: 757729266428322833, guid: 60825afa6ef57b9419e003c1d0b3ef36, type: 3}
       propertyPath: m_LocalRotation.w
@@ -157,12 +165,16 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 757729266428322834, guid: 60825afa6ef57b9419e003c1d0b3ef36, type: 3}
       propertyPath: m_Name
-      value: Boss Enemy Variant
+      value: Rocket Enemy Variant (3)
       objectReference: {fileID: 0}
     - target: {fileID: 757729266811389728, guid: 60825afa6ef57b9419e003c1d0b3ef36, type: 3}
       propertyPath: m_Controller
       value: 
       objectReference: {fileID: 9100000, guid: ea5a1d344e24ce7468344fc53381343d, type: 2}
+    - target: {fileID: 757729266818659554, guid: 60825afa6ef57b9419e003c1d0b3ef36, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 757729266818691506, guid: 60825afa6ef57b9419e003c1d0b3ef36, type: 3}
       propertyPath: m_Damage.x
       value: 0
@@ -233,11 +245,27 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 757729266818691517, guid: 60825afa6ef57b9419e003c1d0b3ef36, type: 3}
       propertyPath: m_Health
-      value: 200
+      value: 325
+      objectReference: {fileID: 0}
+    - target: {fileID: 757729266818691517, guid: 60825afa6ef57b9419e003c1d0b3ef36, type: 3}
+      propertyPath: m_HealthMax
+      value: 325
       objectReference: {fileID: 0}
     - target: {fileID: 757729266818691517, guid: 60825afa6ef57b9419e003c1d0b3ef36, type: 3}
       propertyPath: m_CanDamageSelf
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 757729266818691654, guid: 60825afa6ef57b9419e003c1d0b3ef36, type: 3}
+      propertyPath: hits.cancelAttackIfHit
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 757729266818691654, guid: 60825afa6ef57b9419e003c1d0b3ef36, type: 3}
+      propertyPath: attackState.attackDistance
+      value: 70
+      objectReference: {fileID: 0}
+    - target: {fileID: 757729266818691654, guid: 60825afa6ef57b9419e003c1d0b3ef36, type: 3}
+      propertyPath: attackState.alertOthersTime
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 757729266818691654, guid: 60825afa6ef57b9419e003c1d0b3ef36, type: 3}
       propertyPath: alertState.idleAnimationName
@@ -248,16 +276,24 @@ PrefabInstance:
       value: Alert Rocket Walk
       objectReference: {fileID: 0}
     - target: {fileID: 757729266818691654, guid: 60825afa6ef57b9419e003c1d0b3ef36, type: 3}
+      propertyPath: attackState.distanceFromEnemy
+      value: 75
+      objectReference: {fileID: 0}
+    - target: {fileID: 757729266818691654, guid: 60825afa6ef57b9419e003c1d0b3ef36, type: 3}
       propertyPath: attackState.idleAnimationName
       value: Idle Rocket
       objectReference: {fileID: 0}
     - target: {fileID: 757729266818691654, guid: 60825afa6ef57b9419e003c1d0b3ef36, type: 3}
       propertyPath: attackState.attackInIntervalsTime
-      value: 1.5
+      value: 1.6
       objectReference: {fileID: 0}
     - target: {fileID: 757729266818691654, guid: 60825afa6ef57b9419e003c1d0b3ef36, type: 3}
       propertyPath: attackState.attackDuration.Array.data[0]
       value: 0.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 757729266818691654, guid: 60825afa6ef57b9419e003c1d0b3ef36, type: 3}
+      propertyPath: vision.visionDuringAttackState.sightRange
+      value: 76
       objectReference: {fileID: 0}
     - target: {fileID: 757729266818691654, guid: 60825afa6ef57b9419e003c1d0b3ef36, type: 3}
       propertyPath: attackState.attackAnimations.Array.data[0]
@@ -267,9 +303,37 @@ PrefabInstance:
       propertyPath: attackState.coverShooterOptions.coverShooter
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 757729266818691654, guid: 60825afa6ef57b9419e003c1d0b3ef36, type: 3}
+      propertyPath: attackState.randomizeAttackIntervalsBetween.x
+      value: 0.9
+      objectReference: {fileID: 0}
+    - target: {fileID: 757729266818691654, guid: 60825afa6ef57b9419e003c1d0b3ef36, type: 3}
+      propertyPath: attackState.randomizeAttackIntervalsBetween.y
+      value: 1.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3516873073819609853, guid: 60825afa6ef57b9419e003c1d0b3ef36, type: 3}
+      propertyPath: m_Volume
+      value: 0.848
+      objectReference: {fileID: 0}
     - target: {fileID: 5640268066071700292, guid: 60825afa6ef57b9419e003c1d0b3ef36, type: 3}
       propertyPath: m_IsActive
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6860597318615931540, guid: 60825afa6ef57b9419e003c1d0b3ef36, type: 3}
+      propertyPath: m_Volume
+      value: 0.804
+      objectReference: {fileID: 0}
+    - target: {fileID: 8761108551582304386, guid: 60825afa6ef57b9419e003c1d0b3ef36, type: 3}
+      propertyPath: m_Volume
+      value: 0.833
+      objectReference: {fileID: 0}
+    - target: {fileID: 8878030047031848681, guid: 60825afa6ef57b9419e003c1d0b3ef36, type: 3}
+      propertyPath: m_Volume
+      value: 0.862
+      objectReference: {fileID: 0}
+    - target: {fileID: 8944143877147637435, guid: 60825afa6ef57b9419e003c1d0b3ef36, type: 3}
+      propertyPath: m_Volume
+      value: 0.841
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 60825afa6ef57b9419e003c1d0b3ef36, type: 3}

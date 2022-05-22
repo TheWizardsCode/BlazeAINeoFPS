@@ -12,7 +12,7 @@ namespace WizardsCode.UnnofficialNeoFPSExtension
     /// 
     /// Add this to your AI character and ensure that your attack animation triggers the `ShootFrame` event at the correct time. The demo animation in Blaze AI is already setup correctly.
     /// </summary>
-    public class BlazeNeoShoot : MonoBehaviour
+    public class BlazeNeoShoot : MonoBehaviour, IDamageSource
     {
         [SerializeField, Tooltip("The point of the weapon at which the muzzle flash and other effects will be spawned.")]
         Transform m_Muzzle;
@@ -29,6 +29,27 @@ namespace WizardsCode.UnnofficialNeoFPSExtension
 
         BlazeAI blaze;
         private AudioSource[] audioSources;
+
+        public DamageFilter outDamageFilter
+        {
+            get { return DamageFilter.AllDamageAllTeams; }
+            set { }
+        }
+
+        public IController controller
+        {
+            get { return null; }
+        }
+
+        public Transform damageSourceTransform
+        {
+            get { return transform; }
+        }
+
+        public string description
+        {
+            get { return name; }
+        }
 
         void Start()
         {
@@ -51,14 +72,14 @@ namespace WizardsCode.UnnofficialNeoFPSExtension
 
         public void ShotFrame()
         {
-            if (!healthManager || blaze.enemyToAttack != healthManager.gameObject)
+            if (!healthManager || (blaze.enemyToAttack && blaze.enemyToAttack != healthManager.gameObject))
             {
                 blaze.enemyToAttack.TryGetComponent<BasicHealthManager>(out healthManager);
             }
 
             if (healthManager != null)
             {
-                healthManager.AddDamage(Random.Range(m_Damage.x, m_Damage.y), true);
+                healthManager.AddDamage(Random.Range(m_Damage.x, m_Damage.y), true, this);
                 
                 if (m_MuzzleFX != null && m_Muzzle != null)
                 {

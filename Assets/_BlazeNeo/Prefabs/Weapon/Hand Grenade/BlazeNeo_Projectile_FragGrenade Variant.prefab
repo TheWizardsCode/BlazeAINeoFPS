@@ -61,3 +61,26 @@ PrefabInstance:
       objectReference: {fileID: 114048289010296272, guid: 8d8e0fc8c62883d4787a7ae70fb93f99, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d27b31cbf1c15f14797d6b1453eac7ac, type: 3}
+--- !u!1 &751928671550035535 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1006826270354138, guid: d27b31cbf1c15f14797d6b1453eac7ac, type: 3}
+  m_PrefabInstance: {fileID: 751239741648288917}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &-3002192119945254985
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 751928671550035535}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 79ba3d560ee1d4340ae05aacd42d4ce8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  agentLayers:
+    serializedVersion: 2
+    m_Bits: 1
+  distractionRadius: 40
+  passThroughColliders: 1
+  distractOnAwake: 0

@@ -49,7 +49,7 @@ namespace WizardsCode.AI
                 float winProgress = (float)manager.score / manager.m_ScoreNeededForTheWin;
                 float livesLeft = (float)manager.livesLost / manager.m_LivesAvailable;
 
-                lootValue = (winProgress + livesLeft) / 2;
+                lootValue = 1 - ((winProgress + livesLeft) / 2);
 
                 yield return new WaitForSeconds(m_UpdateFrequency);
             }

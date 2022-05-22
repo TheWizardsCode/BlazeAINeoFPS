@@ -96,7 +96,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: efce49ccb1492ce49ba3f7b6074f85ca, type: 3}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 0.738
   m_Pitch: 1
   Loop: 1
@@ -281,7 +281,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Explosion: {fileID: 114048289010296272, guid: 5dc982c5a92afcb4daebbeb20ca5ca6b, type: 3}
   m_Offset: {x: 0, y: 0, z: 0}
-  m_ExplosionDamage: 75
+  m_ExplosionDamage: 50
   m_ExplosionForce: 100
   m_TakesDamage: 5
   m_Health: 25

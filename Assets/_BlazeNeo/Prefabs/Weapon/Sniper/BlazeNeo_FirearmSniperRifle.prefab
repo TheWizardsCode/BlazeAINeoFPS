@@ -2865,9 +2865,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7e37f41b2cecd4548b4b2ece3c595790, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  distractOnAwake: 0
-  distractionRadius: 50
+  agentLayers:
+    serializedVersion: 2
+    m_Bits: 1
+  distractionRadius: 100
   passThroughColliders: 1
+  distractOnAwake: 0
 --- !u!1 &6536552010439977817
 GameObject:
   m_ObjectHideFlags: 0
@@ -4019,6 +4022,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 6531165035142762663}
     m_Modifications:
+    - target: {fileID: 4684153012571351678, guid: e2b59432c1635864d9c614996dfe4963, type: 3}
+      propertyPath: m_StartActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5278426402192003979, guid: e2b59432c1635864d9c614996dfe4963, type: 3}
       propertyPath: m_Name
       value: Optics_ScopeSniper_RenderTexture

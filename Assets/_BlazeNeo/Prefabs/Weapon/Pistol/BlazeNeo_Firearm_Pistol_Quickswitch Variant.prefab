@@ -82,5 +82,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7e37f41b2cecd4548b4b2ece3c595790, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  agentLayers:
+    serializedVersion: 2
+    m_Bits: 1
   distractionRadius: 25
   passThroughColliders: 1
+  distractOnAwake: 0
