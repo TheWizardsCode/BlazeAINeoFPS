@@ -63,6 +63,14 @@ PrefabInstance:
       propertyPath: m_PrefabStrongID
       value: -1888102029
       objectReference: {fileID: 0}
+    - target: {fileID: 114571997771832510, guid: 5586913d6e0ce934da6bed04cc353246, type: 3}
+      propertyPath: m_Volume
+      value: 0.843
+      objectReference: {fileID: 0}
+    - target: {fileID: 114625414054067056, guid: 5586913d6e0ce934da6bed04cc353246, type: 3}
+      propertyPath: m_ShotVolume
+      value: 0.583
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5586913d6e0ce934da6bed04cc353246, type: 3}
 --- !u!1 &5395296349406961627 stripped
@@ -87,4 +95,5 @@ MonoBehaviour:
     m_Bits: 1
   distractionRadius: 35
   passThroughColliders: 1
+  distractOnlyPrioritizedAgent: 0
   distractOnAwake: 0
