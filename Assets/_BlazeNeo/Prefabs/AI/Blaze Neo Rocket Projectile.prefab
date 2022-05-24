@@ -190,9 +190,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 323248439922596483}
-  - component: {fileID: 988175382482574601}
+  - component: {fileID: -8760865545737163955}
   - component: {fileID: 91128310120046435}
-  - component: {fileID: 7870026953430193671}
+  - component: {fileID: 6744754159486620449}
   - component: {fileID: -2569869635986951476}
   - component: {fileID: -695489108502478990}
   m_Layer: 0
@@ -218,7 +218,7 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &988175382482574601
+--- !u!114 &-8760865545737163955
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -227,17 +227,17 @@ MonoBehaviour:
   m_GameObject: {fileID: 4092872357349286730}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f84d8719e40fbf1469ae5d0cf8f9903e, type: 3}
+  m_Script: {fileID: 11500000, guid: b578e0a2282807e48abc46fc911b84f8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 20
-  collisionLayerMask:
+  m_Speed: 25
+  m_CollisionLayerMask:
     serializedVersion: 2
-    m_Bits: 75523073
-  rocketExplosion: {fileID: 1764654978243476, guid: a98b15aa948478849b54661e4d9a317e, type: 3}
-  projectileMesh: {fileID: 7375337548765109680}
-  inFlightAudioSource: {fileID: 136168842684345051}
-  disableOnHit: {fileID: 4361980691020798282}
+    m_Bits: 8414209
+  m_CollisionPrefab: {fileID: 1764654978243476, guid: a98b15aa948478849b54661e4d9a317e, type: 3}
+  m_ProjectileMesh: {fileID: 7375337548765109680}
+  m_DisableOnHit: {fileID: 4361980691020798282}
+  m_InFlightAudioSource: {fileID: 136168842684345051}
 --- !u!54 &91128310120046435
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -254,8 +254,8 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!135 &7870026953430193671
-SphereCollider:
+--- !u!136 &6744754159486620449
+CapsuleCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -264,8 +264,9 @@ SphereCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 0.5
+  m_Radius: 0.18
+  m_Height: 1.3
+  m_Direction: 2
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &-2569869635986951476
 MonoBehaviour:
