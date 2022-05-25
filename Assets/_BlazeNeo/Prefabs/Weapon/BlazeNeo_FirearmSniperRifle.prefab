@@ -2282,7 +2282,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_DamageType: 1
-  m_Damage: 100
+  m_Damage: 80
   m_BulletSize: 1.5
   m_ImpactForce: 50
 --- !u!114 &6567889800991868921
@@ -2868,8 +2868,9 @@ MonoBehaviour:
   agentLayers:
     serializedVersion: 2
     m_Bits: 1
-  distractionRadius: 100
+  distractionRadius: 150
   passThroughColliders: 1
+  distractOnlyPrioritizedAgent: 0
   distractOnAwake: 0
 --- !u!1 &6536552010439977817
 GameObject:
@@ -4080,7 +4081,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8826867603503034229, guid: e2b59432c1635864d9c614996dfe4963, type: 3}
       propertyPath: m_CullingMask.m_Bits
-      value: 64462387
+      value: 2211946035
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e2b59432c1635864d9c614996dfe4963, type: 3}

@@ -83,8 +83,7 @@ namespace WizardsCode.BlazeNeoFPS
         #region Lifecycle
         void Update()
         {
-            if (!FpsGameMode.inGame
-                && !HasLost)
+            if (!FpsGameMode.inGame)
             {
                 return;
             }
@@ -92,6 +91,7 @@ namespace WizardsCode.BlazeNeoFPS
             if (HasLost)
             {
                 SceneManager.LoadScene(m_LosingSceneName);
+                return;
             }
 
             m_TimeUntilExtraction -= Time.deltaTime;

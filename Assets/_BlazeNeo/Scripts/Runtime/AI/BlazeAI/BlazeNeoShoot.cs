@@ -57,21 +57,13 @@ namespace WizardsCode.UnnofficialNeoFPSExtension
             audioSources = m_SoundFX.GetComponents<AudioSource>();
         }
 
-        void Update()
-        {
-            GameObject target;
-            if (blaze.attackingCover != null)
-            {
-                target = blaze.attackingCover;
-            }
-            else
-            {
-                target = blaze.enemyToAttack;
-            }
-        }
-
         public void ShotFrame()
         {
+            if (blaze.enemyCover != null) {
+                //TODO: Add destructable cover
+                return;
+            }
+            
             if (!healthManager || (blaze.enemyToAttack && blaze.enemyToAttack != healthManager.gameObject))
             {
                 blaze.enemyToAttack.TryGetComponent<BasicHealthManager>(out healthManager);

@@ -486,11 +486,11 @@ PrefabInstance:
       objectReference: {fileID: 1206751291}
     - target: {fileID: 757729266818691506, guid: 60825afa6ef57b9419e003c1d0b3ef36, type: 3}
       propertyPath: m_Damage.x
-      value: 30
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 757729266818691506, guid: 60825afa6ef57b9419e003c1d0b3ef36, type: 3}
       propertyPath: m_Damage.y
-      value: 60
+      value: 45
       objectReference: {fileID: 0}
     - target: {fileID: 757729266818691506, guid: 60825afa6ef57b9419e003c1d0b3ef36, type: 3}
       propertyPath: m_MuzzleFX
