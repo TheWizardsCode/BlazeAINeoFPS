@@ -97,7 +97,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 275539853602644051}
-  - component: {fileID: 275539853602644052}
   m_Layer: 0
   m_Name: ======== UI
   m_TagString: Untagged
@@ -122,22 +121,6 @@ Transform:
   m_Father: {fileID: 275539852014715751}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &275539853602644052
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 275539853602644053}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ad27ff7e55f9f6342b15adacba6aab11, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_ScoreNeededForTheWin: 850
-  m_LivesAvailable: 3
-  m_WinningSceneName: Won
-  m_LosingSceneName: Lost
 --- !u!1 &276495029143224818
 GameObject:
   m_ObjectHideFlags: 0

@@ -31,7 +31,17 @@ namespace WizardsCode.UX
 
         public void OnPlayerCharacterChanged(ICharacter character)
         {
-            if (character == null) return;
+            if (playerHealthManager != null)
+            {
+                playerHealthManager.onIsAliveChanged -= OnIsAliveChaged;
+                playerHealthManager.onHealthChanged -= OnHealthChanged;
+            }
+
+            if (character == null)
+            {
+                return;
+            }
+
             playerT = character.transform;
             playerHealthManager = character.GetComponent<IHealthManager>();
             playerHealthManager.onIsAliveChanged += OnIsAliveChaged;
