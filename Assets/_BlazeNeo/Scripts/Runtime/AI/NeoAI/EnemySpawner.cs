@@ -4,11 +4,9 @@ using System.Collections.Generic;
 using WizardsCode.BackgroundAI;
 using NeoFPS;
 using System;
-using UnityEditor;
 
 namespace WizardsCode.BlazeNeoFPS
 {
-    [CanEditMultipleObjects]
     public class EnemySpawner : Spawner
     {
         int m_ActiveSpawns = 0;

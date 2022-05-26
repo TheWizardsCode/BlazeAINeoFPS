@@ -76,7 +76,7 @@ namespace WizardsCode.BlazeNeoFPS
         {
             get
             {
-                return livesLost >= m_LivesAvailable;
+                return m_TimeUntilExtraction <= 0 || livesLost >= m_LivesAvailable;
             }
         }
 

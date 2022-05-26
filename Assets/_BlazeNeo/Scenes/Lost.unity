@@ -274,7 +274,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: No more respawns left. You lose.
+  m_Text: You failed to be in the extraction zone on time.
 --- !u!222 &500655115
 CanvasRenderer:
   m_ObjectHideFlags: 0
