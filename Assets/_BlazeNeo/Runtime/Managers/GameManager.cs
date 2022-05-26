@@ -6,6 +6,9 @@ using UnityEngine.Events;
 using UnityEngine.SceneManagement;
 using WizardsCode.Managers;
 using NeoFPS;
+using UnityEngine.Playables;
+using NeoFPS.SinglePlayer;
+using TMPro;
 
 #if UNITY_EDITOR
 using UnityEditor;
@@ -18,10 +21,12 @@ namespace WizardsCode.BlazeNeoFPS
     /// </summary>
     public class GameManager : SingletonBehaviour<GameManager>, IPlayerCharacterSubscriber
     {
-
+        [Header("Mission")]
+        [SerializeField, Tooltip("The game mode for this mission.")]
+        private FpsSoloGameMinimal m_GameMode;
         [SerializeField, Tooltip("The mission currently being played.")]
         internal MissionDescriptor m_Mission;
-
+        
         [Header("Timer")]
         [SerializeField]
         AudioClip m_AudioClip5Minutes;
@@ -45,6 +50,10 @@ namespace WizardsCode.BlazeNeoFPS
         AudioClip m_AudioClip2Seconds;
         [SerializeField]
         AudioClip m_AudioClip1Second;
+
+        [Header("UI")]
+        [SerializeField, Tooltip("The UI element to turn on when we want to show the briefing.")]
+        internal RectTransform m_BriefingPanel;
 
         [Header("Game Events")]
         [SerializeField, Tooltip("An event that is fired whenever the score changes. The parameter is the new score.")]
@@ -77,22 +86,11 @@ namespace WizardsCode.BlazeNeoFPS
 
         private void InitializeMission()
         {
-            m_Mission.IsComplete = false;
-
             m_TimeRemainingUntilExtraction = m_Mission.m_MaxMissionTimeInMinutes * 60;
 
             if (m_Mission.m_KillTarget != null)
             {
-                GameObject target = Instantiate(m_Mission.m_KillTarget.gameObject);
-                target.GetComponentInChildren<BasicHealthManager>().onIsAliveChanged += OnTargetKilled;
-            }
-        }
-
-        private void OnTargetKilled(bool alive)
-        {
-            if (!alive)
-            {
-                m_Mission.IsComplete = true;
+                Instantiate(m_Mission.m_KillTarget);
             }
         }
 
@@ -127,6 +125,19 @@ namespace WizardsCode.BlazeNeoFPS
                 return;
             }
 
+            if (!IsBriefingComplete)
+            {
+                m_BriefingPanel.GetComponentInChildren<TextMeshProUGUI>().text = m_Mission.m_Description;
+                m_BriefingPanel.gameObject.SetActive(true);
+
+                if (Time.timeSinceLevelLoad > 30 || Input.GetKeyDown(KeyCode.Space))
+                {
+                    m_GameMode.Respawn(m_GameMode.player);
+                    IsBriefingComplete = true;
+                    m_BriefingPanel.gameObject.SetActive(false);
+                }
+            }
+             
             if (HasLost)
             {
                 SceneManager.LoadScene(m_Mission.m_LosingSceneName);
@@ -139,7 +150,7 @@ namespace WizardsCode.BlazeNeoFPS
             {
                 if (m_ExtractionPoint.IsPlayerInExtractionZone)
                 {
-                    if (m_Mission.IsComplete)
+                    if (m_Mission.AreTargetsNeutralized && score >= m_Mission.m_ScoreNeededForTheWin)
                     {
                         SceneManager.LoadScene(m_Mission.m_ExtractionMissionCompleteSceneName);
                     } else
@@ -225,6 +236,8 @@ namespace WizardsCode.BlazeNeoFPS
         {
             get { return m_TimeRemainingUntilExtraction; }
         }
+
+        public bool IsBriefingComplete { get; private set; }
 
         /// <summary>
         /// Make announcements relating to the time to extraction.

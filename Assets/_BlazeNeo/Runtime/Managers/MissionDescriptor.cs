@@ -1,6 +1,8 @@
 using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
+using UnityEngine.Timeline;
+using NeoFPS;
 
 namespace WizardsCode.BlazeNeoFPS
 {
@@ -33,9 +35,22 @@ namespace WizardsCode.BlazeNeoFPS
         internal string m_LosingSceneName = "Lose";
 
         [SerializeField, Tooltip("A NPC terget who must be killed for this mission to be considered complete.")]
-        internal KillTarget m_KillTarget;
+        internal BasicHealthManager m_KillTarget;
 
-        public bool IsComplete { get; internal set; }
+        [Header("Briefing")]
+        [SerializeField, Tooltip("The full description of the mission."), TextArea(3, 10)]
+        internal string m_Description;
+
+        public bool AreTargetsNeutralized { 
+            get
+            {
+                if (m_KillTarget.isAlive)
+                {
+                    return false;
+                }
+                return true;
+            }
+        }
 
     }
 }

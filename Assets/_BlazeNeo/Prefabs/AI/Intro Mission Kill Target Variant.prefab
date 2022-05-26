@@ -53,7 +53,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 757729266428322834, guid: 60825afa6ef57b9419e003c1d0b3ef36, type: 3}
       propertyPath: m_Name
-      value: Level 1 Kill Target Variant
+      value: Intro Mission Kill Target Variant
       objectReference: {fileID: 0}
     - target: {fileID: 757729266815482338, guid: 60825afa6ef57b9419e003c1d0b3ef36, type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -85,20 +85,3 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 60825afa6ef57b9419e003c1d0b3ef36, type: 3}
---- !u!1 &7243933432993495634 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 757729266428322834, guid: 60825afa6ef57b9419e003c1d0b3ef36, type: 3}
-  m_PrefabInstance: {fileID: 7927568803402587712}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &5004713913859521143
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7243933432993495634}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 966df7c5e1750ae4886eecc0b300dc24, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
