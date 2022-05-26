@@ -4,22 +4,21 @@ using System.Collections.Generic;
 using WizardsCode.BackgroundAI;
 using NeoFPS;
 using System;
+using UnityEditor;
 
 namespace WizardsCode.BlazeNeoFPS
 {
+    [CanEditMultipleObjects]
     public class EnemySpawner : Spawner
     {
         int m_ActiveSpawns = 0;
 
-        protected override void Update()
+        protected override bool ShouldSpawn()
         {
-            if (m_ActiveSpawns < m_NumberOfSpawns
-                && m_TimeOfNextSpawn <= Time.time)
-            {
-                Spawn(m_TotalSpawnedCount.ToString());
-                m_TotalSpawnedCount++;
-                m_TimeOfNextSpawn = Time.time + m_SpawnFrequency;
-            }
+            if (Player == null || (m_Player.position - transform.position).sqrMagnitude < m_MinDistanceSqr) return false;
+            if (m_ActiveSpawns >= m_NumberOfSpawns || m_TimeOfNextSpawn > Time.time) return false;
+
+            return true;
         }
 
         protected override GameObject[] Spawn(string namePostfix)
@@ -46,7 +45,6 @@ namespace WizardsCode.BlazeNeoFPS
             if (!alive)
             {
                 m_ActiveSpawns--;
-                GetComponent<BasicHealthManager>().onIsAliveChanged -= DeSpawnOnDeath;
             }
         }
     }

@@ -98,7 +98,7 @@ namespace WizardsCode.BlazeNeoFPS
 
             if (m_TimeUntilExtraction <= 0)
             {
-                if (m_ExtractionPoint.IsPlayerInExtractionZone && m_ScoreNeededForTheWin <= score)
+                if (m_ExtractionPoint.IsPlayerInExtractionZone)
                 {
                     SceneManager.LoadScene(m_WinningSceneName);
                 }
@@ -116,7 +116,7 @@ namespace WizardsCode.BlazeNeoFPS
                 currentTimeDisplayed = (int)m_TimeUntilExtraction;
                 if (onTimerChanged != null)
                 {
-                    onTimerChanged(currentTimeDisplayed);
+                    onTimerChanged(currentTimeDisplayed + 1);
                 }
             }
         }

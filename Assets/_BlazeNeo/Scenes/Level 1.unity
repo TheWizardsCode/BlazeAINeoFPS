@@ -213,12 +213,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 72751a6323da1bc4aa798844b7edd9ca, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Name: Extraction Point Defender A
+  m_SpawnerName: Spawned
   m_SpawnDefinition: {fileID: 11400000, guid: 04ee90ea6708e384ab2450051e7c9fea, type: 2}
+  m_PlayerTag: Player
+  m_MinSpawnDistance: 100
   m_SpawnsOnStart: 0
   m_NumberOfSpawns: 3
   m_Radius: 10
-  m_SpawnFrequency: 10
+  m_SpawnFrequency: 12
   onNavMesh: 1
   navMeshAreaMask: -1
 --- !u!4 &39286177
@@ -1263,8 +1265,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 72751a6323da1bc4aa798844b7edd9ca, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Name: Sniper
-  m_SpawnDefinition: {fileID: 11400000, guid: 04ee90ea6708e384ab2450051e7c9fea, type: 2}
+  m_SpawnerName: Spawned
+  m_SpawnDefinition: {fileID: 11400000, guid: b04d4cb4c84ced04e8f5bce5f673198c, type: 2}
+  m_PlayerTag: Player
+  m_MinSpawnDistance: 100
   m_SpawnsOnStart: 0
   m_NumberOfSpawns: 1
   m_Radius: 5
@@ -1916,12 +1920,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 72751a6323da1bc4aa798844b7edd9ca, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Name: Tower Defense
+  m_SpawnerName: Spawned
   m_SpawnDefinition: {fileID: 11400000, guid: 04ee90ea6708e384ab2450051e7c9fea, type: 2}
+  m_PlayerTag: Player
+  m_MinSpawnDistance: 100
   m_SpawnsOnStart: 0
   m_NumberOfSpawns: 3
   m_Radius: 10
-  m_SpawnFrequency: 10
+  m_SpawnFrequency: 12
   onNavMesh: 1
   navMeshAreaMask: -1
 --- !u!4 &128294911
@@ -2476,8 +2482,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 72751a6323da1bc4aa798844b7edd9ca, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Name: Sniper
-  m_SpawnDefinition: {fileID: 11400000, guid: 04ee90ea6708e384ab2450051e7c9fea, type: 2}
+  m_SpawnerName: Spawned
+  m_SpawnDefinition: {fileID: 11400000, guid: b04d4cb4c84ced04e8f5bce5f673198c, type: 2}
+  m_PlayerTag: Player
+  m_MinSpawnDistance: 100
   m_SpawnsOnStart: 0
   m_NumberOfSpawns: 1
   m_Radius: 5
@@ -18225,12 +18233,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 72751a6323da1bc4aa798844b7edd9ca, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Name: Extraction Point Defender B
+  m_SpawnerName: Spawned
   m_SpawnDefinition: {fileID: 11400000, guid: 04ee90ea6708e384ab2450051e7c9fea, type: 2}
+  m_PlayerTag: Player
+  m_MinSpawnDistance: 100
   m_SpawnsOnStart: 0
   m_NumberOfSpawns: 3
   m_Radius: 10
-  m_SpawnFrequency: 10
+  m_SpawnFrequency: 12
   onNavMesh: 1
   navMeshAreaMask: -1
 --- !u!4 &709547621
@@ -19647,7 +19657,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh225156
+  m_Name: pb_Mesh1063226
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -23193,7 +23203,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh225404
+  m_Name: pb_Mesh1063474
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -29494,12 +29504,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 72751a6323da1bc4aa798844b7edd9ca, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Name: Extraction Point Defender C
+  m_SpawnerName: Spawned
   m_SpawnDefinition: {fileID: 11400000, guid: 04ee90ea6708e384ab2450051e7c9fea, type: 2}
+  m_PlayerTag: Player
+  m_MinSpawnDistance: 100
   m_SpawnsOnStart: 0
   m_NumberOfSpawns: 3
   m_Radius: 10
-  m_SpawnFrequency: 10
+  m_SpawnFrequency: 12
   onNavMesh: 1
   navMeshAreaMask: -1
 --- !u!4 &1307130079
@@ -40114,61 +40126,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 60825afa6ef57b9419e003c1d0b3ef36, type: 3}
---- !u!1 &1796650366 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1295886160497833430, guid: 0b9f1a570655ce34987a8548656fd0c1, type: 3}
-  m_PrefabInstance: {fileID: 1295886159659716677}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1796650369
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1796650366}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 30da90a2b121e3247883fada29e16573, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_UpdateFrequency: 5
---- !u!114 &1796650372
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1796650366}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b9ad606a63b47bd428e5bd6041fde8bc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &1796650375
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1796650366}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5172c720ee540f444864f4eeb89b32d6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &1796650378
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1796650366}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: aa9ebce4b7e79f443a7ccb395bd23c67, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_IsPersistant: 0
 --- !u!43 &1803223046
 Mesh:
   m_ObjectHideFlags: 0
@@ -47384,20 +47341,16 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1295886160497833425, guid: 0b9f1a570655ce34987a8548656fd0c1, type: 3}
-      propertyPath: m_LosingSceneName
-      value: Lost
+      propertyPath: m_TimeUntilExtraction
+      value: 600
       objectReference: {fileID: 0}
     - target: {fileID: 1295886160497833425, guid: 0b9f1a570655ce34987a8548656fd0c1, type: 3}
       propertyPath: m_ScoreNeededForTheWin
-      value: 750
+      value: 1250
       objectReference: {fileID: 0}
     - target: {fileID: 1295886160497833430, guid: 0b9f1a570655ce34987a8548656fd0c1, type: 3}
       propertyPath: m_Name
       value: ======== Managers
-      objectReference: {fileID: 0}
-    - target: {fileID: 1295886160497833430, guid: 0b9f1a570655ce34987a8548656fd0c1, type: 3}
-      propertyPath: m_StaticEditorFlags
-      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0b9f1a570655ce34987a8548656fd0c1, type: 3}
@@ -47558,21 +47511,9 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 2273431499038019873, guid: a19ead31389373f4092d9ae155f82ed2, type: 3}
-      propertyPath: m_Radius
-      value: 0.05
-      objectReference: {fileID: 0}
-    - target: {fileID: 2273431499038019873, guid: a19ead31389373f4092d9ae155f82ed2, type: 3}
-      propertyPath: m_Center.y
-      value: -1
-      objectReference: {fileID: 0}
     - target: {fileID: 3847663610138747067, guid: a19ead31389373f4092d9ae155f82ed2, type: 3}
       propertyPath: m_RootOrder
       value: 46
-      objectReference: {fileID: 0}
-    - target: {fileID: 3847663610138747067, guid: a19ead31389373f4092d9ae155f82ed2, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 60
       objectReference: {fileID: 0}
     - target: {fileID: 3847663610138747067, guid: a19ead31389373f4092d9ae155f82ed2, type: 3}
       propertyPath: m_LocalPosition.x
