@@ -238,7 +238,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 0, y: -80}
+  m_AnchoredPosition: {x: 0, y: -132.84}
   m_SizeDelta: {x: 1200, y: 120}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!114 &500655114
@@ -274,7 +274,11 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: Congratulations you extracted safely.
+  m_Text: 'You have extracted safely, but you failed to complete your mission.
+
+
+    A
+    win of sorts.'
 --- !u!222 &500655115
 CanvasRenderer:
   m_ObjectHideFlags: 0

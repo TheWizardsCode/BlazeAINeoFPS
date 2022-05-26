@@ -18,7 +18,7 @@ namespace WizardsCode.BlazeNeoFPS.UI
         void OnEnable()
         {
             GameManager.Instance.onScoreChanged += OnScoreChanged;
-            targetScore = GameManager.Instance.m_ScoreNeededForTheWin;
+            targetScore = GameManager.Instance.m_Mission.m_ScoreNeededForTheWin;
             OnScoreChanged(0);
 
             GameManager.Instance.onTimerChanged += OnTimerChanged;
