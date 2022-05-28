@@ -1,0 +1,7 @@
+newmtl Brick_4_1k
+map_Kd E:/BlazeNeo/Assets/_BlazeNeo/Textures/Brick 4 1k/brick_4_diff_1k.jpg
+bump E:/BlazeNeo/Assets/_BlazeNeo/Textures/Brick 4 1k/brick_4_nor_gl_1k.exr
+disp E:/BlazeNeo/Assets/_BlazeNeo/Textures/Brick 4 1k/brick_4_rough_1k.exr
+Kd 1 1 1
+d 1
+

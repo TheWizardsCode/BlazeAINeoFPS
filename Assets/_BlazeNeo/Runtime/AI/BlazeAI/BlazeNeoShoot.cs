@@ -59,23 +59,33 @@ namespace WizardsCode.UnnofficialNeoFPSExtension
 
         public void ShotFrame()
         {
-            if (blaze.enemyCover != null) {
-                //TODO: Add destructable cover
-                return;
-            }
-            
-            if (!healthManager || (blaze.enemyToAttack && blaze.enemyToAttack != healthManager.gameObject))
+            float damage = 0;
+            if (blaze.enemyCover != null)
             {
-                blaze.enemyToAttack.TryGetComponent<BasicHealthManager>(out healthManager);
+                if (!healthManager || blaze.enemyCover != healthManager.gameObject)
+                {
+                    blaze.enemyCover.TryGetComponent<BasicHealthManager>(out healthManager);
+                }
+                damage = m_Damage.y * 3;
+            }
+            else if (blaze.enemyToAttack != null)
+            {
+                if (!healthManager || blaze.enemyToAttack != healthManager.gameObject)
+                {
+                    blaze.enemyToAttack.TryGetComponent<BasicHealthManager>(out healthManager);
+                }
+                damage = Random.Range(m_Damage.x, m_Damage.y);
             }
 
             if (healthManager != null)
             {
-                healthManager.AddDamage(Random.Range(m_Damage.x, m_Damage.y), true, this);
+                healthManager.AddDamage(damage, true, this);
                 
                 if (m_MuzzleFX != null && m_Muzzle != null)
                 {
-                    Instantiate(m_MuzzleFX, m_Muzzle.transform.position, m_Muzzle.transform.rotation);
+                    // TODO: use a pool for Muzzle Flash
+                    GameObject go = Instantiate(m_MuzzleFX, m_Muzzle.transform.position, m_Muzzle.transform.rotation);
+                    Destroy(go, 5);
                 }
 
                 PlayAudio();

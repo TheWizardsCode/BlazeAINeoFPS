@@ -53,7 +53,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 757729266428322834, guid: 60825afa6ef57b9419e003c1d0b3ef36, type: 3}
       propertyPath: m_Name
-      value: Intro Mission Kill Target Variant
+      value: Kivo Kinvol - Mission 1 Kill Target Variant
       objectReference: {fileID: 0}
     - target: {fileID: 757729266815482338, guid: 60825afa6ef57b9419e003c1d0b3ef36, type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -83,5 +83,101 @@ PrefabInstance:
       propertyPath: attackState.coverShooterOptions.firstSightChance
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 757729266818691517, guid: 60825afa6ef57b9419e003c1d0b3ef36, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 60825afa6ef57b9419e003c1d0b3ef36, type: 3}
+--- !u!114 &2169560539995754831 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8079371986278633231, guid: 60825afa6ef57b9419e003c1d0b3ef36, type: 3}
+  m_PrefabInstance: {fileID: 7927568803402587712}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 79ba3d560ee1d4340ae05aacd42d4ce8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &5761469663169054065 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2445661241593961265, guid: 60825afa6ef57b9419e003c1d0b3ef36, type: 3}
+  m_PrefabInstance: {fileID: 7927568803402587712}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7cac98e97762fd54697ca06f9124a66a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!1 &7243933432993495634 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 757729266428322834, guid: 60825afa6ef57b9419e003c1d0b3ef36, type: 3}
+  m_PrefabInstance: {fileID: 7927568803402587712}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &8745993732789641890
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7243933432993495634}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 05213cfaf1591a24e9b22800d9be28e9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Health: 200
+  m_HealthMax: 200
+  m_CanDamageSelf: 1
+  m_OnHealthChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnIsAliveChanged:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 8216341834546733649}
+        m_TargetAssemblyTypeName: WizardsCode.Items.Loot.LootDrop, Assembly-CSharp
+        m_MethodName: OnDropLoot
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 5761469663169054065}
+        m_TargetAssemblyTypeName: WizardsCode.NeoEmeraldFPS.ScoreSource, Assembly-CSharp
+        m_MethodName: AddScore
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 25
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 2169560539995754831}
+        m_TargetAssemblyTypeName: BlazeAIDistraction, Assembly-CSharp
+        m_MethodName: TriggerDistraction
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &8216341834546733649 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2018226773825780753, guid: 60825afa6ef57b9419e003c1d0b3ef36, type: 3}
+  m_PrefabInstance: {fileID: 7927568803402587712}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 69bffea460adcc2448f20f731db0407f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

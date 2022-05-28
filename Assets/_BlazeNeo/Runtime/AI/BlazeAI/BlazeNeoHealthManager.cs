@@ -15,7 +15,7 @@ namespace WizardsCode.UnnofficialNeoFPSExtension
 
         protected override void Awake()
         {
-            blaze = GetComponent<BlazeAI>();
+            blaze = GetComponentInChildren<BlazeAI>();
         }
 
         protected override void OnIsAliveChanged()
