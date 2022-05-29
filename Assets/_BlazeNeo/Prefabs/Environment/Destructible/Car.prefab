@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 2331066567197802192}
   - component: {fileID: 7854750625247167008}
   - component: {fileID: 7854750625247167009}
+  - component: {fileID: -488394203447094012}
   m_Layer: 0
   m_Name: Car
   m_TagString: Untagged
@@ -88,6 +89,7 @@ MonoBehaviour:
       m_Calls: []
   m_DestructionParticles: {fileID: 7343961097728468581, guid: d4df130c679ef6e4293dc9a9d7250294, type: 3}
   m_ParticalDensity: 25
+  m_ExplosiveForce: 0.89
 --- !u!65 &7854750625247167008
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -114,6 +116,22 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1.7537594, y: 1, z: 4.104992}
   m_Center: {x: 0.054966927, y: -0.39999998, z: 0.08437157}
+--- !u!208 &-488394203447094012
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5805368660869958740}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 0.75, y: 0.5, z: 2}
+  m_MoveThreshold: 0.1
+  m_Carve: 1
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 0, z: 0}
+  m_TimeToStationary: 0.5
 --- !u!1001 &4965315540119547559
 PrefabInstance:
   m_ObjectHideFlags: 0
