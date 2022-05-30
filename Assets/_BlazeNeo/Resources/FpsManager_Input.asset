@@ -1,0 +1,92 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bacec860f9509bd43a326e07400686dd, type: 3}
+  m_Name: FpsManager_Input
+  m_EditorClassIdentifier: 
+  m_InputContextInfo:
+  - name: None
+    nameInvalid: 0
+    nameNotUnique: 0
+    nameReserved: 0
+  - name: Character
+    nameInvalid: 0
+    nameNotUnique: 0
+    nameReserved: 0
+  - name: Vehicle
+    nameInvalid: 0
+    nameNotUnique: 0
+    nameReserved: 0
+  - name: Menu
+    nameInvalid: 0
+    nameNotUnique: 0
+    nameReserved: 0
+  - name: Cutscene
+    nameInvalid: 0
+    nameNotUnique: 0
+    nameReserved: 0
+  m_InputContextDirty: 0
+  m_InputContextError: 0
+  m_GamepadProfiles:
+  - m_ProfileName: Standard
+    expanded: 0
+    m_Axes: 0
+    m_ActionIDs:
+    - ed4f03a2-cf17-4aa9-90e6-c1ae71272f68
+    - cc0162db-51e5-40bd-9c4c-4690bcadb520
+    - fa97814f-b93f-4852-b968-45e5a3c5a43d
+    - ac79eaed-e152-4c5e-9467-a1a4fd377b99
+    - fba9c24e-3cfb-4601-903c-1456a75c4d07
+    - de0a01bf-793c-4eb1-a5f5-70703bbcce8a
+    - 99512a04-2083-4d62-ac9a-c56b24bd782a
+    - 153d2117-2dbf-4715-bb47-8931cdcc1900
+    - 679ba57a-3573-4c56-8a9c-9f2bfe2aa988
+    - 99fce94c-531b-44f9-bff9-1e764e215793
+    - 49e8c8fd-c411-4e3c-90ba-44b7ff869c6d
+    - 7f57b87d-d019-4c6e-b95c-dc81eb8f8e21
+    - 303a4389-ebcd-4c5b-a772-a2b67524b2ff
+    - 2542dba3-e724-4efb-be37-e439bd0047da
+  - m_ProfileName: Alternative
+    expanded: 0
+    m_Axes: 0
+    m_ActionIDs:
+    - ac79eaed-e152-4c5e-9467-a1a4fd377b99
+    - 99fce94c-531b-44f9-bff9-1e764e215793
+    - 7f57b87d-d019-4c6e-b95c-dc81eb8f8e21
+    - cc0162db-51e5-40bd-9c4c-4690bcadb520
+    - fba9c24e-3cfb-4601-903c-1456a75c4d07
+    - ed4f03a2-cf17-4aa9-90e6-c1ae71272f68
+    - de0a01bf-793c-4eb1-a5f5-70703bbcce8a
+    - fa97814f-b93f-4852-b968-45e5a3c5a43d
+    - 679ba57a-3573-4c56-8a9c-9f2bfe2aa988
+    - 99512a04-2083-4d62-ac9a-c56b24bd782a
+    - 49e8c8fd-c411-4e3c-90ba-44b7ff869c6d
+    - 153d2117-2dbf-4715-bb47-8931cdcc1900
+    - 303a4389-ebcd-4c5b-a772-a2b67524b2ff
+    - 2542dba3-e724-4efb-be37-e439bd0047da
+  - m_ProfileName: Southpaw
+    expanded: 0
+    m_Axes: 1
+    m_ActionIDs:
+    - ed4f03a2-cf17-4aa9-90e6-c1ae71272f68
+    - 99fce94c-531b-44f9-bff9-1e764e215793
+    - fa97814f-b93f-4852-b968-45e5a3c5a43d
+    - ac79eaed-e152-4c5e-9467-a1a4fd377b99
+    - fba9c24e-3cfb-4601-903c-1456a75c4d07
+    - de0a01bf-793c-4eb1-a5f5-70703bbcce8a
+    - 99512a04-2083-4d62-ac9a-c56b24bd782a
+    - 153d2117-2dbf-4715-bb47-8931cdcc1900
+    - 49e8c8fd-c411-4e3c-90ba-44b7ff869c6d
+    - 7f57b87d-d019-4c6e-b95c-dc81eb8f8e21
+    - 679ba57a-3573-4c56-8a9c-9f2bfe2aa988
+    - cc0162db-51e5-40bd-9c4c-4690bcadb520
+    - 2542dba3-e724-4efb-be37-e439bd0047da
+    - 303a4389-ebcd-4c5b-a772-a2b67524b2ff

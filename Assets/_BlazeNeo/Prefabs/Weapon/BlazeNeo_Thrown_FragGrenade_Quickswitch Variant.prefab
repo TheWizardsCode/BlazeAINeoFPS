@@ -59,5 +59,23 @@ PrefabInstance:
       propertyPath: m_SpawnedProjectile
       value: 
       objectReference: {fileID: 863258755471611419, guid: 1dcec80ba5248e64cafd3bf37ffe1634, type: 3}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 114702937930380524, guid: 07139153b9f0c764385f19b0dba4490b, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 07139153b9f0c764385f19b0dba4490b, type: 3}
+--- !u!1 &4917340790875090094 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1052510373669104, guid: 07139153b9f0c764385f19b0dba4490b, type: 3}
+  m_PrefabInstance: {fileID: 4917466961540285534}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &9110460555417793399
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4917340790875090094}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 45e15ae038e40034a8f969c71eb60166, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

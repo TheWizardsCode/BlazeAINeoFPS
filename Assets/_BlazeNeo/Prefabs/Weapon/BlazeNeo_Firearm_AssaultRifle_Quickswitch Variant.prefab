@@ -71,13 +71,27 @@ PrefabInstance:
       propertyPath: m_ShotVolume
       value: 0.583
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 114230360999357680, guid: 5586913d6e0ce934da6bed04cc353246, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 5586913d6e0ce934da6bed04cc353246, type: 3}
 --- !u!1 &5395296349406961627 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1152804995060304, guid: 5586913d6e0ce934da6bed04cc353246, type: 3}
   m_PrefabInstance: {fileID: 5394161207469198731}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &-9106461843124545484
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5395296349406961627}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8aa8396b2fcbd814288dc6466f12bbd8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_AimingKey: aiming
 --- !u!114 &3054856510352235681
 MonoBehaviour:
   m_ObjectHideFlags: 0

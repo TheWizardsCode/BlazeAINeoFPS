@@ -55,7 +55,16 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 114267448504736252, guid: c78023ecc606bf84bbc16ef3cafa093d, type: 3}
+      propertyPath: prefabGuid
+      value: 97c87d8f29dd56b46a67a4636126dab5
+      objectReference: {fileID: 0}
+    - target: {fileID: 114267448504736252, guid: c78023ecc606bf84bbc16ef3cafa093d, type: 3}
+      propertyPath: m_PrefabStrongID
+      value: 1770879702
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 114796193621549662, guid: c78023ecc606bf84bbc16ef3cafa093d, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: c78023ecc606bf84bbc16ef3cafa093d, type: 3}
 --- !u!1 &3604288191180805761 stripped
 GameObject:
@@ -79,4 +88,18 @@ MonoBehaviour:
     m_Bits: 1
   distractionRadius: 33
   passThroughColliders: 1
+  distractOnlyPrioritizedAgent: 0
   distractOnAwake: 0
+--- !u!114 &2059195257278956696
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3604288191180805761}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8aa8396b2fcbd814288dc6466f12bbd8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_AimingKey: aiming

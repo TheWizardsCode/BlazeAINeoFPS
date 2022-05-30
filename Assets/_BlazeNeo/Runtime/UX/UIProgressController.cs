@@ -41,7 +41,7 @@ namespace WizardsCode.BlazeNeoFPS.UI
             int seconds = totalSeconds % 60;
             int minutes = totalSeconds / 60;
 
-            m_TimerText.text = $"{minutes}:{seconds}";
+            m_TimerText.text = $"{minutes}:{String.Format("{0:00}", seconds)}";
         }
     }
 }

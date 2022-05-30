@@ -525,6 +525,14 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 0}
     - target: {fileID: 2569236037539599049, guid: 5c493c006040340468114af0fee1143e, type: 3}
+      propertyPath: prefabGuid
+      value: 2b1c7b4db3b8fa344a0101bf1962e30f
+      objectReference: {fileID: 0}
+    - target: {fileID: 2569236037539599049, guid: 5c493c006040340468114af0fee1143e, type: 3}
+      propertyPath: m_PrefabStrongID
+      value: 264756338
+      objectReference: {fileID: 0}
+    - target: {fileID: 2569236037539599049, guid: 5c493c006040340468114af0fee1143e, type: 3}
       propertyPath: expandOtherComponents
       value: 0
       objectReference: {fileID: 0}
@@ -532,8 +540,57 @@ PrefabInstance:
       propertyPath: m_Lens.m_SensorSize.x
       value: 1.4461942
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 2568254428320726693, guid: 5c493c006040340468114af0fee1143e, type: 3}
+    - {fileID: 2569195232337415315, guid: 5c493c006040340468114af0fee1143e, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 5c493c006040340468114af0fee1143e, type: 3}
+--- !u!1 &8188418187280766962 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2463877351335856817, guid: 5c493c006040340468114af0fee1143e, type: 3}
+  m_PrefabInstance: {fileID: 6021991721455770947}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &-8211491201451327005
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8188418187280766962}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 81e9fe4a477f9bc468312501edf3536f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_RepeatDelay: 0.25
+  m_ScrollDelay: 0.1
+--- !u!114 &512753510193743183
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8188418187280766962}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c38199fb0539f0a43bb51f00f2c031d2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_EnableDodging: 1
+  m_DodgeTimeout: 0.25
+  m_EnableChargedJump: 0
+  m_JumpChargeTime: 0.25
+  m_ToggleLean: 1
+  m_NoInputCancelsSprint: 0
+  m_JumpKey: jump
+  m_JumpChargeKey: jumpCharge
+  m_JumpHoldKey: jumpHold
+  m_CrouchKey: crouch
+  m_CrouchHoldKey: crouchHold
+  m_SprintKey: sprint
+  m_SprintHoldKey: sprintHold
+  m_DodgeLeftKey: dodgeLeft
+  m_DodgeRightKey: dodgeRight
+  m_AbilityKey: ability
 --- !u!4 &8191663484528699900 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2467070004788065471, guid: 5c493c006040340468114af0fee1143e, type: 3}

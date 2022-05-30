@@ -3400,8 +3400,8 @@ MonoBehaviour:
     m_SpawnAsChild: 0
     m_MinSpawnOffset: {x: -0.5, y: 0.5, z: -0.5}
     m_MaxSpawnOffset: {x: 0.5, y: 0.1, z: 0.5}
-    m_LootValue: 0.31
-    m_Chance: 0.386
+    m_LootValue: 0.159
+    m_Chance: 0.523
     m_StopSpawning: 1
   - m_Prefab: {fileID: 1276440111773484, guid: f15c85aab7dbfbb4f8039ae6f0bc3973, type: 3}
     m_SpawnAsChild: 0
@@ -3421,15 +3421,15 @@ MonoBehaviour:
     m_SpawnAsChild: 0
     m_MinSpawnOffset: {x: -0.5, y: 0.5, z: -0.5}
     m_MaxSpawnOffset: {x: 0.5, y: 0.1, z: 0.5}
-    m_LootValue: 0.198
+    m_LootValue: 0.123
     m_Chance: 0.174
     m_StopSpawning: 1
-  - m_Prefab: {fileID: 6586620167248010748, guid: 85bcd4bf81b521442b5ed8f7fde7fccd, type: 3}
+  - m_Prefab: {fileID: 1415952182397020, guid: 52a9994d325eac441b6c1f48178dc286, type: 3}
     m_SpawnAsChild: 0
     m_MinSpawnOffset: {x: -0.5, y: 0.5, z: -0.5}
     m_MaxSpawnOffset: {x: 0.5, y: 0.1, z: 0.5}
-    m_LootValue: 0.226
-    m_Chance: 0.178
+    m_LootValue: 0
+    m_Chance: 0.773
     m_StopSpawning: 1
 --- !u!114 &2445661241593961265
 MonoBehaviour:

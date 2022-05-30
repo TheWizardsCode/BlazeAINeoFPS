@@ -59,13 +59,27 @@ PrefabInstance:
       propertyPath: m_Explosion
       value: 
       objectReference: {fileID: 114361292132502964, guid: bb2578b9c476bb243afbc27af3a0cfb4, type: 3}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 114673989030490478, guid: 629f7d2c2a05c3b4d9df1274a2bebf8c, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 629f7d2c2a05c3b4d9df1274a2bebf8c, type: 3}
 --- !u!1 &5992980619782336253 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1152804995060304, guid: 629f7d2c2a05c3b4d9df1274a2bebf8c, type: 3}
   m_PrefabInstance: {fileID: 5994080441518587053}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &-6798279929412966920
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5992980619782336253}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8aa8396b2fcbd814288dc6466f12bbd8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_AimingKey: aiming
 --- !u!114 &416442316927856341
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -83,4 +97,5 @@ MonoBehaviour:
     m_Bits: 1
   distractionRadius: 10
   passThroughColliders: 1
+  distractOnlyPrioritizedAgent: 0
   distractOnAwake: 0

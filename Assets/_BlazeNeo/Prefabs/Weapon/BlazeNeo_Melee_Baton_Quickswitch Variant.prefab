@@ -9,7 +9,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1101792277718084, guid: 3cce2d5ec9b7af3459db9bc3dfa597a2, type: 3}
       propertyPath: m_Name
-      value: Melee_Baton_Quickswitch
+      value: BlazeNeo_Melee_Baton_Quickswitch Variant
       objectReference: {fileID: 0}
     - target: {fileID: 4224688789201030, guid: 3cce2d5ec9b7af3459db9bc3dfa597a2, type: 3}
       propertyPath: m_RootOrder
@@ -59,5 +59,31 @@ PrefabInstance:
       propertyPath: m_Damage
       value: 10
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 114916557392192034, guid: 3cce2d5ec9b7af3459db9bc3dfa597a2, type: 3}
+      propertyPath: prefabGuid
+      value: 6eb536e23d38b854e937f6618df0e9d2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114916557392192034, guid: 3cce2d5ec9b7af3459db9bc3dfa597a2, type: 3}
+      propertyPath: m_PrefabStrongID
+      value: -1399793177
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 114825094309977510, guid: 3cce2d5ec9b7af3459db9bc3dfa597a2, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 3cce2d5ec9b7af3459db9bc3dfa597a2, type: 3}
+--- !u!1 &5999731011685274880 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1101792277718084, guid: 3cce2d5ec9b7af3459db9bc3dfa597a2, type: 3}
+  m_PrefabInstance: {fileID: 5998998672496472388}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &-6674231551805084170
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5999731011685274880}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: acbb81acc59cd48418ea910ba48e5029, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
