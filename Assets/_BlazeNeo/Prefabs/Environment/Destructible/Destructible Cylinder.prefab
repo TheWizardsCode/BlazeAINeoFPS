@@ -12,8 +12,8 @@ GameObject:
   - component: {fileID: 6398481300463099569}
   - component: {fileID: 6398481300463099568}
   - component: {fileID: 6398481300463099571}
-  - component: {fileID: 6398481300463099570}
-  m_Layer: 0
+  - component: {fileID: 7223644077157380561}
+  m_Layer: 10
   m_Name: Destructible Cylinder
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -27,7 +27,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6398481300463099572}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 49.276623, y: 1.5, z: 142.0169}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -87,7 +87,8 @@ MonoBehaviour:
       m_Calls: []
   m_DestructionParticles: {fileID: 7343961097728468581, guid: d4df130c679ef6e4293dc9a9d7250294, type: 3}
   m_ParticalDensity: 25
---- !u!136 &6398481300463099570
+  m_ExplosiveForce: 1.04
+--- !u!136 &7223644077157380561
 CapsuleCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -152,12 +153,47 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7273229753382769263, guid: a2539be002ffaf84382273be090c2c27, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: -7273229753382769263, guid: a2539be002ffaf84382273be090c2c27, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -7273229753382769263, guid: a2539be002ffaf84382273be090c2c27, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: a2539be002ffaf84382273be090c2c27, type: 3}
       propertyPath: m_Name
       value: Cylindrical Obstacle
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: a2539be002ffaf84382273be090c2c27, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a2539be002ffaf84382273be090c2c27, type: 3}
+--- !u!1 &6055812104104669376 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: a2539be002ffaf84382273be090c2c27, type: 3}
+  m_PrefabInstance: {fileID: 6398481301932232081}
+  m_PrefabAsset: {fileID: 0}
+--- !u!136 &7866437493311022952
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6055812104104669376}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.8755512
+  m_Height: 2.5881958
+  m_Direction: 1
+  m_Center: {x: -0.031320572, y: -0.029125452, z: 0}
 --- !u!4 &6863839507924068986 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: a2539be002ffaf84382273be090c2c27, type: 3}

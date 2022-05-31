@@ -71,6 +71,19 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 1152804995060304, guid: fb72c1376fd1c67429a73bffedf268d3, type: 3}
   m_PrefabInstance: {fileID: 455926619476840275}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1119261693559330278
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 457078666274675971}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8aa8396b2fcbd814288dc6466f12bbd8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_AimingKey: aiming
 --- !u!114 &4436253102288604768
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -85,21 +98,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   agentLayers:
     serializedVersion: 2
-    m_Bits: 1
+    m_Bits: 134217728
   distractionRadius: 25
   passThroughColliders: 1
   distractOnlyPrioritizedAgent: 0
   distractOnAwake: 0
---- !u!114 &1119261693559330278
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 457078666274675971}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8aa8396b2fcbd814288dc6466f12bbd8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_AimingKey: aiming

@@ -106,7 +106,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   agentLayers:
     serializedVersion: 2
-    m_Bits: 1
+    m_Bits: 134217728
   distractionRadius: 35
   passThroughColliders: 1
   distractOnlyPrioritizedAgent: 0

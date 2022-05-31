@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 7534188634514853050}
   - component: {fileID: 6005632978939948372}
   - component: {fileID: 1441903733}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: Box
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -161,7 +161,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1576753879333004329}
   serializedVersion: 2
-  m_Mass: 10
+  m_Mass: 5
   m_Drag: 0
   m_AngularDrag: 0.05
   m_UseGravity: 1
@@ -185,7 +185,7 @@ GameObject:
   - component: {fileID: 8100241632272417286}
   - component: {fileID: 316078901248985056}
   - component: {fileID: 636629340}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: Box (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -330,7 +330,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1694443264366247869}
   serializedVersion: 2
-  m_Mass: 10
+  m_Mass: 5
   m_Drag: 0
   m_AngularDrag: 0.05
   m_UseGravity: 1
@@ -348,7 +348,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8379095351018859124}
   - component: {fileID: 1304402054}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Box Pile - Small
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -407,7 +407,7 @@ GameObject:
   - component: {fileID: 7555227727053481258}
   - component: {fileID: 7142283881806255911}
   - component: {fileID: 1284760120}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: Box (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -422,7 +422,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4292157563450889814}
   m_LocalRotation: {x: -0, y: -0.008680776, z: -0, w: 0.99996233}
-  m_LocalPosition: {x: 0.25500008, y: 1.5, z: -0.4989999}
+  m_LocalPosition: {x: 0.5662546, y: 1.5, z: -0.48027736}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -552,7 +552,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4292157563450889814}
   serializedVersion: 2
-  m_Mass: 10
+  m_Mass: 5
   m_Drag: 0
   m_AngularDrag: 0.05
   m_UseGravity: 1
@@ -576,7 +576,7 @@ GameObject:
   - component: {fileID: 6914425761577984538}
   - component: {fileID: 8518207939016194475}
   - component: {fileID: 1386498797}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: Box (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -721,7 +721,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4566700043810223143}
   serializedVersion: 2
-  m_Mass: 10
+  m_Mass: 5
   m_Drag: 0
   m_AngularDrag: 0.05
   m_UseGravity: 1
@@ -745,7 +745,7 @@ GameObject:
   - component: {fileID: 8048580099672826726}
   - component: {fileID: 7393533689319654454}
   - component: {fileID: 1781625398}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: Box (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -890,7 +890,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8687098501111537921}
   serializedVersion: 2
-  m_Mass: 10
+  m_Mass: 5
   m_Drag: 0
   m_AngularDrag: 0.05
   m_UseGravity: 1

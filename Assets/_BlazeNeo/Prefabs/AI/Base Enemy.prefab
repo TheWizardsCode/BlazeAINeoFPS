@@ -3258,7 +3258,7 @@ MonoBehaviour:
     alertOthersTime: 0.8
     layersToIgnore:
       serializedVersion: 2
-      m_Bits: 0
+      m_Bits: 136314882
     timeToReturnAlert: 7
     attackInIntervals: 1
     attackInIntervalsTime: 0.8
@@ -3482,9 +3482,21 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 757729266818558386}
     m_Modifications:
+    - target: {fileID: 757729265952953525, guid: 1f8c218f60e37c44192122ac6822dfed, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7303938251500604904, guid: 1f8c218f60e37c44192122ac6822dfed, type: 3}
       propertyPath: m_Name
       value: Gun
+      objectReference: {fileID: 0}
+    - target: {fileID: 7303938251500604904, guid: 1f8c218f60e37c44192122ac6822dfed, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7652893856425607081, guid: 1f8c218f60e37c44192122ac6822dfed, type: 3}
+      propertyPath: m_Layer
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7932841742156732242, guid: 1f8c218f60e37c44192122ac6822dfed, type: 3}
       propertyPath: m_RootOrder
