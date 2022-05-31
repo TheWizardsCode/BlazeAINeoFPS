@@ -19,6 +19,10 @@ namespace WizardsCode.BlazeNeoFPS
         float m_ParticalDensity = 25;
         [SerializeField, Tooltip("Explosive force. The higher this value the more the particles will move away from the center of the destructable object."), Range(0f, 10f)]
         float m_ExplosiveForce = 3;
+
+        [Header("Fall Damage")]
+        [SerializeField, Tooltip("A multiplier for fall damage. 0 means no damage will be taken.")]
+        float m_ImpactDamageMultiplier = 1;
         
 
         protected override void OnIsAliveChanged()
@@ -78,6 +82,17 @@ namespace WizardsCode.BlazeNeoFPS
                 }
             }
             base.OnIsAliveChanged();
+        }
+
+        private void OnCollisionEnter(Collision collision)
+        {
+            if (m_ImpactDamageMultiplier == 0) return;
+
+            ContactPoint contact = collision.contacts[0];
+            Vector3 normal = contact.normal;
+            Vector3 relativeVelocity = collision.relativeVelocity;
+            float damage = Vector3.Dot(normal, relativeVelocity) * m_ImpactDamageMultiplier;
+            AddDamage(damage);
         }
     }
 }

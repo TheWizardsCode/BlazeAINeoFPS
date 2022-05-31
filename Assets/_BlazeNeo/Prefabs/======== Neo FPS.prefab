@@ -679,7 +679,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 2
-    m_SensorSize: {x: 1.5227273, y: 1}
+    m_SensorSize: {x: 2.0457666, y: 1}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0
@@ -1764,7 +1764,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4917062827239374189, guid: 6d64fa866ea063042ab415b75652e880, type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4917062827239374189, guid: 6d64fa866ea063042ab415b75652e880, type: 3}
       propertyPath: m_LocalRotation.y
@@ -1790,7 +1790,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: CinemachineCameraController
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 4917062827239374191, guid: 6d64fa866ea063042ab415b75652e880, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 6d64fa866ea063042ab415b75652e880, type: 3}
 --- !u!4 &3623599097571135323 stripped
 Transform:
