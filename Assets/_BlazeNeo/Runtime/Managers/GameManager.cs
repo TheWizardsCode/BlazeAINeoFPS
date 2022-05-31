@@ -9,6 +9,7 @@ using NeoFPS;
 using UnityEngine.Playables;
 using NeoFPS.SinglePlayer;
 using TMPro;
+using UnityEngine.UI;
 
 #if UNITY_EDITOR
 using UnityEditor;
@@ -27,7 +28,7 @@ namespace WizardsCode.BlazeNeoFPS
         [SerializeField, Tooltip("The game mode for this mission.")]
         private FpsSoloGameMinimal m_NeoGame;
         [SerializeField, Tooltip("The mission currently being played.")]
-        internal MissionDescriptor m_Mission;
+        MissionDescriptor m_Mission;
         
         [Header("Timer")]
         [SerializeField]
@@ -56,6 +57,8 @@ namespace WizardsCode.BlazeNeoFPS
         [Header("UI")]
         [SerializeField, Tooltip("The name of the main menu scene used between games.")]
         internal string m_MainMenuScene = "MainMenu";
+        [SerializeField, Tooltip("The UI Cancas group to display when the player loses a life.")]
+        private CanvasGroup m_DeathCanvasGroup = null;
         [SerializeField, Tooltip("The UI element to turn on when we want to show the briefing.")]
         internal RectTransform m_BriefingPanel;
 
@@ -71,6 +74,10 @@ namespace WizardsCode.BlazeNeoFPS
         float m_TimeRemainingUntilExtraction;
         AudioSource m_AudioSource;
         GameState m_GameState = GameState.MainMenu;
+
+        public MissionDescriptor mission {
+            get { return m_Mission; } 
+        }
 
         public int livesLost { get; private set; }   
         public int score { get; private set; }
@@ -248,16 +255,6 @@ namespace WizardsCode.BlazeNeoFPS
         }
 #endregion
 
-#region Player Events
-        /// <summary>
-        /// Call this whenever the player is killed.
-        /// </summary>
-        public void OnPlayerDeath()
-        {
-            livesLost++;
-        }
-#endregion
-
 #region Enemy Events
         /// <summary>
         /// Call this whenever an enemy is killed.
@@ -280,14 +277,24 @@ namespace WizardsCode.BlazeNeoFPS
             }
             playerHealthManager = character.GetComponent<IHealthManager>();
             playerHealthManager.onIsAliveChanged += OnIsAliveChaged;
+
+            m_DeathCanvasGroup.alpha = 0f;
         }
 
         private void OnIsAliveChaged(bool alive)
         {
-            if (!alive)
+            if (alive)
+            {
+                m_DeathCanvasGroup.alpha = 0f;
+            }
+            else
             {
                 livesLost++;
+                int timeshiftsLeft = m_Mission.m_LivesAvailable - livesLost;
+                m_DeathCanvasGroup.GetComponentInChildren<Text>().text = $"{UIStrings.DeathScreeMessage.Replace("{AvailableTimeshifts}", timeshiftsLeft.ToString())}";
+                m_DeathCanvasGroup.alpha = 1f;
             }
+            gameObject.SetActive(!alive);
         }
         #endregion
 

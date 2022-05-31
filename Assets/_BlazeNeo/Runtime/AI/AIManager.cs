@@ -43,8 +43,8 @@ namespace WizardsCode.AI
 
             while (true)
             {
-                float winProgress = (float)GameManager.Instance.score / GameManager.Instance.m_Mission.m_ScoreNeededForTheWin;
-                float livesLeft = (float)GameManager.Instance.livesLost / GameManager.Instance.m_Mission.m_LivesAvailable;
+                float winProgress = (float)GameManager.Instance.score / GameManager.Instance.mission.m_ScoreNeededForTheWin;
+                float livesLeft = (float)GameManager.Instance.livesLost / GameManager.Instance.mission.m_LivesAvailable;
 
                 lootValue = 1 - ((winProgress + livesLeft) / 2);
 
