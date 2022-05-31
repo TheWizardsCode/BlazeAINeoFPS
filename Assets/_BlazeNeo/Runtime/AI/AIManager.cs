@@ -19,8 +19,6 @@ namespace WizardsCode.AI
         float m_UpdateFrequency = 5;
         #endregion
 
-        GameManager manager;
-
         #region Properties
         /// <summary>
         /// A value between 0 and 1 indicating the value of the current loot drops. 
@@ -31,7 +29,6 @@ namespace WizardsCode.AI
 
         private void Start()
         {
-            manager = GetComponent<GameManager>();
             StartCoroutine(UpdateAILootDrops());
             //TODO: GAMEPLAY: Update the Alert delay and alert distance to control the intensity of the battle
         }
@@ -46,8 +43,8 @@ namespace WizardsCode.AI
 
             while (true)
             {
-                float winProgress = (float)manager.score / manager.m_Mission.m_ScoreNeededForTheWin;
-                float livesLeft = (float)manager.livesLost / manager.m_Mission.m_LivesAvailable;
+                float winProgress = (float)GameManager.Instance.score / GameManager.Instance.m_Mission.m_ScoreNeededForTheWin;
+                float livesLeft = (float)GameManager.Instance.livesLost / GameManager.Instance.m_Mission.m_LivesAvailable;
 
                 lootValue = 1 - ((winProgress + livesLeft) / 2);
 

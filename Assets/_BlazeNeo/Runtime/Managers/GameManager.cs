@@ -21,9 +21,11 @@ namespace WizardsCode.BlazeNeoFPS
     /// </summary>
     public class GameManager : SingletonBehaviour<GameManager>, IPlayerCharacterSubscriber
     {
+        enum GameState { MainMenu = 100, InGameMenu = 150, InitializingGame = 200, InBriefing = 250, InGame = 300, LossReport = 400, ExtractionReport = 500 }
+
         [Header("Mission")]
         [SerializeField, Tooltip("The game mode for this mission.")]
-        private FpsSoloGameMinimal m_GameMode;
+        private FpsSoloGameMinimal m_NeoGame;
         [SerializeField, Tooltip("The mission currently being played.")]
         internal MissionDescriptor m_Mission;
         
@@ -52,6 +54,8 @@ namespace WizardsCode.BlazeNeoFPS
         AudioClip m_AudioClip1Second;
 
         [Header("UI")]
+        [SerializeField, Tooltip("The name of the main menu scene used between games.")]
+        internal string m_MainMenuScene = "MainMenu";
         [SerializeField, Tooltip("The UI element to turn on when we want to show the briefing.")]
         internal RectTransform m_BriefingPanel;
 
@@ -66,6 +70,7 @@ namespace WizardsCode.BlazeNeoFPS
         private IHealthManager playerHealthManager;
         float m_TimeRemainingUntilExtraction;
         AudioSource m_AudioSource;
+        GameState m_GameState = GameState.MainMenu;
 
         public int livesLost { get; private set; }   
         public int score { get; private set; }
@@ -74,24 +79,33 @@ namespace WizardsCode.BlazeNeoFPS
         {
             Cursor.lockState = CursorLockMode.Locked;
             Cursor.visible = false;
+            FpsGameMode.onInGameChanged += OnInNeoGameChanged;
+        }
 
+        private void OnInNeoGameChanged(bool inGame)
+        {
+            if (inGame)
+            {
+                m_GameState = GameState.InitializingGame;
+            }
+        }
+
+        private void InitializeMission()
+        {
             m_ExtractionPoint = FindObjectOfType<ExtractionPointController>();
 
             FindObjectOfType<SoloPlayerCharacterEventWatcher>().AttachSubscriber(this);
 
             m_AudioSource = GetComponent<AudioSource>();
 
-            InitializeMission();
-        }
-
-        private void InitializeMission()
-        {
             m_TimeRemainingUntilExtraction = m_Mission.m_MaxMissionTimeInMinutes * 60;
 
             if (m_Mission.m_KillTarget != null)
             {
                 Instantiate(m_Mission.m_KillTarget);
             }
+
+            m_GameState = GameState.InBriefing;
         }
 
         private void Start()
@@ -120,26 +134,52 @@ namespace WizardsCode.BlazeNeoFPS
         #region Lifecycle
         void Update()
         {
-            if (!FpsGameMode.inGame)
+            switch (m_GameState)
             {
-                return;
+                case GameState.MainMenu:
+                    break;
+                case GameState.InGameMenu:
+                    break;
+                case GameState.InitializingGame:
+                    InitializeMission();
+                    break;
+                case GameState.InBriefing:
+                    UpdateInBriefing();
+                    break;
+                case GameState.InGame:
+                    UpdateInGame();
+                    break;
+                case GameState.LossReport:
+                    if (SceneTimeout())
+                    {
+                        m_GameState = GameState.MainMenu;
+                        SceneManager.LoadScene(m_MainMenuScene);
+                    }
+                    break;
+                case GameState.ExtractionReport:
+                    if (SceneTimeout())
+                    {
+                        m_GameState = GameState.MainMenu;
+                        SceneManager.LoadScene(m_MainMenuScene);
+                    }
+                    break;
             }
+        }
 
-            if (!IsBriefingComplete)
-            {
-                m_BriefingPanel.GetComponentInChildren<TextMeshProUGUI>().text = m_Mission.m_Description;
-                m_BriefingPanel.gameObject.SetActive(true);
+        /// <summary>
+        /// Return true if either there is a timeout after scene load or the user indicates they want to continue.
+        /// </summary>
+        /// <returns></returns>
+        private static bool SceneTimeout(int timeout = 30)
+        {
+            return Time.timeSinceLevelLoad > timeout || Input.GetKeyDown(KeyCode.Space) || Input.GetMouseButtonDown(0) || Input.GetMouseButtonDown(1);
+        }
 
-                if (Time.timeSinceLevelLoad > 30 || Input.GetKeyDown(KeyCode.Space))
-                {
-                    m_GameMode.Respawn(m_GameMode.player);
-                    IsBriefingComplete = true;
-                    m_BriefingPanel.gameObject.SetActive(false);
-                }
-            }
-             
+        private void UpdateInGame()
+        {
             if (HasLost)
             {
+                m_GameState = GameState.LossReport;
                 SceneManager.LoadScene(m_Mission.m_LosingSceneName);
                 return;
             }
@@ -150,10 +190,12 @@ namespace WizardsCode.BlazeNeoFPS
             {
                 if (m_ExtractionPoint.IsPlayerInExtractionZone)
                 {
+                    m_GameState = GameState.ExtractionReport;
                     if (m_Mission.AreTargetsNeutralized && score >= m_Mission.m_ScoreNeededForTheWin)
                     {
                         SceneManager.LoadScene(m_Mission.m_ExtractionMissionCompleteSceneName);
-                    } else
+                    }
+                    else
                     {
                         SceneManager.LoadScene(m_Mission.m_ExtractionMissionIncompleteSceneName);
                     }
@@ -163,6 +205,7 @@ namespace WizardsCode.BlazeNeoFPS
                     if (HasLost)
                     {
                         // TODO: this loading screen says the same thing regadless of mission failure status
+                        m_GameState = GameState.LossReport;
                         SceneManager.LoadScene(m_Mission.m_LosingSceneName);
                     }
                 }
@@ -174,6 +217,23 @@ namespace WizardsCode.BlazeNeoFPS
                 {
                     onTimerChanged(currentTimeDisplayed + 1);
                     TimeAnnouncements(currentTimeDisplayed + 1);
+                }
+            }
+        }
+
+        private void UpdateInBriefing()
+        {
+            if (!IsBriefingComplete)
+            {
+                m_BriefingPanel.GetComponentInChildren<TextMeshProUGUI>().text = m_Mission.m_Description;
+                m_BriefingPanel.gameObject.SetActive(true);
+
+                if (Time.timeSinceLevelLoad > 30 || Input.GetKeyDown(KeyCode.Space))
+                {
+                    m_GameState = GameState.InGame;
+                    m_NeoGame.Respawn(m_NeoGame.player);
+                    IsBriefingComplete = true;
+                    m_BriefingPanel.gameObject.SetActive(false);
                 }
             }
         }

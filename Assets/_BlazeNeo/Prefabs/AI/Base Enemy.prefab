@@ -3335,12 +3335,12 @@ MonoBehaviour:
     distractionSearchAudiosObject: {fileID: 8025619776845108482}
     _waitBeforeTurnInterval: 0
   hits:
-    hitDuration: 0.6
+    hitDuration: 0.05
     cancelAttackIfHit: 0
     useAnimation: 1
     animationName: Stomach Hit
     animationTransition: 0.25
-    animPlayGap: -0.2
+    animPlayGap: 0.02
     useAudios: 1
     AudiosObject: {fileID: 3148608225539556413}
     canPlayAnim: 1
