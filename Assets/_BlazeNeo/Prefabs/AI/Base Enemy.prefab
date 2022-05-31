@@ -3153,9 +3153,12 @@ MonoBehaviour:
     useMovementTurning: 1
     movementTurningSensitivity: 0.6
   vision:
-    alertTags: []
+    layersToDetect:
+      serializedVersion: 2
+      m_Bits: 2245737489
     hostileTags:
     - Player
+    alertTags: []
     visionDuringNormalState:
       coneAngle: 125
       sightRange: 75
@@ -3255,10 +3258,10 @@ MonoBehaviour:
       coverAnimationTransition: 0.25
     distanceFromEnemy: 50
     attackDistance: 40
-    alertOthersTime: 0.8
-    layersToIgnore:
+    layersCheckBeforeAttacking:
       serializedVersion: 2
-      m_Bits: 136314882
+      m_Bits: 2176850945
+    alertOthersTime: 0.8
     timeToReturnAlert: 7
     attackInIntervals: 1
     attackInIntervalsTime: 0.8
