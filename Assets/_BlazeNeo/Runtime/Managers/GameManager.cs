@@ -74,6 +74,8 @@ namespace WizardsCode.BlazeNeoFPS
         float m_TimeRemainingUntilExtraction;
         AudioSource m_AudioSource;
         GameState m_GameState = GameState.MainMenu;
+        private Transform m_Player;
+        private BasicHealthManager missionTarget;
 
         public MissionDescriptor mission {
             get { return m_Mission; } 
@@ -81,6 +83,18 @@ namespace WizardsCode.BlazeNeoFPS
 
         public int livesLost { get; private set; }   
         public int score { get; private set; }
+
+        public bool AreTargetsNeutralized
+        {
+            get
+            {
+                if (missionTarget.isAlive)
+                {
+                    return false;
+                }
+                return true;
+            }
+        }
 
         private void Awake()
         {
@@ -106,10 +120,11 @@ namespace WizardsCode.BlazeNeoFPS
             m_AudioSource = GetComponent<AudioSource>();
 
             m_TimeRemainingUntilExtraction = m_Mission.m_MaxMissionTimeInMinutes * 60;
+            currentTimeDisplayed = (int)m_TimeRemainingUntilExtraction;
 
             if (m_Mission.m_KillTarget != null)
             {
-                Instantiate(m_Mission.m_KillTarget);
+                missionTarget = Instantiate(m_Mission.m_KillTarget);
             }
 
             m_GameState = GameState.InBriefing;
@@ -138,7 +153,7 @@ namespace WizardsCode.BlazeNeoFPS
             }
         }
 
-        #region Lifecycle
+#region Lifecycle
         void Update()
         {
             switch (m_GameState)
@@ -198,7 +213,7 @@ namespace WizardsCode.BlazeNeoFPS
                 if (m_ExtractionPoint.IsPlayerInExtractionZone)
                 {
                     m_GameState = GameState.ExtractionReport;
-                    if (m_Mission.AreTargetsNeutralized && score >= m_Mission.m_ScoreNeededForTheWin)
+                    if (AreTargetsNeutralized && score >= m_Mission.m_ScoreNeededForTheWin)
                     {
                         SceneManager.LoadScene(m_Mission.m_ExtractionMissionCompleteSceneName);
                     }
@@ -253,9 +268,26 @@ namespace WizardsCode.BlazeNeoFPS
             Application.Quit();
 #endif
         }
-#endregion
+        #endregion
 
-#region Enemy Events
+        #region Enemy Management
+        public void ConfigureEnemyToDefendGate(GameObject spawn) 
+        {
+            BlazeAI ai = spawn.GetComponentInChildren<BlazeAI>();
+            if (ai)
+            {
+                if (ai.waypoints.waypoints == null || ai.waypoints.waypoints.Length == 0)
+                {
+                    ai.waypoints.waypoints = new Vector3[1] { m_ExtractionPoint.transform.position };
+                    ai.waypoints.waypointsRotation = new Vector2[1] { Vector2.zero};
+                    ai.waypoints.randomize = false;
+                    ai.waypoints.loop = false;
+                }
+            }
+        }
+        #endregion
+
+        #region Enemy Events
         /// <summary>
         /// Call this whenever an enemy is killed.
         /// </summary>
@@ -266,6 +298,11 @@ namespace WizardsCode.BlazeNeoFPS
 
         public void OnPlayerCharacterChanged(ICharacter character)
         {
+            if (character != null)
+            {
+                m_Player = character.transform;
+            }
+
             if (playerHealthManager != null)
             {
                 playerHealthManager.onIsAliveChanged -= OnIsAliveChaged;

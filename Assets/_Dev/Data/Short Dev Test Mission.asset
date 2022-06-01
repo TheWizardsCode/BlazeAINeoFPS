@@ -13,10 +13,10 @@ MonoBehaviour:
   m_Name: Short Dev Test Mission
   m_EditorClassIdentifier: 
   m_MaxMissionTimeInMinutes: 1
-  m_ScoreNeededForTheWin: 1000
+  m_ScoreNeededForTheWin: 10
   m_LivesAvailable: 1
   m_ExtractionMissionCompleteSceneName: ExtractionWithMissionComplete
   m_ExtractionMissionIncompleteSceneName: ExtractionWithMissionIncomplete
   m_LosingSceneName: Lose
-  m_KillTarget: {fileID: 5004713913859521143, guid: 4cb1f586e87c81d44b8e5b5f39b3cd37, type: 3}
+  m_KillTarget: {fileID: 8745993732789641890, guid: 4cb1f586e87c81d44b8e5b5f39b3cd37, type: 3}
   m_Description: A short mission with one life to be used in the dev text environment

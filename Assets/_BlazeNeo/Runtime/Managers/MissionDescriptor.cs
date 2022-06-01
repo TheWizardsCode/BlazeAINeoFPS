@@ -41,16 +41,5 @@ namespace WizardsCode.BlazeNeoFPS
         [SerializeField, Tooltip("The full description of the mission."), TextArea(3, 10)]
         internal string m_Description;
 
-        public bool AreTargetsNeutralized { 
-            get
-            {
-                if (m_KillTarget.isAlive)
-                {
-                    return false;
-                }
-                return true;
-            }
-        }
-
     }
 }

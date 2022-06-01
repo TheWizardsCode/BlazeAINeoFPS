@@ -329,9 +329,21 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5088939673380300228}
     m_Modifications:
+    - target: {fileID: 1231786695147784, guid: 6637f6efebd5b0d4eb939586be277cd9, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1622348778083768, guid: 6637f6efebd5b0d4eb939586be277cd9, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1764654978243476, guid: 6637f6efebd5b0d4eb939586be277cd9, type: 3}
       propertyPath: m_Name
       value: RocketFire
+      objectReference: {fileID: 0}
+    - target: {fileID: 1764654978243476, guid: 6637f6efebd5b0d4eb939586be277cd9, type: 3}
+      propertyPath: m_Layer
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4232694689350172, guid: 6637f6efebd5b0d4eb939586be277cd9, type: 3}
       propertyPath: m_LocalPosition.y
