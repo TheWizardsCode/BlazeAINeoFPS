@@ -150,7 +150,8 @@ MonoBehaviour:
   m_OnIsAliveChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_DestructionParticles: {fileID: 7343961097728468581, guid: daefea69fa3e00549bd5b43e5fb26840, type: 3}
+  m_DestructionParticles:
+  - {fileID: 7343961097728468581, guid: daefea69fa3e00549bd5b43e5fb26840, type: 3}
   m_ParticalDensity: 9.9
   m_ExplosiveForce: 0
   m_ImpactDamageMultiplier: 1.2
@@ -320,7 +321,8 @@ MonoBehaviour:
   m_OnIsAliveChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_DestructionParticles: {fileID: 7343961097728468581, guid: daefea69fa3e00549bd5b43e5fb26840, type: 3}
+  m_DestructionParticles:
+  - {fileID: 7343961097728468581, guid: daefea69fa3e00549bd5b43e5fb26840, type: 3}
   m_ParticalDensity: 9.9
   m_ExplosiveForce: 0
   m_ImpactDamageMultiplier: 1.2
@@ -490,7 +492,8 @@ MonoBehaviour:
   m_OnIsAliveChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_DestructionParticles: {fileID: 7343961097728468581, guid: daefea69fa3e00549bd5b43e5fb26840, type: 3}
+  m_DestructionParticles:
+  - {fileID: 7343961097728468581, guid: daefea69fa3e00549bd5b43e5fb26840, type: 3}
   m_ParticalDensity: 9.9
   m_ExplosiveForce: 0
   m_ImpactDamageMultiplier: 1.2
@@ -660,7 +663,8 @@ MonoBehaviour:
   m_OnIsAliveChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_DestructionParticles: {fileID: 7343961097728468581, guid: daefea69fa3e00549bd5b43e5fb26840, type: 3}
+  m_DestructionParticles:
+  - {fileID: 7343961097728468581, guid: daefea69fa3e00549bd5b43e5fb26840, type: 3}
   m_ParticalDensity: 9.9
   m_ExplosiveForce: 0
   m_ImpactDamageMultiplier: 1.2
@@ -830,7 +834,8 @@ MonoBehaviour:
   m_OnIsAliveChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_DestructionParticles: {fileID: 7343961097728468581, guid: daefea69fa3e00549bd5b43e5fb26840, type: 3}
+  m_DestructionParticles:
+  - {fileID: 7343961097728468581, guid: daefea69fa3e00549bd5b43e5fb26840, type: 3}
   m_ParticalDensity: 9.9
   m_ExplosiveForce: 0
   m_ImpactDamageMultiplier: 1.2
@@ -1000,7 +1005,8 @@ MonoBehaviour:
   m_OnIsAliveChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_DestructionParticles: {fileID: 7343961097728468581, guid: daefea69fa3e00549bd5b43e5fb26840, type: 3}
+  m_DestructionParticles:
+  - {fileID: 7343961097728468581, guid: daefea69fa3e00549bd5b43e5fb26840, type: 3}
   m_ParticalDensity: 9.9
   m_ExplosiveForce: 0
   m_ImpactDamageMultiplier: 1.2
@@ -1170,7 +1176,8 @@ MonoBehaviour:
   m_OnIsAliveChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_DestructionParticles: {fileID: 7343961097728468581, guid: daefea69fa3e00549bd5b43e5fb26840, type: 3}
+  m_DestructionParticles:
+  - {fileID: 7343961097728468581, guid: daefea69fa3e00549bd5b43e5fb26840, type: 3}
   m_ParticalDensity: 9.9
   m_ExplosiveForce: 0
   m_ImpactDamageMultiplier: 1.2
@@ -1340,7 +1347,8 @@ MonoBehaviour:
   m_OnIsAliveChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_DestructionParticles: {fileID: 7343961097728468581, guid: daefea69fa3e00549bd5b43e5fb26840, type: 3}
+  m_DestructionParticles:
+  - {fileID: 7343961097728468581, guid: daefea69fa3e00549bd5b43e5fb26840, type: 3}
   m_ParticalDensity: 9.9
   m_ExplosiveForce: 0
   m_ImpactDamageMultiplier: 1.2
@@ -1510,7 +1518,8 @@ MonoBehaviour:
   m_OnIsAliveChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_DestructionParticles: {fileID: 7343961097728468581, guid: daefea69fa3e00549bd5b43e5fb26840, type: 3}
+  m_DestructionParticles:
+  - {fileID: 7343961097728468581, guid: daefea69fa3e00549bd5b43e5fb26840, type: 3}
   m_ParticalDensity: 9.9
   m_ExplosiveForce: 0
   m_ImpactDamageMultiplier: 1.2
@@ -1680,7 +1689,8 @@ MonoBehaviour:
   m_OnIsAliveChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_DestructionParticles: {fileID: 7343961097728468581, guid: daefea69fa3e00549bd5b43e5fb26840, type: 3}
+  m_DestructionParticles:
+  - {fileID: 7343961097728468581, guid: daefea69fa3e00549bd5b43e5fb26840, type: 3}
   m_ParticalDensity: 9.9
   m_ExplosiveForce: 0
   m_ImpactDamageMultiplier: 1.2
@@ -1850,7 +1860,8 @@ MonoBehaviour:
   m_OnIsAliveChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_DestructionParticles: {fileID: 7343961097728468581, guid: daefea69fa3e00549bd5b43e5fb26840, type: 3}
+  m_DestructionParticles:
+  - {fileID: 7343961097728468581, guid: daefea69fa3e00549bd5b43e5fb26840, type: 3}
   m_ParticalDensity: 9.9
   m_ExplosiveForce: 0
   m_ImpactDamageMultiplier: 1.2
@@ -2020,7 +2031,8 @@ MonoBehaviour:
   m_OnIsAliveChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_DestructionParticles: {fileID: 7343961097728468581, guid: daefea69fa3e00549bd5b43e5fb26840, type: 3}
+  m_DestructionParticles:
+  - {fileID: 7343961097728468581, guid: daefea69fa3e00549bd5b43e5fb26840, type: 3}
   m_ParticalDensity: 9.9
   m_ExplosiveForce: 0
   m_ImpactDamageMultiplier: 1.2
@@ -2190,7 +2202,8 @@ MonoBehaviour:
   m_OnIsAliveChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_DestructionParticles: {fileID: 7343961097728468581, guid: daefea69fa3e00549bd5b43e5fb26840, type: 3}
+  m_DestructionParticles:
+  - {fileID: 7343961097728468581, guid: daefea69fa3e00549bd5b43e5fb26840, type: 3}
   m_ParticalDensity: 9.9
   m_ExplosiveForce: 0
   m_ImpactDamageMultiplier: 1.2
@@ -2360,7 +2373,8 @@ MonoBehaviour:
   m_OnIsAliveChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_DestructionParticles: {fileID: 7343961097728468581, guid: daefea69fa3e00549bd5b43e5fb26840, type: 3}
+  m_DestructionParticles:
+  - {fileID: 7343961097728468581, guid: daefea69fa3e00549bd5b43e5fb26840, type: 3}
   m_ParticalDensity: 9.9
   m_ExplosiveForce: 0
   m_ImpactDamageMultiplier: 1.2
@@ -2530,7 +2544,8 @@ MonoBehaviour:
   m_OnIsAliveChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_DestructionParticles: {fileID: 7343961097728468581, guid: daefea69fa3e00549bd5b43e5fb26840, type: 3}
+  m_DestructionParticles:
+  - {fileID: 7343961097728468581, guid: daefea69fa3e00549bd5b43e5fb26840, type: 3}
   m_ParticalDensity: 9.9
   m_ExplosiveForce: 0
   m_ImpactDamageMultiplier: 1.2
@@ -2700,7 +2715,8 @@ MonoBehaviour:
   m_OnIsAliveChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_DestructionParticles: {fileID: 7343961097728468581, guid: daefea69fa3e00549bd5b43e5fb26840, type: 3}
+  m_DestructionParticles:
+  - {fileID: 7343961097728468581, guid: daefea69fa3e00549bd5b43e5fb26840, type: 3}
   m_ParticalDensity: 9.9
   m_ExplosiveForce: 0
   m_ImpactDamageMultiplier: 1.2
@@ -2870,7 +2886,8 @@ MonoBehaviour:
   m_OnIsAliveChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_DestructionParticles: {fileID: 7343961097728468581, guid: daefea69fa3e00549bd5b43e5fb26840, type: 3}
+  m_DestructionParticles:
+  - {fileID: 7343961097728468581, guid: daefea69fa3e00549bd5b43e5fb26840, type: 3}
   m_ParticalDensity: 9.9
   m_ExplosiveForce: 0
   m_ImpactDamageMultiplier: 1.2
@@ -3040,7 +3057,8 @@ MonoBehaviour:
   m_OnIsAliveChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_DestructionParticles: {fileID: 7343961097728468581, guid: daefea69fa3e00549bd5b43e5fb26840, type: 3}
+  m_DestructionParticles:
+  - {fileID: 7343961097728468581, guid: daefea69fa3e00549bd5b43e5fb26840, type: 3}
   m_ParticalDensity: 9.9
   m_ExplosiveForce: 0
   m_ImpactDamageMultiplier: 1.2
@@ -3210,7 +3228,8 @@ MonoBehaviour:
   m_OnIsAliveChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_DestructionParticles: {fileID: 7343961097728468581, guid: daefea69fa3e00549bd5b43e5fb26840, type: 3}
+  m_DestructionParticles:
+  - {fileID: 7343961097728468581, guid: daefea69fa3e00549bd5b43e5fb26840, type: 3}
   m_ParticalDensity: 9.9
   m_ExplosiveForce: 0
   m_ImpactDamageMultiplier: 1.2
@@ -3380,7 +3399,8 @@ MonoBehaviour:
   m_OnIsAliveChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_DestructionParticles: {fileID: 7343961097728468581, guid: daefea69fa3e00549bd5b43e5fb26840, type: 3}
+  m_DestructionParticles:
+  - {fileID: 7343961097728468581, guid: daefea69fa3e00549bd5b43e5fb26840, type: 3}
   m_ParticalDensity: 9.9
   m_ExplosiveForce: 0
   m_ImpactDamageMultiplier: 1.2
@@ -3550,7 +3570,8 @@ MonoBehaviour:
   m_OnIsAliveChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_DestructionParticles: {fileID: 7343961097728468581, guid: daefea69fa3e00549bd5b43e5fb26840, type: 3}
+  m_DestructionParticles:
+  - {fileID: 7343961097728468581, guid: daefea69fa3e00549bd5b43e5fb26840, type: 3}
   m_ParticalDensity: 9.9
   m_ExplosiveForce: 0
   m_ImpactDamageMultiplier: 1.2
@@ -3720,7 +3741,8 @@ MonoBehaviour:
   m_OnIsAliveChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_DestructionParticles: {fileID: 7343961097728468581, guid: daefea69fa3e00549bd5b43e5fb26840, type: 3}
+  m_DestructionParticles:
+  - {fileID: 7343961097728468581, guid: daefea69fa3e00549bd5b43e5fb26840, type: 3}
   m_ParticalDensity: 9.9
   m_ExplosiveForce: 0
   m_ImpactDamageMultiplier: 1.2
@@ -3890,7 +3912,8 @@ MonoBehaviour:
   m_OnIsAliveChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_DestructionParticles: {fileID: 7343961097728468581, guid: daefea69fa3e00549bd5b43e5fb26840, type: 3}
+  m_DestructionParticles:
+  - {fileID: 7343961097728468581, guid: daefea69fa3e00549bd5b43e5fb26840, type: 3}
   m_ParticalDensity: 9.9
   m_ExplosiveForce: 0
   m_ImpactDamageMultiplier: 1.2
@@ -4118,7 +4141,8 @@ MonoBehaviour:
   m_OnIsAliveChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_DestructionParticles: {fileID: 7343961097728468581, guid: daefea69fa3e00549bd5b43e5fb26840, type: 3}
+  m_DestructionParticles:
+  - {fileID: 7343961097728468581, guid: daefea69fa3e00549bd5b43e5fb26840, type: 3}
   m_ParticalDensity: 9.9
   m_ExplosiveForce: 0
   m_ImpactDamageMultiplier: 1.2
@@ -4288,7 +4312,8 @@ MonoBehaviour:
   m_OnIsAliveChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_DestructionParticles: {fileID: 7343961097728468581, guid: daefea69fa3e00549bd5b43e5fb26840, type: 3}
+  m_DestructionParticles:
+  - {fileID: 7343961097728468581, guid: daefea69fa3e00549bd5b43e5fb26840, type: 3}
   m_ParticalDensity: 9.9
   m_ExplosiveForce: 0
   m_ImpactDamageMultiplier: 1.2
@@ -4458,7 +4483,8 @@ MonoBehaviour:
   m_OnIsAliveChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_DestructionParticles: {fileID: 7343961097728468581, guid: daefea69fa3e00549bd5b43e5fb26840, type: 3}
+  m_DestructionParticles:
+  - {fileID: 7343961097728468581, guid: daefea69fa3e00549bd5b43e5fb26840, type: 3}
   m_ParticalDensity: 9.9
   m_ExplosiveForce: 0
   m_ImpactDamageMultiplier: 1.2
@@ -4628,7 +4654,8 @@ MonoBehaviour:
   m_OnIsAliveChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_DestructionParticles: {fileID: 7343961097728468581, guid: daefea69fa3e00549bd5b43e5fb26840, type: 3}
+  m_DestructionParticles:
+  - {fileID: 7343961097728468581, guid: daefea69fa3e00549bd5b43e5fb26840, type: 3}
   m_ParticalDensity: 9.9
   m_ExplosiveForce: 0
   m_ImpactDamageMultiplier: 1.2

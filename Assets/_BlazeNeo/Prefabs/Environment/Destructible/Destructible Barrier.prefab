@@ -150,9 +150,12 @@ MonoBehaviour:
   m_OnIsAliveChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_DestructionParticles: {fileID: 7343961097728468581, guid: d4df130c679ef6e4293dc9a9d7250294, type: 3}
+  m_DestructionParticles:
+  - {fileID: 7343961097728468581, guid: d4df130c679ef6e4293dc9a9d7250294, type: 3}
+  - {fileID: 7343961097728468581, guid: d0d4fce4cdd4ddf4798a6c50afb74622, type: 3}
   m_ParticalDensity: 20.8
   m_ExplosiveForce: 1.14
+  m_ImpactDamageMultiplier: 1
 --- !u!1 &8931721224229123467
 GameObject:
   m_ObjectHideFlags: 0

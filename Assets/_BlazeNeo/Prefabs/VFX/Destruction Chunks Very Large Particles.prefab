@@ -746,7 +746,7 @@ ParticleSystem:
     m_TextureBilinearFiltering: 0
     randomDirectionAmount: 0
     sphericalDirectionAmount: 1
-    randomPositionAmount: 5
+    randomPositionAmount: 0
     radius:
       value: 2
       mode: 0
@@ -5698,7 +5698,7 @@ ParticleSystem:
     m_TextureBilinearFiltering: 0
     randomDirectionAmount: 0
     sphericalDirectionAmount: 1
-    randomPositionAmount: 5
+    randomPositionAmount: 0
     radius:
       value: 2
       mode: 0

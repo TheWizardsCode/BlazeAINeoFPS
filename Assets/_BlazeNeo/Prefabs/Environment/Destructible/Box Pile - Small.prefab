@@ -150,7 +150,8 @@ MonoBehaviour:
   m_OnIsAliveChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_DestructionParticles: {fileID: 7343961097728468581, guid: daefea69fa3e00549bd5b43e5fb26840, type: 3}
+  m_DestructionParticles:
+  - {fileID: 7343961097728468581, guid: daefea69fa3e00549bd5b43e5fb26840, type: 3}
   m_ParticalDensity: 9.9
   m_ExplosiveForce: 0
   m_ImpactDamageMultiplier: 1.2
@@ -373,7 +374,8 @@ MonoBehaviour:
   m_OnIsAliveChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_DestructionParticles: {fileID: 7343961097728468581, guid: daefea69fa3e00549bd5b43e5fb26840, type: 3}
+  m_DestructionParticles:
+  - {fileID: 7343961097728468581, guid: daefea69fa3e00549bd5b43e5fb26840, type: 3}
   m_ParticalDensity: 9.9
   m_ExplosiveForce: 0
   m_ImpactDamageMultiplier: 1.2
@@ -543,7 +545,8 @@ MonoBehaviour:
   m_OnIsAliveChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_DestructionParticles: {fileID: 7343961097728468581, guid: daefea69fa3e00549bd5b43e5fb26840, type: 3}
+  m_DestructionParticles:
+  - {fileID: 7343961097728468581, guid: daefea69fa3e00549bd5b43e5fb26840, type: 3}
   m_ParticalDensity: 9.9
   m_ExplosiveForce: 0
   m_ImpactDamageMultiplier: 1.2
@@ -713,7 +716,8 @@ MonoBehaviour:
   m_OnIsAliveChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_DestructionParticles: {fileID: 7343961097728468581, guid: daefea69fa3e00549bd5b43e5fb26840, type: 3}
+  m_DestructionParticles:
+  - {fileID: 7343961097728468581, guid: daefea69fa3e00549bd5b43e5fb26840, type: 3}
   m_ParticalDensity: 9.9
   m_ExplosiveForce: 0
   m_ImpactDamageMultiplier: 1.2
@@ -788,6 +792,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Box
       objectReference: {fileID: 0}
+    - target: {fileID: 8805418741960618432, guid: 69af4854cc7cb6645a753473f856afb5, type: 3}
+      propertyPath: m_DestructionParticles.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8805418741960618432, guid: 69af4854cc7cb6645a753473f856afb5, type: 3}
+      propertyPath: m_DestructionParticles.Array.data[0]
+      value: 
+      objectReference: {fileID: 7343961097728468581, guid: daefea69fa3e00549bd5b43e5fb26840, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 69af4854cc7cb6645a753473f856afb5, type: 3}
 --- !u!4 &3103709802951593987 stripped

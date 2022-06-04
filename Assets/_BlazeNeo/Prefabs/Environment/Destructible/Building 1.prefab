@@ -98,9 +98,12 @@ MonoBehaviour:
   m_OnIsAliveChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_DestructionParticles: {fileID: 7343961097728468581, guid: 2455b1de6657def4889bd7908ac7af0f, type: 3}
+  m_DestructionParticles:
+  - {fileID: 7343961097728468581, guid: 2455b1de6657def4889bd7908ac7af0f, type: 3}
+  - {fileID: 7343961097728468581, guid: d0d4fce4cdd4ddf4798a6c50afb74622, type: 3}
   m_ParticalDensity: 76.2
   m_ExplosiveForce: 2.94
+  m_ImpactDamageMultiplier: 1
 --- !u!1001 &1099271213855716139
 PrefabInstance:
   m_ObjectHideFlags: 0
