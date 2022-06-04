@@ -181,7 +181,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 114849295565700730, guid: cbfc8c33122205844ab701e7067f3c6e, type: 3}
       propertyPath: m_Levels.Array.size
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 114849295565700730, guid: cbfc8c33122205844ab701e7067f3c6e, type: 3}
       propertyPath: m_Levels.Array.data[0].loadName
@@ -189,7 +189,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 114849295565700730, guid: cbfc8c33122205844ab701e7067f3c6e, type: 3}
       propertyPath: m_Levels.Array.data[1].loadName
-      value: FeatureDemo_JetpacksGuidedMissiles
+      value: Level 1
       objectReference: {fileID: 0}
     - target: {fileID: 114849295565700730, guid: cbfc8c33122205844ab701e7067f3c6e, type: 3}
       propertyPath: m_Levels.Array.data[2].loadName
@@ -230,7 +230,7 @@ PrefabInstance:
     - target: {fileID: 114849295565700730, guid: cbfc8c33122205844ab701e7067f3c6e, type: 3}
       propertyPath: m_Levels.Array.data[1].screenshot
       value: 
-      objectReference: {fileID: 21300000, guid: a8f48d4a75b9f6c41a85fcf9bf314808, type: 3}
+      objectReference: {fileID: 21300000, guid: 78d20e6ec5c81e04e8224ba44f25ad41, type: 3}
     - target: {fileID: 114849295565700730, guid: cbfc8c33122205844ab701e7067f3c6e, type: 3}
       propertyPath: m_Levels.Array.data[2].screenshot
       value: 
@@ -265,20 +265,19 @@ PrefabInstance:
       objectReference: {fileID: 21300000, guid: e1d090e6b8399864e8e4ddf467eca1d9, type: 3}
     - target: {fileID: 114849295565700730, guid: cbfc8c33122205844ab701e7067f3c6e, type: 3}
       propertyPath: m_Levels.Array.data[0].description
-      value: The one, the only... enjoy
+      value: Hunt them down.
       objectReference: {fileID: 0}
     - target: {fileID: 114849295565700730, guid: cbfc8c33122205844ab701e7067f3c6e, type: 3}
       propertyPath: m_Levels.Array.data[0].displayName
-      value: Level 1
+      value: The Hunt
       objectReference: {fileID: 0}
     - target: {fileID: 114849295565700730, guid: cbfc8c33122205844ab701e7067f3c6e, type: 3}
       propertyPath: m_Levels.Array.data[1].description
-      value: This scenes uses the jetpack states to recreate a Tribes style movement
-        setup, and adds some guided missiles on top
+      value: Bring down the central tower.
       objectReference: {fileID: 0}
     - target: {fileID: 114849295565700730, guid: cbfc8c33122205844ab701e7067f3c6e, type: 3}
       propertyPath: m_Levels.Array.data[1].displayName
-      value: Jetpacks & Guided Missiles
+      value: Demolition
       objectReference: {fileID: 0}
     - target: {fileID: 114849295565700730, guid: cbfc8c33122205844ab701e7067f3c6e, type: 3}
       propertyPath: m_Levels.Array.data[2].description

@@ -48,8 +48,8 @@ MonoBehaviour:
   m_SpawnDefinition: {fileID: 11400000, guid: 04ee90ea6708e384ab2450051e7c9fea, type: 2}
   m_PlayerTag: Player
   m_MinSpawnDistance: 100
-  m_SpawnsOnStart: 0
-  m_NumberOfSpawns: 3
+  m_SpawnsOnStart: 4
+  m_NumberOfSpawns: 4
   m_Radius: 10
   m_SpawnFrequency: 12
   onNavMesh: 1
