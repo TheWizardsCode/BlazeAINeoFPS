@@ -28,7 +28,7 @@ namespace WizardsCode.BlazeNeoFPS
         [SerializeField, Tooltip("The game mode for this mission.")]
         private FpsSoloGameMinimal m_NeoGame;
         [SerializeField, Tooltip("The mission currently being played.")]
-        MissionDescriptor m_Mission;
+        MissionDescriptor m_MissionDescriptor;
         
         [Header("Timer")]
         [SerializeField]
@@ -70,15 +70,15 @@ namespace WizardsCode.BlazeNeoFPS
 
         ExtractionPointController m_ExtractionPoint;
         private int currentTimeDisplayed;
+        private BlazeNeoMissionTarget[] m_missiontargets;
         private IHealthManager playerHealthManager;
         float m_TimeRemainingUntilExtraction;
         AudioSource m_AudioSource;
         GameState m_GameState = GameState.MainMenu;
         private Transform m_Player;
-        private BasicHealthManager missionTarget;
 
         public MissionDescriptor mission {
-            get { return m_Mission; } 
+            get { return m_MissionDescriptor; } 
         }
 
         public int livesLost { get; private set; }   
@@ -88,11 +88,20 @@ namespace WizardsCode.BlazeNeoFPS
         {
             get
             {
-                if (missionTarget.isAlive)
+                int optional = 0;
+
+                for (int i = 0; i < m_missiontargets.Length; i++)
                 {
-                    return false;
+                    if (m_missiontargets[i].IsRequired)
+                    {
+                        if (m_missiontargets[i].isAlive) return false;
+                    } else
+                    {
+                        if (!m_missiontargets[i].isAlive) optional++;
+                    }
                 }
-                return true;
+
+                return optional >= m_MissionDescriptor.minOptionalTargetsForCompletion;
             }
         }
 
@@ -119,13 +128,11 @@ namespace WizardsCode.BlazeNeoFPS
 
             m_AudioSource = GetComponent<AudioSource>();
 
-            m_TimeRemainingUntilExtraction = m_Mission.m_MaxMissionTimeInMinutes * 60;
+            m_TimeRemainingUntilExtraction = m_MissionDescriptor.m_MaxMissionTimeInMinutes * 60;
             currentTimeDisplayed = (int)m_TimeRemainingUntilExtraction;
 
-            if (m_Mission.m_KillTarget != null)
-            {
-                missionTarget = Instantiate(m_Mission.m_KillTarget);
-            }
+            //OPTIMIZATION: have these set at design time
+            m_missiontargets = FindObjectsOfType<BlazeNeoMissionTarget>(true);
 
             m_GameState = GameState.InBriefing;
         }
@@ -149,7 +156,7 @@ namespace WizardsCode.BlazeNeoFPS
         {
             get
             {
-                return m_TimeRemainingUntilExtraction <= 0 || livesLost >= m_Mission.m_LivesAvailable;
+                return m_TimeRemainingUntilExtraction <= 0 || livesLost >= m_MissionDescriptor.m_LivesAvailable;
             }
         }
 
@@ -202,7 +209,7 @@ namespace WizardsCode.BlazeNeoFPS
             if (HasLost)
             {
                 m_GameState = GameState.LossReport;
-                SceneManager.LoadScene(m_Mission.m_LosingSceneName);
+                SceneManager.LoadScene(m_MissionDescriptor.m_LosingSceneName);
                 return;
             }
 
@@ -213,13 +220,13 @@ namespace WizardsCode.BlazeNeoFPS
                 if (m_ExtractionPoint.IsPlayerInExtractionZone)
                 {
                     m_GameState = GameState.ExtractionReport;
-                    if (AreTargetsNeutralized && score >= m_Mission.m_ScoreNeededForTheWin)
+                    if (AreTargetsNeutralized && score >= m_MissionDescriptor.m_ScoreNeededForTheWin)
                     {
-                        SceneManager.LoadScene(m_Mission.m_ExtractionMissionCompleteSceneName);
+                        SceneManager.LoadScene(m_MissionDescriptor.m_ExtractionMissionCompleteSceneName);
                     }
                     else
                     {
-                        SceneManager.LoadScene(m_Mission.m_ExtractionMissionIncompleteSceneName);
+                        SceneManager.LoadScene(m_MissionDescriptor.m_ExtractionMissionIncompleteSceneName);
                     }
                 }
                 else
@@ -228,7 +235,7 @@ namespace WizardsCode.BlazeNeoFPS
                     {
                         // TODO: this loading screen says the same thing regadless of mission failure status
                         m_GameState = GameState.LossReport;
-                        SceneManager.LoadScene(m_Mission.m_LosingSceneName);
+                        SceneManager.LoadScene(m_MissionDescriptor.m_LosingSceneName);
                     }
                 }
             }
@@ -247,7 +254,7 @@ namespace WizardsCode.BlazeNeoFPS
         {
             if (!IsBriefingComplete)
             {
-                m_BriefingPanel.GetComponentInChildren<TextMeshProUGUI>().text = m_Mission.m_Description;
+                m_BriefingPanel.GetComponentInChildren<TextMeshProUGUI>().text = m_MissionDescriptor.m_Description;
                 m_BriefingPanel.gameObject.SetActive(true);
 
                 if (Time.timeSinceLevelLoad > 30 || Input.GetKeyDown(KeyCode.Space))
@@ -327,7 +334,7 @@ namespace WizardsCode.BlazeNeoFPS
             else
             {
                 livesLost++;
-                int timeshiftsLeft = m_Mission.m_LivesAvailable - livesLost;
+                int timeshiftsLeft = m_MissionDescriptor.m_LivesAvailable - livesLost;
                 m_DeathCanvasGroup.GetComponentInChildren<Text>().text = $"{UIStrings.DeathScreeMessage.Replace("{AvailableTimeshifts}", timeshiftsLeft.ToString())}";
                 m_DeathCanvasGroup.alpha = 1f;
             }

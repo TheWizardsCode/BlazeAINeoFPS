@@ -1786,6 +1786,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4917062827239374193, guid: 6d64fa866ea063042ab415b75652e880, type: 3}
+      propertyPath: prefabGuid
+      value: 6d64fa866ea063042ab415b75652e880
+      objectReference: {fileID: 0}
+    - target: {fileID: 4917062827239374193, guid: 6d64fa866ea063042ab415b75652e880, type: 3}
+      propertyPath: m_PrefabStrongID
+      value: -2091665440
+      objectReference: {fileID: 0}
     - target: {fileID: 4917062827239374195, guid: 6d64fa866ea063042ab415b75652e880, type: 3}
       propertyPath: m_Name
       value: CinemachineCameraController

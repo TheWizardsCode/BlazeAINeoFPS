@@ -22,6 +22,10 @@ namespace WizardsCode.BlazeNeoFPS
         [SerializeField, Tooltip("How many enemies does the player need to kill in order to win the game.")]
         internal int m_ScoreNeededForTheWin = 1000;
 
+        [SerializeField, Tooltip("How many optional targets need to be netralized for this mission to be considered a success?" +
+            " Targets are identified using a `BlazeNeoMissionTarget` component. Some of these will be marked as optional.")]
+        internal int minOptionalTargetsForCompletion = 0;
+
         [SerializeField, Tooltip("How many lives is the player given before they are considered to have lost the game.")]
         internal int m_LivesAvailable = 3;
 
@@ -34,12 +38,8 @@ namespace WizardsCode.BlazeNeoFPS
         [SerializeField, Tooltip("The name of the scene to load upon losing.")]
         internal string m_LosingSceneName = "Lose";
 
-        [SerializeField, Tooltip("A NPC terget who must be killed for this mission to be considered complete.")]
-        internal BasicHealthManager m_KillTarget;
-
         [Header("Briefing")]
         [SerializeField, Tooltip("The full description of the mission."), TextArea(3, 10)]
         internal string m_Description;
-
     }
 }

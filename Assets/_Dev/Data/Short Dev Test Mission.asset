@@ -14,9 +14,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_MaxMissionTimeInMinutes: 1
   m_ScoreNeededForTheWin: 10
+  minOptionalTargetsForCompletion: 1
   m_LivesAvailable: 1
   m_ExtractionMissionCompleteSceneName: ExtractionWithMissionComplete
   m_ExtractionMissionIncompleteSceneName: ExtractionWithMissionIncomplete
   m_LosingSceneName: Lose
-  m_KillTarget: {fileID: 8745993732789641890, guid: 4cb1f586e87c81d44b8e5b5f39b3cd37, type: 3}
-  m_Description: A short mission with one life to be used in the dev text environment
+  m_Description: A short mission with one life to be used in the dev environment
