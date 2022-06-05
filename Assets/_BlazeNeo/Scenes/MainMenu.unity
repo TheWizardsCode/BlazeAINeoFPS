@@ -189,7 +189,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 114849295565700730, guid: cbfc8c33122205844ab701e7067f3c6e, type: 3}
       propertyPath: m_Levels.Array.data[1].loadName
-      value: Level 1
+      value: Level 2
       objectReference: {fileID: 0}
     - target: {fileID: 114849295565700730, guid: cbfc8c33122205844ab701e7067f3c6e, type: 3}
       propertyPath: m_Levels.Array.data[2].loadName
@@ -230,7 +230,7 @@ PrefabInstance:
     - target: {fileID: 114849295565700730, guid: cbfc8c33122205844ab701e7067f3c6e, type: 3}
       propertyPath: m_Levels.Array.data[1].screenshot
       value: 
-      objectReference: {fileID: 21300000, guid: 78d20e6ec5c81e04e8224ba44f25ad41, type: 3}
+      objectReference: {fileID: 21300000, guid: 49d8c0f034f70474fba89a8e870dc60a, type: 3}
     - target: {fileID: 114849295565700730, guid: cbfc8c33122205844ab701e7067f3c6e, type: 3}
       propertyPath: m_Levels.Array.data[2].screenshot
       value: 

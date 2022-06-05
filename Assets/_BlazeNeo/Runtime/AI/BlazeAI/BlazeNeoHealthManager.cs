@@ -20,7 +20,7 @@ namespace WizardsCode.UnnofficialNeoFPSExtension
 
         protected override void OnIsAliveChanged()
         {
-            if (!isAlive)
+            if (!isAlive && blaze != null)
             {
                 blaze.Death();
             }

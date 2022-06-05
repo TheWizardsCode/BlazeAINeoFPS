@@ -10,9 +10,10 @@ namespace WizardsCode.BlazeNeoFPS
     /// Manages the health of a destructible object and will destroy the object when it "dies"
     /// </summary>
     [RequireComponent(typeof(BasicDamageHandler))]
+    [RequireComponent(typeof(BasicHealthManager))]
     [RequireComponent(typeof(SimpleSurface))]
     [RequireComponent(typeof(Collider))]
-    public class DestructibleController : BasicHealthManager
+    public class DestructibleController : MonoBehaviour
     {
         [SerializeField, Tooltip("The particle effect to replace the object with when it is destroyed. These effects will be adjusted to match the obnject being destroyed.")]
         [FormerlySerializedAs("m_DestructionParticles")]
@@ -27,13 +28,24 @@ namespace WizardsCode.BlazeNeoFPS
         [Header("Fall Damage")]
         [SerializeField, Tooltip("A multiplier for fall damage. 0 means no damage will be taken.")]
         float m_ImpactDamageMultiplier = 1;
-        
 
-        protected override void OnIsAliveChanged()
+        private BasicHealthManager m_HealthManager;
+
+        private void OnEnable()
+        {
+            m_HealthManager = GetComponent<BasicHealthManager>();
+            m_HealthManager.onIsAliveChanged += OnIsAliveChanged;
+        }
+
+        private void OnDisable()
+        {
+            m_HealthManager.onIsAliveChanged -= OnIsAliveChanged;
+        }
+
+        protected void OnIsAliveChanged(bool isAlive)
         {
             if (!isAlive)
             {
-
                 if (m_ScaledDestructionParticles != null)
                 {
                     //OPTIMIZATION: cache on start
@@ -109,7 +121,6 @@ namespace WizardsCode.BlazeNeoFPS
 
                 Destroy(gameObject, 15);
             }
-            base.OnIsAliveChanged();
         }
 
         private void OnCollisionEnter(Collision collision)
@@ -120,7 +131,7 @@ namespace WizardsCode.BlazeNeoFPS
             Vector3 normal = contact.normal;
             Vector3 relativeVelocity = collision.relativeVelocity;
             float damage = Vector3.Dot(normal, relativeVelocity) * m_ImpactDamageMultiplier;
-            AddDamage(damage);
+            m_HealthManager.AddDamage(damage);
         }
     }
 }

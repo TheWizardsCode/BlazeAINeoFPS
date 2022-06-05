@@ -261,6 +261,38 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3820133847944118275, guid: 5a0f794be7b57f044b9141f7f4a72d09, type: 3}
+      propertyPath: m_ImpactDamageMultiplier
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 3820133848248084338, guid: 5a0f794be7b57f044b9141f7f4a72d09, type: 3}
+      propertyPath: m_ImpactDamageMultiplier
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 3820133848257805396, guid: 5a0f794be7b57f044b9141f7f4a72d09, type: 3}
+      propertyPath: m_ImpactDamageMultiplier
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 3820133848351679123, guid: 5a0f794be7b57f044b9141f7f4a72d09, type: 3}
+      propertyPath: m_ImpactDamageMultiplier
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 3820133848481804135, guid: 5a0f794be7b57f044b9141f7f4a72d09, type: 3}
+      propertyPath: m_ImpactDamageMultiplier
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 3820133848487765746, guid: 5a0f794be7b57f044b9141f7f4a72d09, type: 3}
+      propertyPath: m_ImpactDamageMultiplier
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 3820133848537806576, guid: 5a0f794be7b57f044b9141f7f4a72d09, type: 3}
+      propertyPath: m_ImpactDamageMultiplier
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 3820133848959575385, guid: 5a0f794be7b57f044b9141f7f4a72d09, type: 3}
+      propertyPath: m_ImpactDamageMultiplier
+      value: 50
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5a0f794be7b57f044b9141f7f4a72d09, type: 3}
 --- !u!1001 &318359895
@@ -1384,6 +1416,10 @@ PrefabInstance:
       propertyPath: m_DeathCanvasGroup
       value: 
       objectReference: {fileID: 1862266096}
+    - target: {fileID: 3448883656322169336, guid: f4f86fd4ced8ac242a9b5de4c439dc83, type: 3}
+      propertyPath: m_MissionDescriptor
+      value: 
+      objectReference: {fileID: 11400000, guid: 7a1df4186b4ae0143a98cf4184eb8494, type: 2}
     - target: {fileID: 3448883656322169337, guid: f4f86fd4ced8ac242a9b5de4c439dc83, type: 3}
       propertyPath: m_RootOrder
       value: 10
