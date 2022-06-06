@@ -280,7 +280,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c3c88d85d85c36f4eae45d6b33b10c42, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Explosion: {fileID: 114048289010296272, guid: 5dc982c5a92afcb4daebbeb20ca5ca6b, type: 3}
+  m_Explosion: {fileID: 114048289010296272, guid: d75177cc7fcc15b4c9b9646ae60c704a, type: 3}
   m_Offset: {x: 0, y: 0, z: 0}
   m_ExplosionDamage: 50
   m_ExplosionForce: 100

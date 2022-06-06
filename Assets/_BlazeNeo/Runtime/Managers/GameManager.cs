@@ -285,10 +285,7 @@ namespace WizardsCode.BlazeNeoFPS
             {
                 if (ai.waypoints.waypoints == null || ai.waypoints.waypoints.Length == 0)
                 {
-                    ai.waypoints.waypoints = new Vector3[1] { m_ExtractionPoint.transform.position };
-                    ai.waypoints.waypointsRotation = new Vector2[1] { Vector2.zero};
-                    ai.waypoints.randomize = false;
-                    ai.waypoints.loop = false;
+                    ai.CallAgentToLocation(m_ExtractionPoint.transform.position);
                 }
             }
         }

@@ -368,8 +368,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1da38ad16d4353e46be3e85aa8052c58, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_NearDistance: 70
-  m_FarDistance: 110
+  m_NearDistance: 100
+  m_FarDistance: 130
 --- !u!1 &757729267074297267
 GameObject:
   m_ObjectHideFlags: 0
@@ -3170,7 +3170,10 @@ MonoBehaviour:
   vision:
     layersToDetect:
       serializedVersion: 2
-      m_Bits: 2245737489
+      m_Bits: 9216
+    hostileAndAlertLayers:
+      serializedVersion: 2
+      m_Bits: 8192
     hostileTags:
     - Player
     alertTags: []
@@ -3182,7 +3185,7 @@ MonoBehaviour:
       sightRange: 100
     visionDuringAttackState:
       coneAngle: 360
-      sightRange: 65
+      sightRange: 80
     sightLevel: 2
     maxSightLevel: 18.46
     head: {fileID: 0}
@@ -3216,11 +3219,6 @@ MonoBehaviour:
     playAudioEvery: {x: 40, y: 70}
   alertState:
     useAlertStateOnStart: 0
-    alertOthers: 1
-    alertRadius: 25
-    tagsToAlert:
-    - Enemy
-    receiveAlertFromOthers: 1
     moveSpeed: 3.5
     rotationSpeed: 2.5
     waitTime: 5
@@ -3254,17 +3252,17 @@ MonoBehaviour:
       coverShooter: 1
       coverLayers:
         serializedVersion: 2
-        m_Bits: 1025
+        m_Bits: 1024
       hideSensitivity: -0.25
-      searchDistance: 15
+      searchDistance: 30
       minObstacleHeight: 0.5
-      firstSightChance: 2
+      firstSightChance: 1
       coverBlownState: 2
-      attackEnemyCover: 0
+      attackEnemyCover: 2
       coverAnimations:
         highCoverHeight: 2
         highCoverAnimation: Cover Idle
-        lowCoverHeight: 1.4
+        lowCoverHeight: 0.95
         lowCoverAnimation: Low Cover Idle
         rotateToNormal: 1
         useScripts: 0
@@ -3275,8 +3273,14 @@ MonoBehaviour:
     attackDistance: 40
     layersCheckBeforeAttacking:
       serializedVersion: 2
-      m_Bits: 2176850945
-    alertOthersTime: 0.8
+      m_Bits: 1025
+    callOthers: 1
+    callRadius: 10
+    agentLayersToCall:
+      serializedVersion: 2
+      m_Bits: 4294967295
+    callOthersTime: 2
+    receiveCallFromOthers: 1
     timeToReturnAlert: 7
     attackInIntervals: 1
     attackInIntervalsTime: 0.8
@@ -3351,7 +3355,6 @@ MonoBehaviour:
     distractedAudiosObject: {fileID: 639940122430445445}
     playDistractionSearchAudio: 1
     distractionSearchAudiosObject: {fileID: 8025619776845108482}
-    _waitBeforeTurnInterval: 0
   hits:
     hitDuration: 0.05
     cancelAttackIfHit: 0

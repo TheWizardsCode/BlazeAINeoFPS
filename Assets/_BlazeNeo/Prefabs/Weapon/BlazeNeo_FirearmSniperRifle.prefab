@@ -2062,7 +2062,7 @@ GameObject:
   - component: {fileID: 6569318637397186405}
   - component: {fileID: 8292312582678481563}
   - component: {fileID: -5473711100930342}
-  - component: {fileID: -8950923222857418714}
+  - component: {fileID: -5101393956296682141}
   m_Layer: 0
   m_Name: BlazeNeo_FirearmSniperRifle
   m_TagString: Untagged
@@ -2859,7 +2859,7 @@ MonoBehaviour:
   passThroughColliders: 1
   distractOnlyPrioritizedAgent: 0
   distractOnAwake: 0
---- !u!114 &-8950923222857418714
+--- !u!114 &-5101393956296682141
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2868,9 +2868,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 6536548838208586599}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 79a733a4fef0d8c48a532c235ddad692, type: 3}
+  m_Script: {fileID: 11500000, guid: 8aa8396b2fcbd814288dc6466f12bbd8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_AimingKey: aiming
 --- !u!1 &6536552010439977817
 GameObject:
   m_ObjectHideFlags: 0
