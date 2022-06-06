@@ -37,7 +37,7 @@ namespace WizardsCode.Optimization
                 return m_ProximityTarget; 
             }
         }
-        private void Start()
+        internal virtual void Start()
         {
             StartCoroutine(EvalauteCo());
         }
