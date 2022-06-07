@@ -2,6 +2,7 @@ using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
+using System;
 
 namespace WizardsCode.Optimization
 {
@@ -15,7 +16,7 @@ namespace WizardsCode.Optimization
     /// Objects are split into "distance bands" with the closest being validated most frequently and the furthest
     /// being validated least frequently.
     /// 
-    /// OPTIMIZATION: This code could be optimized further by using `CullingGroups`
+    /// OPTIMIZATION: This code might be further optimized by using `CullingGroups`
     /// </summary>
     public class ProximityActivationManager : MonoBehaviour
     {
@@ -29,7 +30,7 @@ namespace WizardsCode.Optimization
 
         HashSet<ProximityRegistration> m_FrequentlyManagedObjects = new HashSet<ProximityRegistration>();
         HashSet<ProximityRegistration> m_MidFrequencyManagedObjects = new HashSet<ProximityRegistration>();
-        HashSet<ProximityRegistration> m_InfrequentManagedObjects = new HashSet<ProximityRegistration>();
+        HashSet<ProximityRegistration> m_InfrequentlyManagedObjects = new HashSet<ProximityRegistration>();
 
         Transform ProximityTarget
         {
@@ -41,10 +42,26 @@ namespace WizardsCode.Optimization
         {
             StartCoroutine(EvalauteCo());
         }
-        internal void Add(ProximityRegistration obj)
+
+        /// <summary>
+        /// Register an object with this proximity manager. 
+        /// It will be enabled and disabled based on distance and schedule.
+        /// </summary>
+        /// <param name="obj"></param>
+        internal void Register(ProximityRegistration obj)
         {
             obj.Disable();
             m_FrequentlyManagedObjects.Add(obj);
+        }
+
+        /// <summary>
+        /// Unregister an object with this proximity manager. 
+        /// It will no longer be enabled and disabled based on distance and schedule, but will instead maintain its current state.
+        /// </summary>
+        /// <param name="obj"></param>
+        internal void Unregister(ProximityRegistration obj)
+        {
+            m_FrequentlyManagedObjects.Remove(obj);
         }
 
         private IEnumerator EvalauteCo()
@@ -58,7 +75,7 @@ namespace WizardsCode.Optimization
                 EvaluateAll(m_MidFrequencyManagedObjects);
                 yield return new WaitForSeconds(m_TickFrequency);
 
-                EvaluateAll(m_FrequentlyManagedObjects);
+                EvaluateAll(m_InfrequentlyManagedObjects);
                 yield return new WaitForSeconds(m_TickFrequency);
 
                 // Second cycle check only mid and near
@@ -98,10 +115,10 @@ namespace WizardsCode.Optimization
             }
             else if (obj.gameObject.activeInHierarchy && distance > obj.FarDistanceSqr)
             {
-                if (currentSet != null && currentSet != m_InfrequentManagedObjects)
+                if (currentSet != null && currentSet != m_InfrequentlyManagedObjects)
                 {
                     currentSet.Remove(obj);
-                    m_InfrequentManagedObjects.Add(obj);
+                    m_InfrequentlyManagedObjects.Add(obj);
                 }
                 obj.Disable();
             }
@@ -114,5 +131,15 @@ namespace WizardsCode.Optimization
                 }
             }
         }
+
+        #region Obsolete
+
+
+        [Obsolete("Used `Register(ProximityRegistration obj)` instead")]
+        internal void Add(ProximityRegistration obj)
+        {
+            Register(obj);
+        }
+        #endregion
     }
 }

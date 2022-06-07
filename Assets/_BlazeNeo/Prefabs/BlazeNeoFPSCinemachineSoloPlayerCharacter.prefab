@@ -536,6 +536,10 @@ PrefabInstance:
       propertyPath: expandOtherComponents
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2570000364285042021, guid: 5c493c006040340468114af0fee1143e, type: 3}
+      propertyPath: m_DepenetrationMask.m_Bits
+      value: 4171381465
+      objectReference: {fileID: 0}
     - target: {fileID: 2969047308846445896, guid: 5c493c006040340468114af0fee1143e, type: 3}
       propertyPath: m_Lens.m_SensorSize.x
       value: 1.4461942

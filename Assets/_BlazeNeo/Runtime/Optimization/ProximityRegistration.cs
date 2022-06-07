@@ -36,12 +36,24 @@ namespace WizardsCode.Optimization
             get; private set;
         }
 
+        private ProximityActivationManager manager;
+
         /// <summary>
         /// Indicates whether this object has been disabled due to proximity to the target or not.
         /// </summary>
         public bool DisabledByProximity
         {
             get; private set;
+        }
+
+        public virtual void Unregister()
+        {
+            if (manager) manager.Unregister(this);
+        }
+
+        public virtual void Register()
+        {
+            if (manager) manager.Register(this);
         }
 
         /// <summary>
@@ -61,14 +73,15 @@ namespace WizardsCode.Optimization
             DisabledByProximity = false;
             gameObject.SetActive(true);
         }
+
         private void Awake()
         {
             NearDistanceSqr = m_NearDistance * m_NearDistance;
             FarDistanceSqr = m_FarDistance * m_FarDistance;
 
             //OPTIMIZATION: make the ProximityActivationManager a singleton
-            ProximityActivationManager manager = GameObject.FindObjectOfType<ProximityActivationManager>();
-            if (manager) manager.Add(this);
+            manager = GameObject.FindObjectOfType<ProximityActivationManager>();
+            Register();
         }
     }
 }
