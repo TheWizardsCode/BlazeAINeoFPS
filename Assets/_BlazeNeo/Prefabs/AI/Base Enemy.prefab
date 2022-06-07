@@ -331,7 +331,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 757729266428322833}
-  - component: {fileID: 3548108600661552587}
+  - component: {fileID: 3185068018038663004}
   m_Layer: 27
   m_Name: Base Enemy
   m_TagString: Untagged
@@ -356,7 +356,7 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &3548108600661552587
+--- !u!114 &3185068018038663004
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -365,10 +365,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 757729266428322834}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1da38ad16d4353e46be3e85aa8052c58, type: 3}
+  m_Script: {fileID: 11500000, guid: 0e3a999977080b645b0f26eec8484c15, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_NearDistance: 100
+  m_NearDistance: 90
   m_FarDistance: 130
 --- !u!1 &757729267074297267
 GameObject:
@@ -2925,7 +2925,7 @@ PrefabInstance:
       objectReference: {fileID: 9100000, guid: 3793bb6c00a2b764998f1541a4ce37b3, type: 2}
     - target: {fileID: 9500000, guid: ece08e40b586c7e4eb8429c60b5cbd80, type: 3}
       propertyPath: m_UpdateMode
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ece08e40b586c7e4eb8429c60b5cbd80, type: 3}
@@ -3140,7 +3140,7 @@ MonoBehaviour:
   proxyOffset: 0.8
   enableGravity: 1
   gravityStrength: 10
-  useRootMotion: 1
+  useRootMotion: 0
   centerPosition: {x: 0, y: 1.2, z: 0}
   showCenterPosition: 1
   avoidFacingObstacles: 1
@@ -3476,7 +3476,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 78ba861a214074aa4bdac708dcacc9fe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  id: 1266940076
+  id: 659294414
   priority: 0
   visibility: 0
   visibleDistanceOverride: 0
@@ -3531,8 +3531,8 @@ MonoBehaviour:
   miniMapShowRotation: 0
   miniMapRotationAngleOffset: 0
   miniMapIconScale: 0.5
-  distanceToCameraSQR: 2332.8347
-  computedIconScale: {x: 0.5416355, y: 0.5416355, z: 1}
+  distanceToCameraSQR: 3658.7947
+  computedIconScale: {x: 0.5224334, y: 0.5224334, z: 1}
   iconAlpha: 0
   miniMapCurrentIconScale: {x: 0.25, y: 0.25, z: 0.25}
 --- !u!1 &757729266818659736 stripped

@@ -24,7 +24,7 @@ namespace WizardsCode.Optimization
         {
             base.Register();
 
-            health = GetComponent<BasicHealthManager>();
+            health = GetComponentInChildren<BasicHealthManager>();
             if (health != null)
             {
                 health.onIsAliveChanged += IsAliveChanged;

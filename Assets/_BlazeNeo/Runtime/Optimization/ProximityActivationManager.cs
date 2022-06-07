@@ -101,7 +101,7 @@ namespace WizardsCode.Optimization
 
         private void Evaluate(ProximityRegistration obj, HashSet<ProximityRegistration> currentSet)
         {
-            if (!ProximityTarget) return;
+            if (!ProximityTarget || !obj) return;
 
             float distance = Vector3.SqrMagnitude(ProximityTarget.position - obj.transform.position);
             if (!obj.gameObject.activeInHierarchy && obj.DisabledByProximity && distance < obj.NearDistanceSqr)
