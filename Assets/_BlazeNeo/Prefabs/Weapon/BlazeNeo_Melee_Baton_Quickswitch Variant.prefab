@@ -11,6 +11,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: BlazeNeo_Melee_Baton_Quickswitch Variant
       objectReference: {fileID: 0}
+    - target: {fileID: 1763340920961130, guid: 3cce2d5ec9b7af3459db9bc3dfa597a2, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4224688789201030, guid: 3cce2d5ec9b7af3459db9bc3dfa597a2, type: 3}
       propertyPath: m_RootOrder
       value: 0
