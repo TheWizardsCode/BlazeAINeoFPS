@@ -13,19 +13,7 @@ Follow the steps below. Note the links to the asset store are affiliate links, c
 3. Import [NeoFPS](https://assetstore.unity.com/packages/2d/gui/icons/pixel-cursors-109256?aid=1101l866w)
 4. Apply all the required settings using the NeoFPS Hub
 5. Import [Blaze AI](https://assetstore.unity.com/packages/tools/ai/blaze-ai-engine-194525?aid=1101l866w)
-6. Open `Tools/Universal AI/AI Wizards/Integration Manager` and change `Use NeoFPS` to `Yes`
-7. Import [Rifle Animset Pro](https://assetstore.unity.com/packages/3d/animations/rifle-animset-pro-15098?aid=1101l866w)
-8. Remove (or exclude from import) the `Scripts` and `PlaymakerAdditions` folder from `RifleAnimsetPro`
-9. Import [Movement Animset Pro](https://assetstore.unity.com/packages/3d/animations/movement-animset-pro-14047?aid=1101l866w)
-10. Remove (or exclude from import) the `Scripts` and `PlaymakerAdditions` folder from `MovementAnimsetPro`
-
-### Configure Animations
-
-Universal AI requires that you add events to some weapon animations. Follow these steps:
-
-1. Find the following animations in the Kubold pack and duplicate them: `Rifle_ShootOnce`
-2. Create a folder `Assets/Animations` or similar and copy your duplicated animations into this folder
-3. On `Rifle_ShootOnce` add `ShootFrame` event at frame 8
+6. Install [Wizards Code Characters](https://github.com/TheWizardsCode/Character-Unity-Package#install-via-package-manager)
 
 ## Play the Game
 
@@ -41,8 +29,7 @@ We welcome your contributions to this demo game created with Universal AI and Ne
 
 The following folders have content that are a part of the project:
 
-`Assets/_Design` contains some prototyping assets that are used in the levels. These are all CC0 licensed or covered by the MIT license of this project.
-`Assets/Dev` contains some dev scenes used for testing of the AI
-`Assets/_BlazeNeo` contains the actual game scenes and assets
+`Assets/_Dev` contains some dev scenes used for testing of the AI
+`Assets/_BlazeNeo` contains the actual game scenes and assets using only BlazeAI and Neo FPS
 
-There are other folders, but you might as well ignore them as they require additional assets and if not documented are still not usable.
+There are other folders, but you might as well ignore them as they require additional assets and if not documented are still not usable. That said, feel free to poke around.
