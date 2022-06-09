@@ -10,10 +10,13 @@ Follow the steps below. Note the links to the asset store are affiliate links, c
 
 1. Checkout the repo
 2. Open it in Unity 2021.2.0f1 or later
-3. Import [NeoFPS](https://assetstore.unity.com/packages/2d/gui/icons/pixel-cursors-109256?aid=1101l866w)
-4. Apply all the required settings using the NeoFPS Hub
-5. Import [Blaze AI](https://assetstore.unity.com/packages/tools/ai/blaze-ai-engine-194525?aid=1101l866w)
-6. Install [Wizards Code Characters](https://github.com/TheWizardsCode/Character-Unity-Package#install-via-package-manager)
+3. Import Cinemachine using the Package Manager
+5. Import [NeoFPS](https://assetstore.unity.com/packages/2d/gui/icons/pixel-cursors-109256?aid=1101l866w)
+6. Import `NeoFPSExtension_Cinemachine` which you can find in `Assets/NeoFPS/Extensions`
+7. Import `NeoFPSExtension_InputSystem` which you can find in `Assets/NeoFPS/Extensions`
+8. Apply all the required settings using the NeoFPS Hub
+9. Import [Blaze AI](https://assetstore.unity.com/packages/tools/ai/blaze-ai-engine-194525?aid=1101l866w)
+10. Install [Wizards Code Characters](https://github.com/TheWizardsCode/Character-Unity-Package#install-via-package-manager)
 
 ## Play the Game
 
