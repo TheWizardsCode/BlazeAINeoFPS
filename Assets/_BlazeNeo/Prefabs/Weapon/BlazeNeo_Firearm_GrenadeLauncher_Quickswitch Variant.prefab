@@ -59,6 +59,10 @@ PrefabInstance:
       propertyPath: m_Explosion
       value: 
       objectReference: {fileID: 114361292132502964, guid: bb2578b9c476bb243afbc27af3a0cfb4, type: 3}
+    - target: {fileID: 114797539557639734, guid: 629f7d2c2a05c3b4d9df1274a2bebf8c, type: 3}
+      propertyPath: m_Layers.m_Bits
+      value: 160633857
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 114673989030490478, guid: 629f7d2c2a05c3b4d9df1274a2bebf8c, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 629f7d2c2a05c3b4d9df1274a2bebf8c, type: 3}

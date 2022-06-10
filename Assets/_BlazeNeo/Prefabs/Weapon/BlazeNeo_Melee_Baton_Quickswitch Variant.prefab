@@ -63,6 +63,10 @@ PrefabInstance:
       propertyPath: m_Damage
       value: 10
       objectReference: {fileID: 0}
+    - target: {fileID: 114503434004111880, guid: 3cce2d5ec9b7af3459db9bc3dfa597a2, type: 3}
+      propertyPath: m_Layers.m_Bits
+      value: 160633857
+      objectReference: {fileID: 0}
     - target: {fileID: 114916557392192034, guid: 3cce2d5ec9b7af3459db9bc3dfa597a2, type: 3}
       propertyPath: prefabGuid
       value: 6eb536e23d38b854e937f6618df0e9d2

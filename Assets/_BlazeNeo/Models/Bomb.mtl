@@ -1,0 +1,5 @@
+newmtl NeoFPS_Palette
+map_Kd E:/BlazeNeo/Assets/NeoFPS/Samples/Shared/Materials/Textures/TEX_WeaponPalette.png
+Kd 1 1 1
+d 1
+

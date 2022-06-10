@@ -25,8 +25,11 @@ namespace WizardsCode.UX
 
         private void OnDisable()
         {
-            playerHealthManager.onIsAliveChanged -= OnIsAliveChaged;
-            playerHealthManager.onHealthChanged -= OnHealthChanged;
+            if (playerHealthManager != null)
+            {
+                playerHealthManager.onIsAliveChanged -= OnIsAliveChaged;
+                playerHealthManager.onHealthChanged -= OnHealthChanged;
+            }
         }
 
         public void OnPlayerCharacterChanged(ICharacter character)

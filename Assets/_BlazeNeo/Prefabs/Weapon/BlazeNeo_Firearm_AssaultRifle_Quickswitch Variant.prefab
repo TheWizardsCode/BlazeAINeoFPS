@@ -71,6 +71,10 @@ PrefabInstance:
       propertyPath: m_ShotVolume
       value: 0.583
       objectReference: {fileID: 0}
+    - target: {fileID: 114995767799708294, guid: 5586913d6e0ce934da6bed04cc353246, type: 3}
+      propertyPath: m_Layers.m_Bits
+      value: 160633857
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 114230360999357680, guid: 5586913d6e0ce934da6bed04cc353246, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 5586913d6e0ce934da6bed04cc353246, type: 3}

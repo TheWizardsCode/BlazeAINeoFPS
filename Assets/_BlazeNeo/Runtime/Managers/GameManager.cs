@@ -26,7 +26,7 @@ namespace WizardsCode.BlazeNeoFPS
 
         [Header("Mission")]
         [SerializeField, Tooltip("The game mode for this mission.")]
-        private FpsSoloGameMinimal m_NeoGame;
+        private BlazeNeoMinimalGame m_NeoGame;
         [SerializeField, Tooltip("The mission currently being played.")]
         MissionDescriptor m_MissionDescriptor;
         

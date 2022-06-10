@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6003617390133409072}
-  m_Layer: 19
+  m_Layer: 22
   m_Name: FpsArms_RHand_IndexFinger03
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -40,7 +40,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6003300187708678462}
-  m_Layer: 19
+  m_Layer: 22
   m_Name: FpsArms_RHand_Thumb02
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -54,15 +54,15 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5999651401462372396}
-  m_LocalRotation: {x: 0.22292238, y: 0.1121277, z: -0.09592689, w: 0.9636032}
-  m_LocalPosition: {x: 0.051150884, y: 0.000002708435, z: 0.0000001335144}
+  m_LocalRotation: {x: 0.26826555, y: 0.13045134, z: -0.21660353, w: 0.92956924}
+  m_LocalPosition: {x: 0.0501, y: 0.0042, z: 0.0013}
   m_LocalScale: {x: 1.0000001, y: 1.0000001, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 6003778694316687440}
   m_Father: {fileID: 6003736565445209696}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 33.728, y: 8.736, z: -23.581}
 --- !u!1 &5999657851586172172
 GameObject:
   m_ObjectHideFlags: 0
@@ -72,7 +72,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6002980693331195898}
-  m_Layer: 19
+  m_Layer: 22
   m_Name: FpsArms_LHand_RingFinger02
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -104,7 +104,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6003731441518853536}
-  m_Layer: 19
+  m_Layer: 22
   m_Name: FpsArms_RHand_RingFinger02
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -143,7 +143,7 @@ GameObject:
   - component: {fileID: 624280333942960355}
   - component: {fileID: -1771420431005733190}
   - component: {fileID: -1033149957708605562}
-  m_Layer: 0
+  m_Layer: 22
   m_Name: BlazeNeo_BombTrigger_Quickswitch
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -399,7 +399,7 @@ MonoBehaviour:
   m_Range: 75
   m_Layers:
     serializedVersion: 2
-    m_Bits: 4194304
+    m_Bits: 20971520
 --- !u!1 &5999748976373968000
 GameObject:
   m_ObjectHideFlags: 0
@@ -409,7 +409,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6003233830007999322}
-  m_Layer: 19
+  m_Layer: 22
   m_Name: FpsArms_LHand_MiddleFinger01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -441,7 +441,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6002846887582557194}
-  m_Layer: 19
+  m_Layer: 22
   m_Name: FpsArms_LHand_PinkyFinger03
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -472,7 +472,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6002768861106401338}
-  m_Layer: 19
+  m_Layer: 22
   m_Name: FpsArms_LHand_IndexFinger02
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -504,7 +504,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6003749223186616414}
-  m_Layer: 19
+  m_Layer: 22
   m_Name: FpsArms_Torso
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -537,7 +537,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6002787216995283268}
-  m_Layer: 19
+  m_Layer: 22
   m_Name: FpsArms_LHand_Thumb03
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -568,7 +568,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6003327530224927696}
-  m_Layer: 19
+  m_Layer: 22
   m_Name: FpsArms_RArm_LowerTwist
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -600,7 +600,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6003712615956379426}
-  m_Layer: 19
+  m_Layer: 22
   m_Name: FpsArms_RArm_Hand
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -624,6 +624,7 @@ Transform:
   - {fileID: 6003847846918108836}
   - {fileID: 6003014581629493184}
   - {fileID: 6003736565445209696}
+  - {fileID: 4257269070234578455}
   m_Father: {fileID: 6003327530224927696}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -636,7 +637,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6003562102163926562}
-  m_Layer: 19
+  m_Layer: 22
   m_Name: WeaponOrigin
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -657,7 +658,6 @@ Transform:
   m_Children:
   - {fileID: 6003749223186616414}
   - {fileID: 6002786854387252172}
-  - {fileID: 6003435543705475682}
   m_Father: {fileID: 6003803935748680996}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -670,7 +670,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6003648851844909116}
-  m_Layer: 19
+  m_Layer: 22
   m_Name: Arm_R_Clavicle002
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -701,7 +701,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6003587393855095208}
-  m_Layer: 19
+  m_Layer: 22
   m_Name: FpsArms_LHand_RingFinger01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -733,7 +733,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6002845577281290058}
-  m_Layer: 19
+  m_Layer: 22
   m_Name: FpsArms_LHand_PinkyFinger02
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -765,7 +765,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6003847846918108836}
-  m_Layer: 19
+  m_Layer: 22
   m_Name: FpsArms_RHand_PinkyFinger01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -797,7 +797,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6003712501767335850}
-  m_Layer: 19
+  m_Layer: 22
   m_Name: FpsArms_LArm_Lower
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -829,7 +829,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6003116107422436608}
-  m_Layer: 19
+  m_Layer: 22
   m_Name: FpsArms_LArm_LowerTwist
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -861,7 +861,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6002795056475105188}
-  m_Layer: 19
+  m_Layer: 22
   m_Name: FpsArms_RArm_Upper
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -893,7 +893,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6003014581629493184}
-  m_Layer: 19
+  m_Layer: 22
   m_Name: FpsArms_RHand_RingFinger01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -925,7 +925,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6003436954348959558}
-  m_Layer: 19
+  m_Layer: 22
   m_Name: Arm_R_Clavicle001
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -956,7 +956,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6003211869003604058}
-  m_Layer: 19
+  m_Layer: 22
   m_Name: FpsArmControls
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -988,7 +988,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6003748816555095332}
-  m_Layer: 19
+  m_Layer: 22
   m_Name: FpsArms_RHand_PinkyFinger03
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1019,7 +1019,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6003736565445209696}
-  m_Layer: 19
+  m_Layer: 22
   m_Name: FpsArms_RHand_Thumb01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1033,7 +1033,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6000248467816609296}
-  m_LocalRotation: {x: 0.033784155, y: -0.256608, z: 0.12607883, w: 0.9576613}
+  m_LocalRotation: {x: -0.15333486, y: -0.19428536, z: 0.29730737, w: 0.92214423}
   m_LocalPosition: {x: 0.021732358, y: 0.037653618, z: 0.0070823906}
   m_LocalScale: {x: 1.0000001, y: 1.0000001, z: 1}
   m_ConstrainProportionsScale: 0
@@ -1041,7 +1041,7 @@ Transform:
   - {fileID: 6003300187708678462}
   m_Father: {fileID: 6003712615956379426}
   m_RootOrder: 4
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: -9.629, y: -27.124, z: 38.067}
 --- !u!1 &6000320105503889286
 GameObject:
   m_ObjectHideFlags: 0
@@ -1051,7 +1051,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6003597660004461552}
-  m_Layer: 19
+  m_Layer: 22
   m_Name: FpsArms_LHand_Thumb02
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1083,7 +1083,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6003501832768444886}
-  m_Layer: 19
+  m_Layer: 22
   m_Name: FpsArms_RArm_Lower
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1106,89 +1106,6 @@ Transform:
   m_Father: {fileID: 6002795056475105188}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &6000322818525913722
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 6002950464803205364}
-  - component: {fileID: 5996667535575171610}
-  - component: {fileID: 5986640663596860988}
-  m_Layer: 19
-  m_Name: BatonTip
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &6002950464803205364
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6000322818525913722}
-  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1.4901275e-10, y: 0.0000000094209724, z: 0.16000001}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 6003231821568807948}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!33 &5996667535575171610
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6000322818525913722}
-  m_Mesh: {fileID: 4300006, guid: 16ba836699f73b746a8151933406bb97, type: 3}
---- !u!23 &5986640663596860988
-MeshRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6000322818525913722}
-  m_Enabled: 1
-  m_CastShadows: 0
-  m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 2
-  m_RayTraceProcedural: 0
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 2100000, guid: 6f4fd83ee1d3f714b8ee6a73412e9b64, type: 2}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 0
-  m_SelectedEditorRenderState: 3
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_AdditionalVertexStreams: {fileID: 0}
 --- !u!1 &6000328128062392842
 GameObject:
   m_ObjectHideFlags: 0
@@ -1198,7 +1115,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6003373514259109276}
-  m_Layer: 19
+  m_Layer: 22
   m_Name: IkParent_BatonHandle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1230,7 +1147,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6002786854387252172}
   - component: {fileID: 5955778809974382638}
-  m_Layer: 19
+  m_Layer: 22
   m_Name: MainCharacterFirstPersonArms
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1354,7 +1271,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6003849229737461354}
-  m_Layer: 19
+  m_Layer: 22
   m_Name: FpsArms_RHand_IndexFinger01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1386,7 +1303,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6003837985168899800}
-  m_Layer: 19
+  m_Layer: 22
   m_Name: BonePoints
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1419,7 +1336,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6003778694316687440}
-  m_Layer: 19
+  m_Layer: 22
   m_Name: FpsArms_RHand_Thumb03
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1433,14 +1350,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6000373177316743184}
-  m_LocalRotation: {x: 0.00015003154, y: 0.00014859237, z: -0.3822078, w: 0.9240764}
+  m_LocalRotation: {x: 0.27324674, y: -0.028232684, z: -0.07208822, w: 0.9588235}
   m_LocalPosition: {x: 0.03986781, y: -0.000000019073486, z: 0}
   m_LocalScale: {x: 0.99999976, y: 0.99999976, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 6003300187708678462}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 31.327, y: -6.286, z: -10.364}
 --- !u!1 &6000374835839592708
 GameObject:
   m_ObjectHideFlags: 0
@@ -1450,7 +1367,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6003791103698686180}
-  m_Layer: 19
+  m_Layer: 22
   m_Name: FpsArms_RHand_MiddleFinger02
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1473,90 +1390,6 @@ Transform:
   m_Father: {fileID: 6003437000913223658}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &6000377648879231128
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 6003231821568807948}
-  - component: {fileID: 5996807701309941494}
-  - component: {fileID: 5986082716686809386}
-  m_Layer: 19
-  m_Name: BatonShaft
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &6003231821568807948
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6000377648879231128}
-  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1.4901275e-10, y: 0.000000008824323, z: 0.25000003}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 6002950464803205364}
-  m_Father: {fileID: 6003435543705475682}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!33 &5996807701309941494
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6000377648879231128}
-  m_Mesh: {fileID: 4300004, guid: 16ba836699f73b746a8151933406bb97, type: 3}
---- !u!23 &5986082716686809386
-MeshRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6000377648879231128}
-  m_Enabled: 1
-  m_CastShadows: 0
-  m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 2
-  m_RayTraceProcedural: 0
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 2100000, guid: 6f4fd83ee1d3f714b8ee6a73412e9b64, type: 2}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 0
-  m_SelectedEditorRenderState: 3
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_AdditionalVertexStreams: {fileID: 0}
 --- !u!1 &6000389179418001910
 GameObject:
   m_ObjectHideFlags: 0
@@ -1566,7 +1399,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6003627754655979962}
-  m_Layer: 19
+  m_Layer: 22
   m_Name: FpsArms_LArm_Upper
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1603,7 +1436,7 @@ GameObject:
   - component: {fileID: 8890730158733901845}
   - component: {fileID: 3637796687931212882}
   - component: {fileID: 4446083735250854795}
-  m_Layer: 19
+  m_Layer: 22
   m_Name: LocalWeapon
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1617,7 +1450,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6000419696457047214}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -1625,7 +1458,7 @@ Transform:
   - {fileID: 6003803935748680996}
   m_Father: {fileID: 6003223361216319938}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
 --- !u!114 &5968766140544669202
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1730,7 +1563,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6002811202362379132}
-  m_Layer: 19
+  m_Layer: 22
   m_Name: FpsArms_LHand_IndexFinger03
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1761,7 +1594,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6003237727172944048}
-  m_Layer: 19
+  m_Layer: 22
   m_Name: FpsArms_RHand_RingFinger03
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1792,7 +1625,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6003442808474826070}
-  m_Layer: 19
+  m_Layer: 22
   m_Name: FpsArms_LHand_Thumb01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1824,7 +1657,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6002981978025886422}
-  m_Layer: 19
+  m_Layer: 22
   m_Name: FpsArms_LHand_RingFinger03
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1855,7 +1688,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6003437000913223658}
-  m_Layer: 19
+  m_Layer: 22
   m_Name: FpsArms_RHand_MiddleFinger01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1887,7 +1720,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6003815498996814012}
-  m_Layer: 19
+  m_Layer: 22
   m_Name: FpsArms_LHand_IndexFinger01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1919,7 +1752,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6002966502506473266}
-  m_Layer: 19
+  m_Layer: 22
   m_Name: FpsArms_RShoulder
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1951,7 +1784,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6003830639360831212}
-  m_Layer: 19
+  m_Layer: 22
   m_Name: FpsArms_LHand_PinkyFinger01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1985,7 +1818,7 @@ GameObject:
   - component: {fileID: 6003803935748680996}
   - component: {fileID: 5913880182774778578}
   - component: {fileID: 5968710239150055306}
-  m_Layer: 19
+  m_Layer: 22
   m_Name: Weapon_FP_Baton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2020,7 +1853,7 @@ Animator:
   m_GameObject: {fileID: 6000622863090727830}
   m_Enabled: 1
   m_Avatar: {fileID: 9000000, guid: 16ba836699f73b746a8151933406bb97, type: 3}
-  m_Controller: {fileID: 9100000, guid: 0a3542cf5c81c874092a736f716cb434, type: 2}
+  m_Controller: {fileID: 9100000, guid: 4dc7aeb2585879e4c8a6e07afdd579b4, type: 2}
   m_CullingMode: 1
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -2085,7 +1918,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6002858492262938128}
-  m_Layer: 19
+  m_Layer: 22
   m_Name: FpsArms_LHand
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2121,7 +1954,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6003018317318594700}
-  m_Layer: 19
+  m_Layer: 22
   m_Name: FpsArms_RHand_PinkyFinger02
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2153,7 +1986,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6003086736892143232}
-  m_Layer: 19
+  m_Layer: 22
   m_Name: FpsArms_LHand_MiddleFinger02
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2185,7 +2018,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6003240174960999834}
-  m_Layer: 19
+  m_Layer: 22
   m_Name: FpsArms_RHand_MiddleFinger03
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2216,7 +2049,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6003400127049296816}
-  m_Layer: 19
+  m_Layer: 22
   m_Name: FpsArms_LHand_MiddleFinger03
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2247,7 +2080,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6002744377684156960}
-  m_Layer: 19
+  m_Layer: 22
   m_Name: FpsArms_LShoulder
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2270,90 +2103,6 @@ Transform:
   m_Father: {fileID: 6003749223186616414}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &6000758697696364846
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 6003435543705475682}
-  - component: {fileID: 5995698740245627568}
-  - component: {fileID: 5986387085554367020}
-  m_Layer: 19
-  m_Name: WeaponBaton
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!4 &6003435543705475682
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6000758697696364846}
-  m_LocalRotation: {x: -0.23007327, y: -0.46693352, z: -0.050349705, w: 0.85235226}
-  m_LocalPosition: {x: 0.19, y: -0.39999992, z: -0.11999996}
-  m_LocalScale: {x: 1, y: 0.99999994, z: 0.99999994}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 6003231821568807948}
-  m_Father: {fileID: 6003562102163926562}
-  m_RootOrder: 2
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!33 &5995698740245627568
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6000758697696364846}
-  m_Mesh: {fileID: 4300002, guid: 16ba836699f73b746a8151933406bb97, type: 3}
---- !u!23 &5986387085554367020
-MeshRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6000758697696364846}
-  m_Enabled: 1
-  m_CastShadows: 0
-  m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 2
-  m_RayTraceProcedural: 0
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 2100000, guid: 6f4fd83ee1d3f714b8ee6a73412e9b64, type: 2}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 0
-  m_SelectedEditorRenderState: 3
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_AdditionalVertexStreams: {fileID: 0}
 --- !u!1 &6000968704615623794
 GameObject:
   m_ObjectHideFlags: 0
@@ -2363,7 +2112,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6002883506292412186}
-  m_Layer: 19
+  m_Layer: 22
   m_Name: FpsArms_RHand_IndexFinger02
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2386,3 +2135,89 @@ Transform:
   m_Father: {fileID: 6003849229737461354}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &4368037354123528700
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 6003712615956379426}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: bea1b39f843797d498c37043c7008a63, type: 3}
+      propertyPath: m_RootOrder
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: bea1b39f843797d498c37043c7008a63, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.3000001
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: bea1b39f843797d498c37043c7008a63, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.30000007
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: bea1b39f843797d498c37043c7008a63, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.3
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: bea1b39f843797d498c37043c7008a63, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.04220027
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: bea1b39f843797d498c37043c7008a63, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.047499735
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: bea1b39f843797d498c37043c7008a63, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.022100074
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: bea1b39f843797d498c37043c7008a63, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.5501558
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: bea1b39f843797d498c37043c7008a63, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.4510456
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: bea1b39f843797d498c37043c7008a63, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.65833956
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: bea1b39f843797d498c37043c7008a63, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.24591753
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: bea1b39f843797d498c37043c7008a63, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -55.093
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: bea1b39f843797d498c37043c7008a63, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -118.575
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: bea1b39f843797d498c37043c7008a63, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 34.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: bea1b39f843797d498c37043c7008a63, type: 3}
+      propertyPath: m_Name
+      value: Bomb Trigger
+      objectReference: {fileID: 0}
+    - target: {fileID: 2799472333492570414, guid: bea1b39f843797d498c37043c7008a63, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.015
+      objectReference: {fileID: 0}
+    - target: {fileID: 2799472333492570414, guid: bea1b39f843797d498c37043c7008a63, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.043
+      objectReference: {fileID: 0}
+    - target: {fileID: 2799472333492570414, guid: bea1b39f843797d498c37043c7008a63, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.003
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: bea1b39f843797d498c37043c7008a63, type: 3}
+--- !u!4 &4257269070234578455 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: bea1b39f843797d498c37043c7008a63, type: 3}
+  m_PrefabInstance: {fileID: 4368037354123528700}
+  m_PrefabAsset: {fileID: 0}

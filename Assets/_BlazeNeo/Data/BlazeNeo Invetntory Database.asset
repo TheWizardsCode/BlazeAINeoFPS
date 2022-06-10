@@ -16,3 +16,5 @@ MonoBehaviour:
   m_Entries:
   - m_DisplayName: Weapon - Trigger Bomb
     m_Id: -1697395901
+  - m_DisplayName: Bomb
+    m_Id: -841752941

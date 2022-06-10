@@ -3170,7 +3170,7 @@ MonoBehaviour:
   vision:
     layersToDetect:
       serializedVersion: 2
-      m_Bits: 9216
+      m_Bits: 9217
     hostileAndAlertLayers:
       serializedVersion: 2
       m_Bits: 8192
@@ -3256,7 +3256,7 @@ MonoBehaviour:
       hideSensitivity: -0.25
       searchDistance: 30
       minObstacleHeight: 0.5
-      firstSightChance: 1
+      firstSightChance: 2
       coverBlownState: 2
       attackEnemyCover: 2
       coverAnimations:
@@ -3312,7 +3312,7 @@ MonoBehaviour:
     moveForwardAnimationTransition: 0.25
     moveBackwardsAnimationName: Jog Backwards
     moveBackwardsAnimationTransition: 0.25
-    moveBackwardsAttackAnimationName: Jog Backwards
+    moveBackwardsAttackAnimationName: Fight Run
     moveBackwardsAttackAnimationTransition: 0.25
     attackAnimations:
     - Shooting

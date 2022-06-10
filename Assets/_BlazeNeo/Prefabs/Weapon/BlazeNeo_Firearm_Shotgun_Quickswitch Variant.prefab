@@ -63,6 +63,10 @@ PrefabInstance:
       propertyPath: m_PrefabStrongID
       value: 1770879702
       objectReference: {fileID: 0}
+    - target: {fileID: 114665004902738762, guid: c78023ecc606bf84bbc16ef3cafa093d, type: 3}
+      propertyPath: m_Layers.m_Bits
+      value: 160633857
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 114796193621549662, guid: c78023ecc606bf84bbc16ef3cafa093d, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: c78023ecc606bf84bbc16ef3cafa093d, type: 3}
