@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -9,9 +10,9 @@ namespace WizardsCode.BlazeNeoFPS.UI
     public class UIProgressController : MonoBehaviour
     {
         [SerializeField, Tooltip("The text component to display the score.")]
-        Text m_ScoreText;
+        TMP_Text m_ScoreText;
         [SerializeField, Tooltip("The text component to display the time remaining until extract.")]
-        Text m_TimerText;
+        TMP_Text m_TimerText;
 
         int targetScore;
 

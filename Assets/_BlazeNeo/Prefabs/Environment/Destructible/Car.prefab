@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: -488394203447094012}
   - component: {fileID: 5422443647124280024}
   - component: {fileID: 7293158156581468061}
+  - component: {fileID: 6188401355038642042}
   m_Layer: 10
   m_Name: Car
   m_TagString: Untagged
@@ -78,19 +79,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 43e54dfa7bdc775439a344cf1b57a459, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Health: 100
-  m_HealthMax: 100
-  m_CanDamageSelf: 1
-  m_OnHealthChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_OnIsAliveChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_DestructionParticles:
+  m_ScaledDestructionParticles:
   - {fileID: 7343961097728468581, guid: d4df130c679ef6e4293dc9a9d7250294, type: 3}
   m_ParticalDensity: 25
   m_ExplosiveForce: 0.89
+  m_UnscaledDestructionParticles: []
   m_ImpactDamageMultiplier: 1
 --- !u!208 &-488394203447094012
 NavMeshObstacle:
@@ -134,6 +127,27 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1.7004509, y: 1.0810206, z: 2.292467}
   m_Center: {x: 0.036787033, y: 0.59285617, z: 0.36489773}
+--- !u!114 &6188401355038642042
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5805368660869958740}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: afb4f6b079a31f949b8a10f7e86b427e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Health: 100
+  m_HealthMax: 100
+  m_CanDamageSelf: 1
+  m_OnHealthChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnIsAliveChanged:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1001 &4965315540119547559
 PrefabInstance:
   m_ObjectHideFlags: 0

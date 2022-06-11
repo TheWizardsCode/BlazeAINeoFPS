@@ -2925,7 +2925,7 @@ PrefabInstance:
       objectReference: {fileID: 9100000, guid: 3793bb6c00a2b764998f1541a4ce37b3, type: 2}
     - target: {fileID: 9500000, guid: ece08e40b586c7e4eb8429c60b5cbd80, type: 3}
       propertyPath: m_UpdateMode
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ece08e40b586c7e4eb8429c60b5cbd80, type: 3}
@@ -3140,7 +3140,7 @@ MonoBehaviour:
   proxyOffset: 0.8
   enableGravity: 1
   gravityStrength: 10
-  useRootMotion: 0
+  useRootMotion: 1
   centerPosition: {x: 0, y: 1.2, z: 0}
   showCenterPosition: 1
   avoidFacingObstacles: 1
@@ -3170,7 +3170,7 @@ MonoBehaviour:
   vision:
     layersToDetect:
       serializedVersion: 2
-      m_Bits: 9217
+      m_Bits: 12598273
     hostileAndAlertLayers:
       serializedVersion: 2
       m_Bits: 8192
