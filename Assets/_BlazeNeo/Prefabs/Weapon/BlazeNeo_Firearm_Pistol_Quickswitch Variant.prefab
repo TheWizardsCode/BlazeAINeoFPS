@@ -107,3 +107,19 @@ MonoBehaviour:
   passThroughColliders: 1
   distractOnlyPrioritizedAgent: 0
   distractOnAwake: 0
+--- !u!114 &3519002725332770454
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 457078666274675971}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 37b44d3e8c79b21459bcc7003a5c2022, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_HorizontalMultiplier: 0.54
+  m_VerticalMultiplier: 0.57
+  m_Sensitivity: 0.5
+  m_DampingTime: 0.25

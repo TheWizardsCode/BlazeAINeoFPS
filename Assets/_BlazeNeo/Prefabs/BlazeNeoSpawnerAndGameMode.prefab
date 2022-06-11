@@ -170,7 +170,7 @@ MonoBehaviour:
   m_DeathSequenceDuration: 5
   m_DeathAction: 0
   m_PlayerPrefab: {fileID: 114330862915175946, guid: ea73a91ddb804b64c9a48bd4cf0382b3, type: 3}
-  m_CharacterPrefab: {fileID: 8085538589171346246, guid: 2b1c7b4db3b8fa344a0101bf1962e30f, type: 3}
+  m_CharacterPrefab: {fileID: 0}
   m_StartingLoadout: {fileID: 0}
 --- !u!114 &9184819166435945445
 MonoBehaviour:
@@ -198,11 +198,11 @@ MonoBehaviour:
     m_Keys: 
     m_Values: []
     m_GameObject: {fileID: 9184819166435945445}
-  m_PrefabStrongID: 0
+  m_PrefabStrongID: -1143905548
   expandChildObjects: 0
   expandNeoComponents: 0
   expandOtherComponents: 0
-  prefabGuid: 
+  prefabGuid: a3846984fa227c04abeee8a0986f5102
 --- !u!82 &9184819166435945451
 AudioSource:
   m_ObjectHideFlags: 0
