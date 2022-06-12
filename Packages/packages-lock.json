@@ -269,18 +269,20 @@
       "url": "https://packages.unity.com"
     },
     "org.wizardscode.devlogger": {
-      "version": "file:E:/WizardsCode/Packages/DevLogger-Unity-Package",
+      "version": "https://github.com/TheWizardsCode/DevLogger.git",
       "depth": 0,
-      "source": "local",
+      "source": "git",
       "dependencies": {
         "com.unity.postprocessing": "2.3.0"
-      }
+      },
+      "hash": "aa0dd46746bb5dc57b1874b948ae2784186a2b9a"
     },
     "wizardscode.character": {
-      "version": "file:E:/WizardsCode/Packages/Character-Unity-Package",
+      "version": "https://github.com/TheWizardsCode/Character-Unity-Package.git",
       "depth": 0,
-      "source": "local",
-      "dependencies": {}
+      "source": "git",
+      "dependencies": {},
+      "hash": "159e2f7f450024acd4d2f4883c6a160da07b9bee"
     },
     "com.unity.modules.ai": {
       "version": "1.0.0",

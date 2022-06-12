@@ -120,6 +120,15 @@ namespace WizardsCode.BlazeNeoFPS
             }
         }
 
+        private void InitializeLoadout()
+        {
+            if (m_MissionDescriptor.m_InventoryLoadout != null)
+            {
+                var inventory = m_NeoGame.player.currentCharacter.GetComponent<IInventory>();
+                inventory.ApplyLoadout(m_MissionDescriptor.m_InventoryLoadout);
+            }
+        }
+
         private void InitializeMission()
         {
             m_ExtractionPoint = FindObjectOfType<ExtractionPointController>();
@@ -133,6 +142,12 @@ namespace WizardsCode.BlazeNeoFPS
 
             //OPTIMIZATION: have these set at design time
             m_missiontargets = FindObjectsOfType<BlazeNeoMissionTarget>(true);
+
+            // FIXME: we never remove these actions from the SpawnManager
+            for (int i = 0; i < SpawnManager.spawnPoints.Count; i++)
+            {
+                SpawnManager.spawnPoints[i].onSpawn += InitializeLoadout;
+            }
 
             m_GameState = GameState.InBriefing;
         }
@@ -261,11 +276,6 @@ namespace WizardsCode.BlazeNeoFPS
                 {
                     m_GameState = GameState.InGame;
                     m_NeoGame.Respawn(m_NeoGame.player);
-                    if (m_MissionDescriptor.m_InventoryLoadout != null)
-                    {
-                        var inventory = m_NeoGame.player.currentCharacter.GetComponent<IInventory>();
-                        inventory.ApplyLoadout(m_MissionDescriptor.m_InventoryLoadout);
-                    }
                     IsBriefingComplete = true;
                     m_BriefingPanel.gameObject.SetActive(false);
                 }
