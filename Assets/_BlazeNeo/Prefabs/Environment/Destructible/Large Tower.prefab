@@ -56,12 +56,13 @@ GameObject:
   - component: {fileID: 3820133847334718037}
   - component: {fileID: 3820133847334718034}
   - component: {fileID: 3820133847334718035}
+  - component: {fileID: 3820133847845451923}
   m_Layer: 0
   m_Name: Ground Floor (Destructible)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &3820133847334718032
 Transform:
@@ -181,15 +182,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 43e54dfa7bdc775439a344cf1b57a459, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Health: 100
-  m_HealthMax: 100
-  m_CanDamageSelf: 1
-  m_OnHealthChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_OnIsAliveChanged:
-    m_PersistentCalls:
-      m_Calls: []
   m_ScaledDestructionParticles:
   - {fileID: 7343961097728468581, guid: 994d0fb9fbd8ede4ea18d06abd1feb1b, type: 3}
   - {fileID: 7343961097728468581, guid: d0d4fce4cdd4ddf4798a6c50afb74622, type: 3}
@@ -197,6 +189,28 @@ MonoBehaviour:
   m_ExplosiveForce: 0
   m_UnscaledDestructionParticles: []
   m_ImpactDamageMultiplier: 1
+--- !u!114 &3820133847845451923
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3820133847334718033}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 077026ae32a9eb94bbf37070fd4d5013, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Health: 750
+  m_HealthMax: 750
+  m_CanDamageSelf: 1
+  m_OnHealthChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnIsAliveChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_isRequiredForMissionCompletion: 1
 --- !u!1 &3820133847944118301
 GameObject:
   m_ObjectHideFlags: 0
@@ -213,12 +227,13 @@ GameObject:
   - component: {fileID: 3820133847944118277}
   - component: {fileID: 3820133847944118274}
   - component: {fileID: 3820133847944118275}
+  - component: {fileID: 4369979641768125813}
   m_Layer: 0
   m_Name: Building Level (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &3820133847944118300
 Transform:
@@ -354,15 +369,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 43e54dfa7bdc775439a344cf1b57a459, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Health: 5
-  m_HealthMax: 100
-  m_CanDamageSelf: 1
-  m_OnHealthChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_OnIsAliveChanged:
-    m_PersistentCalls:
-      m_Calls: []
   m_ScaledDestructionParticles:
   - {fileID: 7343961097728468581, guid: 2455b1de6657def4889bd7908ac7af0f, type: 3}
   - {fileID: 7343961097728468581, guid: 994d0fb9fbd8ede4ea18d06abd1feb1b, type: 3}
@@ -370,7 +376,28 @@ MonoBehaviour:
   m_ParticalDensity: 11.5
   m_ExplosiveForce: 0
   m_UnscaledDestructionParticles: []
-  m_ImpactDamageMultiplier: 5
+  m_ImpactDamageMultiplier: 100
+--- !u!114 &4369979641768125813
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3820133847944118301}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: afb4f6b079a31f949b8a10f7e86b427e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Health: 500
+  m_HealthMax: 500
+  m_CanDamageSelf: 1
+  m_OnHealthChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnIsAliveChanged:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &3820133848248084300
 GameObject:
   m_ObjectHideFlags: 0
@@ -387,12 +414,13 @@ GameObject:
   - component: {fileID: 3820133848248084340}
   - component: {fileID: 3820133848248084341}
   - component: {fileID: 3820133848248084338}
+  - component: {fileID: 5040276269769764129}
   m_Layer: 0
   m_Name: Building Level
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &3820133848248084303
 Transform:
@@ -528,15 +556,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 43e54dfa7bdc775439a344cf1b57a459, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Health: 5
-  m_HealthMax: 100
-  m_CanDamageSelf: 1
-  m_OnHealthChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_OnIsAliveChanged:
-    m_PersistentCalls:
-      m_Calls: []
   m_ScaledDestructionParticles:
   - {fileID: 7343961097728468581, guid: 2455b1de6657def4889bd7908ac7af0f, type: 3}
   - {fileID: 7343961097728468581, guid: 994d0fb9fbd8ede4ea18d06abd1feb1b, type: 3}
@@ -544,7 +563,28 @@ MonoBehaviour:
   m_ParticalDensity: 11.5
   m_ExplosiveForce: 0
   m_UnscaledDestructionParticles: []
-  m_ImpactDamageMultiplier: 5
+  m_ImpactDamageMultiplier: 100
+--- !u!114 &5040276269769764129
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3820133848248084300}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: afb4f6b079a31f949b8a10f7e86b427e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Health: 500
+  m_HealthMax: 500
+  m_CanDamageSelf: 1
+  m_OnHealthChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnIsAliveChanged:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &3820133848257805358
 GameObject:
   m_ObjectHideFlags: 0
@@ -561,12 +601,13 @@ GameObject:
   - component: {fileID: 3820133848257805398}
   - component: {fileID: 3820133848257805399}
   - component: {fileID: 3820133848257805396}
+  - component: {fileID: 1013766873750849631}
   m_Layer: 0
   m_Name: Building Level (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &3820133848257805393
 Transform:
@@ -702,15 +743,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 43e54dfa7bdc775439a344cf1b57a459, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Health: 5
-  m_HealthMax: 100
-  m_CanDamageSelf: 1
-  m_OnHealthChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_OnIsAliveChanged:
-    m_PersistentCalls:
-      m_Calls: []
   m_ScaledDestructionParticles:
   - {fileID: 7343961097728468581, guid: 2455b1de6657def4889bd7908ac7af0f, type: 3}
   - {fileID: 7343961097728468581, guid: 994d0fb9fbd8ede4ea18d06abd1feb1b, type: 3}
@@ -718,7 +750,28 @@ MonoBehaviour:
   m_ParticalDensity: 11.5
   m_ExplosiveForce: 0
   m_UnscaledDestructionParticles: []
-  m_ImpactDamageMultiplier: 5
+  m_ImpactDamageMultiplier: 100
+--- !u!114 &1013766873750849631
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3820133848257805358}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: afb4f6b079a31f949b8a10f7e86b427e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Health: 500
+  m_HealthMax: 500
+  m_CanDamageSelf: 1
+  m_OnHealthChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnIsAliveChanged:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &3820133848351678829
 GameObject:
   m_ObjectHideFlags: 0
@@ -735,12 +788,13 @@ GameObject:
   - component: {fileID: 3820133848351679125}
   - component: {fileID: 3820133848351679122}
   - component: {fileID: 3820133848351679123}
+  - component: {fileID: 9163752063877097356}
   m_Layer: 0
   m_Name: Building Level (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &3820133848351678828
 Transform:
@@ -876,15 +930,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 43e54dfa7bdc775439a344cf1b57a459, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Health: 5
-  m_HealthMax: 100
-  m_CanDamageSelf: 1
-  m_OnHealthChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_OnIsAliveChanged:
-    m_PersistentCalls:
-      m_Calls: []
   m_ScaledDestructionParticles:
   - {fileID: 7343961097728468581, guid: 2455b1de6657def4889bd7908ac7af0f, type: 3}
   - {fileID: 7343961097728468581, guid: 994d0fb9fbd8ede4ea18d06abd1feb1b, type: 3}
@@ -892,7 +937,28 @@ MonoBehaviour:
   m_ParticalDensity: 11.5
   m_ExplosiveForce: 0
   m_UnscaledDestructionParticles: []
-  m_ImpactDamageMultiplier: 5
+  m_ImpactDamageMultiplier: 100
+--- !u!114 &9163752063877097356
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3820133848351678829}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: afb4f6b079a31f949b8a10f7e86b427e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Health: 500
+  m_HealthMax: 500
+  m_CanDamageSelf: 1
+  m_OnHealthChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnIsAliveChanged:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &3820133848430444563
 GameObject:
   m_ObjectHideFlags: 0
@@ -909,8 +975,8 @@ GameObject:
   m_Name: Ground Floor (Solid)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &3820133848430444562
 Transform:
@@ -1006,12 +1072,13 @@ GameObject:
   - component: {fileID: 3820133848481804137}
   - component: {fileID: 3820133848481804134}
   - component: {fileID: 3820133848481804135}
+  - component: {fileID: 5426351979196497272}
   m_Layer: 0
   m_Name: Building Level (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &3820133848481804128
 Transform:
@@ -1147,15 +1214,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 43e54dfa7bdc775439a344cf1b57a459, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Health: 5
-  m_HealthMax: 100
-  m_CanDamageSelf: 1
-  m_OnHealthChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_OnIsAliveChanged:
-    m_PersistentCalls:
-      m_Calls: []
   m_ScaledDestructionParticles:
   - {fileID: 7343961097728468581, guid: 2455b1de6657def4889bd7908ac7af0f, type: 3}
   - {fileID: 7343961097728468581, guid: 994d0fb9fbd8ede4ea18d06abd1feb1b, type: 3}
@@ -1163,7 +1221,28 @@ MonoBehaviour:
   m_ParticalDensity: 11.5
   m_ExplosiveForce: 0
   m_UnscaledDestructionParticles: []
-  m_ImpactDamageMultiplier: 5
+  m_ImpactDamageMultiplier: 100
+--- !u!114 &5426351979196497272
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3820133848481804129}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: afb4f6b079a31f949b8a10f7e86b427e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Health: 500
+  m_HealthMax: 500
+  m_CanDamageSelf: 1
+  m_OnHealthChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnIsAliveChanged:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &3820133848487765744
 GameObject:
   m_ObjectHideFlags: 0
@@ -1180,12 +1259,13 @@ GameObject:
   - component: {fileID: 3820133848487765748}
   - component: {fileID: 3820133848487765749}
   - component: {fileID: 3820133848487765746}
+  - component: {fileID: 4012046678023986641}
   m_Layer: 0
   m_Name: Building Level (7)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &3820133848487765747
 Transform:
@@ -1321,15 +1401,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 43e54dfa7bdc775439a344cf1b57a459, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Health: 5
-  m_HealthMax: 100
-  m_CanDamageSelf: 1
-  m_OnHealthChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_OnIsAliveChanged:
-    m_PersistentCalls:
-      m_Calls: []
   m_ScaledDestructionParticles:
   - {fileID: 7343961097728468581, guid: 2455b1de6657def4889bd7908ac7af0f, type: 3}
   - {fileID: 7343961097728468581, guid: 994d0fb9fbd8ede4ea18d06abd1feb1b, type: 3}
@@ -1337,7 +1408,28 @@ MonoBehaviour:
   m_ParticalDensity: 11.5
   m_ExplosiveForce: 0
   m_UnscaledDestructionParticles: []
-  m_ImpactDamageMultiplier: 5
+  m_ImpactDamageMultiplier: 100
+--- !u!114 &4012046678023986641
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3820133848487765744}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: afb4f6b079a31f949b8a10f7e86b427e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Health: 500
+  m_HealthMax: 500
+  m_CanDamageSelf: 1
+  m_OnHealthChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnIsAliveChanged:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &3820133848537806542
 GameObject:
   m_ObjectHideFlags: 0
@@ -1354,12 +1446,13 @@ GameObject:
   - component: {fileID: 3820133848537806578}
   - component: {fileID: 3820133848537806579}
   - component: {fileID: 3820133848537806576}
+  - component: {fileID: 2736052672326973090}
   m_Layer: 0
   m_Name: Building Level (6)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &3820133848537806577
 Transform:
@@ -1495,15 +1588,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 43e54dfa7bdc775439a344cf1b57a459, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Health: 5
-  m_HealthMax: 100
-  m_CanDamageSelf: 1
-  m_OnHealthChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_OnIsAliveChanged:
-    m_PersistentCalls:
-      m_Calls: []
   m_ScaledDestructionParticles:
   - {fileID: 7343961097728468581, guid: 2455b1de6657def4889bd7908ac7af0f, type: 3}
   - {fileID: 7343961097728468581, guid: 994d0fb9fbd8ede4ea18d06abd1feb1b, type: 3}
@@ -1511,7 +1595,28 @@ MonoBehaviour:
   m_ParticalDensity: 11.5
   m_ExplosiveForce: 0
   m_UnscaledDestructionParticles: []
-  m_ImpactDamageMultiplier: 5
+  m_ImpactDamageMultiplier: 100
+--- !u!114 &2736052672326973090
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3820133848537806542}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: afb4f6b079a31f949b8a10f7e86b427e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Health: 500
+  m_HealthMax: 500
+  m_CanDamageSelf: 1
+  m_OnHealthChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnIsAliveChanged:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &3820133848959575383
 GameObject:
   m_ObjectHideFlags: 0
@@ -1528,12 +1633,13 @@ GameObject:
   - component: {fileID: 3820133848959575387}
   - component: {fileID: 3820133848959575384}
   - component: {fileID: 3820133848959575385}
+  - component: {fileID: 1523335718445119672}
   m_Layer: 0
   m_Name: Building Level (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &3820133848959575382
 Transform:
@@ -1669,15 +1775,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 43e54dfa7bdc775439a344cf1b57a459, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Health: 5
-  m_HealthMax: 100
-  m_CanDamageSelf: 1
-  m_OnHealthChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_OnIsAliveChanged:
-    m_PersistentCalls:
-      m_Calls: []
   m_ScaledDestructionParticles:
   - {fileID: 7343961097728468581, guid: 2455b1de6657def4889bd7908ac7af0f, type: 3}
   - {fileID: 7343961097728468581, guid: 994d0fb9fbd8ede4ea18d06abd1feb1b, type: 3}
@@ -1685,4 +1782,25 @@ MonoBehaviour:
   m_ParticalDensity: 11.5
   m_ExplosiveForce: 0
   m_UnscaledDestructionParticles: []
-  m_ImpactDamageMultiplier: 5
+  m_ImpactDamageMultiplier: 100
+--- !u!114 &1523335718445119672
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3820133848959575383}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: afb4f6b079a31f949b8a10f7e86b427e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Health: 500
+  m_HealthMax: 500
+  m_CanDamageSelf: 1
+  m_OnHealthChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnIsAliveChanged:
+    m_PersistentCalls:
+      m_Calls: []

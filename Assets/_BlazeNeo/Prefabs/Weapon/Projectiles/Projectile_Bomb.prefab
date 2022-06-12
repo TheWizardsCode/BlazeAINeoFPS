@@ -203,11 +203,11 @@ MonoBehaviour:
     m_Keys: 
     m_Values: []
     m_GameObject: {fileID: 863465121672798179}
-  m_PrefabStrongID: -1877752142
+  m_PrefabStrongID: -1831836923
   expandChildObjects: 0
   expandNeoComponents: 0
   expandOtherComponents: 1
-  prefabGuid: d27b31cbf1c15f14797d6b1453eac7ac
+  prefabGuid: 8af2a210aec23294a9fd8dad979eb565
 --- !u!114 &-3002192119945254985
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -241,7 +241,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Explosion: {fileID: 114361292132502964, guid: 9cfec821b4233154faef083fddcac79a, type: 3}
   m_Offset: {x: 0, y: 0, z: 0}
-  m_ExplosionDamage: 150
+  m_ExplosionDamage: 200
   m_ExplosionForce: 50
   m_TakesDamage: 5
   m_Health: 1

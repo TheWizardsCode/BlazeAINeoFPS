@@ -18,6 +18,9 @@ namespace WizardsCode.BlazeNeoFPS
             " but do not complete the mission. If they fail to be in the objective at the point of extraction then" +
             " they die permanently.")]
         public int m_MaxMissionTimeInMinutes = 10;
+
+        [SerializeField, Tooltip("The initial loadout for the character in this level.")]
+        internal FpsInventoryLoadout m_InventoryLoadout;
         
         [SerializeField, Tooltip("How many enemies does the player need to kill in order to win the game.")]
         internal int m_ScoreNeededForTheWin = 1000;

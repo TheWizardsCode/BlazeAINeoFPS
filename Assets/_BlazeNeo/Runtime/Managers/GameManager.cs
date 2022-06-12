@@ -261,6 +261,11 @@ namespace WizardsCode.BlazeNeoFPS
                 {
                     m_GameState = GameState.InGame;
                     m_NeoGame.Respawn(m_NeoGame.player);
+                    if (m_MissionDescriptor.m_InventoryLoadout != null)
+                    {
+                        var inventory = m_NeoGame.player.currentCharacter.GetComponent<IInventory>();
+                        inventory.ApplyLoadout(m_MissionDescriptor.m_InventoryLoadout);
+                    }
                     IsBriefingComplete = true;
                     m_BriefingPanel.gameObject.SetActive(false);
                 }

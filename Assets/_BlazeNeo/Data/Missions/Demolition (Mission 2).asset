@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: Demolition (Mission 2)
   m_EditorClassIdentifier: 
   m_MaxMissionTimeInMinutes: 10
+  m_InventoryLoadout: {fileID: 11400000, guid: 2fb2bdc92660bf441bdf36485d6d6ebe, type: 2}
   m_ScoreNeededForTheWin: 1000
   minOptionalTargetsForCompletion: 0
   m_LivesAvailable: 3
