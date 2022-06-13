@@ -5,7 +5,7 @@ using WizardsCode.BackgroundAI;
 using NeoFPS;
 using System;
 
-namespace WizardsCode.BlazeNeoFPS
+namespace WizardsCode.AI
 {
     public class EnemySpawner : Spawner
     {

@@ -111,7 +111,7 @@ MonoBehaviour:
   agentLayers:
     serializedVersion: 2
     m_Bits: 134217728
-  distractionRadius: 35
+  distractionRadius: 50
   passThroughColliders: 1
   distractOnlyPrioritizedAgent: 0
   distractOnAwake: 0

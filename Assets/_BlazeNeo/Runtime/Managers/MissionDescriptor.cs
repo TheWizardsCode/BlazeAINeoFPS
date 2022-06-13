@@ -42,7 +42,7 @@ namespace WizardsCode.BlazeNeoFPS
         internal string m_LosingSceneName = "Lose";
 
         [Header("Briefing")]
-        [SerializeField, Tooltip("The full description of the mission."), TextArea(3, 10)]
+        [SerializeField, Tooltip("The full description of the mission."), TextArea(3, 15)]
         internal string m_Description;
     }
 }

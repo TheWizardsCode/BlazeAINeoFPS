@@ -21,6 +21,5 @@ MonoBehaviour:
   m_ExtractionMissionIncompleteSceneName: ExtractionWithMissionIncomplete
   m_LosingSceneName: Lose
   m_Description: "The city Tav Taru houses the central control building for the Fifth
-    Eastern Batallion. Forward operatives have brought four bombs large enough to
-    destroy the building. \n\nThe bombs are hidden in the woods. Find them and destroy
-    the building."
+    Eastern Batallion. \n\nForward operatives have hidden bombs in the woods. Find
+    4, plant them against the bick part of the towe and detonate them and get out.\n\n"
