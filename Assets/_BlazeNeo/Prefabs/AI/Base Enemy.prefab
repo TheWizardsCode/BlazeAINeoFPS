@@ -3007,7 +3007,7 @@ MonoBehaviour:
   m_Muzzle: {fileID: 3502806436816912323}
   m_MuzzleFX: {fileID: 153266, guid: 39b2a3d1ecfa5614b97e75a9b5561f21, type: 3}
   m_SoundFX: {fileID: 2421091656849766919}
-  m_Damage: {x: 0, y: 4}
+  m_Damage: {x: 0, y: 6}
   m_OnShoot:
     m_PersistentCalls:
       m_Calls: []
@@ -3045,7 +3045,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 05213cfaf1591a24e9b22800d9be28e9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Health: 75
+  m_Health: 70
   m_HealthMax: 75
   m_CanDamageSelf: 1
   m_OnHealthChanged:
@@ -3178,18 +3178,18 @@ MonoBehaviour:
     - Player
     alertTags: []
     visionDuringNormalState:
-      coneAngle: 125
-      sightRange: 75
+      coneAngle: 140
+      sightRange: 80
     visionDuringAlertState:
-      coneAngle: 180
-      sightRange: 100
+      coneAngle: 260
+      sightRange: 150
     visionDuringAttackState:
       coneAngle: 360
       sightRange: 80
     sightLevel: 2
     maxSightLevel: 18.46
     head: {fileID: 0}
-    pulseRate: 5
+    pulseRate: 6
     showNormalVision: 1
     showAlertVision: 0
     showAttackVision: 0
@@ -3275,17 +3275,17 @@ MonoBehaviour:
       serializedVersion: 2
       m_Bits: 1025
     callOthers: 1
-    callRadius: 10
+    callRadius: 40
     agentLayersToCall:
       serializedVersion: 2
-      m_Bits: 4294967295
+      m_Bits: 134217728
     callOthersTime: 2
     receiveCallFromOthers: 1
     timeToReturnAlert: 7
     attackInIntervals: 1
     attackInIntervalsTime: 0.8
     randomizeAttackIntervals: 1
-    randomizeAttackIntervalsBetween: {x: 1.5, y: 2.5}
+    randomizeAttackIntervalsBetween: {x: 1, y: 1.5}
     moveBackwards: 1
     moveBackwardsDist: 10
     pushAgentsBackwards: 0
@@ -3303,8 +3303,8 @@ MonoBehaviour:
     rightStrafeAnimName: Strafe Right
     strafeT: 0.25
     moveSpeed: 5
-    rotationSpeed: 3
-    moveBackwardsSpeed: 2
+    rotationSpeed: 5
+    moveBackwardsSpeed: 4
     useAnimations: 1
     idleAnimationName: Shoot Idle
     idleAnimationTransition: 0.25
@@ -3361,7 +3361,7 @@ MonoBehaviour:
     useAnimation: 1
     animationName: Stomach Hit
     animationTransition: 0.25
-    animPlayGap: 0.02
+    animPlayGap: -0.15
     useAudios: 1
     AudiosObject: {fileID: 3148608225539556413}
     canPlayAnim: 1
