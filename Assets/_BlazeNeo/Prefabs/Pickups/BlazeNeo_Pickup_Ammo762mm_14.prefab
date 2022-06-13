@@ -25,7 +25,7 @@ GameObject:
   - component: {fileID: 114061144888943132}
   - component: {fileID: 114645598971107880}
   m_Layer: 21
-  m_Name: Pickup_Ammo762mm_14
+  m_Name: BlazeNeo_Pickup_Ammo762mm_14
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

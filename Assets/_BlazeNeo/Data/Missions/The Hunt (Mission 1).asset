@@ -13,12 +13,13 @@ MonoBehaviour:
   m_Name: The Hunt (Mission 1)
   m_EditorClassIdentifier: 
   m_MaxMissionTimeInMinutes: 10
+  m_InventoryLoadout: {fileID: 11400000, guid: dde268efe71e17d4eab3fc566947dc89, type: 2}
   m_ScoreNeededForTheWin: 1000
+  minOptionalTargetsForCompletion: 0
   m_LivesAvailable: 3
   m_ExtractionMissionCompleteSceneName: ExtractionWithMissionComplete
   m_ExtractionMissionIncompleteSceneName: ExtractionWithMissionIncomplete
   m_LosingSceneName: Lose
-  m_KillTarget: {fileID: 8745993732789641890, guid: 4cb1f586e87c81d44b8e5b5f39b3cd37, type: 3}
   m_Description: 'Your mission is to clear out the military town of TunTuk. You will
     have 10 minutes between arrival and the opening of the extraction gate.
 

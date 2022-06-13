@@ -17,6 +17,7 @@ GameObject:
   - component: {fileID: 4083884467312518550}
   - component: {fileID: 1097147121137581697}
   - component: {fileID: 1626787788}
+  - component: {fileID: 5684757432561748396}
   m_Layer: 22
   m_Name: InteractivePickup_BombTrigger
   m_TagString: Untagged
@@ -266,6 +267,23 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.5, y: 0.5, z: 0.3}
   m_Center: {x: 0.0679245, y: 0.26449662, z: -0.16004208}
+--- !u!114 &5684757432561748396
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8922218787711960314}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 435a52505a395c2459ad493ac1228696, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_ConsumeResult: 0
+  m_ItemPrefab: {fileID: 5969187292644447684, guid: ed67e55832bbe324bbac91d1efee1baf, type: 3}
+  m_SpawnOnAwake: 1
+  m_RespawnDuration: 5
+  m_DisplayMesh: {fileID: 919132149155446097, guid: bea1b39f843797d498c37043c7008a63, type: 3}
 --- !u!1001 &895689629824159656
 PrefabInstance:
   m_ObjectHideFlags: 0

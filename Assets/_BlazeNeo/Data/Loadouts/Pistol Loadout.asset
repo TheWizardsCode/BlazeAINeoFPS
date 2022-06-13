@@ -10,9 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f932be5f2b3cb7648ac3bdbef2b0c892, type: 3}
-  m_Name: Demolition Loadout
+  m_Name: Pistol Loadout
   m_EditorClassIdentifier: 
   m_Items:
   - {fileID: 561763696632673825, guid: 21fdeb98aa42c7f4383615f487db8457, type: 3}
   - {fileID: 114720571942937776, guid: 25052ae8d9ffa584ab7a888c968e9928, type: 3}
-  - {fileID: 5969187292644447684, guid: ed67e55832bbe324bbac91d1efee1baf, type: 3}
+  - {fileID: 5969187292644447684, guid: 6eb536e23d38b854e937f6618df0e9d2, type: 3}

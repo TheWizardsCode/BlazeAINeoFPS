@@ -10,11 +10,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: bf8f8fb097d88794f8e3b6e98bfb0793, type: 3}
-  m_Name: BlazeNeo Invetntory Database
+  m_Name: WizardsCode Inventory Database
   m_EditorClassIdentifier: 
-  m_TableName: Blaze Neo
+  m_TableName: Wizards Code
   m_Entries:
-  - m_DisplayName: Weapon - Trigger Bomb
-    m_Id: -1697395901
+  - m_DisplayName: Ammo - 9mm
+    m_Id: 603944322
   - m_DisplayName: Bomb
     m_Id: -841752941
+  - m_DisplayName: Weapon - Trigger Bomb
+    m_Id: -1697395901

@@ -10,6 +10,7 @@ using UnityEngine.Playables;
 using NeoFPS.SinglePlayer;
 using TMPro;
 using UnityEngine.UI;
+using Random = UnityEngine.Random;
 
 #if UNITY_EDITOR
 using UnityEditor;
@@ -70,12 +71,13 @@ namespace WizardsCode.BlazeNeoFPS
 
         ExtractionPointController m_ExtractionPoint;
         private int currentTimeDisplayed;
+        private IInventory inventory;
         private BlazeNeoMissionTarget[] m_missiontargets;
         private IHealthManager playerHealthManager;
         float m_TimeRemainingUntilExtraction;
         AudioSource m_AudioSource;
         GameState m_GameState = GameState.MainMenu;
-        private Transform m_Player;
+        private ICharacter m_Player;
 
         public MissionDescriptor mission {
             get { return m_MissionDescriptor; } 
@@ -124,8 +126,13 @@ namespace WizardsCode.BlazeNeoFPS
         {
             if (m_MissionDescriptor.m_InventoryLoadout != null)
             {
-                var inventory = m_NeoGame.player.currentCharacter.GetComponent<IInventory>();
                 inventory.ApplyLoadout(m_MissionDescriptor.m_InventoryLoadout);
+            }
+
+            // TODO: this is a workaround for a bug in NeoFPS that is due to be fixed 6/12 - see also InitializeMission
+            for (int i = 0; i < SpawnManager.spawnPoints.Count; i++)
+            {
+                SpawnManager.spawnPoints[i].onSpawn -= InitializeLoadout;
             }
         }
 
@@ -143,7 +150,7 @@ namespace WizardsCode.BlazeNeoFPS
             //OPTIMIZATION: have these set at design time
             m_missiontargets = FindObjectsOfType<BlazeNeoMissionTarget>(true);
 
-            // FIXME: we never remove these actions from the SpawnManager
+            // TODO: this is a workaround for a bug in NeoFPS that is due to be fixed 6/12 - see also InitializeMission
             for (int i = 0; i < SpawnManager.spawnPoints.Count; i++)
             {
                 SpawnManager.spawnPoints[i].onSpawn += InitializeLoadout;
@@ -216,7 +223,16 @@ namespace WizardsCode.BlazeNeoFPS
         /// <returns></returns>
         private static bool SceneTimeout(int timeout = 30)
         {
-            return Time.timeSinceLevelLoad > timeout || Input.GetKeyDown(KeyCode.Space) || Input.GetMouseButtonDown(0) || Input.GetMouseButtonDown(1);
+            return Time.timeSinceLevelLoad > timeout || InputAdvance();
+        }
+
+        /// <summary>
+        /// Returns true if the player has hit one of the inputs that cause the current game state to advance.
+        /// </summary>
+        /// <returns>true if player is ready to advance</returns>
+        private static bool InputAdvance()
+        {
+            return Input.GetKeyDown(KeyCode.Space) || Input.GetMouseButtonDown(0) || Input.GetMouseButtonDown(1);
         }
 
         private void UpdateInGame()
@@ -272,7 +288,7 @@ namespace WizardsCode.BlazeNeoFPS
                 m_BriefingPanel.GetComponentInChildren<TextMeshProUGUI>().text = m_MissionDescriptor.m_Description;
                 m_BriefingPanel.gameObject.SetActive(true);
 
-                if (Time.timeSinceLevelLoad > 30 || Input.GetKeyDown(KeyCode.Space))
+                if (Time.timeSinceLevelLoad > 30 || InputAdvance())
                 {
                     m_GameState = GameState.InGame;
                     m_NeoGame.Respawn(m_NeoGame.player);
@@ -317,11 +333,6 @@ namespace WizardsCode.BlazeNeoFPS
 
         public void OnPlayerCharacterChanged(ICharacter character)
         {
-            if (character != null)
-            {
-                m_Player = character.transform;
-            }
-
             if (playerHealthManager != null)
             {
                 playerHealthManager.onIsAliveChanged -= OnIsAliveChaged;
@@ -331,8 +342,12 @@ namespace WizardsCode.BlazeNeoFPS
             {
                 return;
             }
+
+            m_Player = character;
             playerHealthManager = character.GetComponent<IHealthManager>();
             playerHealthManager.onIsAliveChanged += OnIsAliveChaged;
+
+            inventory = character.GetComponent<IInventory>();
 
             m_DeathCanvasGroup.alpha = 0f;
         }
@@ -349,6 +364,33 @@ namespace WizardsCode.BlazeNeoFPS
                 int timeshiftsLeft = m_MissionDescriptor.m_LivesAvailable - livesLost;
                 m_DeathCanvasGroup.GetComponentInChildren<Text>().text = $"{UIStrings.DeathScreeMessage.Replace("{AvailableTimeshifts}", timeshiftsLeft.ToString())}";
                 m_DeathCanvasGroup.alpha = 1f;
+        
+                var items = inventory.GetItems();
+                foreach (var item in items)
+                {
+                    FpsInventoryWieldable wieldable = item.GetComponent<FpsInventoryWieldable>();
+                    if (wieldable != null)
+                    {
+                        wieldable.DropItem(wieldable.transform.position, transform.forward, new Vector3(Random.value, Random.value, Random.value));
+                    }
+                    else
+                    {
+                        FpsInventoryAmmo ammo = item.GetComponent<FpsInventoryAmmo>();
+                        if (ammo != null)
+                        {
+                            SharedAmmoTypeExtended sharedAmmoType = ammo.m_AmmoType as SharedAmmoTypeExtended; // TODO: this requires FPSInventoryAmmo to have the m_AmmoType marked public. Need an accessor in that class. Proposed to Chris.
+                            if (sharedAmmoType != null)
+                            {
+                                InventoryItemPickup[] drops = sharedAmmoType.GetDefaultPickups(ammo.quantity);
+                                foreach (var drop in drops)
+                                {
+                                    drop.transform.position = ammo.transform.position;
+                                    
+                                }
+                            }
+                        }
+                    }
+                }
             }
             gameObject.SetActive(!alive);
         }
