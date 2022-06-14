@@ -23,3 +23,4 @@ MonoBehaviour:
   m_Description: "The city Tav Taru houses the central control building for the Fifth
     Eastern Batallion. \n\nForward operatives have hidden bombs in the woods. Find
     4, plant them against the bick part of the towe and detonate them and get out.\n\n"
+  m_DamageMultiplier: 0.5

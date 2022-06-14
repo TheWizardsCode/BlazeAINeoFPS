@@ -4,6 +4,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
+using WizardsCode.BlazeNeoFPS;
 
 namespace WizardsCode.UnnofficialNeoFPSExtension
 {
@@ -20,7 +21,7 @@ namespace WizardsCode.UnnofficialNeoFPSExtension
         GameObject m_MuzzleFX;
         [SerializeField, Tooltip("The audio source that will play any gunshot sounds.")]
         AudioSource m_SoundFX;
-        [SerializeField, Tooltip("The minimum and maximum amount of damage done.")]
+        [SerializeField, Tooltip("The minimum and maximum amount of damage done as standard. Note that this will often be adjusted based on the current difficulty level.")]
         Vector2 m_Damage = new Vector2(8,11);
         [SerializeField, Tooltip("Event first each time the weapon is shot. This is usually triggered by the 'ShotFrame' Event in the animation.")]
         public UnityEvent m_OnShoot;
@@ -34,6 +35,23 @@ namespace WizardsCode.UnnofficialNeoFPSExtension
         {
             get { return DamageFilter.AllDamageAllTeams; }
             set { }
+        }
+
+        Vector2 m_AdjustedDamage = Vector2.one;
+        float m_DamageMultiplier = 1;
+        public float damageMultiplier
+        {
+            get { return m_DamageMultiplier; }
+            internal set { 
+                m_DamageMultiplier = value;
+                m_AdjustedDamage.x = m_Damage.x * m_DamageMultiplier;
+                m_AdjustedDamage.y = m_Damage.y * m_DamageMultiplier;
+            }
+        }
+
+        public float damage
+        {
+            get { return Random.Range(m_AdjustedDamage.x, m_AdjustedDamage.y); }
         }
 
         public IController controller
@@ -51,6 +69,11 @@ namespace WizardsCode.UnnofficialNeoFPSExtension
             get { return name; }
         }
 
+        private void OnEnable()
+        {
+            damageMultiplier = GameManager.Instance.mission.damageMultiplier;
+        }
+
         void Start()
         {
             blaze = GetComponent<BlazeAI>();
@@ -59,14 +82,12 @@ namespace WizardsCode.UnnofficialNeoFPSExtension
 
         public void ShotFrame()
         {
-            float damage = 0;
             if (blaze.enemyCover != null)
             {
                 if (!healthManager || blaze.enemyCover != healthManager.gameObject)
                 {
                     blaze.enemyCover.TryGetComponent<BasicHealthManager>(out healthManager);
                 }
-                damage = m_Damage.y * 3;
             }
             else if (blaze.enemyToAttack != null)
             {
@@ -74,7 +95,6 @@ namespace WizardsCode.UnnofficialNeoFPSExtension
                 {
                     blaze.enemyToAttack.TryGetComponent<BasicHealthManager>(out healthManager);
                 }
-                damage = Random.Range(m_Damage.x, m_Damage.y);
             }
 
             if (healthManager != null)

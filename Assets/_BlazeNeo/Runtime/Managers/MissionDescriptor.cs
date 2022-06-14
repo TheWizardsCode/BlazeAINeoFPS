@@ -44,5 +44,17 @@ namespace WizardsCode.BlazeNeoFPS
         [Header("Briefing")]
         [SerializeField, Tooltip("The full description of the mission."), TextArea(3, 15)]
         internal string m_Description;
+
+        [Header("Difficulty")]
+        [SerializeField, Tooltip("What multiplier should be used when setting up AI characters?" +
+            " A value below 1 will result in less damage, above one will result in more damage."),
+         Range(0.1f, 10f)]
+        internal float m_DamageMultiplier = 1; 
+
+        internal float damageMultiplier
+        {
+            get { return m_DamageMultiplier; }
+            set { m_DamageMultiplier = value; }
+        }
     }
 }

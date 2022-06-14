@@ -274,7 +274,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 2
-    m_SensorSize: {x: 1.7463977, y: 1}
+    m_SensorSize: {x: 2.2822824, y: 1}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0
@@ -752,7 +752,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 2
-    m_SensorSize: {x: 1.7463977, y: 1}
+    m_SensorSize: {x: 2.2822824, y: 1}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0
@@ -952,7 +952,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5ecb28e58d468f6428b93c0ed1c99669, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_MotionGraph: {fileID: 11400000, guid: ca7e671183f45944c820ed97fe1c4860, type: 2}
+  m_MotionGraph: {fileID: 11400000, guid: d9a5e0922e9082742a48d2b09f642295, type: 2}
   m_DataOverrides: {fileID: 0}
   m_UseCrouchJump: 1
   m_ManualInitialisation: 0
