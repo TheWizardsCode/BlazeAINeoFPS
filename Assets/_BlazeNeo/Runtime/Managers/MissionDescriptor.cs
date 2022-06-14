@@ -46,15 +46,26 @@ namespace WizardsCode.BlazeNeoFPS
         internal string m_Description;
 
         [Header("Difficulty")]
-        [SerializeField, Tooltip("What multiplier should be used when setting up AI characters?" +
+        [SerializeField, Tooltip("What damage multiplier should be used when setting up AI characters?" +
             " A value below 1 will result in less damage, above one will result in more damage."),
          Range(0.1f, 10f)]
-        internal float m_DamageMultiplier = 1; 
+        internal float m_DamageMultiplier = 1;
+        [SerializeField, Tooltip("What multiplier should be used when setting up AI spawner?" +
+            " A value below 1 will result in fewer enemies than the configured amount, above one will result in more spawns."),
+         Range(0.1f, 10f)]
+        internal float m_SpawnMultiplier = 1;
 
         internal float damageMultiplier
         {
             get { return m_DamageMultiplier; }
             set { m_DamageMultiplier = value; }
         }
+
+        internal float spawnMultiplier
+        {
+            get { return m_SpawnMultiplier; }
+            set { m_SpawnMultiplier = value; }
+        }
+
     }
 }

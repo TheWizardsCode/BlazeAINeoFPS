@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using WizardsCode.BackgroundAI;
 using NeoFPS;
 using System;
+using WizardsCode.BlazeNeoFPS;
 
 namespace WizardsCode.AI
 {
@@ -11,10 +12,15 @@ namespace WizardsCode.AI
     {
         int m_ActiveSpawns = 0;
 
+        private void OnEnable()
+        {
+            spawnMultiplier = GameManager.Instance.mission.spawnMultiplier;
+        }
+
         protected override bool ShouldSpawn()
         {
             if (Player == null || (m_Player.position - transform.position).sqrMagnitude < m_MinDistanceSqr) return false;
-            if (m_ActiveSpawns >= m_NumberOfSpawns || m_TimeOfNextSpawn > Time.time) return false;
+            if (m_ActiveSpawns >= numberOfSpawns || m_TimeOfNextSpawn > Time.time) return false;
 
             return true;
         }

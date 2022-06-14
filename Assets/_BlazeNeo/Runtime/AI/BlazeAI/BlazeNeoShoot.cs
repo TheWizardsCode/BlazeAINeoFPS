@@ -21,6 +21,8 @@ namespace WizardsCode.UnnofficialNeoFPSExtension
         GameObject m_MuzzleFX;
         [SerializeField, Tooltip("The audio source that will play any gunshot sounds.")]
         AudioSource m_SoundFX;
+        [SerializeField, Tooltip("A set of SFX clips, one of which will be fired when the weapon is fired.")]
+        AudioClip[] m_AudioClips;
         [SerializeField, Tooltip("The minimum and maximum amount of damage done as standard. Note that this will often be adjusted based on the current difficulty level.")]
         Vector2 m_Damage = new Vector2(8,11);
         [SerializeField, Tooltip("Event first each time the weapon is shot. This is usually triggered by the 'ShotFrame' Event in the animation.")]
@@ -29,7 +31,6 @@ namespace WizardsCode.UnnofficialNeoFPSExtension
         BasicHealthManager healthManager;
 
         BlazeAI blaze;
-        private AudioSource[] audioSources;
 
         public DamageFilter outDamageFilter
         {
@@ -77,7 +78,6 @@ namespace WizardsCode.UnnofficialNeoFPSExtension
         void Start()
         {
             blaze = GetComponent<BlazeAI>();
-            audioSources = m_SoundFX.GetComponents<AudioSource>();
         }
 
         public void ShotFrame()
@@ -119,12 +119,10 @@ namespace WizardsCode.UnnofficialNeoFPSExtension
 
         public void PlayAudio()
         {
-            if (m_SoundFX == null) return;
+            if (m_SoundFX == null || m_AudioClips.Length == 0) return;
 
-            if (audioSources.Length >=0)
-            {
-                audioSources[Random.Range(0, audioSources.Length)].Play();
-            }
+            m_SoundFX.clip = m_AudioClips[Random.Range(0, m_AudioClips.Length)];
+            m_SoundFX.Play();
         }
 
         public void Aiming()

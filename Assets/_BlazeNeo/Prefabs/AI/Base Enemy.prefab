@@ -2925,7 +2925,7 @@ PrefabInstance:
       objectReference: {fileID: 9100000, guid: 3793bb6c00a2b764998f1541a4ce37b3, type: 2}
     - target: {fileID: 9500000, guid: ece08e40b586c7e4eb8429c60b5cbd80, type: 3}
       propertyPath: m_UpdateMode
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ece08e40b586c7e4eb8429c60b5cbd80, type: 3}
@@ -3007,6 +3007,8 @@ MonoBehaviour:
   m_Muzzle: {fileID: 3502806436816912323}
   m_MuzzleFX: {fileID: 153266, guid: 39b2a3d1ecfa5614b97e75a9b5561f21, type: 3}
   m_SoundFX: {fileID: 2421091656849766919}
+  m_AudioClips:
+  - {fileID: 8300000, guid: 911bbb230b5a97544a490978b698d67a, type: 3}
   m_Damage: {x: 0, y: 6}
   m_OnShoot:
     m_PersistentCalls:
@@ -3140,7 +3142,7 @@ MonoBehaviour:
   proxyOffset: 0.8
   enableGravity: 1
   gravityStrength: 10
-  useRootMotion: 1
+  useRootMotion: 0
   centerPosition: {x: 0, y: 1.2, z: 0}
   showCenterPosition: 1
   avoidFacingObstacles: 1
@@ -3170,7 +3172,7 @@ MonoBehaviour:
   vision:
     layersToDetect:
       serializedVersion: 2
-      m_Bits: 12598273
+      m_Bits: 2160081921
     hostileAndAlertLayers:
       serializedVersion: 2
       m_Bits: 8192
@@ -3503,6 +3505,82 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 757729266818558386}
     m_Modifications:
+    - target: {fileID: 757729265952953515, guid: 1f8c218f60e37c44192122ac6822dfed, type: 3}
+      propertyPath: m_Volume
+      value: 0.648
+      objectReference: {fileID: 0}
+    - target: {fileID: 757729265952953515, guid: 1f8c218f60e37c44192122ac6822dfed, type: 3}
+      propertyPath: MaxDistance
+      value: 300
+      objectReference: {fileID: 0}
+    - target: {fileID: 757729265952953515, guid: 1f8c218f60e37c44192122ac6822dfed, type: 3}
+      propertyPath: rolloffMode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 757729265952953515, guid: 1f8c218f60e37c44192122ac6822dfed, type: 3}
+      propertyPath: DopplerLevel
+      value: 1.75
+      objectReference: {fileID: 0}
+    - target: {fileID: 757729265952953515, guid: 1f8c218f60e37c44192122ac6822dfed, type: 3}
+      propertyPath: OutputAudioMixerGroup
+      value: 
+      objectReference: {fileID: 243059815924327020, guid: a6f18d72e4ba7bb44a99c8b5e4d9703c, type: 2}
+    - target: {fileID: 757729265952953515, guid: 1f8c218f60e37c44192122ac6822dfed, type: 3}
+      propertyPath: rolloffCustomCurve.m_Curve.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 757729265952953515, guid: 1f8c218f60e37c44192122ac6822dfed, type: 3}
+      propertyPath: rolloffCustomCurve.m_Curve.Array.data[1].time
+      value: 0.33243358
+      objectReference: {fileID: 0}
+    - target: {fileID: 757729265952953515, guid: 1f8c218f60e37c44192122ac6822dfed, type: 3}
+      propertyPath: rolloffCustomCurve.m_Curve.Array.data[2].time
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 757729265952953515, guid: 1f8c218f60e37c44192122ac6822dfed, type: 3}
+      propertyPath: rolloffCustomCurve.m_Curve.Array.data[1].value
+      value: 0.0700717
+      objectReference: {fileID: 0}
+    - target: {fileID: 757729265952953515, guid: 1f8c218f60e37c44192122ac6822dfed, type: 3}
+      propertyPath: rolloffCustomCurve.m_Curve.Array.data[0].inSlope
+      value: -7.906207
+      objectReference: {fileID: 0}
+    - target: {fileID: 757729265952953515, guid: 1f8c218f60e37c44192122ac6822dfed, type: 3}
+      propertyPath: rolloffCustomCurve.m_Curve.Array.data[1].inSlope
+      value: -0.37172383
+      objectReference: {fileID: 0}
+    - target: {fileID: 757729265952953515, guid: 1f8c218f60e37c44192122ac6822dfed, type: 3}
+      propertyPath: rolloffCustomCurve.m_Curve.Array.data[0].outSlope
+      value: -7.906207
+      objectReference: {fileID: 0}
+    - target: {fileID: 757729265952953515, guid: 1f8c218f60e37c44192122ac6822dfed, type: 3}
+      propertyPath: rolloffCustomCurve.m_Curve.Array.data[1].inWeight
+      value: 0.3262393
+      objectReference: {fileID: 0}
+    - target: {fileID: 757729265952953515, guid: 1f8c218f60e37c44192122ac6822dfed, type: 3}
+      propertyPath: rolloffCustomCurve.m_Curve.Array.data[1].outSlope
+      value: -0.37172383
+      objectReference: {fileID: 0}
+    - target: {fileID: 757729265952953515, guid: 1f8c218f60e37c44192122ac6822dfed, type: 3}
+      propertyPath: rolloffCustomCurve.m_Curve.Array.data[2].inWeight
+      value: 0.33333334
+      objectReference: {fileID: 0}
+    - target: {fileID: 757729265952953515, guid: 1f8c218f60e37c44192122ac6822dfed, type: 3}
+      propertyPath: rolloffCustomCurve.m_Curve.Array.data[0].outWeight
+      value: 0.095279284
+      objectReference: {fileID: 0}
+    - target: {fileID: 757729265952953515, guid: 1f8c218f60e37c44192122ac6822dfed, type: 3}
+      propertyPath: rolloffCustomCurve.m_Curve.Array.data[2].outWeight
+      value: 0.33333334
+      objectReference: {fileID: 0}
+    - target: {fileID: 757729265952953515, guid: 1f8c218f60e37c44192122ac6822dfed, type: 3}
+      propertyPath: reverbZoneMixCustomCurve.m_Curve.Array.data[0].value
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 757729265952953525, guid: 1f8c218f60e37c44192122ac6822dfed, type: 3}
+      propertyPath: m_Name
+      value: Gun Audio Source
+      objectReference: {fileID: 0}
     - target: {fileID: 757729265952953525, guid: 1f8c218f60e37c44192122ac6822dfed, type: 3}
       propertyPath: m_Layer
       value: 27

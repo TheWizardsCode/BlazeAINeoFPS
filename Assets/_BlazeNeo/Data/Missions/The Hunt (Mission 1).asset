@@ -32,3 +32,4 @@ MonoBehaviour:
 
     Good Luck.'
   m_DamageMultiplier: 0.4
+  m_SpawnMultiplier: 0.5

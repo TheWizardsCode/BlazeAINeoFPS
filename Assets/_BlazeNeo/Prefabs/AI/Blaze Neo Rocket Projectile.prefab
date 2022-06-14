@@ -230,10 +230,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b578e0a2282807e48abc46fc911b84f8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Speed: 25
+  m_Speed: 20
   m_CollisionLayerMask:
     serializedVersion: 2
-    m_Bits: 8414209
+    m_Bits: 8420353
   m_CollisionPrefab: {fileID: 1764654978243476, guid: a98b15aa948478849b54661e4d9a317e, type: 3}
   m_ProjectileMesh: {fileID: 7375337548765109680}
   m_DisableOnHit: {fileID: 4361980691020798282}
@@ -283,7 +283,7 @@ MonoBehaviour:
   m_Explosion: {fileID: 114048289010296272, guid: d75177cc7fcc15b4c9b9646ae60c704a, type: 3}
   m_Offset: {x: 0, y: 0, z: 0}
   m_ExplosionDamage: 50
-  m_ExplosionForce: 100
+  m_ExplosionForce: 150
   m_TakesDamage: 5
   m_Health: 25
   m_DestroyGameobject: 0
