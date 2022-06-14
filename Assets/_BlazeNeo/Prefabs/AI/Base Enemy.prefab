@@ -3403,49 +3403,56 @@ MonoBehaviour:
     m_MinSpawnOffset: {x: -0.5, y: 0.5, z: -0.5}
     m_MaxSpawnOffset: {x: 0.5, y: 0.75, z: 0.5}
     m_LootValue: 0.68
-    m_Chance: 0.139
+    m_Chance: 0.095
     m_StopSpawning: 1
   - m_Prefab: {fileID: 8647955433852768549, guid: b0798574f44078f499f663a0b2d6f769, type: 3}
     m_SpawnAsChild: 0
     m_MinSpawnOffset: {x: -0.5, y: 0.5, z: -0.5}
     m_MaxSpawnOffset: {x: 0.5, y: 0.75, z: 0.5}
     m_LootValue: 0.424
-    m_Chance: 0.18
+    m_Chance: 0.171
+    m_StopSpawning: 1
+  - m_Prefab: {fileID: 6586620167248010748, guid: 85bcd4bf81b521442b5ed8f7fde7fccd, type: 3}
+    m_SpawnAsChild: 0
+    m_MinSpawnOffset: {x: -0.5, y: 0.5, z: -0.5}
+    m_MaxSpawnOffset: {x: 0.5, y: 0.1, z: 0.5}
+    m_LootValue: 0
+    m_Chance: 0.171
     m_StopSpawning: 1
   - m_Prefab: {fileID: 5673593518725588445, guid: 57a096303abee594fb0aa7eda63ac0a1, type: 3}
     m_SpawnAsChild: 0
     m_MinSpawnOffset: {x: -0.5, y: 0.5, z: -0.5}
     m_MaxSpawnOffset: {x: 0.5, y: 0.75, z: 0.5}
     m_LootValue: 0.348
-    m_Chance: 0.298
+    m_Chance: 0.167
     m_StopSpawning: 1
   - m_Prefab: {fileID: 1415952182397020, guid: 52a9994d325eac441b6c1f48178dc286, type: 3}
     m_SpawnAsChild: 0
     m_MinSpawnOffset: {x: -0.5, y: 0.5, z: -0.5}
     m_MaxSpawnOffset: {x: 0.5, y: 0.1, z: 0.5}
     m_LootValue: 0.159
-    m_Chance: 0.523
+    m_Chance: 0.331
     m_StopSpawning: 1
   - m_Prefab: {fileID: 1276440111773484, guid: f15c85aab7dbfbb4f8039ae6f0bc3973, type: 3}
     m_SpawnAsChild: 0
     m_MinSpawnOffset: {x: -0.5, y: 0.5, z: -0.5}
     m_MaxSpawnOffset: {x: 0.5, y: 0.1, z: 0.5}
     m_LootValue: 0.28
-    m_Chance: 0.338
+    m_Chance: 0.273
     m_StopSpawning: 1
   - m_Prefab: {fileID: 1519684083032848, guid: 5c59695f5521c35419e2b13d73cefa94, type: 3}
     m_SpawnAsChild: 0
     m_MinSpawnOffset: {x: -0.5, y: 0.5, z: -0.5}
     m_MaxSpawnOffset: {x: 0.5, y: 0.1, z: 0.5}
     m_LootValue: 0.282
-    m_Chance: 0.29
+    m_Chance: 0.246
     m_StopSpawning: 1
   - m_Prefab: {fileID: 1277669658375282, guid: 183ae32e1b9f0a748a7c62a7c5a35605, type: 3}
     m_SpawnAsChild: 0
     m_MinSpawnOffset: {x: -0.5, y: 0.5, z: -0.5}
     m_MaxSpawnOffset: {x: 0.5, y: 0.1, z: 0.5}
     m_LootValue: 0.123
-    m_Chance: 0.174
+    m_Chance: 0.193
     m_StopSpawning: 1
   - m_Prefab: {fileID: 1415952182397020, guid: 52a9994d325eac441b6c1f48178dc286, type: 3}
     m_SpawnAsChild: 0

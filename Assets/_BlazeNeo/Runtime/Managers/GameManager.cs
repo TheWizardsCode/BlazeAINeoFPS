@@ -348,6 +348,7 @@ namespace WizardsCode.BlazeNeoFPS
             playerHealthManager.onIsAliveChanged += OnIsAliveChaged;
 
             inventory = character.GetComponent<IInventory>();
+            inventory.ApplyLoadout(mission.m_InventoryLoadout);
 
             m_DeathCanvasGroup.alpha = 0f;
         }
@@ -371,7 +372,19 @@ namespace WizardsCode.BlazeNeoFPS
                     FpsInventoryWieldable wieldable = item.GetComponent<FpsInventoryWieldable>();
                     if (wieldable != null)
                     {
-                        wieldable.DropItem(wieldable.transform.position, transform.forward, new Vector3(Random.value, Random.value, Random.value));
+                        bool dropIt = false;
+                        for (int i = 0; i < mission.m_InventoryLoadout.items.Length; i++)
+                        {
+                            if (mission.m_InventoryLoadout.items[i].itemIdentifier == wieldable.itemIdentifier)
+                            {
+                                dropIt = true;
+                                break;
+                            }
+                        }
+                        if (dropIt)
+                        {
+                            wieldable.DropItem(wieldable.transform.position, transform.forward, new Vector3(Random.value, Random.value, Random.value));
+                        }
                     }
                     else
                     {

@@ -10,12 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ba49fb3df4b7a244090097f880942ad3, type: 3}
-  m_Name: Level 1 Gate Defender Spawner
+  m_Name: Level 2 Perimeter Defender Spawner 1
   m_EditorClassIdentifier: 
   m_SpawnObjectDefinitions:
   - prefab: {fileID: 757729266428322834, guid: 60825afa6ef57b9419e003c1d0b3ef36, type: 3}
     probability: 0.187
     stopSpawning: 0
-  - prefab: {fileID: 6702143101053747323, guid: 06ad9e8505cab85419e84bac69be3577, type: 3}
+  - prefab: {fileID: 6702143101053747323, guid: 59b4326563fc97b43b962e826bb0be77, type: 3}
     probability: 1
     stopSpawning: 0

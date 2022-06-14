@@ -529,7 +529,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 757729266818691654, guid: 60825afa6ef57b9419e003c1d0b3ef36, type: 3}
       propertyPath: vision.visionDuringAttackState.sightRange
-      value: 76
+      value: 105
       objectReference: {fileID: 0}
     - target: {fileID: 757729266818691654, guid: 60825afa6ef57b9419e003c1d0b3ef36, type: 3}
       propertyPath: attackState.attackAnimations.Array.data[0]
@@ -537,7 +537,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 757729266818691654, guid: 60825afa6ef57b9419e003c1d0b3ef36, type: 3}
       propertyPath: attackState.coverShooterOptions.coverShooter
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 757729266818691654, guid: 60825afa6ef57b9419e003c1d0b3ef36, type: 3}
       propertyPath: attackState.randomizeAttackIntervalsBetween.x
@@ -546,6 +546,14 @@ PrefabInstance:
     - target: {fileID: 757729266818691654, guid: 60825afa6ef57b9419e003c1d0b3ef36, type: 3}
       propertyPath: attackState.randomizeAttackIntervalsBetween.y
       value: 1.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 757729266818691654, guid: 60825afa6ef57b9419e003c1d0b3ef36, type: 3}
+      propertyPath: attackState.coverShooterOptions.attackEnemyCover
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 757729266818691654, guid: 60825afa6ef57b9419e003c1d0b3ef36, type: 3}
+      propertyPath: attackState.coverShooterOptions.coverLayers.m_Bits
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 757729267074297267, guid: 60825afa6ef57b9419e003c1d0b3ef36, type: 3}
       propertyPath: m_Layer
