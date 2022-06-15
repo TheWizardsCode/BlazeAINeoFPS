@@ -346,11 +346,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3134111753714892415, guid: 1ba7a2fb09c88f24f850d8c556050c4a, type: 3}
       propertyPath: m_Children.m_Keys.Array.size
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3134111753714892415, guid: 1ba7a2fb09c88f24f850d8c556050c4a, type: 3}
       propertyPath: m_Children.m_Values.Array.size
-      value: 0
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3134111753714892415, guid: 1ba7a2fb09c88f24f850d8c556050c4a, type: 3}
+      propertyPath: m_Children.m_Keys.Array.data[0]
+      value: 1159864113
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1ba7a2fb09c88f24f850d8c556050c4a, type: 3}
@@ -1749,11 +1753,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5705749339179624267, guid: 57a096303abee594fb0aa7eda63ac0a1, type: 3}
       propertyPath: m_Children.m_Keys.Array.size
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5705749339179624267, guid: 57a096303abee594fb0aa7eda63ac0a1, type: 3}
       propertyPath: m_Children.m_Values.Array.size
-      value: 0
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5705749339179624267, guid: 57a096303abee594fb0aa7eda63ac0a1, type: 3}
+      propertyPath: m_Children.m_Keys.Array.data[0]
+      value: -1294007661
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 57a096303abee594fb0aa7eda63ac0a1, type: 3}
@@ -2267,11 +2275,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8759534077278979853, guid: b0798574f44078f499f663a0b2d6f769, type: 3}
       propertyPath: m_Children.m_Keys.Array.size
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8759534077278979853, guid: b0798574f44078f499f663a0b2d6f769, type: 3}
       propertyPath: m_Children.m_Values.Array.size
-      value: 0
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8759534077278979853, guid: b0798574f44078f499f663a0b2d6f769, type: 3}
+      propertyPath: m_Children.m_Keys.Array.data[0]
+      value: -972445231
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b0798574f44078f499f663a0b2d6f769, type: 3}
