@@ -2064,7 +2064,7 @@ GameObject:
   - component: {fileID: -5473711100930342}
   - component: {fileID: -5101393956296682141}
   m_Layer: 0
-  m_Name: BlazeNeo_FirearmSniperRifle
+  m_Name: Firearm_SniperRifle_WizardsQuickswitch
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2316,7 +2316,7 @@ MonoBehaviour:
   m_StartActive: 1
   m_ActivationMode: 0
   m_Effect: {fileID: 6569175580668402831}
-  m_AmmoType: {fileID: 11400000, guid: 9800d35582300d8428aa99db363621e9, type: 2}
+  m_AmmoType: {fileID: 11400000, guid: beba4eb1a88fcf341bc20a78efb4e4c8, type: 2}
 --- !u!114 &6567777054311714185
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2839,7 +2839,7 @@ MonoBehaviour:
   m_OnDeselect:
     m_PersistentCalls:
       m_Calls: []
-  m_DropObject: {fileID: 114744159254946762, guid: 70022aff82982684fb0ece54fe66f4e1, type: 3}
+  m_DropObject: {fileID: -7025395068361064028, guid: 1ba7a2fb09c88f24f850d8c556050c4a, type: 3}
 --- !u!114 &-5473711100930342
 MonoBehaviour:
   m_ObjectHideFlags: 0

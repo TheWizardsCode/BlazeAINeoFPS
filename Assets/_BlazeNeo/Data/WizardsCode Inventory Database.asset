@@ -14,6 +14,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_TableName: Wizards Code
   m_Entries:
+  - m_DisplayName: Ammo - 12 Gauge
+    m_Id: -1859805148
+  - m_DisplayName: Ammo - 357 Magnum
+    m_Id: -1292943232
+  - m_DisplayName: Ammo - 40mm HE
+    m_Id: -620949798
+  - m_DisplayName: Ammo - 556mm
+    m_Id: -160296603
+  - m_DisplayName: Ammo - 762mm
+    m_Id: -898974580
   - m_DisplayName: Ammo - 9mm
     m_Id: 603944322
   - m_DisplayName: Bomb

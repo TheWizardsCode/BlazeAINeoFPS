@@ -373,7 +373,7 @@ GameObject:
   - component: {fileID: 6555236010262685564}
   - component: {fileID: 3906264704671489478}
   m_Layer: 22
-  m_Name: WeaponPickup_Pistol_WizardQuickswitch
+  m_Name: Pickup_Pistol_WizardQuickswitch
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -636,7 +636,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fb2fac24dbfbfb845927db5c51391026, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_RigidBody: {fileID: 6605841049960413240}
+  m_RigidBody: {fileID: 8703078107483414395, guid: b0798574f44078f499f663a0b2d6f769, type: 3}
   m_Pickup: {fileID: 6554366398760726786}
   m_AmmoPickup: {fileID: 2797506274621724535}
   m_AmmoPickupDelay: 0.25
