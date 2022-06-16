@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Long Dev Test Mission
   m_EditorClassIdentifier: 
   m_MaxMissionTimeInMinutes: 100
-  m_InventoryLoadout: {fileID: 11400000, guid: dde268efe71e17d4eab3fc566947dc89, type: 2}
+  m_InventoryLoadout: {fileID: 11400000, guid: ec12e3b0ba04fe041be894f8ca41946e, type: 2}
   m_ScoreNeededForTheWin: 1000
   minOptionalTargetsForCompletion: 0
   m_LivesAvailable: 100

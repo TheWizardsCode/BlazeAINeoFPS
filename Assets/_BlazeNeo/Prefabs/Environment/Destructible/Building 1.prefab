@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 1099271212797961580}
   - component: {fileID: 1099271212797961581}
   - component: {fileID: 1099271212797961582}
+  - component: {fileID: 6826687689340394590}
   m_Layer: 10
   m_Name: Building 1
   m_TagString: Untagged
@@ -89,15 +90,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 43e54dfa7bdc775439a344cf1b57a459, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Health: 100
-  m_HealthMax: 100
-  m_CanDamageSelf: 1
-  m_OnHealthChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_OnIsAliveChanged:
-    m_PersistentCalls:
-      m_Calls: []
   m_ScaledDestructionParticles:
   - {fileID: 7343961097728468581, guid: 2455b1de6657def4889bd7908ac7af0f, type: 3}
   m_ParticalDensity: 37.2
@@ -105,6 +97,27 @@ MonoBehaviour:
   m_UnscaledDestructionParticles:
   - {fileID: 7343961097728468581, guid: d0d4fce4cdd4ddf4798a6c50afb74622, type: 3}
   m_ImpactDamageMultiplier: 1
+--- !u!114 &6826687689340394590
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1099271212797961576}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: afb4f6b079a31f949b8a10f7e86b427e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Health: 1000
+  m_HealthMax: 1000
+  m_CanDamageSelf: 1
+  m_OnHealthChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnIsAliveChanged:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1001 &1099271213855716139
 PrefabInstance:
   m_ObjectHideFlags: 0

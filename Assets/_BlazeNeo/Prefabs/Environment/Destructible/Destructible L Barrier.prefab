@@ -221,11 +221,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_ScaledDestructionParticles:
-  - {fileID: 7343961097728468581, guid: d4df130c679ef6e4293dc9a9d7250294, type: 3}
+  - {fileID: 7343961097728468581, guid: 615239656eb90aa4389b7e949717865e, type: 3}
+  - {fileID: 7343961097728468581, guid: 62098df18ec583a4cb31526b6877eea1, type: 3}
   m_ParticalDensity: 9.5
   m_ExplosiveForce: 1.14
-  m_UnscaledDestructionParticles:
-  - {fileID: 7343961097728468581, guid: d0d4fce4cdd4ddf4798a6c50afb74622, type: 3}
+  m_UnscaledDestructionParticles: []
   m_ImpactDamageMultiplier: 1
 --- !u!114 &544064470901841679
 MonoBehaviour:
@@ -391,11 +391,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_ScaledDestructionParticles:
-  - {fileID: 7343961097728468581, guid: d4df130c679ef6e4293dc9a9d7250294, type: 3}
+  - {fileID: 7343961097728468581, guid: 615239656eb90aa4389b7e949717865e, type: 3}
+  - {fileID: 7343961097728468581, guid: 62098df18ec583a4cb31526b6877eea1, type: 3}
   m_ParticalDensity: 9.5
   m_ExplosiveForce: 1.14
-  m_UnscaledDestructionParticles:
-  - {fileID: 7343961097728468581, guid: d0d4fce4cdd4ddf4798a6c50afb74622, type: 3}
+  m_UnscaledDestructionParticles: []
   m_ImpactDamageMultiplier: 1
 --- !u!114 &7245389610636972148
 MonoBehaviour:

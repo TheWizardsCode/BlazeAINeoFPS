@@ -80,7 +80,12 @@ namespace WizardsCode.BlazeNeoFPS
         private ICharacter m_Player;
 
         public MissionDescriptor mission {
-            get { return m_MissionDescriptor; } 
+            get { return m_MissionDescriptor; }
+        }
+
+        private bool IsMissionComplete
+        {
+            get { return AreTargetsNeutralized && score >= m_MissionDescriptor.m_ScoreNeededForTheWin; }
         }
 
         public int livesLost { get; private set; }   
@@ -110,7 +115,7 @@ namespace WizardsCode.BlazeNeoFPS
         private void Awake()
         {
             Cursor.lockState = CursorLockMode.Locked;
-            Cursor.visible = false;
+            //Cursor.visible = false;
             FpsGameMode.onInGameChanged += OnInNeoGameChanged;
         }
 
@@ -246,12 +251,17 @@ namespace WizardsCode.BlazeNeoFPS
 
             m_TimeRemainingUntilExtraction -= Time.deltaTime;
 
+            if (!HasLost && m_ExtractionPoint.CanExtract && IsMissionComplete)
+            {
+                SceneManager.LoadScene(m_MissionDescriptor.m_ExtractionMissionCompleteSceneName);
+            }
+            
             if (m_TimeRemainingUntilExtraction <= 0)
             {
                 if (m_ExtractionPoint.IsPlayerInExtractionZone)
                 {
                     m_GameState = GameState.ExtractionReport;
-                    if (AreTargetsNeutralized && score >= m_MissionDescriptor.m_ScoreNeededForTheWin)
+                    if (IsMissionComplete)
                     {
                         SceneManager.LoadScene(m_MissionDescriptor.m_ExtractionMissionCompleteSceneName);
                     }

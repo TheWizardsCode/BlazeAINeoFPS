@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 6398481300463099568}
   - component: {fileID: 6398481300463099571}
   - component: {fileID: 7223644077157380561}
+  - component: {fileID: 6437310568567449921}
   m_Layer: 10
   m_Name: Destructible Cylinder
   m_TagString: Untagged
@@ -76,19 +77,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 43e54dfa7bdc775439a344cf1b57a459, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Health: 75
-  m_HealthMax: 75
-  m_CanDamageSelf: 1
-  m_OnHealthChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_OnIsAliveChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_DestructionParticles:
+  m_ScaledDestructionParticles:
   - {fileID: 7343961097728468581, guid: 615239656eb90aa4389b7e949717865e, type: 3}
+  - {fileID: 7343961097728468581, guid: 62098df18ec583a4cb31526b6877eea1, type: 3}
   m_ParticalDensity: 25
   m_ExplosiveForce: 1.04
+  m_UnscaledDestructionParticles: []
   m_ImpactDamageMultiplier: 1
 --- !u!136 &7223644077157380561
 CapsuleCollider:
@@ -104,6 +98,27 @@ CapsuleCollider:
   m_Height: 2.5881958
   m_Direction: 1
   m_Center: {x: -0.031320572, y: -0.029125452, z: 0}
+--- !u!114 &6437310568567449921
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6398481300463099572}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: afb4f6b079a31f949b8a10f7e86b427e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Health: 100
+  m_HealthMax: 100
+  m_CanDamageSelf: 1
+  m_OnHealthChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnIsAliveChanged:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1001 &6398481301932232081
 PrefabInstance:
   m_ObjectHideFlags: 0

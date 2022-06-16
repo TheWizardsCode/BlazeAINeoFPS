@@ -13,10 +13,13 @@ MonoBehaviour:
   m_Name: Short Dev Test Mission
   m_EditorClassIdentifier: 
   m_MaxMissionTimeInMinutes: 1
+  m_InventoryLoadout: {fileID: 11400000, guid: ec12e3b0ba04fe041be894f8ca41946e, type: 2}
   m_ScoreNeededForTheWin: 10
-  minOptionalTargetsForCompletion: 1
+  minOptionalTargetsForCompletion: 0
   m_LivesAvailable: 1
   m_ExtractionMissionCompleteSceneName: ExtractionWithMissionComplete
   m_ExtractionMissionIncompleteSceneName: ExtractionWithMissionIncomplete
   m_LosingSceneName: Lose
   m_Description: A short mission with one life to be used in the dev environment
+  m_DamageMultiplier: 1
+  m_SpawnMultiplier: 1

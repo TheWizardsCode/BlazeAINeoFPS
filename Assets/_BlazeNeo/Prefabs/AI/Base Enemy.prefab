@@ -3009,7 +3009,7 @@ MonoBehaviour:
   m_SoundFX: {fileID: 2421091656849766919}
   m_AudioClips:
   - {fileID: 8300000, guid: 911bbb230b5a97544a490978b698d67a, type: 3}
-  m_Damage: {x: 0, y: 6}
+  m_Damage: {x: 0, y: 10}
   m_OnShoot:
     m_PersistentCalls:
       m_Calls: []
@@ -3261,6 +3261,7 @@ MonoBehaviour:
       firstSightChance: 2
       coverBlownState: 2
       attackEnemyCover: 2
+      moveToCoverCenter: 0
       coverAnimations:
         highCoverHeight: 2
         highCoverAnimation: Cover Idle

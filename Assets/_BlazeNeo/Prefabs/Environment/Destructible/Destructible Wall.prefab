@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 5821324281263399644}
   - component: {fileID: 5821324281263399647}
   - component: {fileID: 5821324281263399646}
+  - component: {fileID: 9185031380887923411}
   m_Layer: 10
   m_Name: Destructible Wall
   m_TagString: Untagged
@@ -141,6 +142,25 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 43e54dfa7bdc775439a344cf1b57a459, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_ScaledDestructionParticles:
+  - {fileID: 7343961097728468581, guid: d4df130c679ef6e4293dc9a9d7250294, type: 3}
+  - {fileID: 7343961097728468581, guid: 62098df18ec583a4cb31526b6877eea1, type: 3}
+  m_ParticalDensity: 9.5
+  m_ExplosiveForce: 1.14
+  m_UnscaledDestructionParticles: []
+  m_ImpactDamageMultiplier: 1
+--- !u!114 &9185031380887923411
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5821324281263399641}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: afb4f6b079a31f949b8a10f7e86b427e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
   m_Health: 100
   m_HealthMax: 100
   m_CanDamageSelf: 1
@@ -150,13 +170,6 @@ MonoBehaviour:
   m_OnIsAliveChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_ScaledDestructionParticles:
-  - {fileID: 7343961097728468581, guid: d4df130c679ef6e4293dc9a9d7250294, type: 3}
-  m_ParticalDensity: 9.5
-  m_ExplosiveForce: 1.14
-  m_UnscaledDestructionParticles:
-  - {fileID: 7343961097728468581, guid: d0d4fce4cdd4ddf4798a6c50afb74622, type: 3}
-  m_ImpactDamageMultiplier: 1
 --- !u!1 &8931721224229123467
 GameObject:
   m_ObjectHideFlags: 0
