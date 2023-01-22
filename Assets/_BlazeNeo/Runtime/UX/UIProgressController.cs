@@ -5,7 +5,7 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
-namespace WizardsCode.BlazeNeoFPS.UI
+namespace WizardsCode.Common.UI
 {
     public class UIProgressController : MonoBehaviour
     {
@@ -18,18 +18,18 @@ namespace WizardsCode.BlazeNeoFPS.UI
 
         void OnEnable()
         {
-            GameManager.Instance.onScoreChanged += OnScoreChanged;
-            targetScore = GameManager.Instance.mission.m_ScoreNeededForTheWin;
+            AbstractGameManager.Instance.onScoreChanged += OnScoreChanged;
+            targetScore = AbstractGameManager.Instance.mission.m_ScoreNeededForTheWin;
             OnScoreChanged(0);
 
-            GameManager.Instance.onTimerChanged += OnTimerChanged;
-            OnTimerChanged((int)GameManager.Instance.TimeToExtraction);
+            AbstractGameManager.Instance.onTimerChanged += OnTimerChanged;
+            OnTimerChanged((int)AbstractGameManager.Instance.TimeToExtraction);
         }
 
         private void OnDisable()
         {
-            GameManager.Instance.onScoreChanged -= OnScoreChanged;
-            GameManager.Instance.onTimerChanged -= OnTimerChanged;
+            AbstractGameManager.Instance.onScoreChanged -= OnScoreChanged;
+            AbstractGameManager.Instance.onTimerChanged -= OnTimerChanged;
         }
 
         private void OnScoreChanged(int score)

@@ -1,7 +1,7 @@
 using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
-using WizardsCode.BlazeNeoFPS;
+using WizardsCode.Common;
 
 namespace WizardsCode.AI
 {
@@ -43,8 +43,8 @@ namespace WizardsCode.AI
 
             while (true)
             {
-                float winProgress = (float)GameManager.Instance.score / GameManager.Instance.mission.m_ScoreNeededForTheWin;
-                float livesLeft = (float)GameManager.Instance.livesLost / GameManager.Instance.mission.m_LivesAvailable;
+                float winProgress = (float)AbstractGameManager.Instance.score / AbstractGameManager.Instance.mission.m_ScoreNeededForTheWin;
+                float livesLeft = (float)AbstractGameManager.Instance.livesLost / AbstractGameManager.Instance.mission.m_LivesAvailable;
 
                 lootValue = 1 - ((winProgress + livesLeft) / 2);
 

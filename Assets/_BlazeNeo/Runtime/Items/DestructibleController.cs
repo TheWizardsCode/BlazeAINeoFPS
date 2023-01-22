@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using NeoFPS;
 using UnityEngine.Serialization;
 
-namespace WizardsCode.BlazeNeoFPS
+namespace WizardsCode.Common
 {
     /// <summary>
     /// Manages the health of a destructible object and will destroy the object when it "dies"

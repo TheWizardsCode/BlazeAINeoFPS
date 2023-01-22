@@ -1,4 +1,5 @@
-﻿using NeoFPS;
+﻿using NeoCC;
+using NeoFPS;
 using UnityEngine;
 
 namespace WizardsCode.UnnofficialNeoFPSExtension
@@ -19,13 +20,13 @@ namespace WizardsCode.UnnofficialNeoFPSExtension
 
         public override DamageResult AddDamage(float damage)
         {
-            blaze.Hits();
+            blaze.Hit();
             return base.AddDamage(damage);
         }
 
         public override DamageResult AddDamage(float damage, RaycastHit hit)
         {
-            blaze.Hits();
+            blaze.Hit();
             return base.AddDamage(damage, hit);
         }
 
@@ -43,14 +44,14 @@ namespace WizardsCode.UnnofficialNeoFPSExtension
 
         private void NotifyBlazeOfHit(IDamageSource source)
         {
-            MonoBehaviour mb = source as MonoBehaviour;
-            if (mb != null)
+            NeoCharacterController enemy = ((Component)source).GetComponentInParent<NeoCharacterController>();
+            if (enemy != null)
             {
-                blaze.Hits(mb.gameObject);
+                blaze.Hit(enemy.gameObject);
             }
             else
             {
-                blaze.Hits();
+                blaze.Hit();
             }
         }
     }

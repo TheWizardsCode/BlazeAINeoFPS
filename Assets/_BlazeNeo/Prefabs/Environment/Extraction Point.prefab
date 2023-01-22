@@ -13,7 +13,6 @@ GameObject:
   - component: {fileID: 6840031421930118792}
   - component: {fileID: 2273431499038019873}
   - component: {fileID: 8511325286436723356}
-  - component: {fileID: 463896765}
   m_Layer: 21
   m_Name: Extraction Point
   m_TagString: Untagged
@@ -111,15 +110,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0983cb4a99bc56740880a2928b4ee74c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &463896765
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5501651036264752317}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0983cb4a99bc56740880a2928b4ee74c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_ClearRadius: 100

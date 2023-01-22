@@ -2,7 +2,7 @@ using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
 
-namespace WizardsCode.BlazeNeoFPS
+namespace WizardsCode.Common
 {
     /// <summary>
     /// A selection of strings for use in the UI.

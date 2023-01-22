@@ -3,18 +3,18 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
 
-namespace WizardsCode.BlazeNeoFPS
+namespace WizardsCode.Common
 {
     /// <summary>
     /// Marks an object as a source of a score.
     /// </summary>
     public class ScoreSource : MonoBehaviour
     {
-        GameManager manager;
+        AbstractGameManager manager;
 
         private void Start()
         {
-            manager = GameObject.FindObjectOfType<GameManager>();
+            manager = GameObject.FindObjectOfType<AbstractGameManager>();
             if (manager == null)
             {
                 Debug.LogWarning("No game manager found, destroying ScoreSource as it requires one.");  

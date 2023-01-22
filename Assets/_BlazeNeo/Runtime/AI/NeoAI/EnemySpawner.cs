@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using WizardsCode.BackgroundAI;
 using NeoFPS;
 using System;
-using WizardsCode.BlazeNeoFPS;
+using WizardsCode.Common;
 
 namespace WizardsCode.AI
 {
@@ -14,7 +14,7 @@ namespace WizardsCode.AI
 
         private void OnEnable()
         {
-            spawnMultiplier = GameManager.Instance.mission.spawnMultiplier;
+            spawnMultiplier = AbstractGameManager.Instance.mission.spawnMultiplier;
         }
 
         protected override bool ShouldSpawn()

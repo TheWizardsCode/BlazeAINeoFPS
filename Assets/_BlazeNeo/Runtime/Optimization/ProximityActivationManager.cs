@@ -50,7 +50,6 @@ namespace WizardsCode.Optimization
         /// <param name="obj"></param>
         internal void Register(ProximityRegistration obj)
         {
-            obj.Disable();
             m_FrequentlyManagedObjects.Add(obj);
         }
 

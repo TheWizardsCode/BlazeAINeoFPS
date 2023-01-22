@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_MaxMissionTimeInMinutes: 10
   m_InventoryLoadout: {fileID: 11400000, guid: dde268efe71e17d4eab3fc566947dc89, type: 2}
-  m_ScoreNeededForTheWin: 1000
+  m_ScoreNeededForTheWin: 1500
   minOptionalTargetsForCompletion: 0
   m_LivesAvailable: 3
   m_ExtractionMissionCompleteSceneName: ExtractionWithMissionComplete

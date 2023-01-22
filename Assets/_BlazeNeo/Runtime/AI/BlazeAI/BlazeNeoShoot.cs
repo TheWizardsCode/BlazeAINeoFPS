@@ -1,10 +1,11 @@
-﻿using NeoFPS;
+﻿using BlazeAISpace;
+using NeoFPS;
 using NeoFPS.ModularFirearms;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
-using WizardsCode.BlazeNeoFPS;
+using WizardsCode.Common;
 
 namespace WizardsCode.UnnofficialNeoFPSExtension
 {
@@ -31,6 +32,7 @@ namespace WizardsCode.UnnofficialNeoFPSExtension
         BasicHealthManager healthManager;
 
         BlazeAI blaze;
+        private CoverShooterBehaviour shooter;
 
         public DamageFilter outDamageFilter
         {
@@ -40,7 +42,7 @@ namespace WizardsCode.UnnofficialNeoFPSExtension
 
         Vector2 m_AdjustedDamage = Vector2.one;
         float m_DamageMultiplier = 1;
-        public float damageMultiplier
+        public float missionDamageMultiplier
         {
             get { return m_DamageMultiplier; }
             internal set { 
@@ -72,21 +74,23 @@ namespace WizardsCode.UnnofficialNeoFPSExtension
 
         private void OnEnable()
         {
-            damageMultiplier = GameManager.Instance.mission.damageMultiplier;
+            missionDamageMultiplier = AbstractGameManager.Instance.mission.damageMultiplier;
         }
 
         void Start()
         {
             blaze = GetComponent<BlazeAI>();
+            // Need to handle both kinds of shooter, cover and non-cover
+            shooter = GetComponent<CoverShooterBehaviour>();
         }
 
-        public void ShotFrame()
+        public void Shoot()
         {
-            if (blaze.enemyCover != null)
+            if (shooter.enemyCover != null)
             {
-                if (!healthManager || blaze.enemyCover != healthManager.gameObject)
+                if (!healthManager || shooter.enemyCover != healthManager.gameObject)
                 {
-                    blaze.enemyCover.TryGetComponent<BasicHealthManager>(out healthManager);
+                    shooter.enemyCover.TryGetComponent<BasicHealthManager>(out healthManager);
                 }
             }
             else if (blaze.enemyToAttack != null)
